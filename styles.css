@@ -8,7 +8,7 @@
     --white: #FFFFFF;
     --primary-light: #8abdff;
     --primary: #6d5dfc;
-    --primary-dark: #5b0eeb;
+    --pal-color: #5b0eeb;
     --gen-bg: #b2f0db;
   
     --greyLight-1: #E4EBF5;
@@ -172,9 +172,7 @@ a {
         inset 0px 0px 0px 0px #0001,
         inset 0px 0px 0px 0px #fff9,        
         inset 0px 0px 0px 0px #0001;
-
-    
-    color: var(--iso-color);
+    /* color: var(--iso-color); */
     text-align: center;
 }
 .icon {
@@ -186,6 +184,10 @@ a {
 
 .iso {
     color: var(--iso-color);
+}
+.pal,
+.pal .btn {
+    color: var(--pal-color);
 }
 /* .iso .algo-btn {
     color: var(--iso-color);
