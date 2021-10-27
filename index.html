@@ -9,283 +9,379 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script> -->
+    
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="iso.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>JavaScript Algorithms | Pia Torain</title>
 </head>
 <body>
     <header>
         
     </header>
-    <div class="dashboard">
-        <div class="algo-card iso">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>ISOGRAM</h3>
-                </div>
+    <!-- Main Container -->
+    <div class="dash-holder" id="dashboard-holder">
+
+        <!-- Dashboard -->
+        <div class="dashboard" id="dash">
+
+            <!-- ISOGRAM CARD -->
+            <div class="algo-card iso">
                 <div class="algo-info">
-                    <p>An isogram is a word or sentence with no repeating letters.</p>
+                    <div class="title">
+                        <h3>ISOGRAM</h3>
+                    </div>
+                    <div class="algo-text">
+                        <p class="info">An isogram is a word or sentence with no repeating letters.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn iso-btn" id="iso-code-btn" aria-label="download">
+                            <!-- <i class='bx bx-download icon iso-icon' ></i> -->
+                            <box-icon name='download' class="icon iso-icon" ></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn iso-btn" id="iso-play-btn" aria-label="play">
+                            <box-icon name='play' class="icon play iso-play" ></box-icon>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="iso-code">
-                        <img class="icon iso-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="iso-play">
-                        <img class="icon iso-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-    
-        </div>
-        <div class="algo-card pal">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>PALINDROME</h3>
-                </div>
+
+            
+            <!-- /ISOGRAM CARD-->
+
+            <!-- Palindrome -->
+            <div class="algo-card pal">
                 <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
+                    <div class="title">
+                        <h3>PALINDROME</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn pal-btn" id="pal-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon pal-icon" ></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn pal-btn" id="pal-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play pal-play" ></box-icon>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn pal" id="pal-code">
-                        <img class="icon pal-icon" src="images/palcode.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn pal" id="pal-play">
-                        <img class="icon pal-icon" src="images/palplay.svg" alt="play icon"/>
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>TWO SUM</h3>
-                </div>
+            <!-- /Palindrome -->
+            
+            <!-- Two Sum -->
+            <div class="algo-card two">
                 <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
+                    <div class="title">
+                        <h3>TWO SUM</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn two-btn" id="two-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon two-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn two-btn" id="two-play-icon"aria-label="play">
+                            <box-icon name='play' class="icon play two-play"></box-icon>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="two-code">
-                        <img class="icon two-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="tw-play">
-                        <img class="icon two-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>SPIN WORDS</h3>
-                </div>
+            <!-- /Two Sum -->
+
+            <!-- SpinWords  -->
+            <div class="algo-card spin">
                 <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
+                    <div class="title">
+                        <h3>SPIN WORDS</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn spin-btn" id="spin-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon spin-icon" ></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn spin-btn" id="spin-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play spin-play"></box-icon>
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="spin-code">
-                        <img class="icon spin-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="spin-play">
-                        <img class="icon spin-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>LENGTH OF LONGEST WORD</h3>
-                </div>
+            <!-- /SpinWords  -->
+
+            <!-- Length of Longest Word -->
+            <div class="algo-card llw">
                 <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
+                    <div class="title">
+                        <h3>LENGTH OF LONGEST WORD</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn llw-btn" id="llw-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon llw-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn llw-btn" id="llw-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play llw-play"></box-icon>
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="llw-code">
-                        <img class="icon llw-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="llw-play">
-                        <img class="icon llw-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>FACTORIALIZE</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="fact-code">
-                        <img class="icon fact-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="fact-play">
-                        <img class="icon fact-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>PALINDROME NUMBER</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="pn-code">
-                        <img class="icon pn-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="pn-play">
-                        <img class="icon pn-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>REVERSE INTEGER</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="rev-code">
-                        <img class="icon rev-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="rev-play">
-                        <img class="icon rev-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>LONGEST NON-REPEATING SUBSTRING</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="lnr-code">
-                        <img class="icon lnr-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="lnr-play">
-                        <img class="icon lnr-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>Lorem, ipsum dolor.</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <input class="algo-btn" id="" type="button" value="">
-            </div>
-            <div class="references">
-                <a href="" class="ref-link" alt="">Lorem</a>
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>Lorem, ipsum dolor.</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <input class="algo-btn" id="" type="button" value="">
-            </div>
-            <div class="references">
-                <a href="" class="ref-link" alt="">Lorem</a>
-            </div>
-        </div>
-        <div class="algo-card">
-            <div class="algo-info">
-                <div class="title">
-                    <h3>Lorem, ipsum dolor.</h3>
-                </div>
-                <div class="algo-info">
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <div class="btn-holder">
-                <div class="code-holder">
-                    <button class="btn" id="">
-                        <img class="icon rev-icon" src="images/code.svg" alt="code icon" />
-                    </button>
-                </div> 
-                <div class="play-holder">
-                    <button class="btn" id="">
-                        <img class="icon rev-icon" src="images/play.svg" alt="play icon" />
-                    </button>
-                </div>
-                
-            </div>
-        </div>
+            <!-- /Length of Longest Word -->
 
 
+            <!-- Factorialize Card-->
+            <div class="algo-card fact">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>FACTORIALIZE</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn fact-btn" id="fact-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon fact-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn fact-btn" id="fact-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play fact-play"></box-icon>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /Factorialize Card-->
+            
+            <!-- Palindrome Number-->
+            <div class="algo-card pn">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>PALINDROME NUMBER</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn pn-btn" id="pn-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon pn-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn pn-btn" id="pn-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play pn-play"></box-icon>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /Palindrome Number-->
+
+            <!-- Reverse An Integer -->
+            <div class="algo-card rev">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>REVERSE INTEGER</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn rev-btn" id="rev-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon rev-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn rev-btn" id="rev-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play rev-play"></box-icon>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- /Reverse An Integer -->
+
+            <!-- Longest Non-Repeating Substring -->
+            <div class="algo-card lnr">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>LONGEST NON-REPEATING SUBSTRING</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn lnr-btn" id="lnr-code-icon" aria-label="download">
+                            <box-icon name='download' class="icon lnr-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn lnr-btn" id="lnr-play-icon" aria-label="play">
+                            <box-icon name='play' class="icon play lnr-play"></box-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /Longest Non-Repeating Substring -->
+
+            <!-- Extra Card One -->
+            <div class="algo-card one">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>Lorem, ipsum dolor.</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn one-btn" id="one-code" aria-label="download">
+                            <box-icon name='download' class="icon one-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn one-btn" id="one-play" aria-label="play">
+                            <box-icon name='play' class="icon play one-play" ></box-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /Extra Card One -->
+
+            <!-- Extra Card Two-->
+            <div class="algo-card btwo">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>Lorem, ipsum dolor.</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn btwo-btn" id="btwo-code" aria-label="download">
+                            <box-icon name='download' class="icon btwo-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn btwo-btn" id="btw0-play" aria-label="play">
+                            <box-icon name='play' class="icon play btwo-play"></box-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /Extra Card Two -->
+
+            <!-- Extra Card Three -->
+            <div class="algo-card three">
+                <div class="algo-info">
+                    <div class="title">
+                        <h3>Lorem, ipsum dolor.</h3>
+                    </div>
+                    <div class="algo-info">
+                        <p class="info">Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <div class="btn-holder">
+                    <div class="code-holder">
+                        <button class="btn three-btn" id="three-code" aria-label="download">
+                            <box-icon name='download' class="icon three-icon"></box-icon>
+                        </button>
+                    </div> 
+                    <div class="play-holder">
+                        <button class="btn three-btn" id="three-play" aria-label="play">
+                        
+                            <box-icon name='play' class="icon play three-play"></box-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /Extra Card Three -->
+        </div>
+        <!-- /Dashboard -->
     </div>
+    <!-- /Main Container -->
 
 
-    
+    <!-- DASHBOARDS -->
+    <!-- Isogram Dashboard -->
+    <div id=iso-container class="iso-cont">
+        <div class="iso-window">
+            <div class="home-btn-holder">
+                <button id="iso-btn-close" class="btn-home iso-home" aria-label="home">
+                    <!-- <i class='bx bx-home icon iso-home-icon'></i> -->
+                    <box-icon name='home' class="icon iso-home-icon"></box-icon>
+                </button>
+            </div>
+
+            <form id="form" class="iso-form">
+                <p class="iso-text">
+                    An <strong><em>isogram</em></strong> is a word that has no repeating letters, consecutive or non-consecutive. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="input-holder">
+                    <!-- USER INPUT -->
+                    <input id="isogramText" class="text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" />
+
+                    <!-- SUBMIT BUTTON -->
+                    <button id="check-input" class="btn-check" type="submit" >CHECK IT!</button> 
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSES BASED ON CRITERIA EVALUATION -->
+                <p id="eval" class="isoEval"></p>
+                <p id="isTrue" class="isoTrue"></p>
+                <p id="isFalse" class="isoFalse"></p>
+                
+                <!-- /RESPONSES BASED ON CRITERIA EVALUATION -->
+            </form>
+        </div>
+    </div>
+    <!-- /Isogram Dashboard -->
+
+<script src="main.js"></script>
+
+
+
 </body>
 </html>

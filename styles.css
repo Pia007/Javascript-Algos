@@ -1,60 +1,25 @@
 /* SET UP */
 
 :root {
+    /* font */
     --rubik: 'Rubik', sans-serif;
-    --border: rgba(150, 150, 160, 0.753);
-    --js-yellow: #F0DB4F;
-    --js-black: #323330;
-    --white: #FFFFFF;
-    --primary-light: #8abdff;
-    --primary: #6d5dfc;
-    --pal-color: #5b0eeb;
-    --gen-bg: #b2f0db;
-  
-    --greyLight-1: #E4EBF5;
-    --greyLight-2: #c8d0e7;
-    --greyLight-3: #bec8e4;
-    --greyDark: #9baacf;
-
-    /* --card-bg: linear-gradient(45deg, #a0d8c5, #beffea); */
-    --btn-bg: linear-gradient(45deg, #a0d8c5, #beffea);
-    --card-bg:#b2f0db;
-    --btn-shadow:16px -16px 48px #9dd3c1,
-        -16px 16px 48px #c7fff5;
+    
+    /* background */
     --main-bg: #e0e5ec;
 
-    /* ISOGRAM */
-    --isogram-primary: #20728d;
+    /* Card Colors */
     --iso-color: #37A4C8;
-    --iso-bg: VAR(--soft-white-bg);
-    --iso-shadow:-5px -5px 10px VAR(--soft-white-bg),
-                5px 5px 10px #3CB3DA;
-
-
-
-    /* neo 1 */
-    --soft-white-bg: #E0E0E0;
-    --one-radius: 50px;
-    
-    --one-shadow: inset 24px 24px 65px #b5b5b5,
-                inset -24px -24px 47px #ffffff;
-
-    /* neo 2  round*/
-    --two-radius: 50%;
-   
-    --two-gradient: linear-gradient(225deg, #cacaca, #f0f0f0);
-    --two-shadow: -9px 9px 39px #9d9d9d,
-                9px -9px 39px #ffffff;
-
-    /* neo 3 */
-    --three-radius: 20px;
-    
-    --three-gradient: linear-gradient(225deg, #cacaca, #f0f0f0);
-    --three-shadow: -9px 9px 59px #9d9d9d,
-                9px -9px 59px #ffffff;
-
-    /* neo 3 */
-
+    --pal-color: #FFA500;
+    --two-color: #5b0eeb;
+    --spin-color: #f89898;
+    --llw-color: #35c048;
+    --fact-color: #eb0e96;
+    --pn-color: #0b7c739d;
+    --rev-color: #8790e0;
+    --lnr-color: #ff0000;
+    --one-color: #8e06fdda;
+    --btwo-color: #f36c36ed;
+    --three-color: #05c0c7;
 
 }
 * {
@@ -63,18 +28,7 @@
     box-sizing: border-box;
     font-size: 24px;
 }
-/* SELECTS ALL CLASS BOX- */
-/* [class ^= "box-"] {
-    display: grid;
-    place-items: center;
-    border: solid 5px orangered;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-    color: #fff;
 
-
-} */
 body {
 
     height: 100vh;
@@ -82,7 +36,10 @@ body {
     color: var(--js-black);
     background:  var(--main-bg);
 }
-
+.dash-holder {
+    width: 85%;
+    margin: 0 auto;
+}
 .dashboard {
     width: 80%;
     display: grid;
@@ -125,12 +82,16 @@ body {
     border-radius: 10px;
     
 }
+
 h3 {
-    font-size: 24px;
-}
-p {
     font-size: 20px;
+}
+
+p {
+    font-size: 16px;
     margin: 10px auto;
+    
+    
 }
 .btn-holder {
     width: 100%;
@@ -140,24 +101,16 @@ p {
     flex-direction: row;
     justify-content: space-between;
 }
-a {
-    text-decoration: none;
-    background: var(--main-bg);
-}
+
 .code-holder,
 .play-holder { 
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin: 0 auto;
-    /* border-radius: 50%; */
-    /* justify-content: center;
-    align-content: center; */
-    /* background: var(--main-bg); */
-    /* display: flex; */
+    
 }
 
 .btn {
-    /* vertical-align: middle; */
     width: 100%; 
     height: 100%;
     outline: none;
@@ -172,34 +125,160 @@ a {
         inset 0px 0px 0px 0px #0001,
         inset 0px 0px 0px 0px #fff9,        
         inset 0px 0px 0px 0px #0001;
-    /* color: var(--iso-color); */
     text-align: center;
 }
-.icon {
-    width: 35px;
-    height: 35px;
-    margin: 4px auto;
+
+.btn:active{
+    box-shadow: 4px -4px 6px 0px rgba(255,255,255,0.5),
+                -4px -4px 6px 0px rgba(116,125,136,0.2),
+                inset -4px -4px 6px -0px rgba(255,255,255,0.5),
+                inset 4px 4px 6px -0px rgba(116,125,136,0.3);
+}
+.icon:hover {
+    opacity: 65%;
 }
 
-
+/* icon styling */
+.icon {
+    width: 31px;
+    height: 31px;
+    margin: 4px auto;
+}
+.play {
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+ 
+}
+/* Isogram card */
 .iso {
     color: var(--iso-color);
 }
-.pal,
-.pal .btn {
+.iso-icon,
+.iso-play {
+    fill: var(--iso-color);
+}
+
+/* Palindrome Card */
+.pal {
     color: var(--pal-color);
 }
-/* .iso .algo-btn {
-    color: var(--iso-color);
-    background: var(--iso-bg);
-    box-shadow: var(--iso-shadow);
+.pal-icon,
+.pal-play {
+    fill: var(--pal-color);
+}
 
-} */
+/* Two Sum Car */
+.two {
+    color: var(--two-color);
+}
+.two-icon,
+.two-play {
+    fill: var(--two-color);
+}
+
+/* Spin Card */
+.spin {
+    color: var(--spin-color);
+}
+
+.spin-icon,
+.spin-play {
+    fill: var(--spin-color);
+}
+
+/* Longest .. Card */
+.llw {
+    color: var(--llw-color);
+}
+
+.llw-icon,
+.llw-play {
+    fill: var(--llw-color);
+}
+
+/* Factor Card */
+.fact {
+    color: var(--fact-color);
+}
+
+.fact-icon,
+.fact-play {
+    fill: var(--fact-color);
+}
+
+/* Palindrome Number Card*/
+.pn {
+    color: var(--pn-color);
+}
+
+.pn-icon,
+.pn-play {
+    fill: var(--pn-color);
+}
+
+/* Reverse Integer Card*/
+.rev {
+    color: var(--rev-color);
+}
+
+.rev-icon,
+.rev-play {
+    fill: var(--rev-color);
+}
 
 
+/* Longest NON... Card*/
+.lnr {
+    color: var(--lnr-color);
+}
+
+.lnr-icon,
+.lnr-play {
+    fill: var(--lnr-color);
+}
+
+
+/* First extra card */
+.one {
+    color: var(--one-color);
+}
+
+.one-icon,
+.one-play {
+    fill: var(--one-color);
+}
+
+/* Next to last card */
+.btwo {
+    color: var(--btwo-color);
+}
+
+.btwo-icon,
+.btwo-play {
+    fill: var(--btwo-color);
+}
+
+/* Last Card */
+.three {
+    color: var(--three-color);
+}
+
+.three-icon,
+.three-play {
+    fill: var(--three-color);
+}
+
+/* Breakpoints */
 @media (min-width: 500px) {
     .dashboard {
         padding: 20px;
+    }
+    h3 {
+        font-size: .85em;
+    }
+    .info {
+        font-size: .7em;
     }
 }
 @media (min-width: 600px) {
@@ -211,9 +290,58 @@ a {
     .dashboard {
         padding: 40px;
     }
+    h3 {
+        font-size: .9em;
+    }
+    .info {
+        font-size: .75em;
+    }
+    .code-holder,
+    .play-holder { 
+        width: 43px;
+        height: 43px;
+        margin: 0 auto;
+    
+    }
+    .icon {
+        width: 33px;
+        height: 33px;
+        margin: 2px auto;
+    }
+    .play {
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+        margin-left: 5px;
+     
+    }
 }
 @media (min-width: 1080px) {
     .dashboard {
         padding: 50px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    .info {
+        font-size: .75em;
+    }
+    .code-holder,
+    .play-holder { 
+        width: 45px;
+        height: 45px;
+        margin: 0 auto;
+    
+    }
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin: 4px auto;
+    }
+    .play {
+        width: 38px;
+        height: 38px;
+        margin-left: 5px;
+        
     }
 }
