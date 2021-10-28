@@ -122,7 +122,7 @@ function twoSum(arr, target) {
             
             // the two sums were found
             outcome.style.display = "block";
-            outcome.style.color = "#00FF2A";
+            outcome.style.color = "#2b923c";
             outcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
             break;
         }else { 
@@ -131,7 +131,7 @@ function twoSum(arr, target) {
             let newArr = arr.join("  ")
             outcome.style.display = "block";
             outcome.style.color = "#FF1919";
-            outcome.innerHTML = "The sum of  " + `${target}` + " is not in " + `${newArr}`
+            outcome.innerHTML = "The sum of  " + `${target}` + " is not in [" + `${newArr}` + "]";
             
         }
         clearTsForm()
