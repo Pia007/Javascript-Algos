@@ -1,24 +1,12 @@
-// HOME PAGE 
 document.addEventListener("DOMContentLoaded", () => {
-    // DOM Element
     const dashHolder = document.getElementById('dashboard-holder');
-    const isoBtn = document.getElementById('iso-play-btn');
-    const isoHomeBtn = document.getElementById("iso-btn-close");
-
+    
+    
+    
     // Isogram Container
     const isoDash = document.getElementById('iso-container');
+    const isoHomeBtn = document.getElementById("iso-btn-close");
 
-    // isoDash.style.display = 'none';
-    function showIso() {
-        isoDash.style.display = 'block';
-        dashHolder.style.display = 'none';  
-        
-    }
-    isoBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-    });
-    isoBtn.addEventListener('click', showIso);
 
     function showHome() {
         isoDash.style.display = "none";

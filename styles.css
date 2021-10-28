@@ -30,18 +30,21 @@
 }
 
 body {
-
     height: 100vh;
     font-family: var(--rubik);
     color: var(--js-black);
     background:  var(--main-bg);
+    overflow: hidden;
 }
 .dash-holder {
     width: 85%;
     margin: 0 auto;
+    overflow: hidden;
+    
 }
 .dashboard {
     width: 80%;
+    height: 924px;
     display: grid;
     /* This ensures responsiveness */
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
@@ -61,12 +64,15 @@ body {
         inset 0px 0px 0px 0px #0001;
     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
     border-radius: 10px;
+    overflow-y: scroll;
 
 }
 .algo-card {
     
     /* background: var(--card-bg); */
-    box-shadow: var(--two-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     padding: 10px;
     box-shadow: 
@@ -82,6 +88,9 @@ body {
     border-radius: 10px;
     
 }
+.algo-info {
+    height: 70%;
+}
 
 h3 {
     font-size: 20px;
@@ -95,7 +104,7 @@ p {
 }
 .btn-holder {
     width: 100%;
-    height: auto;
+    height: 50px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -126,6 +135,7 @@ p {
         inset 0px 0px 0px 0px #fff9,        
         inset 0px 0px 0px 0px #0001;
     text-align: center;
+    
 }
 
 .btn:active{

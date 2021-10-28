@@ -13,6 +13,7 @@
     
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="iso.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>JavaScript Algorithms | Pia Torain</title>
@@ -34,7 +35,7 @@
                         <h3>ISOGRAM</h3>
                     </div>
                     <div class="algo-text">
-                        <p class="info">An isogram is a word or sentence with no repeating letters.</p>
+                        <p class="info">An isogram function checks to see if a word or sentence has no repeating letters.</p>
                     </div>
                 </div>
                 <div class="btn-holder">
@@ -62,17 +63,19 @@
                         <h3>PALINDROME</h3>
                     </div>
                     <div class="algo-info">
-                        <p class="info">Lorem, ipsum.</p>
+                        <p class="info">A palidrome function determines if a word or phrase reads the same forwards
+                             and backwards.
+                        </p>
                     </div>
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn pal-btn" id="pal-code-icon" aria-label="download">
+                        <button class="btn pal-btn" id="pal-code-btn" aria-label="download">
                             <box-icon name='download' class="icon pal-icon" ></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn pal-btn" id="pal-play-icon" aria-label="play">
+                        <button class="btn pal-btn" id="pal-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play pal-play" ></box-icon>
                         </button>
                     </div>
@@ -92,12 +95,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn two-btn" id="two-code-icon" aria-label="download">
+                        <button class="btn two-btn" id="two-code-btn" aria-label="download">
                             <box-icon name='download' class="icon two-icon"></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn two-btn" id="two-play-icon"aria-label="play">
+                        <button class="btn two-btn" id="two-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play two-play"></box-icon>
                         </button>
                     </div>
@@ -344,18 +347,17 @@
 
     <!-- DASHBOARDS -->
     <!-- Isogram Dashboard -->
-    <div id=iso-container class="iso-cont">
+    <div id="iso-container" class="iso-cont">
         <div class="iso-window">
             <div class="home-btn-holder">
                 <button id="iso-btn-close" class="btn-home iso-home" aria-label="home">
-                    <!-- <i class='bx bx-home icon iso-home-icon'></i> -->
                     <box-icon name='home' class="icon iso-home-icon"></box-icon>
                 </button>
             </div>
 
             <form id="form" class="iso-form">
                 <p class="iso-text">
-                    An <strong><em>isogram</em></strong> is a word that has no repeating letters, consecutive or non-consecutive. 
+                    Is it an <strong><em>isogram</em></strong>? Enter a word or sentence to find out! 
                 </p>
 
                 <!-- INPUT FIELD -->
@@ -363,8 +365,7 @@
                     <!-- USER INPUT -->
                     <input id="isogramText" class="text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" />
 
-                    <!-- SUBMIT BUTTON -->
-                    <button id="check-input" class="btn-check" type="submit" >CHECK IT!</button> 
+                    
                 </div>
                 <!--/ INPUT FIELD -->
                 
@@ -374,12 +375,92 @@
                 <p id="isFalse" class="isoFalse"></p>
                 
                 <!-- /RESPONSES BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="check-input" class="btn-check" type="submit" >CHECK IT!</button> 
+                <!-- /SUBMIT BUTTON -->
             </form>
         </div>
     </div>
     <!-- /Isogram Dashboard -->
 
-<script src="main.js"></script>
+    <!-- Palindrome Dashboard -->
+    <div id="palindrome" class="pal-container">
+        <div class="pal-window">
+            <div class="home-btn-holder">
+                <button id="pal-btn-close" class="btn-home pal-home" aria-label="home">
+                    <box-icon name='home' class="icon pal-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="pal-form" class="pal-form">
+                <p class="pal-intro">
+                    Enter a <strong><em>word or sentence</em></strong> to see if it's a palindrome. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="pal-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="pal-text" class="pal-text-field" name="pal-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="palResponse" class="palEval"></p>
+            
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="pal-check-string" class="pal-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    </div>
+
+    <!-- /Palindrome Dashboard -->
+    <!-- Two Sum Dashboard -->
+    <div id="two-sum" class="ts-container">
+        <div class="two-window">
+            <div class="home-btn-holder">
+                <button id="ts-btn-close" class="btn-home two-home" aria-label="home">
+                    <box-icon name='home' class="icon ts-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="ts-form" class="two-form">
+                <p class="ts-intro">
+                    Check to see if the sum of any <strong><em>two numbers</em></strong> in an array equals a target number.
+                    
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="ts-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="randomNumbers" class="ts-text-field" name="randomNumbers" type="text" placeholder="Example: 4 5 6 28 300" autocomplete= "off" />
+                    <input id="targetNumber" class="ts-text-field" name="targetNumbers" type="text" placeholder="10" autocomplete= "off" />
+
+                   
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="sumResponse" class="sumEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+                
+                 <!-- SUBMIT BUTTON -->
+                 <button id="check-sum" class="ts-btn-check" type="submit" >CHECK IT!</button> 
+                 <!-- <button id="reset-form" class="ts-btn-reset" type="submit" >RESET!</button>  -->
+            </form>
+        </div>
+    </div>
+
+    <!-- /Two Sum Dashboard -->
+
+
+<script src="js/main.js"></script>
+<script src="js/iso.js"></script>
+<script src="js/pal.js"></script>
+<script src="js/two.js"></script>
 
 
 
