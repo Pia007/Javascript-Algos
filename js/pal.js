@@ -1,7 +1,7 @@
 // PALINDROME CHECKER
 document.addEventListener("DOMContentLoaded", () => {
     // DOM Element
-    const dashHolder = document.getElementById('dashboard-holder');
+    const cardHolder = document.getElementById('dashboard-holder');
     const palHomeBtn = document.getElementById("pal-btn-close");
     
     // Palindrome Container
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function showHome() {
         palDash.style.display = "none";
-        dashHolder.style.display = "block";
+        cardHolder.style.display = "block";
 
     }
     palHomeBtn.addEventListener('click', function(e) {

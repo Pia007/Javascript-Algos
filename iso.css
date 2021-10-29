@@ -72,7 +72,11 @@ body {
 .pal-container,
 .ts-container,
 .spin-container,
-.lw-container {
+.lw-container,
+.fact-container,
+.pn-container,
+.rev-int-container,
+.lnr-container {
     max-width: 80%;
     min-width: 340px;
     height: 450px;
@@ -86,8 +90,8 @@ body {
     color: var(--main-bg);
     border-radius: 10px;
     /* background: var(--iso-color); */
-    box-shadow:  inset 10px 10px 20px #1b5062,
-    inset -10px -10px 20px #53f8ff;
+    box-shadow:  inset 5px 5px 20px #1b5062,
+    inset -5px -5px 20px #53f8ff;
 }
 .pal-container {
     
@@ -105,13 +109,21 @@ body {
 .pal-container,
 .ts-container,
 .spin-container,
-.lw-container {
+.lw-container,
+.fact-container,
+.pn-container,
+.rev-int-container,
+.lnr-container {
     display: none;
 }
 .iso-window,
 .pal-window,
 .two-window,
-.spin-window {
+.spin-window,
+.lw-window,
+.fact-window,
+.pn-window,
+.lnr-window {
     width: 99%;
     height: 440px;
     margin: 5px auto;

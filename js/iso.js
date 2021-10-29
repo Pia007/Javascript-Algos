@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const dashHolder = document.getElementById('dashboard-holder');
+    const cardHolder = document.getElementById('dashboard-holder');
     
     
     
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showHome() {
         isoDash.style.display = "none";
-        dashHolder.style.display = "block";
+        cardHolder.style.display = "block";
 
     }
     isoHomeBtn.addEventListener('click', function(e) {

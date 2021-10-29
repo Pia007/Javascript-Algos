@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // DOM Element
-    const dashHolder = document.getElementById('dashboard-holder');
+    const cardHolder = document.getElementById('dashboard-holder');
     const twoHomeBtn = document.getElementById('ts-btn-close');
     
     // Two Sum Container
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function showHome() {
         twoDash.style.display = "none";
-        dashHolder.style.display = "block";
+        cardHolder.style.display = "block";
 
     }
     twoHomeBtn.addEventListener('click', function(e) {

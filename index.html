@@ -173,12 +173,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn fact-btn" id="fact-code-icon" aria-label="download">
+                        <button class="btn fact-btn" id="fact-code-btn" aria-label="download">
                             <box-icon name='download' class="icon fact-icon"></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn fact-btn" id="fact-play-icon" aria-label="play">
+                        <button class="btn fact-btn" id="fact-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play fact-play"></box-icon>
                         </button>
                     </div>
@@ -199,12 +199,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn pn-btn" id="pn-code-icon" aria-label="download">
+                        <button class="btn pn-btn" id="pn-code-btn" aria-label="download">
                             <box-icon name='download' class="icon pn-icon"></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn pn-btn" id="pn-play-icon" aria-label="play">
+                        <button class="btn pn-btn" id="pn-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play pn-play"></box-icon>
                         </button>
                     </div>
@@ -225,12 +225,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn rev-btn" id="rev-code-icon" aria-label="download">
+                        <button class="btn rev-btn" id="rev-code-btn" aria-label="download">
                             <box-icon name='download' class="icon rev-icon"></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn rev-btn" id="rev-play-icon" aria-label="play">
+                        <button class="btn rev-btn" id="rev-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play rev-play"></box-icon>
                         </button>
                     </div>
@@ -251,12 +251,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn lnr-btn" id="lnr-code-icon" aria-label="download">
+                        <button class="btn lnr-btn" id="lnr-code-btn aria-label="download">
                             <box-icon name='download' class="icon lnr-icon"></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn lnr-btn" id="lnr-play-icon" aria-label="play">
+                        <button class="btn lnr-btn" id="lnr-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play lnr-play"></box-icon>
                         </button>
                     </div>
@@ -306,7 +306,7 @@
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn btwo-btn" id="btw0-play" aria-label="play">
+                        <button class="btn btwo-btn" id="btwo-play" aria-label="play">
                             <box-icon name='play' class="icon play btwo-play"></box-icon>
                         </button>
                     </div>
@@ -489,6 +489,7 @@
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
+    </div>
     <!-- /Spin Words Dashboard -->
 
 
@@ -522,7 +523,142 @@
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
+    </div>
     <!-- /Length of Longest Word Dashboard -->
+
+
+    <!-- Factorialize a Number Dashboard -->
+    <div id="factorialize" class="fact-container">
+        <div class="fact-window">
+            <div class="home-btn-holder">
+                <button id="fact-btn-close" class="btn-home fact-home" aria-label="home">
+                    <box-icon name='home' class="icon fact-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="fact-form" class="fact-form">
+                <p class="fact-intro">
+                    Enter a <strong><em>number</em></strong> to see the factorial of that number. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="fact-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="fact-text" class="fact-text-field" name="fact-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="factResponse" class="factEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="fact-btn" class="fact-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    </div>
+    <!-- /Factorialize a Number Dashboard -->
+
+    <!-- Palindrome Number Dashboard -->
+    <div id="pal-num" class="pn-container">
+        <div class="pn-window">
+            <div class="home-btn-holder">
+                <button id="pn-btn-close" class="btn-home pn-home" aria-label="home">
+                    <box-icon name='home' class="icon pn-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="pn-form" class="pn-form">
+                <p class="pn-intro">
+                    Enter a <strong><em>number</em></strong> to see if it's a palindrome. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="pn-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="pn-text" class="pn-text-field" name="pn-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="pnResponse" class="pnEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="pn-btn" class="pn-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    </div>
+    <!-- /Palindrome Number Dashboard -->
+
+    <!-- Reverse an Integer Dashboard -->
+    <div id="reverse-int" class="rev-int-container">
+        <div class="rev-int-window">
+            <div class="home-btn-holder">
+                <button id="rev-int-btn-close" class="btn-home rev-int-home" aria-label="home">
+                    <box-icon name='home' class="icon rev-int-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="rev-int-form" class="rev-int-form">
+                <p class="rev-int-intro">
+                    Enter a <strong><em>number</em></strong> to see the reverse of that number. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="rev-int-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="rev-int-text" class="rev-int-text-field" name="rev-int-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="revResponse" class="revEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="rev-int-btn" class="rev-int-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    </div>
+    <!-- /Reverse an Integer Dashboard -->
+
+    <!-- Longest Non-Repeating Substring Dashboard -->
+    <div id="lnr" class="lnr-container">
+        <div class="lnr-window">
+            <div class="home-btn-holder">
+                <button id="lnr-btn-close" class="btn-home lnr-home" aria-label="home">
+                    <box-icon name='home' class="icon lnr-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="lns-form" class="lns-form">
+                <p class="lns-intro">
+                    Enter a <strong><em>sentence</em></strong> to see the longest non-repeating substring. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="lns-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="lns-text" class="lns-text-field" name="lns-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="lnsResponse" class="lnsEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="lns-btn" class="lns-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    </div>
+    
+    <!-- /Longest Non-Repeating Substring Dashboard-->
 
 
 <script src="js/main.js"></script>
@@ -531,6 +667,10 @@
 <script src="js/two.js"></script>
 <script src="js/spin.js"></script>
 <script src="js/llw.js"></script>
+<script src="js/fact.js"></script>
+<script src="js/palnum.js"></script>
+<script src="js/rev.js"></script>
+<script src="js/lns.js"></script>
 
 
 
