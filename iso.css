@@ -70,7 +70,9 @@ body {
 
 .iso-cont,
 .pal-container,
-.ts-container {
+.ts-container,
+.spin-container,
+.lw-container {
     max-width: 80%;
     min-width: 340px;
     height: 450px;
@@ -101,12 +103,15 @@ body {
 }
 .iso-cont,
 .pal-container,
-.ts-container {
+.ts-container,
+.spin-container,
+.lw-container {
     display: none;
 }
 .iso-window,
 .pal-window,
-.two-window {
+.two-window,
+.spin-window {
     width: 99%;
     height: 440px;
     margin: 5px auto;

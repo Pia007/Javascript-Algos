@@ -120,12 +120,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn spin-btn" id="spin-code-icon" aria-label="download">
+                        <button class="btn spin-btn" id="spin-code-btn" aria-label="download">
                             <box-icon name='download' class="icon spin-icon" ></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn spin-btn" id="spin-play-icon" aria-label="play">
+                        <button class="btn spin-btn" id="spin-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play spin-play"></box-icon>
                         </button>
                     </div>
@@ -146,12 +146,12 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn llw-btn" id="llw-code-icon" aria-label="download">
+                        <button class="btn llw-btn" id="llw-code-btn" aria-label="download">
                             <box-icon name='download' class="icon llw-icon"></box-icon>
                         </button>
                     </div> 
                     <div class="play-holder">
-                        <button class="btn llw-btn" id="llw-play-icon" aria-label="play">
+                        <button class="btn llw-btn" id="llw-play-btn" aria-label="play">
                             <box-icon name='play' class="icon play llw-play"></box-icon>
                         </button>
                     </div>
@@ -456,14 +456,81 @@
             </form>
         </div>
     </div>
-
     <!-- /Two Sum Dashboard -->
+
+
+    <!-- Spin Words Dashboard -->
+    <div id="spin-words" class="spin-container">
+        <div class="spin-window">
+            <div class="home-btn-holder">
+                <button id="spin-btn-close" class="btn-home sw-home" aria-label="home">
+                    <box-icon name='home' class="icon sw-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="sw-form" class="sw-form">
+                <p class="sw-intro">
+                    Enter a <strong><em>sentence</em></strong> to see if it's a palindrome. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="sw-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="sw-text" class="sw-text-field" name="sw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="swResponse" class="swEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="sw-check-string" class="sw-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    <!-- /Spin Words Dashboard -->
+
+
+    <!-- Length of Longest Word Dashboard -->
+    <div id="longest-word" class="lw-container">
+        <div class="lw-window">
+            <div class="home-btn-holder">
+                <button id="lw-btn-close" class="btn-home lw-home" aria-label="home">
+                    <box-icon name='home' class="icon lw-home-icon"></box-icon>
+                </button>
+            </div>
+            <form id="lw-form" class="lw-form">
+                <p class="lw-intro">
+                    Enter a <strong><em>sentence</em></strong> to see the length of the longest word. 
+                </p>
+
+                <!-- INPUT FIELD -->
+                <div class="lw-input-holder">
+                    <!-- USER INPUT -->
+                    <input id="lw-text" class="lw-text-field" name="lw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                </div>
+                <!--/ INPUT FIELD -->
+                
+                <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                <p id="lwResponse" class="lwEval"></p>
+                
+                <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                <!-- SUBMIT BUTTON -->
+                <button id="lw-check-string" class="lw-btn-check" type="submit" >CHECK IT!</button>
+                <!-- SUBMIT BUTTON -->
+            </form>
+        </div>
+    <!-- /Length of Longest Word Dashboard -->
 
 
 <script src="js/main.js"></script>
 <script src="js/iso.js"></script>
 <script src="js/pal.js"></script>
 <script src="js/two.js"></script>
+<script src="js/spin.js"></script>
+<script src="js/llw.js"></script>
 
 
 
