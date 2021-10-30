@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 lnsOutcome.innerHTML = "Enter only letters";
                 lnsOutcome.style.color = "#FF1919";
                 lnsOutcome.style.display = "block";
-    
+            
             }else{
                 //otherwise, call length of string function
                 lengthOfLongestSubstring()

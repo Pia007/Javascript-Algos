@@ -5,15 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Pia Torain" />
-    <meta name="description" content="JavaScipt Algorithms Dasboard" />
+    <meta name="description" content="JavaScipt Algorithms Dashboard" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-    <!-- <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script> -->
-    
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="iso.css" />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>JavaScript Algorithms | Pia Torain</title>
@@ -251,7 +248,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="code-holder">
-                        <button class="btn lnr-btn" id="lnr-code-btn aria-label="download">
+                        <button class="btn lnr-btn" id="lnr-code-btn" aria-label="download">
                             <box-icon name='download' class="icon lnr-icon"></box-icon>
                         </button>
                     </div> 
@@ -469,13 +466,19 @@
             </div>
             <form id="sw-form" class="sw-form">
                 <p class="sw-intro">
-                    Enter a <strong><em>sentence</em></strong> to see if it's a palindrome. 
+                    Enter a <strong><em>word/words</em></strong> and a <strong><em>number</em></strong>
+                    to see what happens to any word who's length is the equal to that number. 
                 </p>
 
                 <!-- INPUT FIELD -->
                 <div class="sw-input-holder">
                     <!-- USER INPUT -->
-                    <input id="sw-text" class="sw-text-field" name="sw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <div class="sw-words">
+                        <input id="sw-text" class="sw-text-field" name="sw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    </div>
+                    <div class="sw-num">
+                        <input id="sw-num" class="sw-text-field" name="sw-num" type="text" placeholder="Ex: 5 " autocomplete= "off" />
+                    </div>
                 </div>
                 <!--/ INPUT FIELD -->
                 

@@ -42,70 +42,108 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 5000);
     };
 
-    function checkSwInput(str) {
+    function checkSwInput(str, num) {
         var str = document.getElementById("sw-text").value;
+        var num = Number(document.getElementById("sw-num").value);
+        doFirst(str, num);
 
-        // Loop through the string
-        for (let i = 0; i < str.length - 1; i++){
-            // regex for letter and special characters or just special characters
-            let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-            
-            //regev for letters and numbers or just numbers
-            let numbers = /[A-Za-z]\d|\d/
-
-            //check if either regex pattern is present in the string
-            if(specialChar.test(str) || numbers.test(str)) {
-
-                // if yes, user gets prompted to enter the correct data type
-                swOutcome.innerHTML = "Enter only letters";
-                swOutcome.style.color = "#FF1919";
+        function doFirst(str, num) {
+            if (num == "0" && str == "") {
+                swOutcome.innerHTML = "Please enter a word/words and a number greater than 0";
+                swOutcome.style.color = "#e0e5ec";
                 swOutcome.style.display = "block";
-    
+                // clearSwForm();
+           
+            }else if(num =="0" && str != "") {
+                swOutcome.innerHTML = "Please enter a number greater than 0";
+                swOutcome.style.color = "#e0e5ec";
+                swOutcome.style.display = "block";
+                // clearSwForm();
+            }else if ( num != "0" && str == "") {
+                swOutcome.innerHTML = "Please enter a word/words";
+                swOutcome.style.color = "#e0e5ec";
+                swOutcome.style.display = "block";
+                // clearSwForm();
+
             }else{
-                //otherwise, call spin words function
-                spinWords()
+                checkValues()
+            
             }
-            // clear the form after the function runs
+            clearSwForm();
+        }   
+        
+    
+            
+        function checkValues() {
+            
+            for (let i = 0; i < str.length - 1; i++){
+                // regex for letter and special characters or just special characters
+                let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+                let letters = /[A-Za-z]/
+                //regev for letters and numbers or just numbers
+                let numbers = /[A-Za-z]\d|\d/
+    
+                
+                //check if either regex pattern is present in the string
+                if(specialChar.test(str) || numbers.test(str)) {
+                    // if yes, user gets prompted to enter the correct data type
+                    swOutcome.innerHTML = "Enter only letters in the text field";
+                    swOutcome.style.color = "#e0e5ec";
+                    swOutcome.style.display = "block";
+                } else if (letters.test(num) || specialChar.test(num)) {
+                    // if yes, user gets prompted to enter the correct data type
+                    swOutcome.innerHTML = "Enter only numbers in the number field";
+                    swOutcome.style.color = "#e0e5ec";
+                    swOutcome.style.display = "block";
+                } else{
+                    //otherwise, call spin words function
+                    spinWords()
+                }
+                // clear the form after the function runs
+            }
             clearSwForm()
         }   
-    }
+    
 
-    function spinWords(str) {
+        function spinWords() {
 
-        //convert the string to an array
-        let words = document.getElementById("sw-text").value.split(" ");
+            //convert the string to an array
+            let words = document.getElementById("sw-text").value.split(" ");
+            let userNum = Number(document.getElementById("sw-num").value);
+            
 
-        // confirm that the input is now an array
-        // console.log(words)
-        
-        //get the length of the array 
-        let lengthOfWords = words.length
-        // console.log(lengthOfWords)
+            // confirm that the input is now an array
+            // console.log(words)
+            
+            //get the length of the array 
+            let lengthOfWords = words.length
+            // console.log(lengthOfWords)
 
-        //using a for loop, check each word, i, in the array
-        for(let i = 0; i < lengthOfWords; i++){
-            //if a word the array has 5 or more letters
-            if(words[i].length >= 5) {
-                // split the word, reverse it, then join the letters
-                words[i] = words[i].toLowerCase().split("").reverse().join("");
-                // assign convert the array to a string and assign it to  locally
-                let spin = words.join("  ");
-                // user feedback
-                swOutcome.style.display = "block";
-                swOutcome.style.color = "#2b923c";
-                swOutcome.innerHTML = `${spin}`;   
-                
-            } else {
-                // the array has no words with 5 or more letters
-                // convert the original array to a string and assign it locally
-                let original = words.join("  ")
-                //user feedback
-                swOutcome.style.display = "block";
-                swOutcome.style.color = "#ED8200";
-                swOutcome.innerHTML = `${original}`;    
+            //using a for loop, check each word, i, in the array
+            for(let i = 0; i < lengthOfWords; i++){
+                //if a word the array has "userNum" or more letters
+                if(words[i].length == userNum) {
+                    // split the word, reverse it, then join the letters
+                    console.log(words[i])
+                    words[i] = words[i].toLowerCase().split("").reverse().join("");
+                    // convert the array to a string 
+                    let spin = words.join("  ");
+                    // user feedback
+                    swOutcome.style.display = "block";
+                    swOutcome.style.color = "#2b923c";
+                    swOutcome.innerHTML = `${spin}`;   
+                    
+                } else {
+                    // the array has no words with 5 or more letters
+                    // convert the original array to a string and assign it locally
+                    let original = words.join("  ")
+                    //user feedback
+                    swOutcome.style.display = "block";
+                    swOutcome.style.color = "#e0e5ec";
+                    swOutcome.innerHTML = "There are NO words that are " + `${userNum}`+ " characters  long";    
+                }
             }
         }
-        
     }
 
 });

@@ -32,14 +32,14 @@
         inset -4px -4px 6px -0px #3bafd6,
         inset 4px 4px 6px -0px #3294b4;
 
-    --lt-btn-shadow: 7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,        
-        inset 0px 0px 0px 0px #0001;
+    --lt-btn-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(10, 10, 10, 0.067);
     --lt-active-btn: box-shadow: 4px -4px 6px 0px rgba(255,255,255,0.5),
         -4px -4px 6px 0px rgba(116,125,136,0.2),
         inset -4px -4px 6px -0px rgba(255,255,255,0.5),
@@ -105,6 +105,18 @@ body {
     box-shadow: inset 5px 5px 10px #5b0eeb,
         inset -5px -5px 10px #5b0eeb;
 }
+.spin-container {
+    height: 600px;
+    background: linear-gradient(145deg, #ffa3a3, #df8989);
+    box-shadow:  20px 20px 40px #633d3d,
+             -20px -20px 40px #fff3f3;
+}
+.lw-container {
+    background: none;
+    background: #e0e5ec;
+box-shadow:  50px 50px 100px #5a5c5e,
+             -50px -50px 100px #ffffff;
+}
 .iso-cont,
 .pal-container,
 .ts-container,
@@ -146,6 +158,27 @@ body {
     box-shadow:    26px 26px 52px #5a5c5e,
         -26px -26px 52px #ffffff
 }
+.spin-window {
+    height: 540px;
+    border-radius: 10px;
+    /* background: var(--spin-color);
+    box-shadow: inset 5px 5px 10px #c67a7a,
+        inset -5px -5px 10px #ffb6b6; */
+       
+}
+.lw-window {
+    width: 98%;
+    height: 430px;
+    margin: 10px auto;
+    border: 2px solid var(--lw-color);
+    border-radius: 10px;
+    /* background: var(--main-bg); */
+    color: var(--lw-color);
+   
+background: #35c048;
+box-shadow: inset 14px 14px 28px #1e6d29,
+            inset -14px -14px 28px #4cff67;
+}
 /* home button */
 .home-btn-holder {
     width: 100%;
@@ -154,7 +187,9 @@ body {
 }
 .iso-home,
 .pal-home,
-.two-home {
+.two-home,
+.sw-home,
+.lw-home {
     margin: 15px 0;
     float: right;
     margin-right: 15px;
@@ -183,9 +218,22 @@ body {
     box-shadow:  14px 14px 28px #5a5c5e,
              -14px -14px 28px #ffffff;
 }
+.sw-home {
+    border-radius:8px;
+    box-shadow: inset 8px 8px 14px #a66666,
+            inset -8px -8px 14px #ffcaca;
+}
+.lw-home {
+    border: 1px solid var(--lw-color);
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+box-shadow:  7px 7px 14px #94979c,
+             -7px -7px 14px #ffffff;
+}
 .iso-home:hover,
 .pal-home:hover,
-.two-home:hover {
+.two-home:hover,
+.sw-home:hover,
+.lw-home:hover {
     opacity: 65%;
 }
 .iso-home:active {
@@ -196,6 +244,15 @@ body {
 }
 .two-home:active {
    box-shadow: var(--lt-active-btn);
+}
+.sw-home:active {
+    background:var(--main-bg);
+    box-shadow: var(--lt-btn-shadow);
+}
+.lw-home:active {
+    background: linear-gradient(145deg, #39cd4d, #30ad41);
+    box-shadow:  5px 5px 9px #154d1d,
+        -5px -5px 9px #55ff73;
 }
 .iso-home-icon,
 .pal-home-icon{
@@ -209,6 +266,12 @@ body {
 }
 .ts-home-icon {
     fill: var(--two-color);
+}
+.sw-home-icon {
+    fill: var(--spin-color);
+}
+.lw-home-icon {
+    fill: var(--llw-color);
 }
 
 /* Input Form */
@@ -245,16 +308,40 @@ form {
     box-shadow:    23px 23px 58px #5a5c5e,
         -23px -23px 58px #ffffff
 }
+.sw-form {
+    width: 82%;
+    height: 500px;
+    justify-content: space-evenly;
+    color: var(--main-bg);
+    background: linear-gradient(145deg, #ffa3a3, #df8989);
+    box-shadow:  41px 41px 82px #633d3d,
+    -41px -41px 82px #fff3f3;
+}
+.lw-form {
+    width: 80%;
+    /* height: 500px; */
+    color: var(--llw-color);
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  41px 41px 82px #5a5c5e,
+             -41px -41px 82px #ffffff;
+}
 .iso-text,
 .pal-intro,
-.ts-intro {
+.ts-intr,
+.sw-intro,
+.lw-intro {
     margin: 15px auto;
     text-align: center;
     font-size: 30px;
 }
+.sw-intro {
+    font-size: 27px;
+}
 .input-holder,
 .pal-input-holder,
-.ts-input-holder {
+.ts-input-holder,
+.sw-input-holder,
+.lw-input-holder {
     margin: 0 auto;
     height: 100px;
     display: flex;
@@ -262,14 +349,31 @@ form {
     text-align: center;
     justify-content: space-between;
 }
-.ts-input-holder {
+.ts-input-holder,
+.sw-input-holder,
+.lw-input-holder {
     width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+.sw-input-holder {
+    background: linear-gradient(145deg, #ffa3a3, #df8989);
+    box-shadow:  8px 8px 14px #a66666,
+        -8px -8px 14px #ffcaca; 
+    border-radius: 10px;  
+}
+.lw-input-holder {
+    justify-content: center;
+    background: #35c048;
+    box-shadow: inset 14px 14px 28px #154d1d,
+        inset -14px -14px 28px #55ff73;
+    border-radius: 10px;  
+}
 .two-nums,
-.two-target {
+.two-target,
+.sw-words,
+.sw-num {
     width: 100%;
     height: 100px;
     margin: 0;
@@ -279,12 +383,13 @@ form {
     text-align: center;
 }
 .text-field,
-.pal-text-field {
+.pal-text-field,
+.sw-text-field,
+.lw-text-field {
     width: 400px;
     height: 40px;
     margin: 30px auto;
     font-size: 24px;
-    color: var(--main-bg);
     border-radius: 10px;
     outline: none;
     border: none;
@@ -328,6 +433,26 @@ form {
     box-shadow:    23px 23px 58px #5a5c5e,
         -23px -23px 58px #ffffff
 }
+.sw-text-field {
+    width: 90%;
+    min-width: 140px;
+    height: 40px;
+    margin: auto ;
+    font-size: 24px;
+    outline: none;
+    color: var(--spin-color);
+    padding: 10px;
+    border: 1px solid var(--spin-color);
+    border-radius: 10px;
+    background: var(--main-bg);
+    box-shadow:    inset 8px 8px 14px #a66666,
+    inset -8px -8px 14px #ffcaca;
+}
+.lw-text-field {
+    background: #e0e5ec;
+    box-shadow:  45px 45px 80px #5a5c5e,
+             -45px -45px 80px #ffffff;
+}
 .text-field::placeholder {
     color: var(--iso-color);
 }
@@ -338,6 +463,12 @@ form {
     color: var(--two-color);
     
 }
+.sw-text-field::placeholder {
+    color: var(--spin-color);
+}
+.lw-text-field::placeholder {
+    color: var(--llw-color);
+}
 #targetNumber,
 #targetNumber::placeholder {
     text-align: center;
@@ -345,7 +476,9 @@ form {
 /* Check Button */
 .btn-check,
 .pal-btn-check,
-.ts-btn-check {
+.ts-btn-check,
+.sw-btn-check,
+.lw-btn-check {
     width: 150px;
     height: 40px;
     margin: 0 auto;
@@ -371,9 +504,21 @@ form {
     box-shadow:  29px 29px 34px #5a5c5e,
              -29px -29px 34px #ffffff;
 }
+.sw-btn-check {
+    color: var(--spin-color);
+    box-shadow: inset 8px 8px 14px #a66666,
+        inset -8px -8px 14px #ffcaca;
+}
+.lw-btn-check {
+    color: var(--main-bg);
+    background: #35c048;
+box-shadow: inset 10px 10px 32px #154d1d,
+            inset -10px -10px 32px #55ff73;
+}
 .btn-check:hover,
 .pal-btn-check:hover,
-.ts-btn-check:hover {
+.ts-btn-check:hover,
+.sw-btn-check:hover {
     opacity: 65%;
 }
 .btn-check:active {
@@ -385,11 +530,17 @@ form {
 .ts-btn-check:active {
     box-shadow: var(--lt-active-btn);
 }
+.sw-btn-check:active {
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  23px 23px 78px #633d3d,
+             -23px -23px 78px #fff3f3;
+}
 
-/* STYLING RESPONSES  Isogram*/
+/* STYLING RESPONSES */
 .isoEval,
 .palEval,
-.sumEval {
+.sumEval,
+.swEval {
     text-align: center;
     margin: .4rem auto;
    
@@ -409,7 +560,7 @@ form {
     font-size: 22px;
 }
 
-/* MAX-WIDTH 1440PX*/
+/* MAX-WIDTH 1225PX*/
 @media (max-width: 1225px) {
     /* .iso-cont,
     .pal-container,
@@ -419,14 +570,16 @@ form {
     } */
     .iso-home,
     .pal-home,
-    .two-home {
+    .two-home,
+    .sw-home {
         width: 43px;
         height: 43px;
     }
     
     .iso-home-icon,
     .pal-home-icon,
-    .two-home-icon {
+    .two-home-icon,
+    .sw-home-icon {
         width: 33px;
         height: 33px;
     }
@@ -435,23 +588,29 @@ form {
     .ts-intro {
         font-size: 27px;
     }
+    .sw-intro {
+        font-size: 22px;
+    }
     .isoEval,
     .isTrue,
     .isFalse,
     .palEval, 
-    .sumEval {
+    .sumEval,
+    .swEval {
         width: 80%;
-        font-size: 24px;
+        font-size: 20px;
         margin: 0 auto;
     }
     .text-field::placeholder,
     .pal-text-field::placeholder,
-    .ts-text-field::placeholder {
+    .ts-text-field::placeholder,
+    .sw-text-field::placeholder {
         font-size: 20px;
     }
     .btn-check,
     .pal-btn-check,
-    .ts-btn-check {
+    .ts-btn-check,
+    .sw-btn-check {
         width: 140px;
         height: 36px;
         font-size: 20px;
@@ -459,12 +618,14 @@ form {
     
     .input-holder,
     .pal-input-holder,
-    .ts-input-holder {
+    .ts-input-holder,
+    .sw-input-holder {
         width: 100%;
     }
     .text-field,
     .pal-text-field,
-    .ts-text-field {
+    .ts-text-field
+    .sw-text-field {
         width: 70%;
     }
 }
@@ -476,29 +637,36 @@ form {
     .ts-intro {
         font-size: 24px;
     }
+    .sw-intro {
+        font-size: 22px;
+    }
     .isoEval,
     .isTrue,
     .isFalse,
     .palEval, 
-    .sumEval {
+    .sumEval,
+    .swEval {
         width: 80%;
-        font-size: 22px;
+        font-size: 20px;
         margin: 0 auto;
     }
     .text-field,
     .pal-text-field,
-    .ts-text-field{
+    .ts-text-field,
+    .sw-text-field {
         height: 36px;
         font-size: 18px;
     }
     .text-field::placeholder,
     .pal-text-field::placeholder,
-    .ts-text-field::placeholder {
+    .ts-text-field::placeholder,
+    .sw-text-field::placeholder {
         font-size: 18px;
     }
     .btn-check,
     .pal-btn-check,
-    .ts-btn-check {
+    .ts-btn-check,
+    .sw-btn-check {
         width: 140px;
         height: 36px;
         font-size: 18px;
@@ -509,11 +677,13 @@ form {
 
 /* MAX-WIDTH 800PX */
 @media screen and (max-width:800px){
-    .ts-input-holder {
+    .ts-input-holder,
+    .sw-input-holder {
         flex-direction: column;
     }
-    .ts-intro {
-        font-size: 20px;
+    .ts-intro,
+    .sw-intro {
+        font-size: 18px;
     }
 }
 /* MAX-WIDTH 565PX */
@@ -535,7 +705,8 @@ form {
     } */
     .text-field::placeholder,
     .pal-text-field::placeholder,
-    .ts-text-field::placeholder {
+    .ts-text-field::placeholder,
+    .sw-text-field::placeholder {
         font-size: 16px;
     }
     .iso-text,
@@ -545,11 +716,13 @@ form {
     .palEval,
     .pal-intro,
     .ts-intro,
-    .sumEval{
-        font-size: 22px;
+    .sumEval,
+    .swEval {
+        font-size: 20px;
     }
     .ts-intro,
-    .sumEval{
+    .sumEval,
+    .sw-intro{
         font-size: 18px;
     }
 }
