@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         function spinWords() {
 
             //convert the string to an array
-            let words = document.getElementById("sw-text").value.split(" ");
+            let words = document.getElementById("sw-text").value.toLowerCase().split(" ");
             let userNum = Number(document.getElementById("sw-num").value);
             
 
@@ -121,10 +121,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             //using a for loop, check each word, i, in the array
             for(let i = 0; i < lengthOfWords; i++){
-                //if a word the array has "userNum" or more letters
-                if(words[i].length == userNum) {
+                //if a word in the array has "userNum" or more letters
+                if(words[i].length === userNum) {
                     // split the word, reverse it, then join the letters
-                    console.log(words[i])
+                    console.log(words[i].length)
                     words[i] = words[i].toLowerCase().split("").reverse().join("");
                     // convert the array to a string 
                     let spin = words.join("  ");

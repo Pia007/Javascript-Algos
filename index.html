@@ -344,37 +344,37 @@
 
     <!-- DASHBOARDS -->
     <!-- Isogram Dashboard -->
-    <div id="iso-container" class="iso-cont">
-        <div class="iso-window">
+    <div id="iso-container" class="container iso-container">
+        <div class="window iso-window">
             <div class="home-btn-holder">
                 <button id="iso-btn-close" class="btn-home iso-home" aria-label="home">
-                    <box-icon name='home' class="icon iso-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home iso-home-icon"></box-icon>
                 </button>
             </div>
 
             <form id="form" class="iso-form">
-                <p class="iso-text">
+                <p class="intro iso-intro">
                     Is it an <strong><em>isogram</em></strong>? Enter a word or sentence to find out! 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="input-holder">
+                <div class="input-holder iso-input-holder">
                     <!-- USER INPUT -->
-                    <input id="isogramText" class="text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" />
+                    <input id="isogramText" class="text-field iso-text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" />
 
                     
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSES BASED ON CRITERIA EVALUATION -->
-                <p id="eval" class="isoEval"></p>
-                <p id="isTrue" class="isoTrue"></p>
-                <p id="isFalse" class="isoFalse"></p>
+                <p id="eval" class="evals isoEval"></p>
+                <p id="isTrue" class="evals isoTrue"></p>
+                <p id="isFalse" class="evals isoFalse"></p>
                 
                 <!-- /RESPONSES BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="check-input" class="btn-check" type="submit" >CHECK IT!</button> 
+                <button id="check-input" class="btn-check iso-btn-check" type="submit" >CHECK IT!</button> 
                 <!-- /SUBMIT BUTTON -->
             </form>
         </div>
@@ -382,73 +382,73 @@
     <!-- /Isogram Dashboard -->
 
     <!-- Palindrome Dashboard -->
-    <div id="palindrome" class="pal-container">
-        <div class="pal-window">
+    <div id="palindrome" class="container pal-container">
+        <div class="window pal-window">
             <div class="home-btn-holder">
                 <button id="pal-btn-close" class="btn-home pal-home" aria-label="home">
-                    <box-icon name='home' class="icon pal-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home pal-home-icon"></box-icon>
                 </button>
             </div>
             <form id="pal-form" class="pal-form">
-                <p class="pal-intro">
+                <p class="intro pal-intro">
                     Enter a <strong><em>word or sentence</em></strong> to see if it's a palindrome. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="pal-input-holder">
+                <div class="input-holder pal-input-holder">
                     <!-- USER INPUT -->
-                    <input id="pal-text" class="pal-text-field" name="pal-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <input id="pal-text" class="text-field pal-text-field" name="pal-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="palResponse" class="palEval"></p>
+                <p id="palResponse" class="evals palEval"></p>
             
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="pal-check-string" class="pal-btn-check" type="submit" >CHECK IT!</button>
+                <button id="pal-check-string" class="btn-check pal-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
     </div>
-
     <!-- /Palindrome Dashboard -->
+
     <!-- Two Sum Dashboard -->
-    <div id="two-sum" class="ts-container">
-        <div class="two-window">
+    <div id="two-sum" class="container ts-container">
+        <div class="window two-window">
             <div class="home-btn-holder">
                 <button id="ts-btn-close" class="btn-home two-home" aria-label="home">
-                    <box-icon name='home' class="icon ts-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home ts-home-icon"></box-icon>
                 </button>
             </div>
             <form id="ts-form" class="two-form">
-                <p class="ts-intro">
+                <p class="intro ts-intro">
                     Check to see if the sum of any <strong><em>two numbers</em></strong> in an array equals a target number.
                     
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="ts-input-holder">
+                <div class="input-holder ts-input-holder">
                     <!-- USER INPUT -->
                     <div class="two-nums">
-                        <input id="randomNumbers" class="ts-text-field " name="randomNumbers" type="text" placeholder="Ex: 4 5 6 28 300" autocomplete= "off" aria-label="numbers"/>
+                        <input id="randomNumbers" class="text-field ts-text-field " name="randomNumbers" type="text" placeholder="Ex: 4 5 6 28 300" autocomplete= "off" aria-label="numbers"/>
                     </div>
                     <div class="two-target">
-                        <input id="targetNumber" class="ts-text-field " name="targetNumbers" type="text" placeholder="Ex: 10" autocomplete= "off" aria-label="target number"/>
+                        <input id="targetNumber" class="text-field ts-text-field " name="targetNumbers" type="text" placeholder="Ex: 10" autocomplete= "off" aria-label="target number"/>
                     </div>
                    
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="sumResponse" class="sumEval"></p>
+                <p id="sumResponse" class="evals sumEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
                 
                  <!-- SUBMIT BUTTON -->
-                 <button id="check-sum" class="ts-btn-check" type="submit" >CHECK IT!</button> 
+                 <button id="check-sum" class="btn-check ts-btn-check" type="submit" >CHECK IT!</button> 
                  <!-- <button id="reset-form" class="ts-btn-reset" type="submit" >RESET!</button>  -->
             </form>
         </div>
@@ -457,38 +457,38 @@
 
 
     <!-- Spin Words Dashboard -->
-    <div id="spin-words" class="spin-container">
-        <div class="spin-window">
+    <div id="spin-words" class="container spin-container">
+        <div class="window spin-window">
             <div class="home-btn-holder">
                 <button id="spin-btn-close" class="btn-home sw-home" aria-label="home">
-                    <box-icon name='home' class="icon sw-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home sw-home-icon"></box-icon>
                 </button>
             </div>
             <form id="sw-form" class="sw-form">
-                <p class="sw-intro">
+                <p class="intro sw-intro">
                     Enter a <strong><em>word/words</em></strong> and a <strong><em>number</em></strong>
                     to see what happens to any word who's length is the equal to that number. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="sw-input-holder">
+                <div class="input-holder sw-input-holder">
                     <!-- USER INPUT -->
                     <div class="sw-words">
-                        <input id="sw-text" class="sw-text-field" name="sw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                        <input id="sw-text" class="text-field sw-text-field" name="sw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                     </div>
                     <div class="sw-num">
-                        <input id="sw-num" class="sw-text-field" name="sw-num" type="text" placeholder="Ex: 5 " autocomplete= "off" />
+                        <input id="sw-num" class="text-field sw-text-field" name="sw-num" type="text" placeholder="Ex: 5 " autocomplete= "off" />
                     </div>
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="swResponse" class="swEval"></p>
+                <p id="swResponse" class="evals swEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="sw-check-string" class="sw-btn-check" type="submit" >CHECK IT!</button>
+                <button id="sw-check-string" class="btn-check sw-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
@@ -497,32 +497,32 @@
 
 
     <!-- Length of Longest Word Dashboard -->
-    <div id="longest-word" class="lw-container">
-        <div class="lw-window">
+    <div id="longest-word" class="container lw-container">
+        <div class="window lw-window">
             <div class="home-btn-holder">
                 <button id="lw-btn-close" class="btn-home lw-home" aria-label="home">
-                    <box-icon name='home' class="icon lw-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home lw-home-icon"></box-icon>
                 </button>
             </div>
             <form id="lw-form" class="lw-form">
-                <p class="lw-intro">
+                <p class="intro lw-intro">
                     Enter a <strong><em>sentence</em></strong> to see the length of the longest word. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="lw-input-holder">
+                <div class="input-holder lw-input-holder">
                     <!-- USER INPUT -->
-                    <input id="lw-text" class="lw-text-field" name="lw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <input id="lw-text" class="text-field lw-text-field" name="lw-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="lwResponse" class="lwEval"></p>
+                <p id="lwResponse" class="evals lwEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="lw-check-string" class="lw-btn-check" type="submit" >CHECK IT!</button>
+                <button id="lw-check-string" class="btn-check lw-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
@@ -531,32 +531,32 @@
 
 
     <!-- Factorialize a Number Dashboard -->
-    <div id="factorialize" class="fact-container">
-        <div class="fact-window">
+    <div id="factorialize" class="container fact-container">
+        <div class="window fact-window">
             <div class="home-btn-holder">
                 <button id="fact-btn-close" class="btn-home fact-home" aria-label="home">
-                    <box-icon name='home' class="icon fact-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home fact-home-icon"></box-icon>
                 </button>
             </div>
             <form id="fact-form" class="fact-form">
-                <p class="fact-intro">
-                    Enter a <strong><em>number</em></strong> to see the factorial of that number. 
+                <p class="intro fact-intro">
+                    Enter a positive integer to see the factorial. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="fact-input-holder">
+                <div class="input-holder fact-input-holder">
                     <!-- USER INPUT -->
-                    <input id="fact-text" class="fact-text-field" name="fact-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <input id="fact-text" class="text-field fact-text-field" name="fact-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="factResponse" class="factEval"></p>
+                <p id="factResponse" class="evals factEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="fact-btn" class="fact-btn-check" type="submit" >CHECK IT!</button>
+                <button id="fact-btn" class="btn-check fact-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
@@ -564,32 +564,32 @@
     <!-- /Factorialize a Number Dashboard -->
 
     <!-- Palindrome Number Dashboard -->
-    <div id="pal-num" class="pn-container">
-        <div class="pn-window">
+    <div id="pal-num" class="container pn-container">
+        <div class="window pn-window">
             <div class="home-btn-holder">
                 <button id="pn-btn-close" class="btn-home pn-home" aria-label="home">
-                    <box-icon name='home' class="icon pn-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home pn-home-icon"></box-icon>
                 </button>
             </div>
             <form id="pn-form" class="pn-form">
-                <p class="pn-intro">
-                    Enter a <strong><em>number</em></strong> to see if it's a palindrome. 
+                <p class="intro pn-intro">
+                    Enter a number to see if it's a palindrome. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="pn-input-holder">
+                <div class="input-holder pn-input-holder">
                     <!-- USER INPUT -->
-                    <input id="pn-text" class="pn-text-field" name="pn-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <input id="pn-text" class="text-field pn-text-field" name="pn-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="pnResponse" class="pnEval"></p>
+                <p id="pnResponse" class="evals pnEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="pn-btn" class="pn-btn-check" type="submit" >CHECK IT!</button>
+                <button id="pn-btn" class="btn-check pn-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
@@ -597,32 +597,32 @@
     <!-- /Palindrome Number Dashboard -->
 
     <!-- Reverse an Integer Dashboard -->
-    <div id="reverse-int" class="rev-int-container">
-        <div class="rev-int-window">
+    <div id="reverse-int" class="container rev-int-container">
+        <div class="window rev-int-window">
             <div class="home-btn-holder">
                 <button id="rev-int-btn-close" class="btn-home rev-int-home" aria-label="home">
-                    <box-icon name='home' class="icon rev-int-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home rev-int-home-icon"></box-icon>
                 </button>
             </div>
             <form id="rev-int-form" class="rev-int-form">
-                <p class="rev-int-intro">
-                    Enter a <strong><em>number</em></strong> to see the reverse of that number. 
+                <p class="intro rev-int-intro">
+                    Enter a number to see the reverse of that number. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="rev-int-input-holder">
+                <div class="input-holder rev-int-input-holder">
                     <!-- USER INPUT -->
-                    <input id="rev-int-text" class="rev-int-text-field" name="rev-int-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <input id="rev-int-text" class="text-field rev-int-text-field" name="rev-int-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="revResponse" class="revEval"></p>
+                <p id="revResponse" class="evals revEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="rev-int-btn" class="rev-int-btn-check" type="submit" >CHECK IT!</button>
+                <button id="rev-int-btn" class="btn-check rev-int-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>
@@ -630,32 +630,32 @@
     <!-- /Reverse an Integer Dashboard -->
 
     <!-- Longest Non-Repeating Substring Dashboard -->
-    <div id="lnr" class="lnr-container">
-        <div class="lnr-window">
+    <div id="lnr" class="container lnr-container">
+        <div class="window lnr-window">
             <div class="home-btn-holder">
                 <button id="lnr-btn-close" class="btn-home lnr-home" aria-label="home">
-                    <box-icon name='home' class="icon lnr-home-icon"></box-icon>
+                    <box-icon name='home' class="icon-home lnr-home-icon"></box-icon>
                 </button>
             </div>
             <form id="lns-form" class="lns-form">
-                <p class="lns-intro">
+                <p class="intro lns-intro">
                     Enter a <strong><em>sentence</em></strong> to see the longest non-repeating substring. 
                 </p>
 
                 <!-- INPUT FIELD -->
-                <div class="lns-input-holder">
+                <div class="input-holder lns-input-holder">
                     <!-- USER INPUT -->
-                    <input id="lns-text" class="lns-text-field" name="lns-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                    <input id="lns-text" class="text-field lns-text-field" name="lns-text" type="text" placeholder="Enter text here" autocomplete= "off" />
                 </div>
                 <!--/ INPUT FIELD -->
                 
                 <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                <p id="lnsResponse" class="lnsEval"></p>
+                <p id="lnsResponse" class="evals lnsEval"></p>
                 
                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                 <!-- SUBMIT BUTTON -->
-                <button id="lns-btn" class="lns-btn-check" type="submit" >CHECK IT!</button>
+                <button id="lns-btn" class="btn-check lns-btn-check" type="submit" >CHECK IT!</button>
                 <!-- SUBMIT BUTTON -->
             </form>
         </div>

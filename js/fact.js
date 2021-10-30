@@ -53,31 +53,31 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (integer === 1 || integer === 0) {
             factOutcome.style.display = "block";
-            factOutcome.style.color = "#2b923c";
+            factOutcome.style.color = "#e0e5ec";
 
             factOutcome.innerHTML ="The factorial of " +`${integer}`+ " is 1";
             clearFactForm();
 
         }else if (integer < 0 && decimalCheck.test(integer)) {
             factOutcome.style.display = "block";
-            factOutcome.style.color = "#FF1919";
-            factOutcome.innerHTML = `${integer}`+ " is negative and not an integer";
+            factOutcome.style.color = "#e0e5ec";
+            factOutcome.innerHTML = `${integer}`+ " is NOT an integer";
             clearFactForm();
         }else if (integer < 0) {
             factOutcome.style.display = "block";
-            factOutcome.style.color = "#2b923c";
-            factOutcome.innerHTML = "The factorial of " +`${integer}`+ " is -1";
+            factOutcome.style.color = "#e0e5ec";
+            factOutcome.innerHTML = "The factorial of " +`${integer}`+ " is UNDEFINED";
             clearFactForm();
         }else if (decimalCheck.test(integer)) {
             factOutcome.style.display = "block";
-            factOutcome.style.color = "#FF1919";
-            factOutcome.innerHTML = `${integer}` + " is not a whole number";
+            factOutcome.style.color = "#e0e5ec";
+            factOutcome.innerHTML = `${integer}` + " is NOT a whole number";
             clearFactForm();
         } else {
             for(let i = 1; i <= integer; i++) {
                 base *= i;
                 factOutcome.style.display = "block";
-                factOutcome.style.color = "#2b923c";
+                factOutcome.style.color = "#e0e5ec";
                 factOutcome.innerHTML = `${base}` + " is the factorial of " + `${integer}`;
                 clearFactForm();
             }

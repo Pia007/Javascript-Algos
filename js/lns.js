@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     // Otherwise the letter is added to the set because it's not found
                     stringSet = stringSet.add(str[x]);
+                   
                 }
             }
             
@@ -102,11 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 longestStrLength,
                 stringSet.size
             );
+            lnsOutcome.innerHTML =  "The length of the longest non-repeating string is " +  `${longestStrLength}`
+            lnsOutcome.style.color = "#00FF2A";
+            lnsOutcome.style.display ="block";
         }
         // Outputs the length of the longest non-repeating string
-        lnsOutcome.innerHTML =  "The length of the longest non-repeating string is " + `${longestStrLength}`
-        lnsOutcome.style.color = "#00FF2A";
-        lnsOutcome.style.display ="block";
+        
     
     };
 

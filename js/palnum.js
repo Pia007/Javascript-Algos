@@ -50,24 +50,24 @@ document.addEventListener("DOMContentLoaded", () => {
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
         if (decimalCheck.test(num)) {
             palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#FF1919";
-            palNumOutcome.innerHTML = `${num}`+ " is not an integer";
+            palNumOutcome.style.color = "#e0e5ec";
+            palNumOutcome.innerHTML = `${num}`+ " is NOT an integer";
             clearPalNumForm();
 
         } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
             palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#FF1919";
+            palNumOutcome.style.color = "#e0e5ec";
             palNumOutcome.innerHTML = `${num}`+ " is not within the constraints";
             clearPalNumForm();
         }else if(intArr == num ) {
             palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#2b923c";
+            palNumOutcome.style.color = "#e0e5ec";
             palNumOutcome.innerHTML = `${num}`+ " is a Palindrome Number";
             clearPalNumForm();
         }else {
             palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#FF1919";
-            palNumOutcome.innerHTML = `${num}`+ " is not a Palindrome Number";
+            palNumOutcome.style.color = "#e0e5ec";
+            palNumOutcome.innerHTML = `${num}`+ " is NOT a Palindrome Number";
             clearPalNumForm();
         }
     }

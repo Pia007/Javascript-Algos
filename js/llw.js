@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             longestWord = newArr[i];
             lwOutcome.style.display = "block";
             lwOutcome.style.color = "#2b923c";
-            lwOutcome.innerHTML = `${longestWord}` + " is " + `${longestWordLength}` + " characters long";
+            lwOutcome.innerHTML = "The longest word is " + `${longestWordLength}` + " characters long";
           }
         }
         
