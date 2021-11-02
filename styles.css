@@ -111,7 +111,7 @@ p {
     justify-content: space-between;
 }
 
-.code-holder,
+.download-holder,
 .play-holder { 
     width: 40px;
     height: 40px;
@@ -144,12 +144,12 @@ p {
                 inset -4px -4px 6px -0px rgba(255,255,255,0.5),
                 inset 4px 4px 6px -0px rgba(116,125,136,0.3);
 }
-.icon:hover {
+.download:hover {
     opacity: 65%;
 }
 
-/* icon styling */
-.icon {
+/* download styling */
+.download {
     width: 31px;
     height: 31px;
     margin: 4px auto;
@@ -164,7 +164,7 @@ p {
 .iso {
     color: var(--iso-color);
 }
-.iso-icon,
+.iso-download,
 .iso-play {
     fill: var(--iso-color);
 }
@@ -173,7 +173,7 @@ p {
 .pal {
     color: var(--pal-color);
 }
-.pal-icon,
+.pal-download,
 .pal-play {
     fill: var(--pal-color);
 }
@@ -182,7 +182,7 @@ p {
 .two {
     color: var(--two-color);
 }
-.two-icon,
+.two-download,
 .two-play {
     fill: var(--two-color);
 }
@@ -192,7 +192,7 @@ p {
     color: var(--spin-color);
 }
 
-.spin-icon,
+.spin-download,
 .spin-play {
     fill: var(--spin-color);
 }
@@ -202,7 +202,7 @@ p {
     color: var(--llw-color);
 }
 
-.llw-icon,
+.llw-download,
 .llw-play {
     fill: var(--llw-color);
 }
@@ -212,7 +212,7 @@ p {
     color: var(--fact-color);
 }
 
-.fact-icon,
+.fact-download,
 .fact-play {
     fill: var(--fact-color);
 }
@@ -222,7 +222,7 @@ p {
     color: var(--pn-color);
 }
 
-.pn-icon,
+.pn-download,
 .pn-play {
     fill: var(--pn-color);
 }
@@ -232,7 +232,7 @@ p {
     color: var(--rev-color);
 }
 
-.rev-icon,
+.rev-download,
 .rev-play {
     fill: var(--rev-color);
 }
@@ -243,7 +243,7 @@ p {
     color: var(--lnr-color);
 }
 
-.lnr-icon,
+.lnr-download,
 .lnr-play {
     fill: var(--lnr-color);
 }
@@ -254,7 +254,7 @@ p {
     color: var(--one-color);
 }
 
-.one-icon,
+.one-download,
 .one-play {
     fill: var(--one-color);
 }
@@ -264,7 +264,7 @@ p {
     color: var(--btwo-color);
 }
 
-.btwo-icon,
+.btwo-download,
 .btwo-play {
     fill: var(--btwo-color);
 }
@@ -274,7 +274,7 @@ p {
     color: var(--three-color);
 }
 
-.three-icon,
+.three-download,
 .three-play {
     fill: var(--three-color);
 }
@@ -306,14 +306,14 @@ p {
     .info {
         font-size: .75em;
     }
-    .code-holder,
+    .download-holder,
     .play-holder { 
         width: 43px;
         height: 43px;
         margin: 0 auto;
     
     }
-    .icon {
+    .download {
         width: 33px;
         height: 33px;
         margin: 2px auto;
@@ -336,14 +336,14 @@ p {
     .info {
         font-size: .75em;
     }
-    .code-holder,
+    .download-holder,
     .play-holder { 
         width: 45px;
         height: 45px;
         margin: 0 auto;
     
     }
-    .icon {
+    .download {
         width: 35px;
         height: 35px;
         margin: 4px auto;

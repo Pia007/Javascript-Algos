@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardHolder = document.getElementById('dashboard-holder');
     const llwHomeBtn = document.getElementById('lw-btn-close');
     
-    // Two Sum Container
+    // Longest Word Container
     const llwDash = document.getElementById('longest-word');
 
     
@@ -71,14 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
     function findLongestWord(str) {
         let newArr = document.getElementById("lw-text").value.split(' ');
         let longestWord = 0;
-
+        
         for(let i = 0; i < newArr.length; i++) {
           if(newArr[i].length > longestWord) {
-            let longestWordLength = newArr[i].length;
-            longestWord = newArr[i];
+            longestWord = newArr[i].length;
+            theWord = newArr[i]
+            
             lwOutcome.style.display = "block";
             lwOutcome.style.color = "#2b923c";
-            lwOutcome.innerHTML = "The longest word is " + `${longestWordLength}` + " characters long";
+            lwOutcome.innerHTML = "The longest word is " + "'" +`${theWord}`+"'" + " and it's length is  " + `${longestWord}`;
           }
         }
         

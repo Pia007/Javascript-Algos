@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function hideRes() {
         response.style.display = "none"
-        isTrue.style.display = "none"
-        isFalse.style.display = "none"
+
     }
 
     // CLEARS the form 2.5sec after submission
@@ -86,27 +85,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 response.style.display = "block";
 
             }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
-                response.innerHTML = "Try again! "+ `${str}` +  " is not a single word and has atleast one special character."
+                response.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
                 response.style.display = "block";
 
             }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
-                response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number."
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
                 response.style.display = "block";
 
             }else if(specialChar.test(str) && numbers.test(str)){
-                response.innerHTML = "Try again! " + `${str}` + " has atleast one number and special character."
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
                 response.style.display = "block";
 
             }else if(str.indexOf(' ') >= 0){
-                response.innerHTML = "Try again! " + `${str}` + " is not a single word."
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
                 response.style.display = "block";
 
             }else if(specialChar.test(str)) {
-                response.innerHTML = "Try again! " + `${str}` + " has atleast one special character."
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
                 response.style.display = "block";
 
             }else if(numbers.test(str)) {
-                response.innerHTML = "Try again! " + `${str}` + " has atleast one number."
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
                 response.style.display = "block";
             }
             else {
@@ -140,12 +139,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     // resulting in newLetters.length < letter.length
         if(newLetters.length === letters.length) {
             // return true;
-            isTrue.innerHTML = `${str}` + " is an isogram."
-            isTrue.style.display = "block";
+            response.innerHTML = "'"+`${str}`+"'" + " is an isogram."
+            response.style.display = "block";
+            response.style.color = "#37A4C8";
         }else {
             // return false;
-            isFalse.innerHTML = `${str}` + " is NOT an isogram."
-            isFalse.style.display = "block";
+            response.innerHTML = "'"+`${str}`+"'" + " is NOT an isogram."
+            response.style.display = "block";
+            response.style.color = "#FF1919";
         }
         // clearForm();
         

@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Factorialize Dashboard Elements
     const factForm = document.getElementById("fact-form");
     const factOutcome = document.getElementById("factResponse");
+    const factOutcomeHolder = document.getElementById("factRepoHolder");
     const buttonGetFact = document.getElementById("fact-btn");
 
 
@@ -32,6 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function hideFactOutcome() {
         factOutcome.style.display ="none";
+        factOutcomeHolder.style.display ="none";
+    }
+    function showFactOutcome() {
+        factOutcome.style.color = "#eb0e96";
+        factOutcome.style.display ="block";
+        factOutcomeHolder.style.display ="block";
     }
 
     function clearFactForm() {
@@ -52,32 +59,26 @@ document.addEventListener("DOMContentLoaded", () => {
         
         
         if (integer === 1 || integer === 0) {
-            factOutcome.style.display = "block";
-            factOutcome.style.color = "#e0e5ec";
-
+            showFactOutcome()
             factOutcome.innerHTML ="The factorial of " +`${integer}`+ " is 1";
             clearFactForm();
 
         }else if (integer < 0 && decimalCheck.test(integer)) {
-            factOutcome.style.display = "block";
-            factOutcome.style.color = "#e0e5ec";
+            showFactOutcome()
             factOutcome.innerHTML = `${integer}`+ " is NOT an integer";
             clearFactForm();
         }else if (integer < 0) {
-            factOutcome.style.display = "block";
-            factOutcome.style.color = "#e0e5ec";
+            showFactOutcome()
             factOutcome.innerHTML = "The factorial of " +`${integer}`+ " is UNDEFINED";
             clearFactForm();
         }else if (decimalCheck.test(integer)) {
-            factOutcome.style.display = "block";
-            factOutcome.style.color = "#e0e5ec";
+            showFactOutcome()
             factOutcome.innerHTML = `${integer}` + " is NOT a whole number";
             clearFactForm();
         } else {
             for(let i = 1; i <= integer; i++) {
                 base *= i;
-                factOutcome.style.display = "block";
-                factOutcome.style.color = "#e0e5ec";
+                showFactOutcome()
                 factOutcome.innerHTML = `${base}` + " is the factorial of " + `${integer}`;
                 clearFactForm();
             }

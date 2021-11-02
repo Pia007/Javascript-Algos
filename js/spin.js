@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
         function checkValues() {
             
-            for (let i = 0; i < str.length - 1; i++){
+            for (let i = 0; i < str.length-1; i++){
                 // regex for letter and special characters or just special characters
                 let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
                 let letters = /[A-Za-z]/
@@ -109,28 +109,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
             //convert the string to an array
             let words = document.getElementById("sw-text").value.toLowerCase().split(" ");
-            let userNum = Number(document.getElementById("sw-num").value);
+            let userNum = document.getElementById("sw-num").value;
             
 
             // confirm that the input is now an array
-            // console.log(words)
+            console.log(userNum)
             
             //get the length of the array 
-            let lengthOfWords = words.length
+            // let lengthOfWords = words.length
             // console.log(lengthOfWords)
 
             //using a for loop, check each word, i, in the array
-            for(let i = 0; i < lengthOfWords; i++){
+            for(let i = 0; i < words.length; i++){
                 //if a word in the array has "userNum" or more letters
-                if(words[i].length === userNum) {
+                if(words[i].length >= userNum) {
                     // split the word, reverse it, then join the letters
                     console.log(words[i].length)
+                    console.log(words[i])
                     words[i] = words[i].toLowerCase().split("").reverse().join("");
                     // convert the array to a string 
                     let spin = words.join("  ");
                     // user feedback
                     swOutcome.style.display = "block";
-                    swOutcome.style.color = "#2b923c";
+                    swOutcome.style.color = "#e0e5ec";
                     swOutcome.innerHTML = `${spin}`;   
                     
                 } else {

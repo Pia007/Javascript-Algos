@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Palindrome Number Dashboard Elements
     const palNumForm = document.getElementById("pn-form");
+    const palNumOutcomeHolder = document.getElementById("pnRepoHolder");
     const palNumOutcome = document.getElementById("pnResponse");
+
     const buttonIsPalNum = document.getElementById("pn-btn");
 
 
@@ -31,7 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
     buttonIsPalNum.addEventListener('click', isPalNum);
 
     function hidePalNumOutcome() {
+        palNumOutcomeHolder.style.display ="none";
         palNumOutcome.style.display ="none";
+    }
+    function showPalNumOutcome() {
+        palNumOutcomeHolder.style.display ="block";
+        palNumOutcome.style.display ="block";
+        palNumOutcome.style.color = "#e0e5ec";
     }
 
     function clearPalNumForm() {
@@ -49,24 +57,20 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(intArr);
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
         if (decimalCheck.test(num)) {
-            palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#e0e5ec";
+            showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is NOT an integer";
             clearPalNumForm();
 
         } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
-            palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#e0e5ec";
+            showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is not within the constraints";
             clearPalNumForm();
         }else if(intArr == num ) {
-            palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#e0e5ec";
+            showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is a Palindrome Number";
             clearPalNumForm();
         }else {
-            palNumOutcome.style.display = "block";
-            palNumOutcome.style.color = "#e0e5ec";
+            showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is NOT a Palindrome Number";
             clearPalNumForm();
         }
