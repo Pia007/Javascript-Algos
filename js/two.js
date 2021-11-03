@@ -60,7 +60,7 @@ function checkTsInput(arr) {
 
             // if yes, user gets prompted to enter the correct data type
             outcome.innerHTML = "Enter only numbers";
-            outcome.style.color = "#FF1919";
+            outcome.style.color = "#e0e5ec";
             outcome.style.display = "block";
  
         }else{
@@ -80,7 +80,7 @@ function checkTarget(target) {
     // if the target contains letters or special characters
     if(specialCases.test(target)) {
         outcome.innerHTML = "Enter a number";
-        outcome.style.color = "#FF1919";
+        outcome.style.color = "#e0e5ec";
         outcome.style.display = "block";
     } else{
     //otherwise, call length of twoSum function
@@ -122,7 +122,7 @@ function twoSum(arr, target) {
             
             // the two sums were found
             outcome.style.display = "block";
-            outcome.style.color = "#2b923c";
+            outcome.style.color = "#e0e5ec";
             outcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
             break;
         }else { 
@@ -130,8 +130,8 @@ function twoSum(arr, target) {
             numsObj[numDifference] = i
             let newArr = arr.join("  ")
             outcome.style.display = "block";
-            outcome.style.color = "#FF1919";
-            outcome.innerHTML = "The sum of  " + `${target}` + " is not in [" + `${newArr}` + "]";
+            outcome.style.color = "#e0e5ec";
+            outcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
             
         }
         clearTsForm()

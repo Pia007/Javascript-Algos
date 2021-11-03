@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Factorialize Dashboard Elements
     const factForm = document.getElementById("fact-form");
     const factOutcome = document.getElementById("factResponse");
-    const factOutcomeHolder = document.getElementById("factRepoHolder");
+    
     const buttonGetFact = document.getElementById("fact-btn");
 
 
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function hideFactOutcome() {
         factOutcome.style.display ="none";
-        factOutcomeHolder.style.display ="none";
+        
     }
     function showFactOutcome() {
-        factOutcome.style.color = "#eb0e96";
+        factOutcome.style.color = "#e0e5ec";
         factOutcome.style.display ="block";
-        factOutcomeHolder.style.display ="block";
+        
     }
 
     function clearFactForm() {
