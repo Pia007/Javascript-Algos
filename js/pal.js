@@ -50,12 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Use regex to search for occurences of only letters and numbers
         let regEx = /[^a-z0-9]/gi;
         // 
-        let justStrArr = words.replace(regEx,'').toLowerCase().split('');
+        let newStrArr = words.replace(regEx,'').toLowerCase().split('');
         // 
-        let justStr = justStrArr.join('');
+        let newStr = newStrArr.join('');
         // 
-        let revStr = justStrArr.reverse().join('');
-        if( justStr === revStr ) {
+        let revNewStr = newStrArr.reverse().join('');
+        if( newStr === revNewStr ) {
             palOutcome.style.display = "block";
             palOutcome.style.color = "#00FF2A";
             palOutcome.innerHTML ="' " + `${words}`+ " '"  + " is a palindrome"; 

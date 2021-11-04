@@ -447,6 +447,7 @@ form {
 }
 .lns-form {
     width: 90%;
+    height: 90%;
     margin: 30px auto;
     color: var(--main-bg);
     background: #ff0000;
@@ -884,13 +885,13 @@ form {
     /* border: 2px solid black; */
 }
 .iso-pdf-content {
-    height:90%;
+    height:100%;
     background: #37A4C8;
     box-shadow: inset 17px 17px 15px #2c83a0,
         inset -17px -17px 15px #42c5f0;
 }
 .pal-pdf-content {
-    height: 90%;
+    height: 100%;
     border-radius: 10px;
     border: 2px solid var(--pal-color);
     background: linear-gradient(145deg, #caced4, #f0f5fd);
@@ -898,7 +899,7 @@ form {
              -8px -8px 16px #ffffff;
 }
 .ts-pdf-content {
-    height: 90%;
+    height:100%;
     border-radius: 10px;
     border: 2px solid var(--two-color);
     background: #5b0eeb;

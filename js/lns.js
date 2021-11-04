@@ -80,10 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
         let longestStrLength = 0;
         
         
+        
         // Loop through the string
         for (let i = 0; i < str.length; i++) {
             // Use a set to store the string created from the current point
             let stringSet = new Set();
+            let nonRepeatingArr = [];
 
             // Use an internal loop to evaluate the letters starting at the current point
             for (let x = i; x < str.length; x++) {
@@ -94,20 +96,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     // Otherwise the letter is added to the set because it's not found
                     stringSet = stringSet.add(str[x]);
+                    nonRepeatingArr = [...stringSet];
+                
+                    console.log(nonRepeatingArr);
+                    longestStrLength = Math.max(
+                        longestStrLength,
+                        stringSet.size
+                    );
+                    
                     
                    
                 }
             }
-            
+            lnsOutcome.innerHTML =  "The longest non-repeating string is " + `${nonRepeatingArr}` +", " + `${longestStrLength}` + " letter/s long.";
+                    lnsOutcome.style.color = "#e0e5ec";
+                    lnsOutcome.style.display ="block";
             // assign longestStrLength to the greater numerical value(longestStrLength or stringSet)
-            longestStrLength = Math.max(
-                longestStrLength,
-                stringSet.size
-            );
-    
-            lnsOutcome.innerHTML =  "The length of the longest non-repeating string is " +  `${longestStrLength}`
-            lnsOutcome.style.color = "#e0e5ec";
-            lnsOutcome.style.display ="block";
+            
         }
         // Outputs the length of the longest non-repeating string
         

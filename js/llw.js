@@ -69,17 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }   
     }
     function findLongestWord(str) {
-        let newArr = document.getElementById("lw-text").value.split(' ');
-        let longestWord = 0;
+        let strArr = document.getElementById("lw-text").value.split(' ');
+        let longestWordLength = 0;
         
-        for(let i = 0; i < newArr.length; i++) {
-          if(newArr[i].length > longestWord) {
-            longestWord = newArr[i].length;
-            theWord = newArr[i]
+        for(let i = 0; i < strArr.length; i++) {
+          if(strArr[i].length > longestWordLength) {
+            longestWordLength = strArr[i].length;
+            theWord = strArr[i]
             
             lwOutcome.style.display = "block";
             lwOutcome.style.color = "#2b923c";
-            lwOutcome.innerHTML = "The longest word is " + "'" +`${theWord}`+"'" + " and it's length is  " + `${longestWord}`;
+            lwOutcome.innerHTML = "The longest word is " + "'" +`${theWord}`+"'" + " and it's length is  " + `${longestWordLength}`;
           }
         }
         

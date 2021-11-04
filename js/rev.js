@@ -49,12 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Get the input value
         var num = document.getElementById("rev-int-text").value;
 
-        // num = Number(num);
+        
 
         // Check if the input is empty
         let intArr =  parseInt(num.toString().split("").reverse().join(""))
-        // console.log(num);
-        // let integer = Number(num);
+        
         console.log(intArr);
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
         if (num === "") {
@@ -79,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             revIntOutcome.innerHTML = `${num}`+ " is not within the constraints";
             clearRevIntForm();
         }else if(num < 0 ) {
+            // Consider -/+ inputs using
             let negInt = -Math.abs(intArr)
             revIntOutcome.style.display = "block";
             revIntOutcome.style.color = "#e0e5ec";
@@ -90,9 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
             revIntOutcome.innerHTML = `${intArr}`;
             clearRevIntForm();
         }
-        // Consider -/+ inputs using ternay operator
-        // If the user intArr is < 0, place - in front of absolute value of input and return the input
-        // return intArr<0?-Math.abs(num):num
 
     }
 });
