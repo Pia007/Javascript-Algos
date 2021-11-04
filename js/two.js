@@ -102,7 +102,7 @@ function twoSum(arr, target) {
     // makes sure array is numbers
     arr = arr.map(Number)
 
-    // create an object/hash map to key-value pairs
+    // create an object/hash map to store key-value pairs
     let numsObj = {};
 
     // use a loop to check if the two numbers are present
@@ -128,7 +128,7 @@ function twoSum(arr, target) {
         }else { 
             // the two sums were not found
             numsObj[numDifference] = i
-            let newArr = arr.join("  ")
+            let newArr = arr.join(", ")
             outcome.style.display = "block";
             outcome.style.color = "#e0e5ec";
             outcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";

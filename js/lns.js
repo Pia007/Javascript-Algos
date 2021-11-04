@@ -33,7 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function hideLsOutcome() {
         lnsOutcome.style.display ="none";
     }
-
+    function showLsOutcome() {
+        lnsOutcome.style.display ="block";
+        lnsOutcome.style.color = "#e0e5ec";
+    };
     // CLEAR Form
     function clearLnsForm() {
         setTimeout(function() {
@@ -47,77 +50,109 @@ document.addEventListener("DOMContentLoaded", () => {
         var str = document.getElementById("lns-text").value;
 
         // Loop through the string
-        for (let i = 0; i < str.length - 1; i++){
-            // regex for letter and special characters or just special characters
-            let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-            
-            //regev for letters and numbers or just numbers
-            let numbers = /[A-Za-z]\d|\d/
+        if (str != ""){
+            for (let i = 0; i < str.length - 1; i++){
+                // regex for letter and special characters or just special characters
+                let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+                
+                //regev for letters and numbers or just numbers
+                let numbers = /[A-Za-z]\d|\d/
 
-            //check if either regex pattern is present in the string
-            if(specialChar.test(str) || numbers.test(str)) {
+                //check if either regex pattern is present in the string
+                if(specialChar.test(str) || numbers.test(str)) {
 
-                // if yes, user gets prompted to enter the correct data type
-                lnsOutcome.innerHTML = "Enter only letters";
-                lnsOutcome.style.color = "#FF1919";
-                lnsOutcome.style.display = "block";
-            
-            }else{
-                //otherwise, call length of string function
-                lengthOfLongestSubstring()
-            }
-            // clear the form after the function runs
+                    // if yes, user gets prompted to enter the correct data type
+                    lnsOutcome.innerHTML = "Enter only letters";
+                    showLsOutcome();
+                
+                }else{
+                    //otherwise, call length of string function
+                    getLongestSubstring()
+                }
+                // clear the form after the function runs
+                clearLnsForm()
+            } 
+        }else{
+            showLsOutcome();
+            lnsOutcome.innerHTML = "0";
             clearLnsForm()
-        }   
+        }  
     }
 
 
-    function lengthOfLongestSubstring(str) {
+    function getLongestSubstring(str) {
         var str = document.getElementById("lns-text").value;
         
-        // create a set to store the longest substring
-            //Why? JS set cannot contain duplicate elements i.e. it keeps unique elements only.
-        let longestStrLength = 0;
         
-        
-        
-        // Loop through the string
-        for (let i = 0; i < str.length; i++) {
-            // Use a set to store the string created from the current point
-            let stringSet = new Set();
-            let nonRepeatingArr = [];
-
-            // Use an internal loop to evaluate the letters starting at the current point
-            for (let x = i; x < str.length; x++) {
-                // Use has() to check if the current letter exists in the current Set
-                if (stringSet.has(str[x])) {
-                    // If it does, stop because it already exists in the set
-                    break;
-                } else {
-                    // Otherwise the letter is added to the set because it's not found
-                    stringSet = stringSet.add(str[x]);
-                    nonRepeatingArr = [...stringSet];
-                
-                    console.log(nonRepeatingArr);
-                    longestStrLength = Math.max(
-                        longestStrLength,
-                        stringSet.size
-                    );
-                    
-                    
-                   
-                }
-            }
-            lnsOutcome.innerHTML =  "The longest non-repeating string is " + `${nonRepeatingArr}` +", " + `${longestStrLength}` + " letter/s long.";
-                    lnsOutcome.style.color = "#e0e5ec";
-                    lnsOutcome.style.display ="block";
-            // assign longestStrLength to the greater numerical value(longestStrLength or stringSet)
-            
-        }
-        // Outputs the length of the longest non-repeating string
-        
+        let i;
+        let strLength = str.length;
     
-    };
+        // assign the starting point of current substring.
+        let currentStart = 0;
+    
+        // assign the length of current substring.
+        let currentLength;
+    
+        // assign the max length substring without repeating characters.
+        let maxLength = 0;
+    
+        // assign the starting index of max length substring.
+        let maxLengthStart;
+    
+        // create a Hash Map to store last instance of each
+            // visited letter.
+        let visitedMap = new Map();
+    
+        // index the last instance of the first letter at 0;
+        visitedMap.set(str[0], 0);
+    
+        for (let i = 1; i < strLength; i++) {
+    
+            
+            // use Map.has() to check if the letter is NOT in the visited map,
+                // if true, use Map.set() to add it to the visited map.
+            if (!visitedMap.has(str[i])) {
+                visitedMap.set(str[i], i) ;
+    
+            }else if (visitedMap.get(str[i]) >= currentStart){
+                // if the letter IS in visited map, then
+                    // use Map.get() to check if is was before
+                    // or after the start of the current substring.
 
+                // find length of current substring
+                currentLength = i - currentStart;
+                    if (maxLength < currentLength) {
+                        //if the maxLength is less than currentLength,
+                            // update maxLength and maxLengthStart
+                        maxLength = currentLength;
+                        maxLengthStart = currentStart;
+                    }
+                // update currentStart to the last instance of
+                    // the current letter.
+                currentStart = visitedMap.get(str[i]) + 1;
+            }
+            // Update last instance of current letter in visited map.
+            visitedMap.set(str[i], i);
+        }
+    
+        // Compare length of last substring with maxLength 
+            // update maxLength and maxLengthStart
+        if (maxLength < i - currentStart) {
+            maxLength = i - currentStart;
+            maxLengthStart = currentStart;
+        }
+    
+        // longest non-repeating substring is str[maxLengthStart] to
+            // to str[maxLengthStart+maxLength-1]
+        // use substr() to extract the substring and
+        // get the length of the substring
+        
+        
+        let longestUniqueSub =  str.substr(maxLengthStart,maxLength);
+        let lengthOfUniqueSub = longestUniqueSub.length;
 
+        showLsOutcome();
+        lnsOutcome.innerHTML = "'"+ longestUniqueSub + "'" + " is the longest non-repeating substring. It's length is " + lengthOfUniqueSub; 
+    }
+    clearLnsForm();
 });
