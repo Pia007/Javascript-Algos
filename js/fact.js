@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Factorialize Dashboard Elements
     const factForm = document.getElementById("fact-form");
     const factOutcome = document.getElementById("factResponse");
-    
     const buttonGetFact = document.getElementById("fact-btn");
 
 
@@ -55,34 +54,35 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(integer);
 
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
-        let base = 1
+        let fact = 1
         
         
         if (integer === 1 || integer === 0) {
             showFactOutcome()
             factOutcome.innerHTML ="The factorial of " +`${integer}`+ " is 1";
-            clearFactForm();
+            //clearFactForm();
 
         }else if (integer < 0 && decimalCheck.test(integer)) {
             showFactOutcome()
             factOutcome.innerHTML = `${integer}`+ " is NOT an integer";
-            clearFactForm();
+            //clearFactForm();
         }else if (integer < 0) {
             showFactOutcome()
             factOutcome.innerHTML = "The factorial of " +`${integer}`+ " is UNDEFINED";
-            clearFactForm();
+            //clearFactForm();
         }else if (decimalCheck.test(integer)) {
             showFactOutcome()
             factOutcome.innerHTML = `${integer}` + " is NOT a whole number";
-            clearFactForm();
+            //clearFactForm();
         } else {
             for(let i = 1; i <= integer; i++) {
-                base *= i;
+                fact *= i;
                 showFactOutcome()
-                factOutcome.innerHTML = `${base}` + " is the factorial of " + `${integer}`;
-                clearFactForm();
+                factOutcome.innerHTML = `${fact}` + " is the factorial of " + `${integer}`;
+                
             }
         }
+        clearFactForm();
     }
 
 });

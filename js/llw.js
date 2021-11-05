@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
         lwOutcome.style.display ="none";
     }
 
+    function showLwOutcome() {
+        lwOutcome.style.display = "block";
+        lwOutcome.style.color = "#35c048";
+    }
     function clearLwForm() {
         setTimeout(function() {
             lwForm.reset();
@@ -56,9 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if(specialChar.test(str) || numbers.test(str)) {
 
                 // if yes, user gets prompted to enter the correct data type
+                showLwOutcome();
                 lwOutcome.innerHTML = "Enter only letters";
-                lwOutcome.style.color = "#FF1919";
-                lwOutcome.style.display = "block";
+                
     
             }else{
                 //otherwise, call spin words function
@@ -77,8 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             longestWordLength = strArr[i].length;
             theWord = strArr[i]
             
-            lwOutcome.style.display = "block";
-            lwOutcome.style.color = "#2b923c";
+            showLwOutcome();
             lwOutcome.innerHTML = "The longest word is " + "'" +`${theWord}`+"'" + " and it's length is  " + `${longestWordLength}`;
           }
         }

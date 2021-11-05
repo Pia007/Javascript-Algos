@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Isogram Container
     const isoDash = document.getElementById('iso-container');
     const isoHomeBtn = document.getElementById("iso-btn-close");
-
-
+    const isoCounter = document.getElementById("iso-download");
+    const isoDownloadBtn = document.getElementById("iso-pdf-download-btn");
+    const isoDownloadHolder = document.getElementById("iso-download-holder");   
+    
     function showHome() {
         isoDash.style.display = "none";
         cardHolder.style.display = "block";
@@ -26,9 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //RESPONSES: using the id to assign constants to criteria responses in index.html
     const response = document.getElementById("eval");
-    const isTrue = document.getElementById("isTrue");
-    const isFalse = document.getElementById("isFalse");
-
 
 
     function hideRes() {
@@ -36,6 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+    function showRes() {
+        response.style.display = "block"
+        response.style.color = "#37A4C8"
+    }
     // CLEARS the form 2.5sec after submission
     function clearForm() {
         setTimeout(function() {
@@ -81,32 +84,39 @@ document.addEventListener("DOMContentLoaded", () => {
             let numbers = /\d/
             
             if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
+                showRes();
                 response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
-                response.style.display = "block";
+                
 
             }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
+                showRes();
                 response.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
-                response.style.display = "block";
+            
 
             }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
+                showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
-                response.style.display = "block";
+                
 
             }else if(specialChar.test(str) && numbers.test(str)){
+                showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
-                response.style.display = "block";
+                
 
             }else if(str.indexOf(' ') >= 0){
+                showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
-                response.style.display = "block";
+
 
             }else if(specialChar.test(str)) {
+                showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
-                response.style.display = "block";
+                
 
             }else if(numbers.test(str)) {
+                showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
-                response.style.display = "block";
+                
             }
             else {
                 isIsogram();
@@ -139,17 +149,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     // resulting in newLetters.length < letter.length
         if(newLetters.length === letters.length) {
             // return true;
-            response.innerHTML = "'"+`${str}`+"'" + " is an isogram."
-            response.style.display = "block";
-            response.style.color = "#37A4C8";
+            showRes();
+            response.innerHTML = "'"+`${str}`+"'" + " IS an isogram."
+           
         }else {
             // return false;
+            showRes();
             response.innerHTML = "'"+`${str}`+"'" + " is NOT an isogram."
-            response.style.display = "block";
-            response.style.color = "#FF1919";
         }
-        // clearForm();
         
     };
 
 });
+
+
+
+

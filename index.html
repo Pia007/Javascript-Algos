@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="clock.css" />
     <link rel="stylesheet" href="iso.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
@@ -17,6 +18,20 @@
 </head>
 <body>
     <header>
+        <div class="header-info-holder">
+            <div class="hd-holder hd-btn-holder">
+                <button  class="header-btn" aria-label="menu-button">
+                    <box-icon name='menu' class="header-menu" id="menu-icon" aria-label="menu"></box-icon>
+                </button>
+            </div>
+            <div class="hd-holder hd-title-holder">
+                <p id="header-title" class="hd-title">JavaScript Algorithms</p>
+                <p id="mb-header-title" class="hd-title">Js Algos</p>
+            </div>
+            <div class="hd-holder clock-holder">
+                <div id="clock" class="hd-clock"></div>
+            </div>
+        </div>
         
     </header>
     <!-- Main Container -->
@@ -37,10 +52,10 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn iso-btn" id="iso-download-btn" aria-label="download">
+                        <div class="btn iso-btn" id="iso-download" aria-label="download">
                             <!-- <i class='bx bx-download icon iso-icon' ></i> -->
                             <box-icon name='download' class="icon download iso-download" ></box-icon>
-                        </button>
+                        </div>
                     </div> 
                     <div class="play-holder">
                         <button class="btn iso-btn" id="iso-play-btn" aria-label="play">
@@ -67,7 +82,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn pal-btn" id="pal-download-btn" aria-label="download">
+                        <button class="btn pal-btn" id="pal-download" aria-label="download">
                             <box-icon name='download' class="icon download pal-download" ></box-icon>
                         </button>
                     </div> 
@@ -93,7 +108,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn two-btn" id="two-download-btn" aria-label="download">
+                        <button class="btn two-btn" id="two-download" aria-label="download">
                             <box-icon name='download' class="icon download two-download"></box-icon>
                         </button>
                     </div> 
@@ -118,7 +133,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn spin-btn" id="spin-download-btn" aria-label="download">
+                        <button class="btn spin-btn" id="spin-download" aria-label="download">
                             <box-icon name='download' class="icon download spin-download" ></box-icon>
                         </button>
                     </div> 
@@ -144,7 +159,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn llw-btn" id="llw-download-btn" aria-label="download">
+                        <button class="btn llw-btn" id="llw-download" aria-label="download">
                             <box-icon name='download' class="icon download llw-download"></box-icon>
                         </button>
                     </div> 
@@ -171,7 +186,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn fact-btn" id="fact-download-btn" aria-label="download">
+                        <button class="btn fact-btn" id="fact-download" aria-label="download">
                             <box-icon name='download' class="icon download fact-download"></box-icon>
                         </button>
                     </div> 
@@ -197,7 +212,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn pn-btn" id="pn-download-btn" aria-label="download">
+                        <button class="btn pn-btn" id="pn-download" aria-label="download">
                             <box-icon name='download' class="icon download pn-download"></box-icon>
                         </button>
                     </div> 
@@ -223,7 +238,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn rev-btn" id="rev-download-btn" aria-label="download">
+                        <button class="btn rev-btn" id="rev-download" aria-label="download">
                             <box-icon name='download' class="icon download rev-download"></box-icon>
                         </button>
                     </div> 
@@ -249,7 +264,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn lnr-btn" id="lnr-download-btn" aria-label="download">
+                        <button class="btn lnr-btn" id="lnr-download" aria-label="download">
                             <box-icon name='download' class="icon download lnr-download"></box-icon>
                         </button>
                     </div> 
@@ -383,8 +398,8 @@
             <div class="pdf-holder iso-pdf">
                 <div class="pdf-content iso-pdf-content">
                     <iframe id="iso-pdf-frame" class="pdf-frame iso-pdf-frame" src="pdf/isogram.pdf"></iframe>
-                    <div class="download-holder iso-download-holder">
-                        <button class="btn iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download">
+                    <div class="download-holder iso-download-holder" id="iso-download-holder">
+                        <button class="btn iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download" type="button">
                             <a href="pdf/isogram.pdf" download="isogram.pdf">
                                 <box-icon name='download' class="icon download iso-download" id="iso-download"></box-icon>
                             </a>
@@ -803,6 +818,7 @@
 
 
 <script src="js/main.js"></script>
+<script src="js/clock.js"></script>
 <script src="js/iso.js"></script>
 <script src="js/pal.js"></script>
 <script src="js/two.js"></script>

@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
     function hidePalOutcome() {
         palOutcome.style.display ="none";
     }
+    function showPalOutcome() {
+        palOutcome.style.display ="block";
+        palOutcome.style.color = "#FFA500";
+    }
+
+    
 
     function clearPalForm() {
         setTimeout(function() {
@@ -56,13 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // 
         let revNewStr = newStrArr.reverse().join('');
         if( newStr === revNewStr ) {
-            palOutcome.style.display = "block";
-            palOutcome.style.color = "#00FF2A";
-            palOutcome.innerHTML ="' " + `${words}`+ " '"  + " is a palindrome"; 
+            showPalOutcome();
+            palOutcome.innerHTML ="' " + `${words}`+ " '"  + " IS a palindrome"; 
         }else {
-            palOutcome.style.display = "block";
-            palOutcome.style.color = "#FFA500";
-            palOutcome.innerHTML = "' " + `${words}`+ " '"  +  " is not palindrome";
+            showPalOutcome();
+            palOutcome.innerHTML = "' " + `${words}`+ " '"  +  " is NOT a palindrome";
         }
         clearPalForm()
     }

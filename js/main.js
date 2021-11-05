@@ -2,6 +2,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     // DOM Element
     const cardHolder = document.getElementById('dashboard-holder');
+    // const btnHome = document.querySelectorAll('btn-home');
+
+    // function showHome() {
+    //     cardHolder.style.display = 'block';
+    //     isoDash.style.display = 'none';
+    //     palDash.style.display = 'none';
+    //     twoDash.style.display = 'none';
+    //     spinDash.style.display = 'none';
+    //     llwDash.style.display = 'none';
+    //     factDash.style.display = 'none';
+    //     palNumDash.style.display = 'none';  
+    //     revIntDash.style.display = 'none';
+    //     lnsDash.style.display = 'none';  
+    // }
+
 
     // Isogram Container
     const isoDash = document.getElementById('iso-container');

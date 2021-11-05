@@ -69,8 +69,9 @@ body {
     width: 83.5%;
     min-width: 340px;
     height: 650px;
+    max-height: 750px;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -470,6 +471,9 @@ form {
 .sw-intro {
     font-size: 24px;
     margin-top: 0;
+}
+.fact-intro {
+    padding: auto 10px;
 }
 .fact-intro,
 .fact-text-field,
@@ -1200,9 +1204,9 @@ form {
         height: 48%;
         margin: 0 auto;
     }
-    .pdf-holder {
-        height: 50%;
-        /* margin: 0 auto; */
+    .pdf-content {
+        height: 90%;
+        
     }
     .pal-form,
     .two-form,

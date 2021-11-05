@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function hideRevIntOutcome() {
         revIntOutcome.style.display ="none";
     }
-
+    // Showing the output text
+    function showRevIntOutcome() {
+        revIntOutcome.style.display ="block";
+        revIntOutcome.style.color = "#e0e5ec";
+    }
     // Clearing the form
     function clearRevIntForm() {
         setTimeout(function() {
@@ -49,47 +53,42 @@ document.addEventListener("DOMContentLoaded", () => {
         // Get the input value
         var num = document.getElementById("rev-int-text").value;
 
-        
-
         // Check if the input is empty
         let intArr =  parseInt(num.toString().split("").reverse().join(""))
         
-        console.log(intArr);
+        // regex to check for non whole numbers
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
+        
+        // check for input conditions and challenge constraints
         if (num === "") {
-            revIntOutcome.style.display = "block";
-            revIntOutcome.style.color = "#e0e5ec";
+            showRevIntOutcome();
             revIntOutcome.innerHTML = "Please enter a number";
-            clearRevIntForm();
+            
         } else if (num == "0"){
-            revIntOutcome.style.display = "block";
-            revIntOutcome.style.color = "#e0e5ec";
+            showRevIntOutcome();
             revIntOutcome.innerHTML = `${num}`;
-            clearRevIntForm();
+            
         }else if (decimalCheck.test(num)) {
-            revIntOutcome.style.display = "block";
-            revIntOutcome.style.color = "#e0e5ec";
+            showRevIntOutcome();
             revIntOutcome.innerHTML = `${num}`+ " is not an integer";
-            clearRevIntForm();
+           
 
         } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
-            revIntOutcome.style.display = "block";
-            revIntOutcome.style.color = "#e0e5ec";
+            showRevIntOutcome();
             revIntOutcome.innerHTML = `${num}`+ " is not within the constraints";
-            clearRevIntForm();
+            
         }else if(num < 0 ) {
             // Consider -/+ inputs using
             let negInt = -Math.abs(intArr)
-            revIntOutcome.style.display = "block";
-            revIntOutcome.style.color = "#e0e5ec";
-            revIntOutcome.innerHTML = `${negInt}`;
-            clearRevIntForm();
-        }else {
-            revIntOutcome.style.display = "block";
-            revIntOutcome.style.color = "#e0e5ec";
-            revIntOutcome.innerHTML = `${intArr}`;
-            clearRevIntForm();
-        }
 
+            showRevIntOutcome();
+            revIntOutcome.innerHTML = `${negInt}`;
+            
+        }else {
+            showRevIntOutcome
+            revIntOutcome.innerHTML = `${intArr}`;
+            
+        }
+        clearRevIntForm();
     }
 });

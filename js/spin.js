@@ -34,7 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function hideSwOutcome() {
         swOutcome.style.display ="none";
     }
-
+    function showSwOutcome() {
+        swOutcome.style.display ="block";
+        swOutcome.style.color = "#e0e5ec";
+    }
     function clearSwForm() {
         setTimeout(function() {
             swForm.reset();
@@ -49,20 +52,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         function doFirst(str, num) {
             if (num == "0" && str == "") {
+                showSwOutcome();
                 swOutcome.innerHTML = "Please enter a word/words and a number greater than 0";
-                swOutcome.style.color = "#e0e5ec";
-                swOutcome.style.display = "block";
+                
                 // clearSwForm();
            
             }else if(num =="0" && str != "") {
+                showSwOutcome();
                 swOutcome.innerHTML = "Please enter a number greater than 0";
-                swOutcome.style.color = "#e0e5ec";
-                swOutcome.style.display = "block";
+                
                 // clearSwForm();
             }else if ( num != "0" && str == "") {
+                showSwOutcome();
                 swOutcome.innerHTML = "Please enter a word/words";
-                swOutcome.style.color = "#e0e5ec";
-                swOutcome.style.display = "block";
+                
                 // clearSwForm();
 
             }else{
@@ -88,13 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 if(specialChar.test(str) || numbers.test(str)) {
                     // if yes, user gets prompted to enter the correct data type
                     swOutcome.innerHTML = "Enter only letters in the text field";
-                    swOutcome.style.color = "#e0e5ec";
-                    swOutcome.style.display = "block";
+                    showSwOutcome();
+
                 } else if (letters.test(num) || specialChar.test(num)) {
                     // if yes, user gets prompted to enter the correct data type
                     swOutcome.innerHTML = "Enter only numbers in the number field";
-                    swOutcome.style.color = "#e0e5ec";
-                    swOutcome.style.display = "block";
+                    showSwOutcome();
                 } else{
                     //otherwise, call spin words function
                     spinWords()
@@ -111,13 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
             let words = document.getElementById("sw-text").value.toLowerCase().split(" ");
             let userNum = document.getElementById("sw-num").value;
             
-
-            // confirm that the input is now an array
-            console.log(userNum)
-            
-            //get the length of the array 
-            // let lengthOfWords = words.length
-            // console.log(lengthOfWords)
 
             //using a for loop, check each word, i, in the array
             for(let i = 0; i < words.length; i++){

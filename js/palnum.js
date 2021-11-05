@@ -52,10 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function isPalNum(num) {
         var num = document.getElementById("pn-text").value;
         let intArr =  parseInt(num.toString().split("").reverse().join(""))
-        // console.log(num);
-        // let integer = Number(num);
-        console.log(intArr);
+        
+        // regex for non-whole numbers
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
+    
+        // check for input conditions and challenge constraints
         if (decimalCheck.test(num)) {
             showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is NOT an integer";

@@ -30,6 +30,10 @@ const buttonReset = document.getElementById("reset-form");
 function hideOutcome() {
     outcome.style.display ="none";
 }
+function showOutcome() {
+    outcome.style.display ="block";
+    outcome.style.color = "#e0e5ec";
+}
 
 // Reset Form
 function clearTsForm() {
@@ -59,9 +63,9 @@ function checkTsInput(arr) {
         if(specialCases.test(arr)) {
 
             // if yes, user gets prompted to enter the correct data type
+            showOutcome();
             outcome.innerHTML = "Enter only numbers";
-            outcome.style.color = "#e0e5ec";
-            outcome.style.display = "block";
+            
  
         }else{
             //otherwise, check if target is a number
@@ -79,9 +83,9 @@ function checkTarget(target) {
         
     // if the target contains letters or special characters
     if(specialCases.test(target)) {
+        showOutcome();
         outcome.innerHTML = "Enter a number";
-        outcome.style.color = "#e0e5ec";
-        outcome.style.display = "block";
+        
     } else{
     //otherwise, call length of twoSum function
         twoSum()
@@ -121,16 +125,14 @@ function twoSum(arr, target) {
             let indexTwo = i;
             
             // the two sums were found
-            outcome.style.display = "block";
-            outcome.style.color = "#e0e5ec";
+            showOutcome();
             outcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
             break;
         }else { 
             // the two sums were not found
             numsObj[numDifference] = i
             let newArr = arr.join(", ")
-            outcome.style.display = "block";
-            outcome.style.color = "#e0e5ec";
+            showOutcome();
             outcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
             
         }

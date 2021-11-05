@@ -29,10 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
     });
     buttonCheckStr.addEventListener('click', checkLsInput);
-
+    // reset the output 
     function hideLsOutcome() {
         lnsOutcome.style.display ="none";
     }
+    // show the output text
     function showLsOutcome() {
         lnsOutcome.style.display ="block";
         lnsOutcome.style.color = "#e0e5ec";
