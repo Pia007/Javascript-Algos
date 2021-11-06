@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
+    
+    // Menu Elements
     const menuIconOne = document.getElementById('icon-1');
     const menuIconTwo = document.getElementById('icon-2');
     const menuIconThree = document.getElementById('icon-3');
