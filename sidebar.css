@@ -56,21 +56,25 @@ body {
 }
 
 .sidebar {
-    width: 7%;
-    height: 23vh;
-    margin: 10px 0;
+    width: 70px;
+    height: 30vh;
+    margin: 15px;
     font-size: 82.5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 3;
 }
+/* .sidebar {
+    display: none;
+} */
 .sidebar-content {
     width: 70px;
-    /* height: 72px; */
+    height: 300px;
    
     display: grid;
     grid-template-rows: 4, 25%;
-    
+    background: var(--main-bg);
     border: var(main-bg);
     box-shadow: var(--header-shadow);
     border-radius: 8px;
@@ -83,7 +87,38 @@ body {
     height : 50px;
     margin: auto;
     border: none;
-    
+    background: var(--main-bg);
     box-shadow: var(--header-shadow);
     border-radius: 8px;
+}
+.side-btn {
+    fill:var(--js-header)
+}
+.btn-side-text {
+    color: var(--js-header);
+    font-size: 18px;
+}
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 50px;
+        height: 100vh;
+        margin: 8px;
+        margin-top: 10px;
+        
+        /* font-size: 100%; */
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+    }
+    .sidebar-content {
+        width: 50px;
+        height: 200px;
+        margin-top: 8px;
+       
+    } 
+    .sb-btn {
+        width: 35px;
+        height : 35px;
+        
+    }  
 }

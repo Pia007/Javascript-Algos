@@ -944,6 +944,7 @@ form {
 }
 .rev-int-pdf-content {
     height: 90%;
+    
     border-radius: 10px;
     background: #e0e5ec;
     box-shadow: 10px 10px 32px #5a5c5e,

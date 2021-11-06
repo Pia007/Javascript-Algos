@@ -45,16 +45,32 @@ body {
     flex-direction: row;
 }
 .dash-holder {
-    width: 85%;
-    margin:auto;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    /* margin-left: 0; */
     overflow: hidden;
     
 }
+.dash-grid-holder {
+    width: 90%;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; */
+    margin: 0 auto;
+    
+    overflow: hidden;
+
+}
 .dashboard {
-    width: 80%;
+    width: 90%;
     height: 924px;
     display: grid;
     /* This ensures responsiveness */
+    
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     /* /This ensures responsiveness */
     gap: 20px;

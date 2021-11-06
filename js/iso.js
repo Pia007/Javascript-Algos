@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cardHolder = document.getElementById('dashboard-holder');
+    const cardHolder = document.getElementById('dg-holder');
     
     // Header Elements
     const menu = document.getElementById('menu-icon');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
+    const mobileTitle = document.getElementById('mb-header-title');
+    const menuIconOne = document.getElementById('icon-1');
+    const menuIconTwo = document.getElementById('icon-2');
+    const menuIconThree = document.getElementById('icon-3');
+    const menuText = document.getElementById('sb-btn-text');
     
     // Isogram Container
     const isoDash = document.getElementById('iso-container');
@@ -19,6 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.style.fill = '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9'; 
+        mobileTitle.style.color= '#c32abbc9'; 
+        menuIconOne.style.fill = '#c32abbc9';
+        menuIconTwo.style.fill = '#c32abbc9';
+        menuIconThree.style.fill = '#c32abbc9';
+
+        menuText.style.color= '#c32abbc9'; 
         
 
     }
