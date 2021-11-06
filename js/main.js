@@ -1,21 +1,13 @@
 // HOME PAGE 
 document.addEventListener("DOMContentLoaded", () => {
-    // DOM Element
+    // DOM ELEMENTS
     const cardHolder = document.getElementById('dashboard-holder');
     // const btnHome = document.querySelectorAll('btn-home');
 
-    // function showHome() {
-    //     cardHolder.style.display = 'block';
-    //     isoDash.style.display = 'none';
-    //     palDash.style.display = 'none';
-    //     twoDash.style.display = 'none';
-    //     spinDash.style.display = 'none';
-    //     llwDash.style.display = 'none';
-    //     factDash.style.display = 'none';
-    //     palNumDash.style.display = 'none';  
-    //     revIntDash.style.display = 'none';
-    //     lnsDash.style.display = 'none';  
-    // }
+    // Header Elements
+    const menu = document.getElementById('menu-icon');
+    const title = document.getElementById('header-title');
+    const clock = document.getElementById('clock');
 
 
     // Isogram Container
@@ -26,7 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // isoDash.style.display = 'none';
     function showIso() {
         isoDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#37A4C8';  
+        title.style.color= '#37A4C8';  
+        clock.style.color= '#37A4C8';
         
     }
     isoBtn.addEventListener('click', function(e) {
@@ -43,7 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Open Palindrome Dashboard
     function showPal() {
         palDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none';
+        menu.style.fill = '#FFA500';  
+        title.style.color= '#FFA500';  
+        clock.style.color= '#FFA500';
         
     }
     palBtn.addEventListener('click', function(e) {
@@ -60,7 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Open Two Sum Dashboard
     function showTwo() {
         twoDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#5b0eeb';  
+        title.style.color= '#5b0eeb';  
+        clock.style.color= '#5b0eeb'; 
         
     }
     twoBtn.addEventListener('click', function(e) {
@@ -78,7 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Open Spin Words Dashboard
     function showSpin() {
         spinDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#f89898';  
+        title.style.color= '#f89898';  
+        clock.style.color= '#f89898'; 
+         
         
     }
     spinBtn.addEventListener('click', function(e) {
@@ -96,7 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Open Length of Longest Word Dashboard
     function showLength() {
         llwDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#35c048';  
+        title.style.color= '#35c048';  
+        clock.style.color= '#35c048';  
         
     }
     llwBtn.addEventListener('click', function(e) {
@@ -114,7 +122,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Factorialize a Number Dashboard
     function showFact() {
         factDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none';
+        menu.style.fill = '#eb0e96';  
+        title.style.color= '#eb0e96';  
+        clock.style.color= '#eb0e96';   
         
     }
     factBtn.addEventListener('click', function(e) {
@@ -131,7 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Palindrome Number Dashboard
     function showPalNum() {
         palNumDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#0b7c739d';  
+        title.style.color= '#0b7c739d';  
+        clock.style.color= '#0b7c739d';  
         
     }
     palNumBtn.addEventListener('click', function(e) {
@@ -149,7 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reverse Integer Dashboard
     function showRevInt() {
         revIntDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#8790e0';  
+        title.style.color= '#8790e0';  
+        clock.style.color= '#8790e0';   
         
     }
     revIntBtn.addEventListener('click', function(e) {
@@ -167,7 +184,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Longest Non-Repeating Substring Dashboard
     function showLns() {
         lnsDash.style.display = 'block';
-        cardHolder.style.display = 'none';  
+        cardHolder.style.display = 'none'; 
+        menu.style.fill = '#ff0000';  
+        title.style.color= '#ff0000';  
+        clock.style.color= '#ff0000'; 
         
     }
     lnsBtn.addEventListener('click', function(e) {

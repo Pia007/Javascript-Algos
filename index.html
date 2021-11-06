@@ -9,38 +9,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="clock.css" />
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+    <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="sidebar.css" />
     <link rel="stylesheet" href="iso.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <title>JavaScript Algorithms | Pia Torain</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div class="header-info-holder">
             <div class="hd-holder hd-btn-holder">
-                <button  class="header-btn" aria-label="menu-button">
-                    <box-icon name='menu' class="header-menu" id="menu-icon" aria-label="menu"></box-icon>
+                <button  class="header-btn" id="menu-btn" aria-label="menu-button">
+                    <box-icon name='menu' class="header-menu" id="menu-icon" ></box-icon>
                 </button>
             </div>
             <div class="hd-holder hd-title-holder">
-                <p id="header-title" class="hd-title">JavaScript Algorithms</p>
+                <p id="header-title" class="hd-title">JavaScript FUN</p>
                 <p id="mb-header-title" class="hd-title">Js Algos</p>
             </div>
             <div class="hd-holder clock-holder">
                 <div id="clock" class="hd-clock"></div>
             </div>
         </div>
-        
     </header>
-    <!-- Main Container -->
+    <!-- /HEADER -->
+    <div class="main-body">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <!-- <div class="sb-content-holder box-1"> -->
+                <button class="sb-btn">
+                    <box-icon name='question-mark'></box-icon>
+                </button>
+            <!-- </div>
+            <div class="sb-content-holder box-2"> -->
+                <button class="sb-btn">
+                    <box-icon name='info-circle' ></box-icon>
+                </button>
+            <!-- </div>
+            <div class="sb-content-holder box-3"> -->
+                <button class="sb-btn">
+                    <box-icon name='info-circle' type='solid' ></box-icon>
+                </button>
+            <!-- </div>
+            <div class="sb-content-holder box-4"> -->
+                <button class="sb-btn">
+                    Dev
+                </button>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- /SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    
     <div class="dash-holder" id="dashboard-holder">
 
-        <!-- Dashboard -->
+        <!-- GRID CARDS -->
         <div class="dashboard" id="dash">
 
-            <!-- ISOGRAM CARD -->
+            <!-- Isogram Card -->
             <div class="algo-card iso">
                 <div class="algo-info">
                     <div class="title">
@@ -52,10 +84,10 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <div class="btn iso-btn" id="iso-download" aria-label="download">
+                        <button class="btn iso-btn" id="iso-card-download" aria-label="download">
                             <!-- <i class='bx bx-download icon iso-icon' ></i> -->
                             <box-icon name='download' class="icon download iso-download" ></box-icon>
-                        </div>
+                        </button>
                     </div> 
                     <div class="play-holder">
                         <button class="btn iso-btn" id="iso-play-btn" aria-label="play">
@@ -66,9 +98,9 @@
             </div>
 
             
-            <!-- /ISOGRAM CARD-->
+            <!-- /Isogram Card-->
 
-            <!-- Palindrome -->
+            <!-- Palindrome Card-->
             <div class="algo-card pal">
                 <div class="algo-info">
                     <div class="title">
@@ -82,7 +114,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn pal-btn" id="pal-download" aria-label="download">
+                        <button class="btn pal-btn" id="pal-card-download" aria-label="download">
                             <box-icon name='download' class="icon download pal-download" ></box-icon>
                         </button>
                     </div> 
@@ -93,9 +125,9 @@
                     </div>
                 </div>
             </div>
-            <!-- /Palindrome -->
+            <!-- /Palindrome Card-->
             
-            <!-- Two Sum -->
+            <!-- Two Sum Card-->
             <div class="algo-card two">
                 <div class="algo-info">
                     <div class="title">
@@ -108,7 +140,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn two-btn" id="two-download" aria-label="download">
+                        <button class="btn two-btn" id="two-card-download" aria-label="download">
                             <box-icon name='download' class="icon download two-download"></box-icon>
                         </button>
                     </div> 
@@ -119,9 +151,9 @@
                     </div>
                 </div>
             </div>
-            <!-- /Two Sum -->
+            <!-- /Two Sum Card-->
 
-            <!-- SpinWords  -->
+            <!-- SpinWords  Card-->
             <div class="algo-card spin">
                 <div class="algo-info">
                     <div class="title">
@@ -133,7 +165,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn spin-btn" id="spin-download" aria-label="download">
+                        <button class="btn spin-btn" id="spin-card-download" aria-label="download">
                             <box-icon name='download' class="icon download spin-download" ></box-icon>
                         </button>
                     </div> 
@@ -145,9 +177,9 @@
                     
                 </div>
             </div>
-            <!-- /SpinWords  -->
+            <!-- /SpinWords  Card-->
 
-            <!-- Length of Longest Word -->
+            <!-- Length of Longest Word Card-->
             <div class="algo-card llw">
                 <div class="algo-info">
                     <div class="title">
@@ -159,7 +191,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn llw-btn" id="llw-download" aria-label="download">
+                        <button class="btn llw-btn" id="llw-card-download" aria-label="download">
                             <box-icon name='download' class="icon download llw-download"></box-icon>
                         </button>
                     </div> 
@@ -171,7 +203,7 @@
                     
                 </div>
             </div>
-            <!-- /Length of Longest Word -->
+            <!-- /Length of Longest Word Card-->
 
 
             <!-- Factorialize Card-->
@@ -186,7 +218,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn fact-btn" id="fact-download" aria-label="download">
+                        <button class="btn fact-btn" id="fact-card-download" aria-label="download">
                             <box-icon name='download' class="icon download fact-download"></box-icon>
                         </button>
                     </div> 
@@ -200,7 +232,7 @@
             </div>
             <!-- /Factorialize Card-->
             
-            <!-- Palindrome Number-->
+            <!-- Palindrome Number Card-->
             <div class="algo-card pn">
                 <div class="algo-info">
                     <div class="title">
@@ -212,7 +244,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn pn-btn" id="pn-download" aria-label="download">
+                        <button class="btn pn-btn" id="pn-card-download" aria-label="download">
                             <box-icon name='download' class="icon download pn-download"></box-icon>
                         </button>
                     </div> 
@@ -224,9 +256,9 @@
                     
                 </div>
             </div>
-            <!-- /Palindrome Number-->
+            <!-- /Palindrome Number Card-->
 
-            <!-- Reverse An Integer -->
+            <!-- Reverse An Integer Card-->
             <div class="algo-card rev">
                 <div class="algo-info">
                     <div class="title">
@@ -238,7 +270,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn rev-btn" id="rev-download" aria-label="download">
+                        <button class="btn rev-btn" id="rev-card-download" aria-label="download">
                             <box-icon name='download' class="icon download rev-download"></box-icon>
                         </button>
                     </div> 
@@ -250,9 +282,9 @@
                     
                 </div>
             </div>
-            <!-- /Reverse An Integer -->
+            <!-- /Reverse An Integer Card -->
 
-            <!-- Longest Non-Repeating Substring -->
+            <!-- Longest Non-Repeating Substring Card-->
             <div class="algo-card lnr">
                 <div class="algo-info">
                     <div class="title">
@@ -264,7 +296,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn lnr-btn" id="lnr-download" aria-label="download">
+                        <button class="btn lnr-btn" id="lnr-card-download" aria-label="download">
                             <box-icon name='download' class="icon download lnr-download"></box-icon>
                         </button>
                     </div> 
@@ -275,9 +307,9 @@
                     </div>
                 </div>
             </div>
-            <!-- /Longest Non-Repeating Substring -->
+            <!-- /Longest Non-Repeating Substring Card-->
 
-            <!-- Extra Card One -->
+            <!-- Extra Card One Card-->
             <div class="algo-card one">
                 <div class="algo-info">
                     <div class="title">
@@ -289,7 +321,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn one-btn" id="one-download" aria-label="download">
+                        <button class="btn one-btn" id="one-card-download" aria-label="download">
                             <box-icon name='download' class="icon download one-download"></box-icon>
                         </button>
                     </div> 
@@ -300,9 +332,9 @@
                     </div>
                 </div>
             </div>
-            <!-- /Extra Card One -->
+            <!-- /Extra Card One Card-->
 
-            <!-- Extra Card Two-->
+            <!-- Extra Card Two Card-->
             <div class="algo-card btwo">
                 <div class="algo-info">
                     <div class="title">
@@ -314,7 +346,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn btwo-btn" id="btwo-download" aria-label="download">
+                        <button class="btn btwo-btn" id="btwo-card-download" aria-label="download">
                             <box-icon name='download' class="icon download btwo-download"></box-icon>
                         </button>
                     </div> 
@@ -325,9 +357,9 @@
                     </div>
                 </div>
             </div>
-            <!-- /Extra Card Two -->
+            <!-- /Extra Card Two Card-->
 
-            <!-- Extra Card Three -->
+            <!-- Extra Card Three Card-->
             <div class="algo-card three">
                 <div class="algo-info">
                     <div class="title">
@@ -339,7 +371,7 @@
                 </div>
                 <div class="btn-holder">
                     <div class="download-holder">
-                        <button class="btn three-btn" id="three-download" aria-label="download">
+                        <button class="btn three-btn" id="three-card-download" aria-label="download">
                             <box-icon name='download' class="icon download three-download"></box-icon>
                         </button>
                     </div> 
@@ -351,14 +383,13 @@
                     </div>
                 </div>
             </div>
-            <!-- /Extra Card Three -->
+            <!-- /Extra Card Three Card-->
         </div>
-        <!-- /Dashboard -->
+        <!-- /GRID CARDS-->
     </div>
-    <!-- /Main Container -->
+    
 
-
-    <!-- DASHBOARDS -->
+    <!-- ALGORITHMS -->
     <!-- Isogram Dashboard -->
     <div id="iso-container" class="container iso-container">
         <div class="home-btn-holder">
@@ -400,7 +431,7 @@
                     <iframe id="iso-pdf-frame" class="pdf-frame iso-pdf-frame" src="pdf/isogram.pdf"></iframe>
                     <div class="download-holder iso-download-holder" id="iso-download-holder">
                         <button class="btn iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download" type="button">
-                            <a href="pdf/isogram.pdf" download="isogram.pdf">
+                            <a href="pdf/isogram.pdf" download="isogram.pdf" alt="download isogram file">
                                 <box-icon name='download' class="icon download iso-download" id="iso-download"></box-icon>
                             </a>
                         </button>
@@ -449,7 +480,7 @@
                     <iframe id="pal-pdf-frame" class="pdf-frame pal-pdf-frame" src="pdf/palindrome.pdf"></iframe>
                     <div class="download-holder pal-download-holder">
                         <button class="btn pal-btn pal-pdf-btn" id="pal-pdf-download-btn" aria-label="download">
-                            <a href="pdf/palindrome.pdf" download="palindrome.pdf">
+                            <a href="pdf/palindrome.pdf" download="palindrome.pdf" alt="download palindrome file">
                                 <box-icon id="pal-download" name='download' class="icon download" ></box-icon>
                             </a>
                         </button>
@@ -504,7 +535,7 @@
                     <iframe id="ts-pdf-frame" class="pdf-frame ts-pdf-frame" src="pdf/twoSum.pdf"></iframe>
                     <div class="download-holder ts-download-holder">
                         <button class="btn ts-btn ts-pdf-btn" id="ts-pdf-download-btn" aria-label="download">
-                            <a href="pdf/twoSum.pdf" download="two-sum.pdf">
+                            <a href="pdf/twoSum.pdf" download="two-sum.pdf" alt="download two some file">
                                 <box-icon id="ts-pdf-download" name='download' class="icon download " ></box-icon>
                             </a>
                         </button>
@@ -559,7 +590,7 @@
                     <iframe id="sw-pdf-frame" class="pdf-frame sw-pdf-frame" src="pdf/spinwords.pdf"></iframe>
                     <div class="download-holder sw-download-holder">
                         <button class="btn sw-btn sw-pdf-btn" id="sw-pdf-download-btn" aria-label="download">
-                            <a href="pdf/spinwords.pdf" download="spinwords.pdf">
+                            <a href="pdf/spinwords.pdf" download="spinwords.pdf" alt="download spin words file">
                                 <box-icon id="sw-pdf-download" name='download' class="icon download sw-download" ></box-icon>
                             </a>
                         </button>
@@ -608,7 +639,7 @@
                     <iframe id="lw-pdf-frame" class="pdf-frame lw-pdf-frame" src="pdf/LongestLengthWord.pdf"></iframe>
                     <div class="download-holder lw-download-holder">
                         <button class="btn lw-btn lw-pdf-btn" id="lw-pdf-download-btn" aria-label="download">
-                            <a href="pdf/LongestLengthWord.pdf" download="lengthLongestWord.pdf">
+                            <a href="pdf/LongestLengthWord.pdf" download="lengthLongestWord.pdf" alt="download length of longest word file">
                                 <box-icon id="lw-pdf-download" name='download' class="icon download lw-download" ></box-icon>
                             </a>
                         </button>
@@ -658,7 +689,7 @@
                     <iframe id="fact-pdf-frame" class="pdf-frame fact-pdf-frame" src="pdf/factorial.pdf"></iframe>
                     <div class="download-holder fact-download-holder">
                         <button class="btn fact-btn fact-pdf-btn" id="fact-pdf-download-btn" aria-label="download">
-                            <a href="pdf/factorial.pdf" download="factorial.pdf">
+                            <a href="pdf/factorial.pdf" download="factorial.pdf" alt="download factorialize file">
                                 <box-icon id="fact-pdf-download" name='download' class="icon download fact-download" ></box-icon>
                             </a>
                         </button>
@@ -708,7 +739,7 @@
                     <iframe id="pn-pdf-frame" class="pdf-frame pn-pdf-frame" src="pdf/palindromeNum.pdf"></iframe>
                     <div class="download-holder pn-download-holder">
                         <button class="btn pn-btn pn-pdf-btn" id="pn-pdf-download-btn" aria-label="download">
-                            <a href="pdf/palindromeNum.pdf" download="palindromeNum.pdf">
+                            <a href="pdf/palindromeNum.pdf" download="palindromeNum.pdf" alt="download palindrome number file">
                                 <box-icon id="pn-pdf-download" name='download' class="icon download pn-download" ></box-icon>
                             </a>
                         </button>
@@ -756,7 +787,7 @@
                     <iframe id="rev-int-pdf-frame" class="pdf-frame rev-int-pdf-frame" src="pdf/reverseInt.pdf"></iframe>
                     <div class="download-holder rev-int-download-holder">
                         <button class="btn rev-int-btn rev-int-pdf-btn" id="rev-int-pdf-download-btn" aria-label="download">
-                            <a href="pdf/reverseInt.pdf" download="reverseInt.pdf">
+                            <a href="pdf/reverseInt.pdf" download="reverseInt.pdf" alt="download reverse integer file">
                                 <box-icon id="rev-int-pdf-download" name='download' class="icon download rev-int-download" ></box-icon>
                             </a>
                         </button>
@@ -804,7 +835,7 @@
                     <iframe id="lns-pdf-frame" class="pdf-frame lns-pdf-frame" src="pdf/longestNonRepeating.pdf"></iframe>
                     <div class="download-holder lns-download-holder">
                         <button class="btn lns-btn lns-pdf-btn" id="lns-pdf-download-btn" aria-label="download">
-                            <a href="pdf/longestNonRepeating.pdf" download="longestNonRepeating.pdf">
+                            <a href="pdf/longestNonRepeating.pdf" download="longestNonRepeating.pdf" alt="download longest non-repeating substring file">
                                 <box-icon id="lns-pdf-download" name='download' class="icon download lns-download" ></box-icon>
                             </a>
                         </button>
@@ -813,8 +844,11 @@
             </div>
         </div>
     </div>
-    
     <!-- /Longest Non-Repeating Substring Dashboard-->
+
+    <!-- /ALGORITHMS -->
+    </div>
+    <!-- /MAIN CONTENT -->
 
 
 <script src="js/main.js"></script>

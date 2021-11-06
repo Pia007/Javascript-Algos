@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // DOM Element
+    // Header Elements
+    const menu = document.getElementById('menu-icon');
+    const title = document.getElementById('header-title');
+    const clock = document.getElementById('clock');
+    
+    // Body Element
     const cardHolder = document.getElementById('dashboard-holder');
     const twoHomeBtn = document.getElementById('ts-btn-close');
     
@@ -10,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function showHome() {
         twoDash.style.display = "none";
         cardHolder.style.display = "block";
+        menu.style.fill = '#c32abbc9';  
+        title.style.color= '#c32abbc9';  
+        clock.style.color= '#c32abbc9';
 
     }
     twoHomeBtn.addEventListener('click', function(e) {

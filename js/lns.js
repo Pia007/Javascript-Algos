@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+     // Header Elements
+     const menu = document.getElementById('menu-icon');
+     const title = document.getElementById('header-title');
+     const clock = document.getElementById('clock');
+
     // Cardholder
     const cardHolder = document.getElementById('dashboard-holder');
 
@@ -10,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function showHome() {
         lnsDash.style.display = "none";
         cardHolder.style.display = "block";
+        menu.style.fill = '#c32abbc9';  
+        title.style.color= '#c32abbc9';  
+        clock.style.color= '#c32abbc9';
 
     }
     lnsHomeBtn.addEventListener('click', function(e) {

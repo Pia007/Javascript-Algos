@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     // DOM Element
+    // Header Elements
+    const menu = document.getElementById('menu-icon');
+    const title = document.getElementById('header-title');
+    const clock = document.getElementById('clock');
+
+    // Body Elements
     const cardHolder = document.getElementById('dashboard-holder');
     const llwHomeBtn = document.getElementById('lw-btn-close');
     
@@ -10,6 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function showHome() {
         llwDash.style.display = "none";
         cardHolder.style.display = "block";
+        menu.style.fill = '#c32abbc9';  
+        title.style.color= '#c32abbc9';  
+        clock.style.color= '#c32abbc9';
 
     }
     llwHomeBtn.addEventListener('click', function(e) {

@@ -21,6 +21,8 @@
     --btwo-color: #f36c36ed;
     --three-color: #05c0c7;
 
+    --js-header: #c32abbc9;
+
 }
 * {
     margin: 0;
@@ -35,6 +37,12 @@ body {
     color: var(--js-black);
     background:  var(--main-bg);
     overflow: hidden;
+}
+.main-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
 }
 .dash-holder {
     width: 85%;
@@ -67,6 +75,10 @@ body {
     overflow-y: scroll;
 
 }
+
+/* .sidebar {
+    width: 6%;
+} */
 .algo-card {
     
     /* background: var(--card-bg); */
