@@ -60,10 +60,17 @@ header {
     font-size: 82.5%;
     display: flex;
     flex-direction: row;
+    z-index: 3;
+    /* position: fixed; */
    
 }
 .header-info-holder {
-    width: 98%;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+}
+.hd-content {
+    width: 95%;
     height: 90%;
     margin: 10px auto;
     display: flex;
@@ -75,7 +82,7 @@ header {
     box-shadow: var(--header-shadow);
     /* transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81); */
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -99,22 +106,23 @@ header {
     box-shadow: var(--header-shadow);
 }
 .header-btn:hover {
-    box-shadow: var(--lt-active-btn);
+    /* box-shadow: var(--lt-active-btn); */
     opacity: 0.8;
 }
 .header-btn:active {
-    background: linear-gradient(145deg, #caced4, #f0f5fd);
-    box-shadow:  17px 17px 33px #5a5c5e,
-             -17px -17px 33px #ffffff;
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  5px 5px 10px #5a5c5e,
+        -5px -5px 10px #ffffff;
 }
 
-.header-menu {
-    fill: var(--js-header);
+.header-info {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    color: var(--js-header);
 }
-.header-menu {
-    height: 35px;
-    width: 40px;
-    margin: 6px auto;
+.header-info:hover {
+    opacity: 80%;
 }
 
 .hd-title-holder {
@@ -127,7 +135,7 @@ header {
     display: none;
 }
 .hd-title {
-    width: 90%;
+    width: 95%;
     text-align: center;
     color: var(--js-header);
     font-size: 24px;
@@ -161,10 +169,25 @@ header {
         font-size: 16px;
     }
 } */
-@media (max-width: 850px) {
+@media (max-width: 875px) {
+    /* .hd-btn-holder {
+        width: 25%;
+    } */
+    .hd-title-holder {
+        width: 100%; 
+    } 
+    .header-info {
+        font-size: 20px;
+    }
+    /* .header-info {
+        font-size: 24px;
+    } */
     .hd-title{
         font-size: 20px;
     } 
+    /* .clock-holder {
+        width: 20%;
+    } */
     .hd-clock {
         font-size: 16px;
 
@@ -172,7 +195,11 @@ header {
        
     }
 }
-@media (max-width: 710px) {
+@media (max-width: 730px) {
+    .header-info {
+        font-size: 18px;
+        margin:  13px auto;
+    }
     .hd-title {
         font-size: 16px;
         margin: 15px auto;
@@ -185,8 +212,18 @@ header {
     }
 }
 @media (max-width: 600px) {
-    .hd-title {
+    .header-info-holder {
         width: 100%;
+    }
+    .hd-content {
+        width: 100%;
+    }
+    /* .header-btn {
+        width: 45px;
+
+    } */
+    .hd-title {
+        width: 75%;
         font-size: 15px;
         margin: 15px auto;
        

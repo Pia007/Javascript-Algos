@@ -22,17 +22,20 @@
     <!-- HEADER -->
     <header>
         <div class="header-info-holder">
-            <div class="hd-holder hd-btn-holder">
-                <button  class="header-btn" id="menu-btn" aria-label="menu-button">
-                    <box-icon name='menu' class="header-menu" id="menu-icon" ></box-icon>
-                </button>
-            </div>
-            <div class="hd-holder hd-title-holder">
-                <p id="header-title" class="hd-title">JavaScript Algorithms</p>
-                <p id="mb-header-title" class="hd-title">Js Algos</p>
-            </div>
-            <div class="hd-holder clock-holder">
-                <div id="clock" class="hd-clock"></div>
+            <div class="hd-content">
+                <div class="hd-holder hd-btn-holder">
+                    <button  class="header-btn" id="info-btn" aria-label="info-button">
+                        <i class="fas fa-info header-info" name='info' id="info-icon"></i>
+                        <!-- <box-icon name='menu' class="header-menu" id="menu-icon" ></box-icon> -->
+                    </button>
+                </div>
+                <div class="hd-holder hd-title-holder">
+                    <p id="header-title" class="hd-title">JavaScript Algorithms</p>
+                    <p id="mb-header-title" class="hd-title">Js Algos</p>
+                </div>
+                <div class="hd-holder clock-holder">
+                    <div id="clock" class="hd-clock"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -40,360 +43,332 @@
 
     <div class="main-body">
         <div class="dash-holder" id="dashboard-holder">
-            <!-- SIDEBAR -->
-            <div class="sidebar" id="s-bar">
-                <div class="sidebar-content">
-                    <!-- <div class="sb-content-holder box-1"> -->
-                        <button class="sb-btn" aria-label="about">
-                            <box-icon name='question-mark'class="side-btn" id="icon-1"></box-icon>
-                        </button>
-                    <!-- </div>
-                    <div class="sb-content-holder box-2"> -->
-                        <button class="sb-btn" aria-label="information">
-                            <box-icon name='info-circle'class="side-btn" id="icon-2"></box-icon>
-                        </button>
-                    <!-- </div>
-                    <div class="sb-content-holder box-3"> -->
-                        <button class="sb-btn" aria-label="instructions">
-                            <box-icon name='info-circle' type='solid' class="side-btn" id="icon-3"></box-icon>
-                        </button>
-                    <!-- </div>
-                    <div class="sb-content-holder box-4"> -->
-                        <button class="sb-btn btn-side-text" id="sb-btn-text" aria-label="about the developer">
-                            Dev
-                        </button>
-                    <!-- </div> -->
-                </div>
-            </div>
-            <!-- /SIDEBAR -->
+            
 
             <!-- MAIN CONTENT -->
-            
-        
-
-            <!-- GRID CARDS -->
-            <div class="dash-grid-holder" id="dg-holder">
-                <div class="dashboard" id="dash">
-                    <!-- Isogram Card -->
-                    <div class="algo-card iso">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>ISOGRAM</h3>
-                            </div>
-                            <div class="algo-text">
-                                <p class="info">An isogram is a word or sentence that has no repeating letters.</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn iso-btn" id="iso-card-download" aria-label="download">
-                                    <!-- <i class='bx bx-download icon iso-icon' ></i> -->
-                                    <box-icon name='download' class="icon download iso-download" ></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn iso-btn" id="iso-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play iso-play" ></box-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <!-- /Isogram Card-->
-
-                    <!-- Palindrome Card-->
-                    <div class="algo-card pal">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>PALINDROME</h3>
-                            </div>
+                <!-- GRID CARDS -->
+                <div class="dash-grid-holder" id="dg-holder">
+                    <div class="dashboard" id="dash">
+                        <!-- Isogram Card -->
+                        <div class="algo-card iso">
                             <div class="algo-info">
-                                <p class="info">A palidrome is a word or phrase that reads the same forwards
-                                    and backwards.
-                                </p>
+                                <div class="title">
+                                    <h3>ISOGRAM</h3>
+                                </div>
+                                <div class="algo-text">
+                                    <p class="info">An isogram is a word or sentence that has no repeating letters.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn iso-btn" id="iso-card-download" aria-label="download">
+                                        <!-- <i class='bx bx-download icon iso-icon' ></i> -->
+                                        <box-icon name='download' class="icon download iso-download" ></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn iso-btn" id="iso-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play iso-play" ></box-icon>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn pal-btn" id="pal-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download pal-download" ></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn pal-btn" id="pal-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play pal-play" ></box-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Palindrome Card-->
-                    
-                    <!-- Two Sum Card-->
-                    <div class="algo-card two">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>TWO SUM</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">Two Sum is a concept-based phrase, 
-                                    whereby the sum of two integers is equal to another integer. </p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn two-btn" id="two-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download two-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn two-btn" id="two-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play two-play"></box-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Two Sum Card-->
 
-                    <!-- SpinWords  Card-->
-                    <div class="algo-card spin">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>SPIN WORDS</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">A spin word/s is word/s that is reversed under certain conditions.</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn spin-btn" id="spin-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download spin-download" ></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn spin-btn" id="spin-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play spin-play"></box-icon>
-                                </button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- /SpinWords  Card-->
+                        
+                        <!-- /Isogram Card-->
 
-                    <!-- Length of Longest Word Card-->
-                    <div class="algo-card llw">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>LENGTH OF LONGEST WORD</h3>
-                            </div>
+                        <!-- Palindrome Card-->
+                        <div class="algo-card pal">
                             <div class="algo-info">
-                                <p class="info">The longest word in a sentence is represented by the longest word.</p>
+                                <div class="title">
+                                    <h3>PALINDROME</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">A palidrome is a word or phrase that reads the same forwards
+                                        and backwards.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn pal-btn" id="pal-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download pal-download" ></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn pal-btn" id="pal-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play pal-play" ></box-icon>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn llw-btn" id="llw-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download llw-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn llw-btn" id="llw-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play llw-play"></box-icon>
-                                </button>
+                        <!-- /Palindrome Card-->
+                        
+                        <!-- Two Sum Card-->
+                        <div class="algo-card two">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>TWO SUM</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">Two Sum is a concept-based phrase, 
+                                        whereby the sum of two integers is equal to another integer. </p>
+                                </div>
                             </div>
-                            
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn two-btn" id="two-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download two-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn two-btn" id="two-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play two-play"></box-icon>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- /Length of Longest Word Card-->
+                        <!-- /Two Sum Card-->
 
-
-                    <!-- Factorialize Card-->
-                    <div class="algo-card fact">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>FACTORIALIZE</h3>
-                            </div>
+                        <!-- SpinWords  Card-->
+                        <div class="algo-card spin">
                             <div class="algo-info">
-                                <p class="info">The factorial(!) of a positive integer is the product of it and all of the positive integers below it, except 0.</p>
+                                <div class="title">
+                                    <h3>SPIN WORDS</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">A spin word/s is word/s that is reversed under certain conditions.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn fact-btn" id="fact-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download fact-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn fact-btn" id="fact-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play fact-play"></box-icon>
-                                </button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- /Factorialize Card-->
-                    
-                    <!-- Palindrome Number Card-->
-                    <div class="algo-card pn">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>PALINDROME NUMBER</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">A palidrome number reads the same forwards and backwards</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn pn-btn" id="pn-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download pn-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn pn-btn" id="pn-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play pn-play"></box-icon>
-                                </button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- /Palindrome Number Card-->
-
-                    <!-- Reverse An Integer Card-->
-                    <div class="algo-card rev">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>REVERSE INTEGER</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">A reverse integer is the reverse of an integer and maintains the original integer’s comparison to 0. </p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn rev-btn" id="rev-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download rev-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn rev-btn" id="rev-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play rev-play"></box-icon>
-                                </button>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!-- /Reverse An Integer Card -->
-
-                    <!-- Longest Non-Repeating Substring Card-->
-                    <div class="algo-card lnr">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>LONGEST NON-REPEATING SUBSTRING</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">The longest non-repeating substring is the longest portion of a string has no repeating characters.</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn lnr-btn" id="lnr-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download lnr-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn lnr-btn" id="lnr-play-btn" aria-label="play">
-                                    <box-icon name='play' class="icon play lnr-play"></box-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Longest Non-Repeating Substring Card-->
-
-                    <!-- Extra Card One Card-->
-                    <div class="algo-card one">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>Lorem, ipsum dolor.</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">Lorem, ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn one-btn" id="one-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download one-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn one-btn" id="one-play" aria-label="play">
-                                    <box-icon name='play' class="icon play one-play" ></box-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Extra Card One Card-->
-
-                    <!-- Extra Card Two Card-->
-                    <div class="algo-card btwo">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>Lorem, ipsum dolor.</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">Lorem, ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn btwo-btn" id="btwo-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download btwo-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn btwo-btn" id="btwo-play" aria-label="play">
-                                    <box-icon name='play' class="icon play btwo-play"></box-icon>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Extra Card Two Card-->
-
-                    <!-- Extra Card Three Card-->
-                    <div class="algo-card three">
-                        <div class="algo-info">
-                            <div class="title">
-                                <h3>Lorem, ipsum dolor.</h3>
-                            </div>
-                            <div class="algo-info">
-                                <p class="info">Lorem, ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="btn-holder">
-                            <div class="download-holder">
-                                <button class="btn three-btn" id="three-card-download" aria-label="download">
-                                    <box-icon name='download' class="icon download three-download"></box-icon>
-                                </button>
-                            </div> 
-                            <div class="play-holder">
-                                <button class="btn three-btn" id="three-play" aria-label="play">
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn spin-btn" id="spin-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download spin-download" ></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn spin-btn" id="spin-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play spin-play"></box-icon>
+                                    </button>
+                                </div>
                                 
-                                    <box-icon name='play' class="icon play three-play"></box-icon>
-                                </button>
                             </div>
                         </div>
+                        <!-- /SpinWords  Card-->
+
+                        <!-- Length of Longest Word Card-->
+                        <div class="algo-card llw">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>LENGTH OF LONGEST WORD</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">The longest word in a sentence is represented by the longest word.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn llw-btn" id="llw-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download llw-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn llw-btn" id="llw-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play llw-play"></box-icon>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Length of Longest Word Card-->
+
+
+                        <!-- Factorialize Card-->
+                        <div class="algo-card fact">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>FACTORIALIZE</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">The factorial(!) of a positive integer is the product of it and all of the positive integers below it, except 0.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn fact-btn" id="fact-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download fact-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn fact-btn" id="fact-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play fact-play"></box-icon>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Factorialize Card-->
+                        
+                        <!-- Palindrome Number Card-->
+                        <div class="algo-card pn">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>PALINDROME NUMBER</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">A palidrome number reads the same forwards and backwards</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn pn-btn" id="pn-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download pn-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn pn-btn" id="pn-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play pn-play"></box-icon>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Palindrome Number Card-->
+
+                        <!-- Reverse An Integer Card-->
+                        <div class="algo-card rev">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>REVERSE INTEGER</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">A reverse integer is the reverse of an integer and maintains the original integer’s comparison to 0. </p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn rev-btn" id="rev-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download rev-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn rev-btn" id="rev-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play rev-play"></box-icon>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- /Reverse An Integer Card -->
+
+                        <!-- Longest Non-Repeating Substring Card-->
+                        <div class="algo-card lnr">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>LONGEST NON-REPEATING SUBSTRING</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">The longest non-repeating substring is the longest portion of a string has no repeating characters.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn lnr-btn" id="lnr-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download lnr-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn lnr-btn" id="lnr-play-btn" aria-label="play">
+                                        <box-icon name='play' class="icon play lnr-play"></box-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Longest Non-Repeating Substring Card-->
+
+                        <!-- Extra Card One Card-->
+                        <div class="algo-card one">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">Lorem, ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn one-btn" id="one-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download one-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn one-btn" id="one-play" aria-label="play">
+                                        <box-icon name='play' class="icon play one-play" ></box-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Extra Card One Card-->
+
+                        <!-- Extra Card Two Card-->
+                        <div class="algo-card btwo">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">Lorem, ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn btwo-btn" id="btwo-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download btwo-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn btwo-btn" id="btwo-play" aria-label="play">
+                                        <box-icon name='play' class="icon play btwo-play"></box-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Extra Card Two Card-->
+
+                        <!-- Extra Card Three Card-->
+                        <div class="algo-card three">
+                            <div class="algo-info">
+                                <div class="title">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                </div>
+                                <div class="algo-info">
+                                    <p class="info">Lorem, ipsum.</p>
+                                </div>
+                            </div>
+                            <div class="btn-holder">
+                                <div class="download-holder">
+                                    <button class="btn three-btn" id="three-card-download" aria-label="download">
+                                        <box-icon name='download' class="icon download three-download"></box-icon>
+                                    </button>
+                                </div> 
+                                <div class="play-holder">
+                                    <button class="btn three-btn" id="three-play" aria-label="play">
+                                    
+                                        <box-icon name='play' class="icon play three-play"></box-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Extra Card Three Card-->
                     </div>
-                    <!-- /Extra Card Three Card-->
                 </div>
-            </div>
-            <!-- /GRID CARDS-->
+                <!-- /GRID CARDS-->
             
-            
+                
 
             <!-- ALGORITHMS -->
-            <!-- <div class="algorithms"> -->
+            <div class="algo-dash-holder" id="algo-dash">
                 <!-- Isogram Dashboard -->
                 <div id="iso-container" class="container iso-container">
                     <div class="home-btn-holder">
@@ -408,7 +383,7 @@
 
                             <form id="form" class="iso-form">
                                 <p class="intro iso-intro">
-                                    Is it an <em>isogram</em>? Enter a word or sentence to find out! 
+                                    Is it an isogram? Enter a word or sentence to find out! 
                                 </p>
 
                                 <!-- INPUT FIELD -->
@@ -507,7 +482,7 @@
                             
                             <form id="ts-form" class="two-form">
                                 <p class="intro ts-intro">
-                                    Check to see if the sum of any two numbers in an array equals a target number.
+                                    Any two numbers in your array equal your target number.
                                     
                                 </p>
 
@@ -563,8 +538,8 @@
                             
                             <form id="sw-form" class="sw-form">
                                 <p class="intro sw-intro">
-                                    Enter a word/words and a number
-                                    to see what happens to any word who's length is greater than or equal to your number. 
+                                    Enter word/words & a number
+                                    to spin words that are longer than or equal to that number. 
                                 </p>
 
                                 <!-- INPUT FIELD -->
@@ -585,7 +560,7 @@
                                 <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                                 <!-- SUBMIT BUTTON -->
-                                <button id="sw-check-string" class="btn-check sw-btn-check" type="submit" >CHECK IT!</button>
+                                <button id="sw-spin" class="btn-check sw-btn-check" type="submit" >CHECK IT!</button>
                                 <!-- SUBMIT BUTTON -->
                             </form>
                         </div>
@@ -666,7 +641,7 @@
                         <div class="window fact-window">
                             <form id="fact-form" class="fact-form">
                                 <p class="intro fact-intro">
-                                    Enter a positive integer to see the factorial. 
+                                    Enter a positive integer. 
                                 </p>
 
                                 <!-- INPUT FIELD -->
@@ -716,7 +691,7 @@
                             
                             <form id="pn-form" class="pn-form">
                                 <p class="intro pn-intro">
-                                    Enter a number to see if it's a palindrome. 
+                                    Palindrome Number?
                                 </p>
 
                                 <!-- INPUT FIELD -->
@@ -766,7 +741,7 @@
                             
                             <form id="rev-int-form" class="rev-int-form">
                                 <p class="intro rev-int-intro">
-                                    Enter a number to see the reverse of that number. 
+                                    Reverse an integer. 
                                 </p>
 
                                 <!-- INPUT FIELD -->
@@ -814,13 +789,13 @@
                             
                             <form id="lns-form" class="lns-form">
                                 <p class="intro lns-intro">
-                                    Enter a string to see the longest non-repeating substring. 
+                                    Find the longest non-repeating substring. 
                                 </p>
 
                                 <!-- INPUT FIELD -->
                                 <div class="input-holder lns-input-holder">
                                     <!-- USER INPUT -->
-                                    <input id="lns-text" class="text-field lns-text-field" name="lns-text" type="text" placeholder="Enter text here" autocomplete= "off" />
+                                    <input id="lns-text" class="text-field lns-text-field" name="lns-text" type="text" placeholder="Ex: lokijgud" autocomplete= "off" />
                                 </div>
                                 <!--/ INPUT FIELD -->
                                 
@@ -852,7 +827,7 @@
                 <!-- </div> -->
                 <!-- /ALGORITHMS -->
             </div>
-        </div>
+        </div>  
     </div>
     <!-- /MAIN CONTENT -->
 

@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Header Elements
-    const menu = document.getElementById('menu-icon');
+    const info = document.getElementById('info-icon');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
     
     // Menu Elements
-    const menuIconOne = document.getElementById('icon-1');
-    const menuIconTwo = document.getElementById('icon-2');
-    const menuIconThree = document.getElementById('icon-3');
-    const menuText = document.getElementById('sb-btn-text');
+    // const menuIconOne = document.getElementById('icon-1');
+    // const menuIconTwo = document.getElementById('icon-2');
+    // const menuIconThree = document.getElementById('icon-3');
+    // const menuText = document.getElementById('sb-btn-text');
 
     // Cardholder
     const cardHolder = document.getElementById('dg-holder');
+    const mainDash = document.getElementById('algo-dash');
 
     // Factorial  Container
     const factHomeBtn = document.getElementById('fact-btn-close');
@@ -22,15 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Return to Cardholder
     function showHome() {
         factDash.style.display = "none";
+        mainDash.style.display = "none";
         cardHolder.style.display = "block";
-        menu.style.fill = '#c32abbc9';  
+        info.style.color = '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9';
         mobileTitle.style.color= '#c32abbc9';
-        menuText.style.color= '#c32abbc9';
-        menuIconOne.style.fill = '#c32abbc9';
-        menuIconTwo.style.fill = '#c32abbc9';
-        menuIconThree.style.fill = '#c32abbc9';
+        // menuText.style.color= '#c32abbc9';
+        // menuIconOne.style.fill = '#c32abbc9';
+        // menuIconTwo.style.fill = '#c32abbc9';
+        // menuIconThree.style.fill = '#c32abbc9';
 
     }
     factHomeBtn.addEventListener('click', function(e) {
@@ -53,11 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function hideFactOutcome() {
         factOutcome.style.display ="none";
+        buttonGetFact.style.display = "block";
         
     }
     function showFactOutcome() {
         factOutcome.style.color = "#e0e5ec";
         factOutcome.style.display ="block";
+        buttonGetFact.style.display = "none";
         
     }
 

@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Header Elements
-    const menu = document.getElementById('menu-icon');
+    const info = document.getElementById('info-icon');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
-    const menuIconOne = document.getElementById('icon-1');
-    const menuIconTwo = document.getElementById('icon-2');
-    const menuIconThree = document.getElementById('icon-3');
-    const menuText = document.getElementById('sb-btn-text');
+    // const menuIconOne = document.getElementById('icon-1');
+    // const menuIconTwo = document.getElementById('icon-2');
+    // const menuIconThree = document.getElementById('icon-3');
+    // const menuText = document.getElementById('sb-btn-text');
     
     // Body Element
     const cardHolder = document.getElementById('dg-holder');
+    const mainDash = document.getElementById('algo-dash');
     const twoHomeBtn = document.getElementById('ts-btn-close');
     
     // Two Sum Container
@@ -19,15 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function showHome() {
         twoDash.style.display = "none";
+        mainDash.style.display = "none";
         cardHolder.style.display = "block";
-        menu.style.fill = '#c32abbc9';  
+        info.style.color= '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9';
         mobileTitle.style.color= '#c32abbc9';
-        menuText.style.color= '#c32abbc9';
-        menuIconOne.style.fill = '#c32abbc9';
-        menuIconTwo.style.fill = '#c32abbc9';
-        menuIconThree.style.fill = '#c32abbc9';
+        // menuText.style.color= '#c32abbc9';
+        // menuIconOne.style.fill = '#c32abbc9';
+        // menuIconTwo.style.fill = '#c32abbc9';
+        // menuIconThree.style.fill = '#c32abbc9';
 
 
     }
@@ -40,18 +42,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // DOM Elements
 const tsForm = document.getElementById("ts-form");
-const outcome = document.getElementById("sumResponse");
+const sumOutcome = document.getElementById("sumResponse");
 const buttonSum = document.getElementById("check-sum");
 const buttonReset = document.getElementById("reset-form");
 
 
 // Hides outcome when form is cleared
 function hideOutcome() {
-    outcome.style.display ="none";
+    sumOutcome.style.display ="none";
+    buttonSum.style.display = "block";
 }
 function showOutcome() {
-    outcome.style.display ="block";
-    outcome.style.color = "#e0e5ec";
+    sumOutcome.style.display ="block";
+    sumOutcome.style.color = "#e0e5ec";
+    buttonSum.style.display = "none";
 }
 
 // Reset Form
@@ -83,7 +87,7 @@ function checkTsInput(arr) {
 
             // if yes, user gets prompted to enter the correct data type
             showOutcome();
-            outcome.innerHTML = "Enter only numbers";
+            sumOutcome.innerHTML = "Enter only numbers";
             
  
         }else{
@@ -103,7 +107,7 @@ function checkTarget(target) {
     // if the target contains letters or special characters
     if(specialCases.test(target)) {
         showOutcome();
-        outcome.innerHTML = "Enter a number";
+        sumOutcome.innerHTML = "Enter a number";
         
     } else{
     //otherwise, call length of twoSum function
@@ -145,14 +149,14 @@ function twoSum(arr, target) {
             
             // the two sums were found
             showOutcome();
-            outcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
+            sumOutcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
             break;
         }else { 
             // the two sums were not found
             numsObj[numDifference] = i
             let newArr = arr.join(", ")
             showOutcome();
-            outcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
+            sumOutcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
             
         }
         clearTsForm()

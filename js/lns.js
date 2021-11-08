@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
      // Header Elements
-     const menu = document.getElementById('menu-icon');
+     const info = document.getElementById('info-icon');
      const title = document.getElementById('header-title');
      const clock = document.getElementById('clock');
      const mobileTitle = document.getElementById('mb-header-title');
-     const menuIconOne = document.getElementById('icon-1');
-     const menuIconTwo = document.getElementById('icon-2');
-     const menuIconThree = document.getElementById('icon-3');
-     const menuText = document.getElementById('sb-btn-text');
+    //  const menuIconOne = document.getElementById('icon-1');
+    //  const menuIconTwo = document.getElementById('icon-2');
+    //  const menuIconThree = document.getElementById('icon-3');
+    //  const menuText = document.getElementById('sb-btn-text');
 
     // Cardholder
     const cardHolder = document.getElementById('dg-holder');
+    const mainDash = document.getElementById('algo-dash');
 
     // Longest Non-Repeating Substring
     const lnsHomeBtn = document.getElementById('lnr-btn-close');
@@ -20,15 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Return to Cardholder
     function showHome() {
         lnsDash.style.display = "none";
+        mainDash.style.display = "none";
         cardHolder.style.display = "block";
-        menu.style.fill = '#c32abbc9';  
+        info.style.color = '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9';
         mobileTitle.style.color= '#c32abbc9';
-        menuText.style.color= '#c32abbc9';
-        menuIconOne.style.fill= '#c32abbc9';
-        menuIconTwo.style.fill= '#c32abbc9';
-        menuIconThree.style.fill= '#c32abbc9';
+        // menuText.style.color= '#c32abbc9';
+        // menuIconOne.style.fill= '#c32abbc9';
+        // menuIconTwo.style.fill= '#c32abbc9';
+        // menuIconThree.style.fill= '#c32abbc9';
         
 
     }
@@ -52,11 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // reset the output 
     function hideLsOutcome() {
         lnsOutcome.style.display ="none";
+        buttonCheckStr.style.display = "block";
     }
     // show the output text
     function showLsOutcome() {
         lnsOutcome.style.display ="block";
         lnsOutcome.style.color = "#e0e5ec";
+        buttonCheckStr.style.display = "none";
     };
     // CLEAR Form
     function clearLnsForm() {
@@ -173,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let lengthOfUniqueSub = longestUniqueSub.length;
 
         showLsOutcome();
-        lnsOutcome.innerHTML = "'"+ longestUniqueSub + "'" + " is the longest non-repeating substring. It's length is " + lengthOfUniqueSub; 
+        lnsOutcome.innerHTML = "'"+ longestUniqueSub + "'" + " is " + lengthOfUniqueSub + " letters long" 
     }
     clearLnsForm();
 });

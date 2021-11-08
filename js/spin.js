@@ -2,18 +2,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // DOM Element
 
     // Header Elements
-    const menu = document.getElementById('menu-icon');
+    const info = document.getElementById('info-icon');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
-    const menuIconOne = document.getElementById('icon-1');
-    const menuIconTwo = document.getElementById('icon-2');
-    const menuIconThree = document.getElementById('icon-3');
-    const menuText = document.getElementById('sb-btn-text');
+    // const menuIconOne = document.getElementById('icon-1');
+    // const menuIconTwo = document.getElementById('icon-2');
+    // const menuIconThree = document.getElementById('icon-3');
+    // const menuText = document.getElementById('sb-btn-text');
 
     // Cardholder
     const cardHolder = document.getElementById('dg-holder');
+    const mainDash = document.getElementById('algo-dash');
     const spinHomeBtn = document.getElementById('spin-btn-close');
+    
     
     // Two Sum Container
     const spinDash = document.getElementById('spin-words');
@@ -21,15 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function showHome() {
         spinDash.style.display = "none";
+        mainDash.style.display = "none";
         cardHolder.style.display = "block";
-        menu.style.fill = '#c32abbc9';  
+        info.style.color = '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9';
         mobileTitle.style.color= '#c32abbc9';
-        menuText.style.color= '#c32abbc9';
-        menuIconOne.style.fill = '#c32abbc9';
-        menuIconTwo.style.fill = '#c32abbc9';
-        menuIconThree.style.fill = '#c32abbc9';
+        // menuText.style.color= '#c32abbc9';
+        // menuIconOne.style.fill = '#c32abbc9';
+        // menuIconTwo.style.fill = '#c32abbc9';
+        // menuIconThree.style.fill = '#c32abbc9';
 
 
     }
@@ -43,21 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // DOM Elements
     const swForm = document.getElementById("sw-form");
     const swOutcome = document.getElementById("swResponse");
-    const buttonCheckSpin = document.getElementById("sw-check-string");
+    const buttonSpin = document.getElementById("sw-spin");
+    // const buttonSpin = document.querySelector('.sw-btn-check');
 
 
-    // PREVENT THE DEFAULT BEHAVIOR OF THE BUTTON 
-    buttonCheckSpin.addEventListener('click', function(e) {
-        e.preventDefault();
-    });
-    buttonCheckSpin.addEventListener('click', checkSwInput);
+   
 
     function hideSwOutcome() {
         swOutcome.style.display ="none";
+        buttonSpin.style.display = "block";
+        
     }
     function showSwOutcome() {
         swOutcome.style.display ="block";
         swOutcome.style.color = "#e0e5ec";
+        buttonSpin.style.display = "none";
+        
     }
     function clearSwForm() {
         setTimeout(function() {
@@ -65,6 +69,13 @@ document.addEventListener("DOMContentLoaded", () => {
             hideSwOutcome();
         }, 5000);
     };
+
+    // PREVENT THE DEFAULT BEHAVIOR OF THE BUTTON 
+    buttonSpin.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonSpin.addEventListener('click', checkSwInput);
+
 
     function checkSwInput(str, num) {
         var str = document.getElementById("sw-text").value;
@@ -140,14 +151,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 //if a word in the array has "userNum" or more letters
                 if(words[i].length >= userNum) {
                     // split the word, reverse it, then join the letters
-                    console.log(words[i].length)
-                    console.log(words[i])
+                    
                     words[i] = words[i].toLowerCase().split("").reverse().join("");
                     // convert the array to a string 
                     let spin = words.join("  ");
                     // user feedback
-                    swOutcome.style.display = "block";
-                    swOutcome.style.color = "#e0e5ec";
+                    showSwOutcome();
                     swOutcome.innerHTML = `${spin}`;   
                     
                 } else {
@@ -155,8 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     // convert the original array to a string and assign it locally
                     let original = words.join("  ")
                     //user feedback
-                    swOutcome.style.display = "block";
-                    swOutcome.style.color = "#e0e5ec";
+                    showSwOutcome();
                     swOutcome.innerHTML = "There are NO words that are " + `${userNum}`+ " characters  long";    
                 }
             }

@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // Header Elements
-    const menu = document.getElementById('menu-icon');
+    const info = document.getElementById('info-icon');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
-    const menuIconOne = document.getElementById('icon-1');
-    const menuIconTwo = document.getElementById('icon-2');
-    const menuIconThree = document.getElementById('icon-3');
-    const menuText = document.getElementById('sb-btn-text');
+    // const menuIconOne = document.getElementById('icon-1');
+    // const menuIconTwo = document.getElementById('icon-2');
+    // const menuIconThree = document.getElementById('icon-3');
+    // const menuText = document.getElementById('sb-btn-text');
 
     // Cardholder
     const cardHolder = document.getElementById('dg-holder');
+    const mainDash = document.getElementById('algo-dash');
 
     // Reverse an Integer
     const revIntHomeBtn = document.getElementById('rev-int-btn-close');
@@ -20,15 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Return to Cardholder
     function showHome() {
         revIntDash.style.display = "none";
+        mainDash.style.display = "none";
         cardHolder.style.display = "block";
-        menu.style.fill = '#c32abbc9';  
+        info.style.color = '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9';
         mobileTitle.style.color= '#c32abbc9';
-        menuText.style.color= '#c32abbc9';
-        menuIconOne.style.fill = '#c32abbc9';
-        menuIconTwo.style.fill = '#c32abbc9';
-        menuIconThree.style.fill = '#c32abbc9';
+        // menuText.style.color= '#c32abbc9';
+        // menuIconOne.style.fill = '#c32abbc9';
+        // menuIconTwo.style.fill = '#c32abbc9';
+        // menuIconThree.style.fill = '#c32abbc9';
 
 
     }
@@ -54,18 +56,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // Resetting the output text
     function hideRevIntOutcome() {
         revIntOutcome.style.display ="none";
+        buttonRevInt.style.display = "block";
     }
     // Showing the output text
     function showRevIntOutcome() {
         revIntOutcome.style.display ="block";
         revIntOutcome.style.color = "#e0e5ec";
+        buttonRevInt.style.display = "none";
     }
     // Clearing the form
     function clearRevIntForm() {
         setTimeout(function() {
             revIntForm.reset();
             hideRevIntOutcome();
-        }, 3500);
+        }, 3000);
     };
 
     // Reverse the integer
@@ -106,7 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
             
         }else {
             showRevIntOutcome
-            revIntOutcome.innerHTML = `${intArr}`;
+            let revInt = Math.abs(intArr)
+            revIntOutcome.innerHTML = `${revInt}`;
             
         }
         clearRevIntForm();
