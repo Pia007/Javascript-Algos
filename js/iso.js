@@ -7,11 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
-    // const menuIconOne = document.getElementById('icon-1');
-    // const menuIconTwo = document.getElementById('icon-2');
-    // const menuIconThree = document.getElementById('icon-3');
-    // const menuText = document.getElementById('sb-btn-text');
     
+
     // Isogram Container
     const isoDash = document.getElementById('iso-container');
     const isoHomeBtn = document.getElementById("iso-btn-close");
@@ -26,13 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         info.style.color = '#c32abbc9';  
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9'; 
-        mobileTitle.style.color= '#c32abbc9'; 
-        // menuIconOne.style.fill = '#c32abbc9';
-        // menuIconTwo.style.fill = '#c32abbc9';
-        // menuIconThree.style.fill = '#c32abbc9';
-
-        // menuText.style.color= '#c32abbc9'; 
-        
+        mobileTitle.style.color= '#c32abbc9';
 
     }
     isoHomeBtn.addEventListener('click', function(e) {
@@ -46,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("form");
     const button = document.getElementById("check-input");
 
-    //RESPONSES: using the id to assign constants to criteria responses in index.html
+    //RESPONSE
     const response = document.getElementById("eval");
 
 

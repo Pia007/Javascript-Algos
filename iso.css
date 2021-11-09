@@ -22,27 +22,17 @@
     --outcome-red: #FF1919;
     --outcome-green: #1a5f25;
     --extra-color: #2b923c;
-    /* iso shadows */
+
+    /*shadows */
     --iso-active-btn: 4px -4px 6px 0px #3bafd6,
         -4px -4px 6px 0px #256e86,
         inset -4px -4px 6px -0px #3bafd6,
         inset 4px 4px 6px -0px #3294b4;
-
-    --lt-btn-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
-        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
-        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
-        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
-        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
-        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
-        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
-        inset 0px 0px 0px 0px rgba(10, 10, 10, 0.067);
     --lt-active-btn: box-shadow: 4px -4px 6px 0px rgba(255,255,255,0.5),
         -4px -4px 6px 0px rgba(116,125,136,0.2),
         inset -4px -4px 6px -0px rgba(255,255,255,0.5),
         inset 4px 4px 6px -0px rgba(116,125,136,0.3); 
-    --rev-shadow: inset 5px 5px 10px #24065e,
-        inset -5px -5px 10px #9216ff; 
-    --in-shadow:   
+    
 
 
 }
@@ -66,16 +56,13 @@ body {
 /* Main Container */
 .algo-dash-holder {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     margin: 10px 15px;
-    /* box-shadow: var(--lt-btn-shadow); */
     border: none;
     outline: none;
     border-radius: 10px;
     padding: 10px auto;
     overflow: hidden;
-    
-    /* padding: 15px; */
 }
 .algo-dash-holder{
     display: none
@@ -87,10 +74,6 @@ body {
     height: 700px;
     max-height: 750px;
     min-height: 500px;
-    /* position: fixed; */
-    /* top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -492,6 +475,7 @@ form {
     margin: 15px auto;
     text-align: center;
     font-size: 30px;
+    width: 95%;
 }
 .sw-intro {
     font-size: 24px;
@@ -499,6 +483,7 @@ form {
 }
 .fact-intro {
     padding: auto 10px;
+    margin-bottom: 15px;
 }
 .fact-intro,
 .fact-text-field,
@@ -521,8 +506,9 @@ form {
         -12px -12px 24px #0eaea0;
 }
 .pn-intro {
-    height: 70px;
+    height: 50px;
     margin: 0 auto;
+    padding: 10px 0;
 }
 .input-holder {
     width: 95%;
@@ -1269,6 +1255,11 @@ form {
     .sw-intro {
         font-size: 20px;
     }
+    .fact-intro {
+        width: 100%;
+        height: 34px;
+        margin: 0;
+    }
     .pn-intro {
         font-size: 22px;
     }
@@ -1291,7 +1282,7 @@ form {
     }
     
     .evals {
-        width: 80%;
+        height: auto;
         font-size: 20px;
         margin: 0 auto;
     }
@@ -1299,7 +1290,7 @@ form {
         height: auto;
     }
     .text-field {
-        height: 36px;
+        height: 34px;
         font-size: 18px;
         margin: auto;
     }
@@ -1308,6 +1299,9 @@ form {
     }
     .ts-text-field {
         margin-top: 3px;
+    }
+    .sw-text-field {
+        padding: 0 auto;
     }
     .btn-check {
         width: 140px;
@@ -1345,8 +1339,7 @@ form {
         flex-direction: column;
     }
     .ts-intro,
-    .sw-intro,
-    .pn-intro {
+    .sw-intro {
         font-size: 20px;
     }
     .play {
@@ -1405,6 +1398,12 @@ form {
     .evals{
         font-size: 18px;
     }
+    .fact-intro {
+        /* width: 80%; */
+        height: 30px;
+        text-align: center;
+        margin:15px 0 ;
+    }
     .ts-intro,
     .sumEval,
     .sw-intro,
@@ -1417,7 +1416,7 @@ form {
     }
     .ts-input-holder,
     .sw-input-holder {
-        height:65px;
+        height: 65px;
         box-shadow: none;
     }
     .sw-input-holder {
@@ -1428,6 +1427,9 @@ form {
         margin: 0 auto;
         width: 80%;
     }
+    .text-field {
+        padding: 5px auto;
+    }
     .ts-text-field,
     .sw-text-field,
     .sw-words,
@@ -1435,7 +1437,8 @@ form {
     .fact-text-field {
         height: 30px;
         margin-bottom: 8px;
-        /* box-shadow: none; */
+        padding: 5px auto;
+        
     }
     .fact-text-field {
         margin: auto;

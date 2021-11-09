@@ -11,26 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
 
-    // Sidebar
-    // const sidebar = document.getElementById('s-bar');
-    // const menuIconOne = document.getElementById('icon-1');
-    // const menuIconTwo = document.getElementById('icon-2');
-    // const menuIconThree = document.getElementById('icon-3');
-    // const menuText = document.getElementById('sb-btn-text');
-
-    // function showInfo() {
-    //     if (infoText.style.display === 'none') {
-    //         infoText.style.display = 'block';
-    //     } else {
-    //         infoText.style.display = 'none';
-    //     }
-        
-    // }
-    // info.addEventListener('click', function(e) {
-    //     e.preventDefault();
-        
-    // });
-    // info.addEventListener('click', showInfo);
 
     // Isogram Container
     const isoDash = document.getElementById('iso-container');
@@ -46,11 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#37A4C8';  
         clock.style.color= '#37A4C8';
         mobileTitle.style.color= '#37A4C8';
-        // menuText.style.color= '#37A4C8';
-        // menuIconOne.style.fill = '#37A4C8';
-        // menuIconTwo.style.fill = '#37A4C8';
-        // menuIconThree.style.fill = '#37A4C8'; 
-        
     }
     isoBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -61,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Palin Container
     const palDash = document.getElementById('palindrome');
     const palBtn = document.getElementById('pal-play-btn');
-    // const palHomeBtn = document.getElementById("pal-btn-close");
 
     // Open Palindrome Dashboard
     function showPal() {
@@ -72,11 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#FFA500';  
         clock.style.color= '#FFA500';
         mobileTitle.style.color= '#FFA500';
-        // menuText.style.color= '#FFA500';
-        // menuIconOne.style.fill = '#FFA500';
-        // menuIconTwo.style.fill = '#FFA500';
-        // menuIconThree.style.fill = '#FFA500';
-        
     }
     palBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -87,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Two Sum Container
     const twoDash = document.getElementById('two-sum');
     const twoBtn = document.getElementById('two-play-btn');
-    // const twoHomeBtn = document.getElementById("two-btn-close");
 
     // Open Two Sum Dashboard
     function showTwo() {
@@ -98,12 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#5b0eeb';  
         clock.style.color= '#5b0eeb'; 
         mobileTitle.style.color= '#5b0eeb'; 
-        // menuText.style.color= '#5b0eeb'; 
-        // menuIconOne.style.fill = '#5b0eeb';
-        // menuIconTwo.style.fill = '#5b0eeb';
-        // menuIconThree.style.fill = '#5b0eeb';
-
-        
     }
     twoBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -126,13 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#f89898';  
         clock.style.color= '#f89898'; 
         mobileTitle.style.color= '#f89898'; 
-        // menuText.style.color= '#f89898'; 
-        // menuIconOne.style.fill = '#f89898';
-        // menuIconTwo.style.fill = '#f89898';
-        // menuIconThree.style.fill = '#f89898';
-
-         
-        
     }
     spinBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -155,12 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#35c048';  
         clock.style.color= '#35c048';  
         mobileTitle.style.color= '#35c048'; 
-        // menuText.style.color= '#35c048';
-        // menuIconOne.style.fill = '#35c048';
-        // menuIconTwo.style.fill = '#35c048';
-        // menuIconThree.style.fill = '#35c048';
-
-        
+ 
     }
     llwBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -182,13 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
         info.style.color = '#eb0e96';  
         title.style.color= '#eb0e96';  
         clock.style.color= '#eb0e96';   
-        mobileTitle.style.color= '#eb0e96';  
-        // menuText.style.color= '#eb0e96';
-        // menuIconOne.style.fill = '#eb0e96';
-        // menuIconTwo.style.fill = '#eb0e96';
-        // menuIconThree.style.fill = '#eb0e96';
-
-        
+        mobileTitle.style.color= '#eb0e96';
     }
     factBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -209,13 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         info.style.color = '#0b7c739d';  
         title.style.color= '#0b7c739d';  
         clock.style.color= '#0b7c739d';  
-        mobileTitle.style.color= '#0b7c739d';  
-        // menuText.style.color= '#0b7c739d';
-        // menuIconOne.style.fill = '#0b7c739d';
-        // menuIconTwo.style.fill = '#0b7c739d';
-        // menuIconThree.style.fill = '#0b7c739d';
-
-        
+        mobileTitle.style.color= '#0b7c739d';
     }
     palNumBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -237,13 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
         info.style.color = '#8790e0';  
         title.style.color= '#8790e0';  
         clock.style.color= '#8790e0';   
-        mobileTitle.style.color= '#8790e0';  
-        // menuText.style.color= '#8790e0';
-        // menuIconOne.style.fill = '#8790e0';
-        // menuIconTwo.style.fill = '#8790e0';
-        // menuIconThree.style.fill = '#8790e0';
-
-        
+        mobileTitle.style.color= '#8790e0'; 
     }
     revIntBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -266,21 +198,10 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#ff0000';  
         clock.style.color= '#ff0000'; 
         mobileTitle.style.color= '#ff0000'; 
-        // menuText.style.color= '#ff0000';
-        // menuIconOne.style.fill = '#ff0000';
-        // menuIconTwo.style.fill = '#ff0000';
-        // menuIconThree.style.fill = '#ff0000';
-        
     }
     lnsBtn.addEventListener('click', function(e) {
         e.preventDefault();
         
     });
     lnsBtn.addEventListener('click', showLns);
-
-
-
-
-    
-
 });

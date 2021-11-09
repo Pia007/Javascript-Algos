@@ -25,17 +25,6 @@
 
     --js-header: #c32abbc9;
     
-    /* header box shadow */
-    --header-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
-        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
-        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
-        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
-        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
-        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
-        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
-        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
-
-
 }
 *,
 *::before,
@@ -56,31 +45,25 @@ body {
 }
 header {
     width: 100%;
-    height: 80px;
+    height: 100px;
     font-size: 82.5%;
     display: flex;
     flex-direction: row;
     z-index: 3;
-    /* position: fixed; */
-   
 }
 .header-info-holder {
     width: 95%;
-    height: 95%;
-    margin: 0 auto;
+    height: 100%;
+    margin: 10px auto;
 }
 .hd-content {
     width: 95%;
-    height: 90%;
+    height: 85%;
     margin: 10px auto;
     display: flex;
-    /* display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-gap: 20px; */
     border-radius: 8px;
-    /* border: 2px solid green; */
-    box-shadow: var(--header-shadow);
-    /* transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81); */
+    box-shadow:   inset 12px 12px 24px #b8bcc2,
+    inset -12px -12px 24px #ffffff;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -90,10 +73,6 @@ header {
     width: 90%;
     height: auto;
     margin: auto;
-    /* border: 2px solid orange; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly */
 }
 
 .header-btn {
@@ -103,10 +82,10 @@ header {
     background: var(--main-bg);
     border: 1px solid var(--main-bg);
     border-radius: 8px;
-    box-shadow: var(--header-shadow);
+    box-shadow: 9px 9px 18px #5a5c5e,
+        -9px -9px 18px #ffffff;
 }
 .header-btn:hover {
-    /* box-shadow: var(--lt-active-btn); */
     opacity: 0.8;
 }
 .header-btn:active {
@@ -129,7 +108,8 @@ header {
     height: 50px;
     min-width: 158px;
     border-radius: 8px;
-    box-shadow: var(--header-shadow);
+    box-shadow: 11px 11px 22px #afb3b8,
+        -11px -11px 22px #ffffff;
 }
 #mb-header-title {
     display: none;
@@ -140,75 +120,76 @@ header {
     color: var(--js-header);
     font-size: 24px;
     font-weight: 600;
+    
 }
 .hd-clock {
     float: right;
     
     background: var(--main-bg);
-    max-width: 150px;
-    min-width: 125px;
+    max-width: 140px;
+    min-width: 100px;
     height: 50px;
     color:var(--js-header);
     margin: auto 10px;
     margin-right: 10px;
     text-align: center;
-    padding: 15px 10px;
-
+    padding: 15px 0px;
     font-family: var(--rubik);
     font-size: 18px;
     font-weight: 600;
     border-radius: 8px;
-    box-shadow: var(--header-shadow);
+    box-shadow: 10px 10px 20px #afb3b8,
+        -10px -10px 20px #ffffff;
 }
 
-/* @media (max-width: 1080px) {
-    .hd-title{
-        font-size: 24px;
-    }
-    .hd-clock {
-        font-size: 16px;
-    }
-} */
 @media (max-width: 875px) {
-    /* .hd-btn-holder {
-        width: 25%;
-    } */
+    header {
+        height: 60px;
+    }
+    .header-info-holder {
+        width: 100%;
+        height: 95%;
+        margin: 0;
+    }
+    .hd-content {
+        box-shadow: none;
+    }
+    .header-btn {
+        width: 43px;
+        height: 43px;
+    }
     .hd-title-holder {
-        width: 100%; 
-    } 
+        width: 100%;
+        height: 43px; 
+        text-align: center;
+    }
     .header-info {
         font-size: 20px;
+        margin: 10px auto;
     }
-    /* .header-info {
-        font-size: 24px;
-    } */
     .hd-title{
         font-size: 20px;
     } 
-    /* .clock-holder {
-        width: 20%;
-    } */
+    .clock-holder {
+        height: 43px;
+    }
     .hd-clock {
-        font-size: 16px;
-
-        padding: 18px 5px;
+        height: 43px;
+        padding: 10px 0;
        
     }
 }
 @media (max-width: 730px) {
     .header-info {
         font-size: 18px;
-        margin:  13px auto;
     }
     .hd-title {
-        font-size: 16px;
-        margin: 15px auto;
+        font-size: 17px;
+        padding: 10px auto;
     }
     .hd-clock {
-        font-size: 14px;
-
-        padding: auto 10px;
-       
+        font-size: 16px;
+        margin: auto 10px;
     }
 }
 @media (max-width: 600px) {
@@ -218,26 +199,18 @@ header {
     .hd-content {
         width: 100%;
     }
-    /* .header-btn {
-        width: 45px;
-
-    } */
+    .header-btn {
+        box-shadow: 4px 4px 9px #afb3b8,
+            -4px -4px 9px #ffffff;
+    }
     .hd-title {
         width: 75%;
-        font-size: 15px;
-        margin: 15px auto;
-       
+        font-size: 18px;
     }
     #header-title {
         display: none;
     }
     #mb-header-title {
         display: block
-    }
-    .hd-clock {
-        font-size: 13px;
-
-        padding: 17px 5px;
-       
     }
 }
