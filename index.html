@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
     <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="sidebar.css" />
-    <link rel="stylesheet" href="iso.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header-footer.css" />
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
+    <link rel="stylesheet" href="iso.css" />
+    
+    
     <title>JavaScript Algorithms | Pia Torain</title>
 </head>
 <body>
@@ -51,7 +54,7 @@
                     <div class="dashboard" id="dash">
                         <!-- Isogram Card -->
                         <div class="algo-card iso">
-                            <div class="algo-info iso-info">
+                            <div class="algo-info">
                                 <div class="title">
                                     <h3>ISOGRAM</h3>
                                 </div>
@@ -59,8 +62,8 @@
                                     <p class="info">An isogram is a word or sentence that has no repeating letters.</p>
                                 </div>
                             </div>
-                            <div class="btn-holder iso-card-btn-holder">
-                                <div class="download-holder">
+                            <div class="btn-holder">
+                                <div class="card-download-holder">
                                     <button class="btn iso-btn" id="iso-card-download" aria-label="download">
                                         <!-- <i class='bx bx-download icon iso-icon' ></i> -->
                                         <box-icon name='download' class="icon download iso-download" ></box-icon>
@@ -90,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn pal-btn" id="pal-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download pal-download" ></box-icon>
                                     </button>
@@ -116,7 +119,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn two-btn" id="two-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download two-download"></box-icon>
                                     </button>
@@ -141,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn spin-btn" id="spin-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download spin-download" ></box-icon>
                                     </button>
@@ -167,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn llw-btn" id="llw-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download llw-download"></box-icon>
                                     </button>
@@ -194,7 +197,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn fact-btn" id="fact-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download fact-download"></box-icon>
                                     </button>
@@ -220,7 +223,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn pn-btn" id="pn-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download pn-download"></box-icon>
                                     </button>
@@ -246,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn rev-btn" id="rev-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download rev-download"></box-icon>
                                     </button>
@@ -272,7 +275,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn lnr-btn" id="lnr-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download lnr-download"></box-icon>
                                     </button>
@@ -297,7 +300,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn one-btn" id="one-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download one-download"></box-icon>
                                     </button>
@@ -322,7 +325,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn btwo-btn" id="btwo-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download btwo-download"></box-icon>
                                     </button>
@@ -347,7 +350,7 @@
                                 </div>
                             </div>
                             <div class="btn-holder">
-                                <div class="download-holder">
+                                <div class="card-download-holder">
                                     <button class="btn three-btn" id="three-card-download" aria-label="download">
                                         <box-icon name='download' class="icon download three-download"></box-icon>
                                     </button>
@@ -830,6 +833,22 @@
         </div>  
     </div>
     <!-- /MAIN CONTENT -->
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-holder">
+            <div class="footer-list">
+                <button class="footer-btn-item" aria-label="linkedin logo">
+                    <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                </button>
+                <button class="footer-btn-item" aria-label="github logo">
+                    <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                </button>
+                <button class="footer-btn-item" aria-label="twitter logo">
+                    <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                </li>
+            </div>
+        </div>
+    </footer>
 
 
 <script src="js/main.js"></script>

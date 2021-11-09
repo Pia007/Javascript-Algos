@@ -24,6 +24,11 @@
     --extra-color: #2b923c;
 
     --js-header: #c32abbc9;
+
+    /* Footer Links */
+    --f-linkedin: #0077b5;
+    --f-github: #333;
+    --f-twitter: #1da1f2;
     
 }
 *,
@@ -142,6 +147,89 @@ header {
         -10px -10px 20px #ffffff;
 }
 
+footer {
+    width: 100%;
+    height:90px;
+    bottom: 0;
+    /* margin: 0 auto; */
+    z-index: 3;
+    text-align: center;
+}
+.footer-holder {
+    width: 50%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 80px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow:  7px 7px 14px #bec3c9,
+        -7px -7px 14px #ffffff;
+}
+.footer-btn-item {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    box-shadow:  6px 6px 12px #bec3c9,
+        -6px -6px 12px #ffffff;
+    
+}
+.footer-links {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+.footer-links:hover {
+    
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  5px 5px 10px #5a5c5e,
+        -5px -5px 10px #ffffff;
+}
+.footer-links:active {
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  5px 5px 10px #5a5c5e,
+        -5px -5px 10px #ffffff;
+}
+.footer-btn-item:hover {
+    
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  inset 5px 5px 10px #5a5c5e,
+        inset -5px -5px 10px #ffffff;
+}
+.footer-btn-item:active {
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  inset 5px 5px 10px #5a5c5e,
+        inset -5px -5px 10px #ffffff;
+}
+.f-icon {
+    font-size: 30px;
+    margin: 0 auto;
+    
+}
+.f-linkedin {
+    color: var(--f-linkedin);
+}
+.f-github {
+    color: var(--f-github);
+}
+.f-twitter {
+    color: var(--f-twitter);
+}
 @media (max-width: 875px) {
     header {
         height: 60px;
@@ -212,5 +300,20 @@ header {
     }
     #mb-header-title {
         display: block
+    }
+    footer {
+        height: 80px;
+    }
+    .footer-list {
+        width: 80%;
+        height: 70px;
+        min-width: 200px;
+        justify-content: space-between;
+    }
+    .footer-btn-item {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        border-radius: 6px;
     }
 }
