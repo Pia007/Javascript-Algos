@@ -17,11 +17,14 @@
     --pn-color: #0b7c739d;
     --rev-color: #8790e0;
     --lnr-color: #ff0000;
-    --one-color: #8e06fdda;
+    --rw-color: #8e06fdda;
     --btwo-color: #f36c36ed;
     --three-color: #05c0c7;
 
     --js-header: #c32abbc9;
+    --card-btn-shadows:  inset 9px 9px 17px #5a5c5e,
+        inset -9px -9px 17px #ffffff;
+   
 
 }
 * {
@@ -38,12 +41,7 @@ body {
     background:  var(--main-bg);
     overflow: hidden;
 }
-/* .main-body {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-} */
+
 .dash-holder {
     height: 80vh;
     width: 100%;
@@ -103,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     /* CHECK HERE FOR CARD CONTENT SPACING */
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     padding: 10px;
     box-shadow: 
@@ -120,7 +118,7 @@ body {
     
 }
 .algo-info {
-    height: 70%;
+    /* height: 60%; */
     text-align: center;
 }
 
@@ -130,188 +128,253 @@ h3 {
 
 p {
     font-size: 16px;
-    margin: 10px auto;
+    margin: 5px auto;
+    margin-bottom: 10px;
 }
 
 .btn-holder {
-    width: 100%;
-    height: 50px;
+    width: 90%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: auto;
+    
+    /* align-items: flex-end; */
 }
 
-.card-download-holder,
-.play-holder { 
-    width: 50%;
-    height: 60px;
-    margin: 0 auto;
-    text-align: center;
-    
-}
+
 
 .btn {
-    width: 50px; 
-    height: 50px;
+    width: 45px; 
+    height: 45px;
+    /* margin-top: 10px; */
     outline: none;
     border: none;
     border-radius: 50%;
     background: var(--main-bg);
-    box-shadow: 7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,
-        inset 0px 0px 0px 0px #0001,
-        inset 0px 0px 0px 0px #fff9,        
-        inset 0px 0px 0px 0px #0001;
+    box-shadow: 7px -7px 20px 0px rgba(251, 251, 251, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(8, 8, 8, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
     text-align: center;
+    font-size: 24px;
+    
     
 }
 
-/* .btn:active{
-    box-shadow: 4px -4px 6px 0px rgba(255,255,255,0.5),
-                -4px -4px 6px 0px rgba(116,125,136,0.2),
-                inset -4px -4px 6px -0px rgba(255,255,255,0.5),
-                inset 4px 4px 6px -0px rgba(116,125,136,0.3);
-} */
-.download:hover {
-    opacity: 65%;
-}
 
-/* download styling */
 .download {
-    width: 31px;
-    height: 31px;
+    width: 25px;
+    height: 25px;
     margin: 4px auto;
 }
-.play {
-    width: 33px;
-    height: 33px;
-    margin-left: 5px;
- 
+.fa-play {
+    /* width: 30px;
+    height: 30px; */
+    margin: 8px auto;
+    margin-left: 3px;
+    font-size: 18px;
 }
+
 /* Isogram card */
-.iso {
+.iso,
+.iso-play {
     color: var(--iso-color);
 }
-.iso-download,
-.iso-play {
+.iso-download {
     fill: var(--iso-color);
+}
+.iso-btn:active,
+.iso-btn:hover,
+.iso-btn:focus {
+    border: 4px solid var(--iso-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
 }
 
 /* Palindrome Card */
-.pal {
+.pal,
+.pal-play {
     color: var(--pal-color);
 }
-.pal-download,
-.pal-play {
+.pal-download {
     fill: var(--pal-color);
 }
-
+.pal-btn:active,
+.pal-btn:hover,
+.pal-btn:focus {
+    border: 4px solid var(--pal-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Two Sum Car */
-.two {
+.two,
+.two-play {
     color: var(--two-color);
 }
-.two-download,
-.two-play {
+.two-download {
     fill: var(--two-color);
 }
-
+.two-btn:active,
+.two-btn:hover,
+.two-btn:focus {
+    border: 4px solid var(--two-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Spin Card */
-.spin {
+.spin,
+.spin-play {
     color: var(--spin-color);
 }
 
-.spin-download,
-.spin-play {
+.spin-download{
     fill: var(--spin-color);
 }
-
+.spin-btn:active,
+.spin-btn:hover,
+.spin-btn:focus {
+    border: 4px solid var(--spin-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Longest .. Card */
-.llw {
+.llw,
+.llw-play {
     color: var(--llw-color);
 }
 
-.llw-download,
-.llw-play {
+.llw-download  {
     fill: var(--llw-color);
 }
-
+.llw-btn:active,
+.llw-btn:hover,
+.llw-btn:focus {
+    border: 4px solid var(--llw-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Factor Card */
-.fact {
+.fact,
+.fact-play {
     color: var(--fact-color);
 }
 
-.fact-download,
-.fact-play {
+.fact-download {
     fill: var(--fact-color);
 }
-
+.fact-btn:active,
+.fact-btn:hover,
+.fact-btn:focus {
+    border: 4px solid var(--fact-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Palindrome Number Card*/
-.pn {
+.pn,
+.pn-play {
     color: var(--pn-color);
 }
 
-.pn-download,
-.pn-play {
+.pn-download {
     fill: var(--pn-color);
 }
-
+.pn-btn:active,
+.pn-btn:hover,
+.pn-btn:focus {
+    border: 4px solid var(--pn-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Reverse Integer Card*/
-.rev {
+.rev,
+.rev-play {
     color: var(--rev-color);
 }
 
-.rev-download,
-.rev-play {
+.rev-download {
     fill: var(--rev-color);
 }
-
+.rev-btn:active,
+.rev-btn:hover,
+.rev-btn:focus {
+    border: 4px solid var(--rev-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 
 /* Longest NON... Card*/
-.lnr {
+.lnr,
+.lnr-play {
     color: var(--lnr-color);
 }
 
-.lnr-download,
-.lnr-play {
+.lnr-download {
     fill: var(--lnr-color);
 }
-
-
-/* First extra card */
-.one {
-    color: var(--one-color);
+.lnr-btn:active,
+.lnr-btn:hover,
+.lnr-btn:focus {
+    border: 4px solid var(--lnr-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
 }
 
-.one-download,
-.one-play {
-    fill: var(--one-color);
+
+/* Reverse a Word....Card */
+.rw,
+.rw-play {
+    color: var(--rw-color);
 }
 
+.rw-download {
+    fill: var(--rw-color);
+}
+.rw-btn:active,
+.rw-btn:hover,
+.rw-btn:focus {
+    border: 4px solid var(--rw-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Next to last card */
-.btwo {
+.btwo,
+.btwo-play {
     color: var(--btwo-color);
 }
 
-.btwo-download,
-.btwo-play {
+.btwo-download {
     fill: var(--btwo-color);
 }
-
+.btwo-btn:active,
+.btwo-btn:hover,
+.btwo-btn:focus {
+    border: 4px solid var(--btwo-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Last Card */
-.three {
+.three,
+.three-play {
     color: var(--three-color);
 }
 
-.three-download,
-.three-play {
+.three-download{
     fill: var(--three-color);
 }
-
+.three-btn:active,
+.three-btn:hover,
+.three-btn:focus {
+    border: 4px solid var(--three-color);
+    box-shadow:  var(--card-btn-shadows);
+    cursor: pointer;
+}
 /* Breakpoints */
 @media (min-width: 500px) {
     .dashboard {
@@ -322,6 +385,13 @@ p {
     }
     .info {
         font-size: .7em;
+    }
+    .btn-holder{
+        height: 55px;
+        
+    }
+    .btn-holder .btn {
+        margin-top: auto;
     }
 }
 @media (min-width: 600px) {
@@ -376,6 +446,19 @@ p {
         height: 45px;
         margin: 0 auto;
     
+    }
+    .btn-holder {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .btn {
+        width: 50px; 
+        height:50px;
     }
     .download {
         width: 35px;

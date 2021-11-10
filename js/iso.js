@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Isogram Container
     const isoDash = document.getElementById('iso-container');
     const isoHomeBtn = document.getElementById("iso-btn-close");
-    const isoCounter = document.getElementById("iso-download");
-    const isoDownloadBtn = document.getElementById("iso-pdf-download-btn");
-    const isoDownloadHolder = document.getElementById("iso-download-holder");   
+      
     
     function showHome() {
         isoDash.style.display = "none";
@@ -43,12 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function hideRes() {
         response.style.display = "none"
+        button.style.display = "block"
 
     }
 
     function showRes() {
         response.style.display = "block"
         response.style.color = "#37A4C8"
+        button.style.display = "none"
     }
     // CLEARS the form 2.5sec after submission
     function clearForm() {

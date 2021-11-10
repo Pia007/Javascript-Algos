@@ -204,4 +204,25 @@ document.addEventListener("DOMContentLoaded", () => {
         
     });
     lnsBtn.addEventListener('click', showLns);
+
+
+    // Reverse A Word In A String Container
+    const revWordDash = document.getElementById('rev-word');
+    const revWordBtn = document.getElementById('rw-play-btn');
+
+    // Reverse A Word In A String Dashboard
+    function showRevWord() {
+        revWordDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none';
+        info.style.color = '#8e06fdda';  
+        title.style.color= '#8e06fdda';  
+        clock.style.color= '#8e06fdda'; 
+        mobileTitle.style.color= '#8e06fdda'; 
+    }
+    revWordBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    revWordBtn.addEventListener('click', showRevWord);
 });
