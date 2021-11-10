@@ -19,7 +19,7 @@
     --lnr-color: #ff0000;
     --rw-color: #8e06fdda;
     --btwo-color: #f36c36ed;
-    --three-color: #05c0c7;
+    --rome-color: #05c0c7;
 
     --js-header: #c32abbc9;
     --card-btn-shadows:  inset 9px 9px 17px #5a5c5e,
@@ -193,7 +193,7 @@ p {
 .iso-btn:active,
 .iso-btn:hover,
 .iso-btn:focus {
-    border: 4px solid var(--iso-color);
+    border: 2px solid var(--iso-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -209,7 +209,7 @@ p {
 .pal-btn:active,
 .pal-btn:hover,
 .pal-btn:focus {
-    border: 4px solid var(--pal-color);
+    border: 2px solid var(--pal-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -224,7 +224,7 @@ p {
 .two-btn:active,
 .two-btn:hover,
 .two-btn:focus {
-    border: 4px solid var(--two-color);
+    border: 2px solid var(--two-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -240,7 +240,7 @@ p {
 .spin-btn:active,
 .spin-btn:hover,
 .spin-btn:focus {
-    border: 4px solid var(--spin-color);
+    border: 2px solid var(--spin-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -256,7 +256,7 @@ p {
 .llw-btn:active,
 .llw-btn:hover,
 .llw-btn:focus {
-    border: 4px solid var(--llw-color);
+    border: 2px solid var(--llw-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -272,7 +272,7 @@ p {
 .fact-btn:active,
 .fact-btn:hover,
 .fact-btn:focus {
-    border: 4px solid var(--fact-color);
+    border: 2px solid var(--fact-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -288,7 +288,7 @@ p {
 .pn-btn:active,
 .pn-btn:hover,
 .pn-btn:focus {
-    border: 4px solid var(--pn-color);
+    border: 2px solid var(--pn-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -304,7 +304,7 @@ p {
 .rev-btn:active,
 .rev-btn:hover,
 .rev-btn:focus {
-    border: 4px solid var(--rev-color);
+    border: 2px solid var(--rev-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -321,7 +321,7 @@ p {
 .lnr-btn:active,
 .lnr-btn:hover,
 .lnr-btn:focus {
-    border: 4px solid var(--lnr-color);
+    border: 2px solid var(--lnr-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -339,7 +339,7 @@ p {
 .rw-btn:active,
 .rw-btn:hover,
 .rw-btn:focus {
-    border: 4px solid var(--rw-color);
+    border: 2px solid var(--rw-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
@@ -355,23 +355,23 @@ p {
 .btwo-btn:active,
 .btwo-btn:hover,
 .btwo-btn:focus {
-    border: 4px solid var(--btwo-color);
+    border: 2px solid var(--btwo-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
 /* Last Card */
-.three,
-.three-play {
-    color: var(--three-color);
+.rome,
+.rome-play {
+    color: var(--rome-color);
 }
 
-.three-download{
-    fill: var(--three-color);
+.rome-download{
+    fill: var(--rome-color);
 }
-.three-btn:active,
-.three-btn:hover,
-.three-btn:focus {
-    border: 4px solid var(--three-color);
+.rome-btn:active,
+.rome-btn:hover,
+.rome-btn:focus {
+    border: 2px solid var(--rome-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }

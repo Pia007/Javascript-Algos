@@ -355,10 +355,10 @@
                 <!-- /Extra Card Two Card-->
 
                 <!-- Extra Card Three Card-->
-                <div class="algo-card three">
+                <div class="algo-card rome">
                     <div class="algo-info">
                         <div class="title">
-                            <h3>Lorem, ipsum dolor.</h3>
+                            <h3>TO ROME AND BACK</h3>
                         </div>
                         <div class="algo-info">
                             <p class="info">Lorem, ipsum.</p>
@@ -366,13 +366,13 @@
                     </div>
                     <div class="btn-holder">
                         <!-- <div class="card-download-holder"> -->
-                            <button class="btn three-btn" id="three-card-download" aria-label="download">
-                                <box-icon name='download' class="icon download three-download"></box-icon>
+                            <button class="btn rome-btn" id="rome-card-download" aria-label="download">
+                                <box-icon name='download' class="icon download rome-download"></box-icon>
                             </button>
                         <!-- </div> 
                         <div class="play-holder"> -->
-                            <button class="btn three-btn" id="three-play" aria-label="play">
-                                <i class="fas fa-play three-play"></i>
+                            <button class="btn rome-btn" id="rome-play-btn" aria-label="play">
+                                <i class="fas fa-play rome-play"></i>
                                 <!-- <box-icon name='play' class="icon play three-play"></box-icon> -->
                             </button>
                         <!-- </div> -->
@@ -890,6 +890,54 @@
                 </div>
             </div>
             <!-- /Reverse A Word in a String Dashboard -->
+
+            <!-- To Rome and Back -->
+            <div id="rome" class="container rome-container">
+                <div class="home-btn-holder">
+                    <button id="rome-btn-close" class="btn-home rome-home" aria-label="home">
+                        <box-icon name='home' class="icon-home rome-home-icon"></box-icon>
+                    </button>
+                </div>
+                <div class="window-holder rome-window-holder">
+                    <div class="window rome-window">
+                        
+                        <form id="rome-form" class="rome-form">
+                            <p class="intro rome-intro">
+                                Convert a number to roman numerals and back. 
+                            </p>
+
+                            <!-- INPUT FIELD -->
+                            <div class="input-holder rome-input-holder">
+                                <!-- USER INPUT -->
+                                <input id="rome-text" class="text-field rome-text-field" name="rome-text" type="text" placeholder="Ex: 1234" autocomplete= "off" />
+                            </div>
+                            <!--/ INPUT FIELD -->
+                            
+                            <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                            <p id="romeResponse" class="evals romeEval"></p>
+                            
+                            <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                            <!-- SUBMIT BUTTON -->
+                            <button id="rome-btn" class="btn-check rome-btn-check" type="submit" >CHECK IT!</button>
+                            <!-- SUBMIT BUTTON -->
+                        </form>
+                    </div>
+                    <div class="pdf-holder rome-pdf">
+                        <div class="pdf-content rome-pdf-content">
+                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" src=""></iframe>
+                            <div class="download-holder rome-download-holder">
+                                <button class="btn rome-btn rome-pdf-btn" id="rome-pdf-download-btn" aria-label="download">
+                                    <a href="" download="" alt="download to rome file">
+                                        <box-icon id="rome-pdf-download" name='download' class="icon download rome-download" ></box-icon>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /To Rome and Back -->
         </div>
         <!-- /ALGORITHMS -->
     </div>
@@ -927,6 +975,7 @@
 <script src="js/rev.js"></script>
 <script src="js/lns.js"></script>
 <script src="js/revwords.js"></script>
+<script src="js/roman.js"></script>
 
 
 

@@ -91,10 +91,12 @@ header {
         -9px -9px 18px #ffffff;
 }
 .header-btn:hover,
-.header-btn:active {
+.header-btn:active,
+.header-btn:focus {
     background: #e0e5ec;
     box-shadow: inset 5px 5px 10px #727578,
         inset -5px -5px 10px #ffffff;
+    cursor: pointer;
 }
 .header-info {
     height: 30px;
@@ -173,8 +175,8 @@ footer {
     height: 80px;
     justify-content: space-evenly;
     border-radius: 10px;
-    box-shadow:  7px 7px 14px #bec3c9,
-        -7px -7px 14px #ffffff;
+    box-shadow: inset 20px 20px 15px #b8bcc2,
+            inset -20px -20px 15px #ffffff;
 }
 .footer-btn-item {
     width: 50px;
@@ -186,8 +188,8 @@ footer {
     align-items: center;
     border: none;
     border-radius: 6px;
-    box-shadow:  6px 6px 12px #bec3c9,
-        -6px -6px 12px #ffffff;
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
     
 }
 .footer-links {

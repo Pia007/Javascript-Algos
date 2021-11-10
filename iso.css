@@ -17,7 +17,7 @@
     --lnr-color: #ff0000;
     --rw-color: #8e06fdda;
     --btwo-color: #f36c36ed;
-    --three-color: #05c0c7;
+    --rome-color: #05c0c7;
     --outcome-gen: #FFA500;
     --outcome-red: #FF1919;
     --outcome-green: #1a5f25;
@@ -135,6 +135,11 @@ body {
     box-shadow: inset 21px 21px 100px #7d05df,
         inset -21px -21px 100px #9f07ff;
 }
+.rome-container {
+    background:var(--main-bg);
+    box-shadow: inset 21px 21px 42px #8b8e92,
+        inset -21px -21px 42px #ffffff;
+}
 .container {
     display: none;
 }
@@ -153,8 +158,10 @@ body {
     text-align: center;
     padding: 0px;
     border-radius: 50%;
-    border: none;
-    
+    border: none;   
+}
+.btn-home:hover {
+    cursor: pointer;
 }
 .iso-home {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
@@ -179,7 +186,7 @@ body {
             inset -8px -8px 14px #ffcaca;
 }
 .lw-home {
-    border: 1px solid var(--lw-color);
+   
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  7px 7px 14px #94979c,
         -7px -7px 14px #ffffff;
@@ -207,62 +214,101 @@ body {
         inset -7px -7px 14px #ff0000;
 }
 .rev-word-home {
-    background: var(--rw-color);
-    box-shadow: inset 7px 7px 14px #7d05df,
-        inset -7px -7px 14px #9f07ff;
+    background: linear-gradient(145deg, #9806ff, #8005e4);
+    box-shadow:  12px 12px 24px #390265,
+        -12px -12px 24px #e30aff;
 }
-.btn-home:hover {
-    opacity: 65%;
-}
-.iso-home:active {
-    background: linear-gradient(145deg, #f0f5fd, #caced4);
-    box-shadow:  5px 5px 9px #5a5c5e,
+.rome-home {
+    background: #e0e5ec;
+    box-shadow: 5px 5px 9px #5a5c5e,
         -5px -5px 9px #ffffff;
 }
-.pal-home:active {
-    background: linear-gradient(145deg, #f0f5fd, #caced4);
+
+.iso-home:active,
+.iso-home:hover,
+.iso-home:focus {
+    border: 3px solid var(--iso-color);
+    /* background: linear-gradient(145deg, #f0f5fd, #caced4); */
+    box-shadow: inset 5px 5px 10px #5a5c5e,
+        inset -5px -5px 10px #ffffff;
+}
+.pal-home:active,
+.pal-home:focus,
+.pal-home:hover {
+    border: 3px solid var(--pal-color);
+    /* background: linear-gradient(145deg, #f0f5fd, #caced4); */
     box-shadow:  inset 5px 5px 9px #5a5c5e,
         inset -5px -5px 9px #ffffff;
 }
-.two-home:active {
-   box-shadow: var(--lt-active-btn);
+.two-home:active,
+.two-home:focus,
+.two-home:hover {
+    border: 2px solid var(--main-bg);
+    box-shadow:  inset 5px 5px 10px #24065e,
+    inset -5px -5px 10px #9216ff;
 }
-.sw-home:active {
+.sw-home:active,
+.sw-home:focus,
+.sw-home:hover {
+    border: 3px solid var(--spin-color);
     background: linear-gradient(145deg, #f0f5fd, #caced4);
-    box-shadow:  5px 5px 9px #5a5c5e,
-        -5px -5px 9px #ffffff;
+    box-shadow:  12px 12px 24px #5a5c5e,
+        -12px -12px 24px #ffffff;
 }
-.lw-home:active {
+.lw-home:active,
+.lw-home:focus,
+.lw-home:hover {
+    border: 2px solid var(--llw-color);
     background: #e0e5ec;
     box-shadow:  inset 5px 5px 9px #5a5c5e,
         inset -5px -5px 9px #ffffff;;
 }
-.fact-home:active {
+.fact-home:active,
+.fact-home:focus,
+.fact-home:hover {
+    border: 2px solid var(--fact-color);
     background: #e0e5ec;
     box-shadow:  inset 5px 5px 9px #5a5c5e,
         inset -5px -5px 9px #ffffff;;
 }
-.pn-home:active {
+.pn-home:active,
+.pn-home:focus,
+.pn-home:hover {
+    border: 2px solid var(--main-bg);
     background: #096d64;
     box-shadow: inset 5px 5px 9px #042c28,
             inset -5px -5px 9px #0eaea0;
 }
-.rev-int-home:active {
+.rev-int-home:active,
+.rev-int-home:focus,
+.rev-int-home:hover {
+    border: 2px solid var(--rev-color);
     background: #e0e5ec;
     box-shadow:  5px 5px 9px #5a5c5e,
         -5px -5px 9px #ffffff;
 }
-.lnr-home:active {
+.lnr-home:active,
+.lnr-home:focus,
+.lnr-home:hover {
+    border: 2px solid var(--main-bg);
     background: #ff0000;
     box-shadow: 5px 5px 9px #660000,
         -5px -5px 9px #ff0000;
 }
-.rev-word-home:active {
-    background: var(--rw-color);
-    box-shadow: 5px 5px 9px #7d05df,
-        -5px -5px 9px #9f07ff;
+.rev-word-home:active,
+.rev-word-home:focus,
+.rev-word-home:hover {
+    border: 2px solid var(--main-bg);
+    box-shadow:  12px 12px 24px #390265,
+        -12px -12px 24px #e30aff;
 }
-
+.rome-home:active,
+.rome-home:hover,
+.rome-home:focus {
+    border: 2px solid var(--rome-color);
+    box-shadow: inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;
+}
 .icon-home{
     width: 35px;
     height: 35px;
@@ -300,6 +346,9 @@ body {
 .rev-word-home-icon {
     fill: var(--main-bg);
 }
+.rome-home-icon {
+    fill: var(--rome-color);
+}
 .window-holder {
     width: 90%;
     height: 85%;
@@ -317,6 +366,13 @@ body {
     width: 95%;
     margin: 0 20px;
     /* border: 2px solid black; */
+}
+.rome-window-holder {
+    width: 95%;
+    border-radius: 10px;
+    background: var(--rome-color);
+    box-shadow:    21px 21px 42px #8b8e92,
+        -21px -21px 42px #ffffff;
 }
 
 .window {
@@ -414,7 +470,13 @@ body {
     box-shadow: inset 14px 14px 28px #5a5c5e,
         inset -14px -14px 28px #6d6868;
 }
-
+.rome-window {
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--rome-color);
+    /* box-shadow: inset 21px 21px 42px #8b8e92,
+        inset -21px -21px 42px #ffffff; */
+}
 /* Input Form */
 form {
     /* margin: 20px; */
@@ -505,7 +567,15 @@ form {
     box-shadow: inset 14px 14px 28px #5a5c5e,
         inset -14px -14px 28px #9f07ff;
 }
-
+.rome-form {
+    width: 90%;
+    height: 90%;
+    margin:  30px auto;
+    color: var(--rome-color);
+    background: var(--main-bg);
+    box-shadow: inset 21px 21px 42px #8b8e92,
+        inset -21px -21px 42px #ffffff;
+}
 
 .intro {
     margin: 15px auto;
@@ -545,6 +615,13 @@ form {
     height: 50px;
     margin: 0 auto;
     padding: 10px 0;
+}
+.rome-intro {
+    color: var(--main-bg);
+    border-radius: 10px;
+    background: var(--rome-color);
+    box-shadow: 21px 21px 42px #8b8e92,
+        -21px -21px 42px #ffffff;
 }
 .input-holder {
     width: 95%;
@@ -607,6 +684,12 @@ form {
     background: #e0e5ec;
     box-shadow: inset 14px 14px 28px #5a5c5e,
         inset -14px -14px 28px #ffffff;
+}
+.rome-input-holder {
+    border-radius: 10px;
+    background: var(--rome-color);
+    box-shadow: 21px 21px 42px #8b8e92,
+        -21px -21px 42px #ffffff;
 }
 
 .two-nums,
@@ -699,6 +782,11 @@ form {
     background: var(--rw-color);
     
 }
+.rome-text-field {
+    color: var(--rome-color);
+    box-shadow: inset 21px 21px 42px #8b8e92,
+            inset -21px -21px 42px #ffffff;
+}
 /* .fact-text-field {
     background: linear-gradient(145deg, #fb0fa1, #d40d87);
     box-shadow:  29px 29px 58px #5e063c,
@@ -742,13 +830,12 @@ form {
     color: var(--main-bg);
     opacity: 65%;
 }
+.rome-text-field::placeholder {
+    color: var(--rome-color);
+    opacity: 85%;
+}
 
-.pnRepoHolder {
-    display: none;
-}
-.pn-holder {
-    height: 125px;
-}
+
 /* Check Button */
 .btn-check {
     width: 150px;
@@ -808,54 +895,86 @@ form {
     box-shadow: inset 10px 10px 32px #5a5c5e,
         inset -10px -10px 32px #ffffff;
 }
+.rome-btn-check {
+    color: var(--main-bg);
+    background: var(--rome-color);
+    box-shadow: 10px 10px 20px #acb0b6,
+        -10px -10px 20px #ffffff;
+}
 .btn-check:hover {
     opacity: 65%;
 }
-.iso-btn-check:active {
+.iso-btn-check:active,
+.iso-btn-check:hover,
+.iso-btn-check:focus {
     box-shadow: var(--iso-active-btn);
 }
-.pal-btn-check:active {
+.pal-btn-check:active,
+.pal-btn-check:focus,
+.pal-btn-check:hover {
     box-shadow: var(--lt-active-btn);
 }
-.ts-btn-check:active {
+.ts-btn-check:active,
+.ts-btn-check:focus
+.ts-btn-check:hover {
     box-shadow: var(--lt-active-btn);
 }
-.sw-btn-check:active {
+.sw-btn-check:active,
+.sw-btn-check:focus,
+.sw-btn-check:hover {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  23px 23px 78px #633d3d,
         -23px -23px 78px #fff3f3;
 }
-.lw-btn-check:active {
+.lw-btn-check:active,
+.lw-btn-check:hover,
+.lw-btn-check:focus {
     background: #35c048;
     box-shadow:  10px 10px 32px #154d1d,
          -10px -10px 32px #55ff73;
 }
-.fact-btn-check:active {
+.fact-btn-check:active,
+.fact-btn-check:focus,
+.fact-btn-check:hover {
     background: #e0e5ec;
     box-shadow: 7px 7px 14px #5a5c5e,
         -7px -7px 14px #ffffff;
 }
-.pn-btn-check:active {
+.pn-btn-check:active,
+.pn-btn-check:hover,
+.pn-btn-check:focus {
     background: #096d64;
     box-shadow: inset 15px 15px 30px #042c28,
         inset -15px -15px 30px #0eaea0;
 }
-.rev-int-btn-check:active {
+.rev-int-btn-check:active,
+.rev-int-btn-check:focus,
+.rev-int-btn-check:hover {
     background: #e0e5ec;
     box-shadow: 10px 10px 32px #5a5c5e,
         -10px -10px 32px #ffffff;
 }
-.lns-btn-check:active {
+.lns-btn-check:active,
+.lns-btn-check:hover,
+.lns-btn-check:focus {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  15px 15px 30px #5a5c5e,
         -15px -15px 30px #ffffff;
 }
-.rev-word-btn-check:active {
+.rev-word-btn-check:active,
+.rev-word-btn-check:focus,
+.rev-word-btn-check:hover {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  15px 15px 30px #5a5c5e,
         -15px -15px 30px #ffffff;
 }
-
+.rome-btn-check:active,
+.rome-btn-check:hover,
+.rome-text-field:focus {
+    background: var(--rome-color);
+    box-shadow: inset 24px 24px 48px #036f73,
+        inset -24px -24px 48px #07ffff;
+}   
 /* STYLING RESPONSES */
 .pnRepoHolder {
     width: 90%;
@@ -889,6 +1008,13 @@ form {
     height: 100px;
     margin: 0 10px;
     padding: auto;
+}
+#romeResponse {
+    color: var(--main-bg);
+    background: var(--rome-color);
+    border-radius: 10px;
+    box-shadow:   41px 41px 57px #8b8e92,
+        -41px -41px 57px #ffffff;
 }
 /* PDFs */
 .pdf-holder {
@@ -964,6 +1090,12 @@ form {
 .rev-word-pdf {
     height: 90%;
     width: 45%;
+    margin: 0 auto;
+}
+
+.rome-pdf {
+    height:100%;
+    width: 50%;
     margin: 0 auto;
 }
 .pdf-frame {
@@ -1047,12 +1179,18 @@ form {
             inset -14px -14px 28px #6d6868;
 }
 .rev-word-pdf-content {
-    
     height: 100%;
     border-radius: 10px;
     background: #e0e5ec;
     box-shadow: inset 14px 14px 28px #5a5c5e,
             inset -14px -14px 28px #6d6868;
+}
+.rome-pdf-content {
+    height: 100%;
+    /* border-radius: 10px; */
+    /* background: #e0e5ec;
+    box-shadow: inset 14px 14px 28px #5a5c5e,
+            inset -14px -14px 28px #6d6868; */
 }
 .iso-pdf-frame {
     background: linear-gradient(145deg, #caced4, #f0f5fd);
@@ -1116,6 +1254,13 @@ form {
     box-shadow: inset 14px 14px 28px #5a5c5e,
             inset -14px -14px 28px #6d6868;
 }
+.rome-pdf-frame {
+    height: 90%;
+    border: 2px solid var(--main-bg);
+    background: #e0e5ec;
+    box-shadow: inset 14px 14px 28px #5a5c5e,
+            inset -14px -14px 28px #6d6868;
+}
 .download-holder {
     width: 100%;
     height: 60px;
@@ -1143,7 +1288,7 @@ form {
 #iso-pdf-download-btn:hover,
 #iso-pdf-download-btn:focus,
 #iso-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: linear-gradient(145deg, #3294b4, #3bafd6);
     box-shadow:  5px 5px 9px #23677e,
                  -5px -5px 9px #4be1ff;
@@ -1151,16 +1296,16 @@ form {
 #pal-pdf-download-btn {
     border: 2px solid var(--pal-color);
     background: linear-gradient(145deg, #caced4, #f0f5fd);
-    box-shadow:  5px 5px 9px #8d9095,
-             -5px -5px 9px #ffffff;
+    box-shadow: 5px 5px 9px #8d9095,
+        -5px -5px 9px #ffffff;
 }
 #pal-pdf-download-btn:hover,
 #pal-pdf-download-btn:focus,
 #pal-pdf-download-btn:active {
-    border: 4px solid var(--pal-color);
+    border: 2px solid var(--pal-color);
     background: linear-gradient(145deg, #caced4, #f0f5fd);
-    box-shadow:  5px 5px 9px #8d9095,
-             -5px -5px 9px #ffffff;
+    box-shadow:  inset 5px 5px 9px #8d9095,
+        inset -5px -5px 9px #ffffff;
 }
 #ts-pdf-download-btn {
     background: #5b0eeb;
@@ -1170,7 +1315,7 @@ form {
 #ts-pdf-download-btn:hover,
 #ts-pdf-download-btn:focus,
 #ts-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: #5b0eeb;
     box-shadow:  5px 5px 9px #24065e,
         -5px -5px 9px #9216ff;
@@ -1184,7 +1329,7 @@ form {
 #sw-pdf-download-btn:hover,
 #sw-pdf-download-btn:focus,
 #sw-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: #f89898;
     box-shadow:  5px 5px 9px #d38181,
         inset -5px -5px 9px #ffafaf;
@@ -1198,10 +1343,24 @@ form {
 #lw-pdf-download-btn:hover,
 #lw-pdf-download-btn:focus,
 #lw-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: #35c048;
     box-shadow:  5px 5px 9px #1e6d29,
         inset -5px -5px 9px #4cff67;
+}
+#fact-pdf-download-btn {
+    border: 2px solid var(--fact-color);
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;
+}
+#fact-pdf-download-btn:hover,
+#fact-pdf-download-btn:focus,
+#fact-pdf-download-btn:active {
+    border: 2px solid var(--fact-color);
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;
 }
 #pn-pdf-download-btn {
     background: linear-gradient(145deg, #0a756b, #08625a);
@@ -1211,7 +1370,7 @@ form {
 #pn-pdf-download-btn:hover,
 #pn-pdf-download-btn:focus,
 #pn-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: linear-gradient(145deg, #0a756b, #08625a);
     box-shadow:  8px 8px 16px #042c28,
         -8px -8px 16px #0eaea0;
@@ -1224,7 +1383,7 @@ form {
 #rev-int-pdf-download-btn:hover,
 #rev-int-pdf-download-btn:focus,
 #rev-int-pdf-download-btn:active {
-    border: 4px solid var(--rev-color);
+    border: 2px solid var(--rev-color);
     background: #e0e5ec;
     box-shadow: inset 5px 5px 9px #5a5c5e,
         inset -5px -5px 9px #ffffff;
@@ -1237,7 +1396,7 @@ form {
 #lns-pdf-download-btn:hover,
 #lns-pdf-download-btn:focus,
 #lns-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: #ff0000;
     box-shadow:   inset 20px 20px 40px #660000,
     inset -20px -20px 40px #ff0000;
@@ -1250,7 +1409,7 @@ form {
 #rev-word-pdf-download-btn:hover,
 #rev-word-pdf-download-btn:focus,
 #rev-word-pdf-download-btn:active {
-    border: 4px solid var(--main-bg);
+    border: 2px solid var(--main-bg);
     background: var(--rw-color);
     box-shadow: inset 7px 7px 17px #390265,
         inset -7px -7px 17px #e30aff;
@@ -1456,6 +1615,9 @@ form {
     .pn-intro{
         padding: 0 auto;
        
+    }
+    .rome-intro {
+        width: 100%;
     }
     .input-holder {
         height: 70px;

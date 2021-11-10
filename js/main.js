@@ -225,4 +225,24 @@ document.addEventListener("DOMContentLoaded", () => {
         
     });
     revWordBtn.addEventListener('click', showRevWord);
+
+    // To Rome and Back Container
+    const toRomeDash = document.getElementById('rome');
+    const toRomeBtn = document.getElementById('rome-play-btn');
+
+    // To Rome and Back Dashboard
+    function showToRome() {
+        toRomeDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none';
+        info.style.color = '#05c0c7';  
+        title.style.color= '#05c0c7';  
+        clock.style.color= '#05c0c7'; 
+        mobileTitle.style.color= '#05c0c7'; 
+    };
+    toRomeBtn.addEventListener('click', function(e){
+        e.preventDefault();
+    })
+    toRomeBtn.addEventListener('click', showToRome);
+
 });
