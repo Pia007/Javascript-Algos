@@ -18,7 +18,7 @@
     --rev-color: #8790e0;
     --lnr-color: #ff0000;
     --rw-color: #8e06fdda;
-    --btwo-color: #f36c36ed;
+    --sqc-color: #f36c36ed;
     --rome-color: #05c0c7;
 
     --js-header: #c32abbc9;
@@ -43,7 +43,8 @@ body {
 }
 
 .dash-holder {
-    height: 80vh;
+    /* CHECK THIS HEIGHT AT BREAKPOINTS */
+    height: 90vh;
     width: 100%;
     display: flex;
     margin: 0 auto;
@@ -67,7 +68,7 @@ body {
 .dashboard {
     width: 90%;
     /* CHECK HERE FOR THE SCROLL HEIGHT */
-    height: 750px;
+    height: 80vh;
     display: grid;
     /* This ensures responsiveness */
     
@@ -88,7 +89,7 @@ body {
         inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
     border-radius: 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
 
@@ -343,23 +344,23 @@ p {
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
-/* Next to last card */
-.btwo,
-.btwo-play {
-    color: var(--btwo-color);
+/* Square Or Cube */
+.sqc,
+.sqc-play {
+    color: var(--sqc-color);
 }
 
-.btwo-download {
-    fill: var(--btwo-color);
+.sqc-download {
+    fill: var(--sqc-color);
 }
-.btwo-btn:active,
-.btwo-btn:hover,
-.btwo-btn:focus {
-    border: 2px solid var(--btwo-color);
+.sqc-btn:active,
+.sqc-btn:hover,
+.sqc-btn:focus {
+    border: 2px solid var(--sqc-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }
-/* Last Card */
+/* Rome and Back */
 .rome,
 .rome-play {
     color: var(--rome-color);
@@ -379,6 +380,7 @@ p {
 @media (min-width: 500px) {
     .dashboard {
         padding: 20px;
+        overflow: auto;
     }
     h3 {
         font-size: .85em;

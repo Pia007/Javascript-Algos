@@ -328,33 +328,33 @@
                 </div>
                 <!-- /Reverse A Word in a String Card-->
 
-                <!-- Extra Card Two Card-->
-                <div class="algo-card btwo">
+                <!-- Square of Cube Card-->
+                <div class="algo-card sqc">
                     <div class="algo-info">
                         <div class="title">
-                            <h3>Lorem, ipsum dolor.</h3>
+                            <h3>SQUARE OR CUBE</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Lorem, ipsum.</p>
+                            <p class="info"></p>
                         </div>
                     </div>
                     <div class="btn-holder">
                         <!-- <div class="card-download-holder"> -->
-                            <button class="btn btwo-btn" id="btwo-card-download" aria-label="download">
-                                <box-icon name='download' class="icon download btwo-download"></box-icon>
+                            <button class="btn sqc-btn" id="sqc-card-download" aria-label="download">
+                                <box-icon name='download' class="icon download sqc-download"></box-icon>
                             </button>
                         <!-- </div> 
                         <div class="play-holder"> -->
-                            <button class="btn btwo-btn" id="btwo-play" aria-label="play">
-                                <i class="fas fa-play btwo-play"></i>
-                                <!-- <box-icon name='play' class="icon play btwo-play"></box-icon> -->
+                            <button class="btn sqc-btn" id="sqc-play-btn" aria-label="play">
+                                <i class="fas fa-play sqc-play"></i>
+                                <!-- <box-icon name='play' class="icon play sqc-play"></box-icon> -->
                             </button>
                         <!-- </div> -->
                     </div>
                 </div>
-                <!-- /Extra Card Two Card-->
+                <!-- /Square or Cube Card-->
 
-                <!-- Extra Card Three Card-->
+                <!-- To Roman and Back Card-->
                 <div class="algo-card rome">
                     <div class="algo-info">
                         <div class="title">
@@ -378,7 +378,7 @@
                         <!-- </div> -->
                     </div>
                 </div>
-                <!-- /Extra Card Three Card-->
+                <!-- /To Roman and Back Card-->
             </div>
         </div>
         <!-- /GRID CARDS-->
@@ -891,6 +891,56 @@
             </div>
             <!-- /Reverse A Word in a String Dashboard -->
 
+            <!-- Square or Cube Dashboard -->
+
+            <div id="sqr-cube" class="container sqr-cube-container">
+                <div class="home-btn-holder">
+                    <button id="sqr-cube-btn-close" class="btn-home sqr-cube-home" aria-label="home">
+                        <box-icon name='home' class="icon-home sqr-cube-home-icon"></box-icon>
+                    </button>
+                </div>
+                <div class="window-holder sqr-cube-window-holder">
+                    <div class="window sqr-cube-window">
+                        
+                        <form id="sqr-cube-form" class="sqr-cube-form">
+                            <p class="intro sqr-cube-intro">
+                                Square or Cube a number. 
+                            </p>
+
+                            <!-- INPUT FIELD -->
+                            <div class="input-holder sqr-cube-input-holder">
+                                <!-- USER INPUT -->
+                                <input id="sqr-cube-text" class="text-field sqr-cube-text-field" name="sqr-cube-text" type="text" placeholder="Ex: 5" autocomplete= "off" />
+                            </div>
+                            <!--/ INPUT FIELD -->
+                            
+                            <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
+                            <p id="sqrCubeResponse" class="evals sqrCubeEval"></p>
+                            
+                            <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
+
+                            <!-- SUBMIT BUTTON -->
+                            <button id="sqr-cube-btn" class="btn-check sqr-cube-btn-check" type="submit" >CHECK IT!</button>
+                            <!-- SUBMIT BUTTON -->
+                        </form>
+                    </div>
+                    <div class="pdf-holder sqr-cube-pdf">
+                        <div class="pdf-content sqr-cube-pdf-content">
+                            <iframe id="sqr-cube-pdf-frame" class="pdf-frame sqr-cube-pdf-frame" src=""></iframe>
+                            <div class="download-holder sqr-cube-download-holder">
+                                <button class="btn sqr-cube-btn sqr-cube-pdf-btn" id="sqr-cube-pdf-download-btn" aria-label="download">
+                                    <a href="" download="squareOrCube.pdf" alt="download square or cube file">
+                                        <box-icon id="sqr-cube-pdf-download" name='download' class="icon download sqr-cube-download" ></box-icon>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /Square or Cube Dashboard -->
+
             <!-- To Rome and Back -->
             <div id="rome" class="container rome-container">
                 <div class="home-btn-holder">
@@ -903,7 +953,7 @@
                         
                         <form id="rome-form" class="rome-form">
                             <p class="intro rome-intro">
-                                Convert a number to roman numerals and back. 
+                                Number to Roman or Roman to Number. 
                             </p>
 
                             <!-- INPUT FIELD -->
@@ -914,7 +964,9 @@
                             <!--/ INPUT FIELD -->
                             
                             <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                            <p id="romeResponse" class="evals romeEval"></p>
+                            <div id = "romeRepoHolder" class="romeRepoHolder">
+                                <p id="romeResponse" class="evals romeEval"></p>
+                            </div>
                             
                             <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
@@ -925,7 +977,7 @@
                     </div>
                     <div class="pdf-holder rome-pdf">
                         <div class="pdf-content rome-pdf-content">
-                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" src=""></iframe>
+                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" src="pdf/palindrome.pdf"></iframe>
                             <div class="download-holder rome-download-holder">
                                 <button class="btn rome-btn rome-pdf-btn" id="rome-pdf-download-btn" aria-label="download">
                                     <a href="" download="" alt="download to rome file">
@@ -975,6 +1027,7 @@
 <script src="js/rev.js"></script>
 <script src="js/lns.js"></script>
 <script src="js/revwords.js"></script>
+<script src="js/sqr.js"></script>
 <script src="js/roman.js"></script>
 
 

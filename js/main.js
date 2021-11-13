@@ -226,6 +226,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     revWordBtn.addEventListener('click', showRevWord);
 
+    // Square or Cube Container
+    const sqrCubeDash = document.getElementById('sqr-cube');
+    const sqrCubeBtn = document.getElementById('sqc-play-btn');
+
+    // Square or Cube Dashboard
+    function showSqrCube() {  
+       
+        sqrCubeDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none';
+        info.style.color = '#f36c36ed';  
+        title.style.color= '#f36c36ed';  
+        clock.style.color= '#f36c36ed'; 
+        mobileTitle.style.color= '#f36c36ed'; 
+        
+    }
+    sqrCubeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    sqrCubeBtn.addEventListener('click', showSqrCube);
+
+
     // To Rome and Back Container
     const toRomeDash = document.getElementById('rome');
     const toRomeBtn = document.getElementById('rome-play-btn');

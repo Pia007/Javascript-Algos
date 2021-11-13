@@ -99,7 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
             revIntOutcome.innerHTML = `${negInt}`;
             
         }else {
-            showRevIntOutcome
+            num > 0 ? showRevIntOutcome() : showRevIntOutcome();
+            // showRevIntOutcome
             let revInt = Math.abs(intArr)
             revIntOutcome.innerHTML = `${revInt}`;
             

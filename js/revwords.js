@@ -69,13 +69,16 @@ document.addEventListener("DOMContentLoaded", () => {
         
         //reverse array
         arr = arr.reverse();
+        // get the length of the reversed array
+        let lengthArr = arr.length;
         // initialize an empty array to store reversed words that are not empty
         let newArr = [];
 
         // if the array satifies the constraints
-        if(arr.length <= Math.pow(10, 4) || arr >= 1) {
+        if(lengthArr <= Math.pow(10, 4) || arr >= 1) {
+            
             // loop through the array
-            for (let i = arr.length - 1; i >= 0; i--) {
+            for (let i = lengthArr - 1; i >= 0; i--) {
 
                 // if a word is not empty
                 if (arr[i].length > 0) {
