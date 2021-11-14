@@ -11,12 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
-    
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="header-footer.css" />
-    <link rel="stylesheet" href="iso.css" />
+    <link rel="stylesheet" href="dash.css" />
     
     
     <title>JavaScript Algorithms | Pia Torain</title>
@@ -328,11 +327,11 @@
                 </div>
                 <!-- /Reverse A Word in a String Card-->
 
-                <!-- Square of Cube Card-->
-                <div class="algo-card sqc">
+                <!-- Sum All in Range -->
+                <div class="algo-card sum-all">
                     <div class="algo-info">
                         <div class="title">
-                            <h3>SQUARE OR CUBE</h3>
+                            <h3>SUM ALL IN RANGE</h3>
                         </div>
                         <div class="algo-info">
                             <p class="info"></p>
@@ -340,19 +339,19 @@
                     </div>
                     <div class="btn-holder">
                         <!-- <div class="card-download-holder"> -->
-                            <button class="btn sqc-btn" id="sqc-card-download" aria-label="download">
-                                <box-icon name='download' class="icon download sqc-download"></box-icon>
+                            <button class="btn sum-all-btn" id="sum-all-card-download" aria-label="download">
+                                <box-icon name='download' class="icon download sum-all-download"></box-icon>
                             </button>
                         <!-- </div> 
                         <div class="play-holder"> -->
-                            <button class="btn sqc-btn" id="sqc-play-btn" aria-label="play">
-                                <i class="fas fa-play sqc-play"></i>
-                                <!-- <box-icon name='play' class="icon play sqc-play"></box-icon> -->
+                            <button class="btn sum-all-btn" id="sum-all-play-btn" aria-label="play">
+                                <i class="fas fa-play sum-all-play"></i>
+                                <!-- <box-icon name='play' class="icon play sum-all-play"></box-icon> -->
                             </button>
                         <!-- </div> -->
                     </div>
                 </div>
-                <!-- /Square or Cube Card-->
+                <!-- /Sum All in Range Card-->
 
                 <!-- To Roman and Back Card-->
                 <div class="algo-card rome">
@@ -390,15 +389,25 @@
             <!-- Isogram Dashboard -->
             <div id="iso-container" class="container iso-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="is-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="is-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="is-twitter"aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="iso-btn-close" class="btn-home iso-home" aria-label="home">
                         <box-icon name='home' class="icon-home iso-home-icon"></box-icon>
                     </button>
                 </div>
                 <div class="window-holder iso-window-holder">
-                    
                     <div class="window iso-window">
-                        
-
                         <form id="form" class="iso-form">
                             <p class="intro iso-intro">
                                 Is it an isogram? Enter a word or sentence to find out! 
@@ -408,8 +417,6 @@
                             <div class="input-holder iso-input-holder">
                                 <!-- USER INPUT -->
                                 <input id="isogramText" class="text-field iso-text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" />
-
-                                
                             </div>
                             <!--/ INPUT FIELD -->
                             
@@ -427,7 +434,7 @@
                         <div class="pdf-content iso-pdf-content">
                             <iframe id="iso-pdf-frame" class="pdf-frame iso-pdf-frame" src="pdf/isogram.pdf"></iframe>
                             <div class="download-holder iso-download-holder" id="iso-download-holder">
-                                <button class="btn iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download" type="button">
+                                <button class="btn-dl iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download" type="button">
                                     <a href="pdf/isogram.pdf" download="isogram.pdf" alt="download isogram file">
                                         <box-icon name='download' class="icon download iso-download" id="iso-download"></box-icon>
                                     </a>
@@ -442,6 +449,19 @@
             <!-- Palindrome Dashboard -->
             <div id="palindrome" class="container pal-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="pal-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="pal-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="pal-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="pal-btn-close" class="btn-home pal-home" aria-label="home">
                         <box-icon name='home' class="icon-home pal-home-icon"></box-icon>
                     </button>
@@ -491,6 +511,19 @@
             <!-- Two Sum Dashboard -->
             <div id="two-sum" class="container ts-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="two-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="two-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="two-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="ts-btn-close" class="btn-home two-home" aria-label="home">
                         <box-icon name='home' class="icon-home ts-home-icon"></box-icon>
                     </button>
@@ -547,6 +580,19 @@
             <!-- Spin Words Dashboard -->
             <div id="spin-words" class="container spin-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="spin-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="spin-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="spin-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="spin-btn-close" class="btn-home sw-home" aria-label="home">
                         <box-icon name='home' class="icon-home sw-home-icon"></box-icon>
                     </button>
@@ -602,6 +648,19 @@
             <!-- Length of Longest Word Dashboard -->
             <div id="longest-word" class="container lw-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="lw-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="lw-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="lw-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="lw-btn-close" class="btn-home lw-home" aria-label="home">
                         <box-icon name='home' class="icon-home lw-home-icon"></box-icon>
                     </button>
@@ -651,6 +710,19 @@
             <!-- Factorialize a Number Dashboard -->
             <div id="factorialize" class="container fact-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="fact-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="fact-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="fact-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="fact-btn-close" class="btn-home fact-home" aria-label="home">
                         <box-icon name='home' class="icon-home fact-home-icon"></box-icon>
                     </button>
@@ -700,6 +772,19 @@
             <!-- Palindrome Number Dashboard -->
             <div id="pal-num" class="container pn-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="pn-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="pn-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="pn-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="pn-btn-close" class="btn-home pn-home" aria-label="home">
                         <box-icon name='home' class="icon-home pn-home-icon"></box-icon>
                     </button>
@@ -750,6 +835,19 @@
             <!-- Reverse an Integer Dashboard -->
             <div id="reverse-int" class="container rev-int-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="rv-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="rv-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="rv-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="rev-int-btn-close" class="btn-home rev-int-home" aria-label="home">
                         <box-icon name='home' class="icon-home rev-int-home-icon"></box-icon>
                     </button>
@@ -798,6 +896,19 @@
             <!-- Longest Non-Repeating Substring Dashboard -->
             <div id="lnr" class="container lnr-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="lnr-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="lnr-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="lnr-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="lnr-btn-close" class="btn-home lnr-home" aria-label="home">
                         <box-icon name='home' class="icon-home lnr-home-icon"></box-icon>
                     </button>
@@ -846,6 +957,19 @@
             <!-- Reverse A Word in a String Dashboard -->
             <div id="rev-word" class="container rev-word-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="rw-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="rw-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="rw-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="rev-word-btn-close" class="btn-home rev-word-home" aria-label="home">
                         <box-icon name='home' class="icon-home rev-word-home-icon"></box-icon>
                     </button>
@@ -877,10 +1001,10 @@
                     </div>
                     <div class="pdf-holder rev-word-pdf">
                         <div class="pdf-content rev-word-pdf-content">
-                            <iframe id="ref-word-pdf-frame" class="pdf-frame rev-word-pdf-frame" src=""></iframe>
+                            <iframe id="ref-word-pdf-frame" class="pdf-frame rev-word-pdf-frame" src="pdf/ReverseWords.pdf"></iframe>
                             <div class="download-holder lns-download-holder">
                                 <button class="btn rev-word-btn rev-word-pdf-btn" id="rev-word-pdf-download-btn" aria-label="download">
-                                    <a href="" download="longestNonRepeating.pdf" alt="download longest non-repeating substring file">
+                                    <a href="pdf/ReverseWords.pdf" download="ReverseWords.pdf" alt="download reverse words in a string file">
                                         <box-icon id="rev-word-pdf-download" name='download' class="icon download rev-word-download" ></box-icon>
                                     </a>
                                 </button>
@@ -891,46 +1015,59 @@
             </div>
             <!-- /Reverse A Word in a String Dashboard -->
 
-            <!-- Square or Cube Dashboard -->
+            <!-- Sum All in Range Dashboard -->
 
-            <div id="sqr-cube" class="container sqr-cube-container">
+            <div id="sm-all" class="container sm-all-container">
                 <div class="home-btn-holder">
-                    <button id="sqr-cube-btn-close" class="btn-home sqr-cube-home" aria-label="home">
-                        <box-icon name='home' class="icon-home sqr-cube-home-icon"></box-icon>
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="sm-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="sm-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="sm-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
+                    <button id="sm-all-btn-close" class="btn-home sm-all-home" aria-label="home">
+                        <box-icon name='home' class="icon-home sm-all-home-icon"></box-icon>
                     </button>
                 </div>
-                <div class="window-holder sqr-cube-window-holder">
-                    <div class="window sqr-cube-window">
+                <div class="window-holder sum-all-window-holder">
+                    <div class="window sm-all-window">
                         
-                        <form id="sqr-cube-form" class="sqr-cube-form">
-                            <p class="intro sqr-cube-intro">
-                                Square or Cube a number. 
+                        <form id="sm-all-form" class="sm-all-form">
+                            <p class="intro sm-all-intro">
+                                Enter 2 numbers to see their sum and the numbers between them. 
                             </p>
 
                             <!-- INPUT FIELD -->
-                            <div class="input-holder sqr-cube-input-holder">
+                            <div class="input-holder sm-all-input-holder">
                                 <!-- USER INPUT -->
-                                <input id="sqr-cube-text" class="text-field sqr-cube-text-field" name="sqr-cube-text" type="text" placeholder="Ex: 5" autocomplete= "off" />
+                                <input id="sm-all-text" class="text-field sm-all-text-field" name="sm-all-text" type="text" placeholder="Ex: 5" autocomplete= "off" />
                             </div>
                             <!--/ INPUT FIELD -->
                             
                             <!-- RESPONSE BASED ON CRITERIA EVALUATION -->
-                            <p id="sqrCubeResponse" class="evals sqrCubeEval"></p>
+                            <p id="sumAllResponse" class="evals sumAllEval"></p>
                             
                             <!-- /RESPONSE BASED ON CRITERIA EVALUATION -->
 
                             <!-- SUBMIT BUTTON -->
-                            <button id="sqr-cube-btn" class="btn-check sqr-cube-btn-check" type="submit" >CHECK IT!</button>
+                            <button id="sm-all-btn" class="btn-check sm-all-btn-check" type="submit" >CHECK IT!</button>
                             <!-- SUBMIT BUTTON -->
                         </form>
                     </div>
-                    <div class="pdf-holder sqr-cube-pdf">
-                        <div class="pdf-content sqr-cube-pdf-content">
-                            <iframe id="sqr-cube-pdf-frame" class="pdf-frame sqr-cube-pdf-frame" src=""></iframe>
-                            <div class="download-holder sqr-cube-download-holder">
-                                <button class="btn sqr-cube-btn sqr-cube-pdf-btn" id="sqr-cube-pdf-download-btn" aria-label="download">
-                                    <a href="" download="squareOrCube.pdf" alt="download square or cube file">
-                                        <box-icon id="sqr-cube-pdf-download" name='download' class="icon download sqr-cube-download" ></box-icon>
+                    <div class="pdf-holder sm-all-pdf">
+                        <div class="pdf-content sm-all-pdf-content">
+                            <iframe id="sm-all-pdf-frame" class="pdf-frame sm-all-pdf-frame" src="pdf/SumAll.pdf"></iframe>
+                            <div class="download-holder sm-all-download-holder">
+                                <button class="btn sm-all-btn sm-all-pdf-btn" id="sm-all-pdf-download-btn" aria-label="download">
+                                    <a href="pdf/SumAll.pdf" download="squareOrCube.pdf" alt="download sum all numbers in a range file">
+                                        <box-icon id="sm-all-pdf-download" name='download' class="icon download sm-all-download" ></box-icon>
                                     </a>
                                 </button>
                             </div>
@@ -939,11 +1076,24 @@
                 </div>
             </div>
 
-            <!-- /Square or Cube Dashboard -->
+            <!-- /Sum All in Range Dashboard -->
 
             <!-- To Rome and Back -->
             <div id="rome" class="container rome-container">
                 <div class="home-btn-holder">
+                    <div class="footer-holder">
+                        <div class="footer-list">
+                            <button class="footer-btn-item" id="rome-linkedin" aria-label="linkedin logo">
+                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="footer-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="rome-github" aria-label="github logo">
+                                <a href="https://github.com/Pia007/Pia007" class="footer-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                            </button>
+                            <button class="footer-btn-item" id="rome-twitter" aria-label="twitter logo">
+                                <a href="https://twitter.com/FeenixRizn" class="footer-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                            </li>
+                        </div>
+                    </div>
                     <button id="rome-btn-close" class="btn-home rome-home" aria-label="home">
                         <box-icon name='home' class="icon-home rome-home-icon"></box-icon>
                     </button>
@@ -997,7 +1147,7 @@
     
     
     <!-- FOOTER -->
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="footer-holder">
             <div class="footer-list">
                 <button class="footer-btn-item" aria-label="linkedin logo">
@@ -1011,7 +1161,7 @@
                 </li>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--/ FOOTER -->
 
 
@@ -1027,7 +1177,7 @@
 <script src="js/rev.js"></script>
 <script src="js/lns.js"></script>
 <script src="js/revwords.js"></script>
-<script src="js/sqr.js"></script>
+<script src="js/sum.js"></script>
 <script src="js/roman.js"></script>
 
 

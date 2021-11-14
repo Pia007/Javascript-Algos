@@ -18,7 +18,7 @@
     --rev-color: #8790e0;
     --lnr-color: #ff0000;
     --rw-color: #8e06fdda;
-    --sqc-color: #f36c36ed;
+    --sum-all-color: #f36c36ed;
     --rome-color: #05c0c7;
 
     --js-header: #c32abbc9;
@@ -345,18 +345,18 @@ p {
     cursor: pointer;
 }
 /* Square Or Cube */
-.sqc,
-.sqc-play {
-    color: var(--sqc-color);
+.sum-all,
+.sum-all-play {
+    color: var(--sum-all-color);
 }
 
-.sqc-download {
-    fill: var(--sqc-color);
+.sum-all-download {
+    fill: var(--sum-all-color);
 }
-.sqc-btn:active,
-.sqc-btn:hover,
-.sqc-btn:focus {
-    border: 2px solid var(--sqc-color);
+.sum-all-btn:active,
+.sum-all-btn:hover,
+.sum-all-btn:focus {
+    border: 2px solid var(--sum-all-color);
     box-shadow:  var(--card-btn-shadows);
     cursor: pointer;
 }

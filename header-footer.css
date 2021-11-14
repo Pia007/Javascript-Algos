@@ -16,7 +16,7 @@
     --rev-color: #8790e0;
     --lnr-color: #ff0000;
     --rw-color: #8e06fdda;
-    --btwo-color: #f36c36ed;
+    --sum-all-color: #f36c36ed;
     --three-color: #05c0c7;
     --outcome-gen: #FFA500;
     --outcome-red: #FF1919;
@@ -153,41 +153,43 @@ header {
 
 footer {
     width: 100%;
-    height:90px;
+    height:auto;
     bottom: 0;
     /* margin: 0 auto; */
     z-index: 3;
     text-align: center;
 }
 .footer-holder {
-    width: 50%;
-    height: 90px;
+    width:15%;
+    height: auto;
     margin: auto;
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
 }
 .footer-list {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    height: 80px;
-    justify-content: space-evenly;
-    border-radius: 10px;
+    width: 240px;
+    height: 70px;
+    justify-content: space-between;
+    /* border-radius: 10px;
     box-shadow: inset 20px 20px 15px #b8bcc2,
-            inset -20px -20px 15px #ffffff;
+            inset -20px -20px 15px #ffffff; */
 }
 .footer-btn-item {
-    width: 50px;
-    height: 50px;
-    margin: auto;
+    width: 45px;
+    height: 45px;
+    margin: 15px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: none;
-    border-radius: 6px;
+    border: 2px solid var(--iso-color);
+    border-radius: 50%;
     box-shadow: 17px 17px 34px #5a5c5e,
         -17px -17px 34px #ffffff;
     
@@ -196,14 +198,14 @@ footer {
     width: 30px;
     height: 30px;
     text-align: center;
-    border-radius: 2px;
+    border-radius:50%;
 }
 .footer-links:hover,
 .footer-links:active,
 .footer-links:focus {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
-    box-shadow:  5px 5px 10px #5a5c5e,
-        -5px -5px 10px #ffffff;
+    box-shadow:  inset 5px 5px 10px #5a5c5e,
+        inset -5px -5px 10px #ffffff;
 }
 
 .footer-btn-item:hover,
@@ -299,19 +301,20 @@ footer {
     #mb-header-title {
         display: block
     }
-    footer {
+    /* footer {
         height: 80px;
-    }
+    } */
     .footer-list {
         width: 80%;
-        height: 70px;
-        min-width: 200px;
+        height: 55px;
+        min-width: 150px;
         justify-content: space-between;
     }
     .footer-btn-item {
         width: 40px;
         height: 40px;
-        margin: auto;
-        border-radius: 6px;
+        margin: 5px;
+        /* margin: auto;
+        border-radius: 6px; */
     }
 }

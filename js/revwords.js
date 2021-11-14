@@ -64,17 +64,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     function reverseWords() {
-        //convert string to array
-        let arr = document.getElementById("rev-word-text").value.split(" ");
-        
-        //reverse array
-        arr = arr.reverse();
+        //convert string to array, reverse it and assign it 
+        let arr = document.getElementById("rev-word-text").value.split(" ").reverse();
+    
         // get the length of the reversed array
         let lengthArr = arr.length;
         // initialize an empty array to store reversed words that are not empty
         let newArr = [];
 
-        // if the array satifies the constraints
+        // if the array satisfies the constraints
         if(lengthArr <= Math.pow(10, 4) || arr >= 1) {
             
             // loop through the array

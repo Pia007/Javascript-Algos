@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Palindrome Container
     const palDash = document.getElementById('palindrome');
+   
 
     
     function showHome() {
