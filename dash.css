@@ -478,13 +478,14 @@ body {
     box-shadow: 16px 16px 32px #042c28,
         -16px -16px 32px #0eaea0;
 }
-.rev-int-window {
+.rev-int-window,
+.rev-int-pdf-content {
     width: 45%;
     height: 90%;
     margin: 0 auto;
     background: #e0e5ec;
-    box-shadow: 10px 10px 32px #5a5c5e,
-        -10px -10px 32px #ffffff;
+    box-shadow: 18px 18px 47px #6d75b5,
+    -18px -18px 47px #a1abff;
 }
 .lnr-window {
     width: 45%;
@@ -642,6 +643,7 @@ form {
     margin-top: 0;
 }
 .fact-intro {
+    height: 35px;
     padding: auto 10px;
     margin-bottom: 15px;
 }
@@ -657,7 +659,7 @@ form {
 
 .pn-intro,
 .pn-text-field,
-.pnEval,
+.pnRepoHolder,
 .pn-btn-check {
     color: var(--main-bg);
     border-radius: 10px;
@@ -670,6 +672,7 @@ form {
     margin: 0 auto;
     padding: 10px 0;
 }
+
 .rome-intro {
     color: var(--main-bg);
     border-radius: 10px;
@@ -751,7 +754,7 @@ form {
 .sw-words,
 .sw-num {
     width: 100%;
-    height: 100px;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -948,6 +951,7 @@ form {
              -8px -8px 16px #ffffff;
 }
 .ts-btn-check {
+    margin-bottom: 5px;
     color: var(--main-bg);
     border: 2px solid var(--two-color);
     background: #5b0eeb;
@@ -1072,9 +1076,11 @@ form {
 /* STYLING RESPONSES */
 .pnRepoHolder,
 .romeRepoHolder {
-    width: 90%;
+    width: 80%;
+    height: 50px;
     margin: 0 auto;
     padding: 0;
+   
 }
 .romeRepoHolder {
     text-align: center;
@@ -1095,22 +1101,24 @@ form {
     height: 80px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 8px;
     padding: auto;
     font-size: 23px;
 }
-.factEval,
-.pnEval {
+.factEval {
     width: 100%;
     padding: 25px ;
+   
     text-align: center;
 }
+
 .factEval,
 .sqrCubeEval {
     color: var(--main-bg);
 }
 .pnEval {
     height: 100px;
-    margin: 0 10px;
+    margin:10px auto;
     padding: auto;
 }
 .romeEval {
@@ -1273,9 +1281,9 @@ form {
     height: 90%;
     
     border-radius: 10px;
-    background: #e0e5ec;
+    /* background: #e0e5ec;
     box-shadow: 10px 10px 32px #5a5c5e,
-        -10px -10px 32px #ffffff;
+        -10px -10px 32px #ffffff; */
 }
 .lns-pdf-content {
     height: 100%;
@@ -1345,7 +1353,7 @@ form {
 }
 .fact-pdf-frame {
     height: 100%;
-    border: 2px solid var(--main-bg);
+    border: 2px solid var(--fact-color);
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  26px 26px 75px #5a5c5e,
         -26px -26px 75px #ffffff;
@@ -1749,10 +1757,23 @@ form {
         height: 90%;
         
     }
+    .pdf-frame {
+        height: 90%;
+        width: 90%;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
     .iso-window {
         /* width: 90%; */
         height:100%;
         margin: 0 auto;
+    }
+    .two-window {
+        height: 50%;
+    }
+    .ts-pdf-frame {
+        height: 50%;
+        width: 100%;
     }
     .iso-form,
     .iso-pdf-frame {
@@ -1760,19 +1781,54 @@ form {
         box-shadow:  6px 6px 12px #2b829e,
             -6px -6px 12px #43c6f2;
     }
-    .pal-form,
     .two-form,
-    .lw-form {
-        width: 90%;
+    .ts-pdf-frame {
+        width: 95%;
+        box-shadow:  5px 5px 10px #330884,
+            -5px -5px 10px #8314ff;
+    }
+    .pal-form,
+    
+    .lw-form,
+    .lw-pdf-frame {
+        width: 95%;
         height: 90%;
+        box-shadow: 5px 5px 10px #31b343,
+             -5px -5px 10px #39cd4d;
     }
     .sw-form {
         width: 100%;
         margin: 0;
     }
+    .pn-window,
+    .pn-pdf-content,
+    .pn-intro,
+    .pn-text-field,
+    .pn-btn-check,
+    .pn-pdf-frame,
+    .pnRepoHolder {
+        box-shadow: 4px 4px 12px #042c28,
+        -4px -4px 12px #0eaea0;
+
+    }
+    .rev-int-window,
+    .rev-int-pdf-content{
+        box-shadow: 12px 12px 24px #6d75b5,
+        -12px -12px 24px #a1abff;
+    }
+    .rev-int-form,
+    .rev-int-pdf-frame {
+        width: 95%;
+    }
+    .rev-int-text-field {
+        margin-bottom: 8px;
+        box-shadow:  2px 2px 10px #5d639b,
+        -2px -2px 10px #b1bdff;
+    }
     .rev-word-form {
         justify-content: space-evenly;
     }
+    
     .rev-word-form,
     .rev-word-pdf {
         width: 90%;
@@ -1785,15 +1841,17 @@ form {
     }
     .intro {
         font-size: 24px;
-        margin: 0;
+        margin: 0 auto;
         margin-bottom: 5px;
+        
     }
     .ts-intro {
-        margin-top:0;
+        margin:0 auto;
+        margin-bottom: 10px;
     }
-    .sw-intro {
+    /* .sw-intro {
         font-size: 20px;
-    }
+    } */
     .fact-intro {
         width: 100%;
         height: 34px;
@@ -1814,12 +1872,25 @@ form {
         margin: 0;
         margin-bottom: 10px;
     }
-    .ts-input-holder,
+    .ts-input-holder{
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+    }
+    .two-nums,
+    .two-target {
+        height: 40px;
+        width: 50%;
+        text-align: center;
+    }   
     .sw-input-holder {
-        height: 90px;
+       
         width: 80%;
         margin: 5px auto;
-        flex-direction: column;
+        margin-bottom: 10px;
+        flex-direction: row;
         justify-content: space-around;
     }
     
@@ -1830,17 +1901,23 @@ form {
     }
     .sumEval {
         height: auto;
+        margin-bottom: 8px;
+    }
+    .revEval {
+        margin-top: 8px;
     }
     .text-field {
         width: 90%;
         height: 36px;
         font-size: 18px;
         margin: auto;
+        padding: auto;
     }
     .text-field::placeholder {
         font-size: 18px;
     }
     .ts-text-field {
+        width: 70%;
         margin-top: 3px;
     }
     .sw-text-field {
@@ -1854,12 +1931,12 @@ form {
     }
     .iso-btn-check {
         box-shadow: 6px 6px 12px #ccd0d7,
-        -6px -6px 12px #f4faff;
+            -6px -6px 12px #f4faff;
     }
-    .ts-btn-check,
-    .sw-btn-check {
+    
+    /* .sw-btn-check {
         margin-bottom: 0;
-    }
+    } */
     /* .pdf-holder {
         width: 90%;
         height: 50%;
@@ -1869,12 +1946,7 @@ form {
     .sw-pdf-content {
         width: 100%;
     }
-    .pdf-frame {
-        height: 90%;
-        width: 90%;
-        margin: 20px auto;
-        margin-bottom: 10px;
-    }
+    
     .download-holder {
         margin:0px;
     }
@@ -1882,13 +1954,32 @@ form {
 
 /* MAX-WIDTH 800PX */
 @media screen and (max-width:800px){
-    .ts-input-holder,
+    .sw-form {
+        box-shadow:   5px 5px 30px #9c6060,
+        -5px -5px 30px #ffd0d0;
+    }
     .sw-input-holder {
-        flex-direction: column;
+       box-shadow: 5px 5px 15px #cb7d7d,
+       -5px -5px 15px #ffb3b3;
     }
     .ts-intro,
     .sw-intro {
         font-size: 20px;
+    }
+    .sw-text-field,
+    .sw-btn-check {
+        box-shadow: inset 5px 5px 10px #d08080,
+        inset -5px -5px 10px #ffb0b0;
+    }
+    .rev-int-input-holder {
+        height:  50px;
+        width: 80%;
+        margin : 0 auto;
+    }
+    .rev-int-btn-check {
+       
+        margin: 10px auto;
+        margin-bottom: auto;
     }
     .play {
         margin: 3px auto;
@@ -1971,11 +2062,19 @@ form {
         height: 55px;
        
     }
+    .ts-input-holder {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
     .text-field {
         width: 95%;
         margin: 10px;
         height: var(--sum-all-color);
     }
+    
     .text-field::placeholder {
         font-size: 4.5vw;
     }
@@ -1986,26 +2085,29 @@ form {
         padding: auto;
     }
     .intro,
-    .evals{
-        font-size: 4vw;
+    .evals,
+    .sw-intro{
+        font-size: 18px;
     }
+    /* .sw-intro {
+        font-size: 18px;
+    } */
     .fact-intro {
         /* width: 80%; */
         height: 30px;
         text-align: center;
-        margin:15px 0 ;
+        margin: 15px 0;
     }
-    .ts-intro,
+    
+    /* .ts-intro,
     .sumEval,
     .sw-intro,
     .pn-intro {
         font-size: 18px;
-    }
-    .ts-intro,
-    .sw-intro {
-        font-size: 16px;
-    }
-    .ts-input-holder,
+    } */
+    
+    
+    
     .sw-input-holder {
         height: 65px;
         box-shadow: none;
@@ -2019,9 +2121,15 @@ form {
         width: 80%;
     }
     .text-field {
-        padding: 5px auto;
+        padding: 2px auto;
     }
-    .ts-text-field,
+    
+    .ts-text-field {
+        width: 70%;
+        margin: 5px auto;
+        height: 36px;
+        padding: 3px;
+    }
     .sw-text-field,
     .sw-words,
     .sw-num,
@@ -2035,6 +2143,9 @@ form {
         margin: auto;
         width: 75%;
     }
+    .text-field::placeholder {
+        font-size: 16px;
+    }
     /* .revEval {
         margin-top: 30px;
     } */
@@ -2047,7 +2158,7 @@ form {
     .btn-check {
         height: 34px;
         width: 100px;
-        margin-bottom: 0;
+        /* margin-bottom: 8px; */
         /* font-size: 3.5vw; */
         font-weight: 500;
     }
@@ -2081,11 +2192,8 @@ form {
 }
 @media screen and (max-width: 375px) {
     .algo-dash-holder {
-        height: auto;
-        
+        height: auto; 
         margin: 10px 0;
-        border: none;
-        outline: none;
         border-radius: 0;
         padding: 0;
         overflow: hidden;
@@ -2094,6 +2202,12 @@ form {
         margin: 0;
         width: 100%;
 
+    }
+    .text-field {
+        font-size: 16px;
+    }
+    .ts-input-holder {
+        height: 35px;
     }
 
 }
