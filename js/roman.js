@@ -67,24 +67,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     function checkRome(input) {
+        // get the value of the input
         input = document.getElementById("rome-text").value;
+        // convert the input to upper case
         input = input.toUpperCase();
+        // check case
         console.log(input);
 
+        // regex for roman numerals
         let roman = /^(M{1,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|M{0,4}(CM|C?D|D?C{1,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|M{0,4}(CM|CD|D?C{0,3})(XC|X?L|L?X{1,3})(IX|IV|V?I{0,3})|M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|I?V|V?I{1,3}))$/;
+        // regex for numbers
         let numbers = /^[0-9]/;
+        // regex for special characters
         let specialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+
+        // check if the input contains special characters & numbers
         if (specialChar.test(input) && numbers.test(input)) {
           romeOutcome.innerHTML = "Please enter a whole number";
           showRomeOutcome();
-          
           // return 'roman';
+
+          // is input a roman numeral if so convert to number
         } else if (roman.test(input)) {
           console.log("Roman");
           toInt();
+
+          // is input a number if so convert to roman numeral
         } else if(numbers.test(input)) {
           console.log("Numbers")
           toRoman();
+
+          // otherwise input is invalid
         }else {
           romeOutcome.innerHTML = "Please enter a valid roman number or number";
           showRomeOutcome();
@@ -92,62 +105,95 @@ document.addEventListener("DOMContentLoaded", () => {
       clearRomeForm();
     };
 
+    // Convert to Roman - the input is an integer
     function toRoman(num) {
       num = Number(document.getElementById("rome-text").value);
-      if (!num || num <= 0) {
-        // ADD A POSITIVE NUMBER HERE
-        return 0;
-      }
-
-      let map = new Map([[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'], 
-                          [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], 
-                          [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]);
-
-      let roman = '';
-      while (num > 0) {
-        for (let [key, value] of map) {
-          if (num >= key) {
-            roman += value;
-            num -= key;
-            break;
-          }
-        }
+      // check constraints
+      if (num <= 0 || num > 3999) {
         showRomeOutcome();
-    romeOutcome.innerHTML = roman;
-    console.log(roman);
-      }
-    
-  }
+        romeOutcome.innerHTML = "Please enter a number from 1 to 3999";
 
-    function toInt(str) {
-        str = document.getElementById("rome-text").value.toUpperCase();
-        str = str.toUpperCase();
-        let map = new Map([['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], 
-            ['D', 500], ['M', 1000]]);
-        if (!str || str.length === 0) {
-          //ADD AN ERROR MESSAGE HERE
-          return 0;
+        // satifies contraints, convert to roman numeral
+      } else {
+        // create a map of key value pairs to convert to roman numerals
+        const intMap = new Map([[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'], 
+                            [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], 
+                            [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]);
+        // assign 'roman' to an empty string
+        let roman = '';
+        // loop through the map object
+        while (num > 0) {
+          // access the key-value pairs of the map
+          for (let [key, value] of intMap) {
+            // if the value of the key is less than or equal to the num
+            if (num >= key) {
+              // add the value to the roman string
+              roman += value;
+              // subtract the value from the num
+              num -= key;
+              // break out of the loop
+              break;
+            }
+          }
+          //return roman;
+          showRomeOutcome();
+          romeOutcome.innerHTML = roman;
+          console.log(roman);
         }
-        let i = str.length - 1;
-        let int = map.get(str[i]);
+        
+      }
+    }
 
+    // Convert to Integer - the input is a roman numeral
+    function toInt(str) {
+      // assign the input to a variable
+      str = document.getElementById("rome-text").value.toUpperCase();
+      
+      // assign the length of the string to a variable;
+      strLength = str.length;
+      // create a map that contains the key - value pairs of roman numerals - integers
+      const romanMap = new Map([['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], 
+          ['D', 500], ['M', 1000]]);
+
+      // check constraints
+      if (strLength <= 0 || strLength > 15) {
+        // return 'invalid';
+        showRomeOutcome();
+        romeOutcome.innerHTML = "Please enter a valid roman numeral";
+
+        // satifies contraints, convert to integer  
+      } else {
+        // assign the difference of the string's length and 1 to a variable
+        let i = strLength - 1;
+        // assign the value at that key to a variable
+        let int = romanMap.get(str[i]);
+        console.log(int);
+        // loop through the string as long as the length is greater than 0
         while (i > 0) {
-          const curr = map.get(str[i]);
-          const prev = map.get(str[i - 1]);
+          // assign the value at the key to a variable to get the current value
+          const curr = romanMap.get(str[i]);
+          // assign the value at map key-1 to a variable to get the previous value
+          const prev = romanMap.get(str[i - 1]);
 
+          // if the current value is less than the previous value
           if (prev >= curr) {
-              int += prev;
+            // add the previous value to the integer
+            int += prev;
           } else {
+            // otherwise, subtract the previous value from the integer
             int -= prev;
           }
+          // decrement by 1 for each loop
           i--;
         }
-      showRomeOutcome()
-      romeOutcome.innerHTML = int;
-      console.log(int);
+        // contraints - check the returned integer 
+        if (int > 3999) {
+          showRomeOutcome();
+          romeOutcome.innerHTML = "Please a roman numeral between I and  MMMCMXCIX";
+        } else {
+          showRomeOutcome()
+          romeOutcome.innerHTML = int;
+        }
+      }
     };
-    
-
-
-    
 });

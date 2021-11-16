@@ -50,6 +50,7 @@ body {
 }
 header {
     width: 100%;
+    min-width: 340px;
     height: 100px;
     font-size: 82.5%;
     display: flex;

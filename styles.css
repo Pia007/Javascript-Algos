@@ -55,6 +55,7 @@ body {
 }
 .dash-grid-holder {
     width: 90%;
+    min-width: 343px;
     display: flex;
     height: 92%;
     /* flex-direction: row;
@@ -66,13 +67,13 @@ body {
 
 }
 .dashboard {
-    width: 90%;
+    width: 80%;
     /* CHECK HERE FOR THE SCROLL HEIGHT */
     height: 80vh;
     display: grid;
     /* This ensures responsiveness */
     
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
     /* /This ensures responsiveness */
     gap: 20px;
     
@@ -99,8 +100,8 @@ body {
 .algo-card {
     
     /* background: var(--card-bg); */
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
     /* CHECK HERE FOR CARD CONTENT SPACING */
     justify-content: space-evenly;
     text-align: center;
@@ -119,17 +120,20 @@ body {
     
 }
 .algo-info {
-    /* height: 60%; */
+    height: 60%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-h3 {
-    font-size: 20px;
+.title {
+    font-size: 18px;
+    margin: 8px 0;
+    margin-top: 0;
 }
 
-p {
-    font-size: 16px;
-    margin: 5px auto;
+.info {
+    font-size: 14px;
+    margin: 8px auto;
     margin-bottom: 10px;
 }
 
@@ -148,8 +152,8 @@ p {
 
 
 .btn {
-    width: 45px; 
-    height: 45px;
+    width: 40px; 
+    height: 40px;
     /* margin-top: 10px; */
     outline: none;
     border: none;
@@ -382,11 +386,11 @@ p {
         padding: 20px;
         overflow: auto;
     }
-    h3 {
-        font-size: .85em;
+    .title {
+        font-size: 4vw;
     }
     .info {
-        font-size: .7em;
+        font-size: 2.8vw;
     }
     .btn-holder{
         height: 55px;
@@ -397,20 +401,27 @@ p {
     }
 }
 @media (min-width: 600px) {
+    
     .dashboard {
         padding: 30px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .info {
+        font-size: 18px;
     }
 }
 @media (min-width: 768px) {
     .dashboard {
         padding: 40px;
     }
-    h3 {
-        font-size: .9em;
-    }
-    .info {
+    /* .title {
+        font-size: 2.5vw;
+    } */
+    /* .info {
         font-size: .75em;
-    }
+    } */
     .card-download-holder,
     .play-holder { 
         width: 43px;
@@ -436,12 +447,12 @@ p {
     .dashboard {
         padding: 50px;
     }
-    h3 {
-        font-size: 1em;
-    }
-    .info {
+    /* .title {
+        font-size: 24px;
+    } */
+    /* .info {
         font-size: .75em;
-    }
+    } */
     .card-download-holder,
     .play-holder { 
         width: 45px;
