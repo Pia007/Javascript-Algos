@@ -935,9 +935,10 @@ form {
     
 }
 .iso-btn-check {
-    color: var(--iso-color);
-    box-shadow:  12px 12px 24px #256e86,
-        -12px -12px 24px #49daff;
+    color: var(--main-bg);
+    background: var(--iso-color);
+    box-shadow:  15px 15px 28px #b1b5ba,
+        -15px -15px 28px #ffffff;
 }
 .pal-btn-check {
     color: var(--pal-color);
@@ -1698,7 +1699,7 @@ form {
     .btn-check {
         width: 140px;
         height: 36px;
-        font-size: 20px;
+        
     }
     
     
@@ -1717,7 +1718,7 @@ form {
 @media screen and (max-width: 900px) {
     .algo-dash-holder {
         width: 100%;
-        /* height: 100vh; */
+        height: auto;
     }
     .container {
         width: 90%;
@@ -1747,6 +1748,17 @@ form {
     .pdf-content {
         height: 90%;
         
+    }
+    .iso-window {
+        /* width: 90%; */
+        height:100%;
+        margin: 0 auto;
+    }
+    .iso-form,
+    .iso-pdf-frame {
+        background: linear-gradient(145deg, #caced4, #f0f5fd);
+        box-shadow:  6px 6px 12px #2b829e,
+            -6px -6px 12px #43c6f2;
     }
     .pal-form,
     .two-form,
@@ -1840,6 +1852,10 @@ form {
         margin-top: 0;
         font-size: 16px;
     }
+    .iso-btn-check {
+        box-shadow: 6px 6px 12px #ccd0d7,
+        -6px -6px 12px #f4faff;
+    }
     .ts-btn-check,
     .sw-btn-check {
         margin-bottom: 0;
@@ -1886,16 +1902,19 @@ form {
         width: 100%;
         height: 90vh;
     }
-    body {
+    /* body {
         position: relative;
-    }
+    } */
     .algo-dash-holder {
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
     }
     /* CHECK HERE TOMORROW */
     .container {
         height: 40vh;
+        margin: 0;
+        width: 100%;
+    
     }
     .home-btn-holder {
         height: 55px;
@@ -1923,7 +1942,13 @@ form {
         width: 100%;
         height: 40%;
         margin: 20px auto;
+        margin-top: 0;
         
+    }
+    .iso-window {
+        
+        height: 50%;
+        /* margin: 10px auto; */
     }
     /* .lnr-window {
         width: 100%;
@@ -1933,7 +1958,10 @@ form {
     form {
         width: 100%;
         height: 100%;
-        margin: 0px auto;
+        margin: 10px auto;
+    }
+    .iso-form {
+        width: 95%;
     }
     .lns-form {
         width: 95%;
@@ -1959,7 +1987,7 @@ form {
     }
     .intro,
     .evals{
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .fact-intro {
         /* width: 80%; */
@@ -2020,8 +2048,8 @@ form {
         height: 34px;
         width: 100px;
         margin-bottom: 0;
-        font-size: 3.5vw;
-        font-weight: 600;
+        /* font-size: 3.5vw; */
+        font-weight: 500;
     }
     /* .lw-btn-check,
     .fact-btn-check {
@@ -2051,6 +2079,21 @@ form {
         height: auto;
     }
 }
+@media screen and (max-width: 375px) {
+    .algo-dash-holder {
+        height: auto;
+        
+        margin: 10px 0;
+        border: none;
+        outline: none;
+        border-radius: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container {
+        margin: 0;
+        width: 100%;
 
+    }
 
-
+}
