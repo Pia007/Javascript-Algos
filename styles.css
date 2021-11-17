@@ -41,6 +41,9 @@ body {
     background:  var(--main-bg);
     overflow: hidden;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .dash-holder {
     /* CHECK THIS HEIGHT AT BREAKPOINTS */

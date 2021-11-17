@@ -48,10 +48,13 @@ body {
     width: 100%;
     height: 100vh;
     font-family: var(--rubik);
-    font-size: 30px;
+    margin: 0;
     /* color: var(--main-bg); */
     overflow-y: hidden;
     
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 /* Main Container */
 .algo-dash-holder {
@@ -79,7 +82,7 @@ body {
     align-content: center;
     color: var(--main-bg);
     border-radius: 10px;
-    /* overflow-y:scroll; */
+    overflow:hidden;
     
     
 }
@@ -380,6 +383,7 @@ body {
     justify-content: space-evenly;
     
     margin: auto;
+    overflow-y: scroll;
 }
 .spin-window-holder {
     width: 95%;
@@ -395,9 +399,9 @@ body {
     margin: 0 auto;
     border-radius: 10px;
     border: 3px solid var(--sum-all-color);
-    background: #f36c36;
+    /* background: #f36c36;
     box-shadow: inset 12px 12px 24px #974321,
-            inset -12px -12px 24px #ff954b;     
+            inset -12px -12px 24px #ff954b;      */
 }
 .rome-window-holder {
     width: 95%;
@@ -518,7 +522,7 @@ body {
 .rome-window {
     width: 50%;
     margin: 0 auto;
-    background-color: var(--rome-color);
+    /* background-color: var(--rome-color); */
     /* box-shadow: inset 21px 21px 42px #8b8e92,
         inset -21px -21px 42px #ffffff; */
 }
@@ -617,7 +621,7 @@ form {
     height: 90%;
     margin: 30px auto;
     color: var(--main-bg);
-    background: #f36c36;
+   
     background: #f36c36;
     box-shadow: inset 14px 14px 33px #863b1e,
         inset -14px -14px 33px #ff9d4e;
@@ -637,6 +641,7 @@ form {
     text-align: center;
     font-size: 24px;
     width: 95%;
+   
 }
 .sw-intro {
     /* font-size: 24px; */
@@ -674,8 +679,10 @@ form {
 }
 
 .rome-intro {
+    height: auto;
+    padding: auto;
     color: var(--main-bg);
-    border-radius: 10px;
+    border-radius: 8px;
     background: var(--rome-color);
     box-shadow: 21px 21px 42px #8b8e92,
         -21px -21px 42px #ffffff;
@@ -711,6 +718,8 @@ form {
         -6px -6px 12px #8314ff;
 }
 .sw-input-holder {
+    display: flex;
+    justify-content: space-between;
     background: linear-gradient(145deg, #ffa3a3, #df8989);
     box-shadow:  8px 8px 14px #a66666,
         -8px -8px 14px #ffcaca; 
@@ -741,6 +750,10 @@ form {
     background: #e0e5ec;
     box-shadow: inset 14px 14px 28px #5a5c5e,
         inset -14px -14px 28px #ffffff;
+}
+.sm-all-input-holder {
+    width: 70%;
+    
 }
 .rome-input-holder {
     border-radius: 10px;
@@ -862,6 +875,7 @@ form {
     background: var(--rw-color); 
 }
 .sm-all-text-field {
+    width: 70%;
     color: var(--sum-all-color);
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  23px 23px 46px #8f4020,
@@ -1103,17 +1117,10 @@ form {
     margin: 0 auto;
     margin-bottom: 8px;
     padding: auto;
-    font-size: 23px;
-}
-.factEval {
-    width: 100%;
-    padding: 25px ;
-   
-    text-align: center;
+    font-size: 22px;
 }
 
-.factEval,
-.sqrCubeEval {
+.factEval {
     color: var(--main-bg);
 }
 .pnEval {
@@ -1683,21 +1690,21 @@ form {
         width: 33px;
         height: 33px;
     }
-    .intro {
+    /* .intro {
         font-size: 2.2vw; 
-    }
-    .sw-intro,
+    } */
+    /* .sw-intro,
     .pn-intro {
         font-size: 22px;
-    }
+    } */
     .evals {
         width: 80%;
         font-size: 20px;
         margin: 0 auto;
     }
-    .input-holder {
+    /* .input-holder {
         width: 100%;
-    }
+    } */
     .text-field {
         width: 80%;
     }
@@ -1729,7 +1736,7 @@ form {
         height: auto;
     }
     .container {
-        width: 90%;
+        width: 95%;
         height: 650px;
         margin: 5px auto;
         min-height: 600px;
@@ -1739,7 +1746,7 @@ form {
     }
 
     .window-holder{
-        width: 90%;
+        width: 95%;
         height: auto;
         margin: auto;
         /* height: 80vh; */
@@ -1754,7 +1761,7 @@ form {
         margin: 10px auto;
     }
     .pdf-content {
-        height: 90%;
+        height: 100%;
         
     }
     .pdf-frame {
@@ -1775,6 +1782,11 @@ form {
         height: 50%;
         width: 100%;
     }
+    form {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
     .iso-form,
     .iso-pdf-frame {
         background: linear-gradient(145deg, #caced4, #f0f5fd);
@@ -1788,6 +1800,11 @@ form {
             -5px -5px 10px #8314ff;
     }
     .pal-form,
+    .pal-pdf-frame {
+        width: 95%;
+        box-shadow: 4px 4px 16px #606265,
+        -4px -4px 16px #ffffff;;
+    }
     
     .lw-form,
     .lw-pdf-frame {
@@ -1826,23 +1843,49 @@ form {
         -2px -2px 10px #b1bdff;
     }
     .rev-word-form {
-        justify-content: space-evenly;
-    }
-    
-    .rev-word-form,
-    .rev-word-pdf {
-        width: 90%;
-        margin: auto;
-    }
-    form {
-        width: 90%;
-        height: auto;
+        width: 95%;
         margin: 10px auto;
     }
+    .sm-all-window {
+        box-shadow:5px 5px 13px #bec3c9,
+        -5px -5px 13px #ffffff;
+    }
+    .sm-all-form,
+    .sm-all-pdf-frame {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    .sm-all-pdf-content {
+        width:  100%;
+    }
+    .rome-window-holder {
+        box-shadow: 9px 9px 18px #ccd0d7,
+            -9px -9px 18px #f4faff;
+    }
+    .rome-window {
+        width: 95%;
+        height: 95%;
+        margin: 0 auto;
+    }
+    .rome-form {
+        width: 95%;
+        height: 90%;
+        margin: 15px auto;
+    }
+    .rome-pdf-content {
+        width: 95%;
+        margin: 10px auto;
+        
+    }
+    /* .rome-pdf-frame {
+        height: 80%;
+    } */
     .intro {
         font-size: 24px;
         margin: 0 auto;
         margin-bottom: 5px;
+        border-radius: 8px;
         
     }
     .ts-intro {
@@ -1858,12 +1901,10 @@ form {
         margin: 0;
     }
     .pn-intro {
-        font-size: 22px;
-    }
-    .pn-intro{
+        font-size: 20px;
         padding: 0 auto;
-       
     }
+    
     .rome-intro {
         width: 100%;
     }
@@ -1872,7 +1913,8 @@ form {
         margin: 0;
         margin-bottom: 10px;
     }
-    .ts-input-holder{
+    .ts-input-holder,
+    .sw-input-holder{
         height: auto;
         width: 90%;
         margin: 0 auto;
@@ -1886,17 +1928,27 @@ form {
         text-align: center;
     }   
     .sw-input-holder {
-       
-        width: 80%;
-        margin: 5px auto;
-        margin-bottom: 10px;
-        flex-direction: row;
-        justify-content: space-around;
+       background: none;
+       box-shadow: none; 
     }
-    
+    .lw-input-holder {
+        margin: 0 auto;
+    }
+    .pn-input-holder{
+       margin: 0 auto;
+       
+    }
+    .sm-all-input-holder {
+        margin: 0 auto;
+    }
+    .rome-input-holder {
+        width: 90%;
+        margin: 10px auto;
+        /* margin-bottom: 10px; */
+    }
     .evals {
         height: auto;
-        font-size: 20px;
+        font-size: 18px;
         margin: 0 auto;
     }
     .sumEval {
@@ -1912,6 +1964,7 @@ form {
         font-size: 18px;
         margin: auto;
         padding: auto;
+        border-radius: 8px;
     }
     .text-field::placeholder {
         font-size: 18px;
@@ -1923,17 +1976,28 @@ form {
     .sw-text-field {
         padding: 0 auto;
     }
+    .sm-all-text-field {
+        width: 70%;
+        margin:  auto;
+       
+    }
     .btn-check {
         width: 140px;
         height: 36px;
-        margin-top: 0;
+        margin: 10px auto;
         font-size: 16px;
+        border-radius: 8px;
     }
     .iso-btn-check {
         box-shadow: 6px 6px 12px #ccd0d7,
             -6px -6px 12px #f4faff;
     }
-    
+    .sm-all-btn-check {
+        color: var(--sum-all-color);
+        background: #e0e5ec;
+        box-shadow:  7px 7px 20px #c0552b,
+        -7px -7px 20px #ff8341;
+    }
     /* .sw-btn-check {
         margin-bottom: 0;
     } */
@@ -1958,10 +2022,7 @@ form {
         box-shadow:   5px 5px 30px #9c6060,
         -5px -5px 30px #ffd0d0;
     }
-    .sw-input-holder {
-       box-shadow: 5px 5px 15px #cb7d7d,
-       -5px -5px 15px #ffb3b3;
-    }
+     
     .ts-intro,
     .sw-intro {
         font-size: 20px;
@@ -1989,7 +2050,7 @@ form {
 @media screen and (max-width: 565px) {
     html,
     body {
-        overflow-y: hidden;
+        overflow: hidden;
         width: 100%;
         height: 90vh;
     }
@@ -2041,6 +2102,9 @@ form {
         height: 50%;
         /* margin: 10px auto; */
     }
+    .rome-window {
+        margin-bottom: 0;
+    }
     /* .lnr-window {
         width: 100%;
         height: 50%;
@@ -2058,11 +2122,17 @@ form {
         width: 95%;
         margin: 10px;
     }
+    .sm-all-form {
+        box-shadow: inset 5px 5px 13px #c2562b,
+        inset -5px -5px 13px #ff8241;
+        
+    }
     .input-holder {
         height: 55px;
        
     }
-    .ts-input-holder {
+    .ts-input-holder,
+    .sw-input-holder {
         height: auto;
         width: 100%;
         margin: 0 auto;
@@ -2076,7 +2146,7 @@ form {
     }
     
     .text-field::placeholder {
-        font-size: 4.5vw;
+        font-size: 17px;
     }
     .intro {
         /* height: auto; */
@@ -2108,14 +2178,7 @@ form {
     
     
     
-    .sw-input-holder {
-        height: 65px;
-        box-shadow: none;
-    }
-    .sw-input-holder {
-        height: auto;
-        background: none;
-    }
+    
     .rev-int-input-holder {
         margin: 0 auto;
         width: 80%;
@@ -2124,13 +2187,14 @@ form {
         padding: 2px auto;
     }
     
-    .ts-text-field {
+    .ts-text-field,
+    .sw-text-field {
         width: 70%;
         margin: 5px auto;
-        height: 36px;
+        height: 34px;
         padding: 3px;
     }
-    .sw-text-field,
+    
     .sw-words,
     .sw-num,
     .fact-text-field {
@@ -2179,6 +2243,14 @@ form {
         height: 90%;
         margin: 0 auto;
     }
+    /* .rome-pdf {
+        height: 90%;
+    } */
+    .rome-pdf-content {
+        width: 95%;
+        margin: 10px auto;
+        
+    }
     .pdf-frame {
         height: 75%;
         width: 95%;
@@ -2211,3 +2283,31 @@ form {
     }
 
 }
+
+/* @media (orientation: landscape) {
+    .algo-dash-holder {
+        height: auto; 
+        margin: 10px 0;
+        border-radius: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+
+    }
+    .window-holder {
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .text-field {
+        font-size: 16px;
+    }
+    .ts-input-holder {
+        height: 35px;
+    }
+
+} */
