@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
             theWord = strArr[i]
             
             showLwOutcome();
-            lwOutcome.innerHTML = "The longest word is " + "'" +`${theWord}`+"'" + " and it's length is  " + `${longestWordLength}`;
+            lwOutcome.innerHTML = "'" +`${theWord}`+"': " + `${longestWordLength}`;
           }
         }
         

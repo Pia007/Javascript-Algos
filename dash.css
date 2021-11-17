@@ -97,17 +97,13 @@ body::-webkit-scrollbar {
     box-shadow:  8px 8px 16px #5a5c5e,
         -8px -8px 16px #ffffff;
 }
-.ts-container {
-    background: var(--two-color);
-    box-shadow: inset 35px 35px 70px #3b0999,
-        inset -35px -35px 70px #7b13ff;
-}
+.ts-container,
 .spin-container {
-    height: 600px;
-    background: linear-gradient(145deg, #ffa3a3, #df8989);
-    box-shadow:  20px 20px 40px #633d3d,
-        -20px -20px 40px #fff3f3;
+    background: var(--main-bg);
+    box-shadow: inset 35px 35px 70px #5a5c5e,
+        inset -35px -35px 70px #ffffff
 }
+
 .lw-container {
     background: #e0e5ec;
     box-shadow:  50px 50px 100px #5a5c5e,
@@ -119,9 +115,9 @@ body::-webkit-scrollbar {
         inset -26px -26px 75px #ffffff;
 }
 .pn-container {
-    background: #096d64;
-    box-shadow:  inset 50px 50px 100px #043430,
-        inset -50px -50px 100px #0ea698;
+    background: var(--main-bg);;
+    box-shadow:  50px 50px 100px #5a5c5e,
+        -50px -50px 100px #ffffff;
 }
 .rev-int-container {
     background: #8790e0;
@@ -186,8 +182,8 @@ body::-webkit-scrollbar {
 .two-home {
     /* border: 1px solid var(--two-color); */
     background: linear-gradient(145deg, #610ffb, #520dd4);
-    box-shadow:  5px 5px 9px #24065e,
-             -5px -5px 9px #9216ff;
+    box-shadow:  17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
 }
 .sw-home {
     border-radius:50px;
@@ -204,8 +200,8 @@ body::-webkit-scrollbar {
 .pn-home {
     /* border: 1px solid var(--pn-color); */
     background: linear-gradient(145deg, #0a756b, #08625a);
-    box-shadow:  8px 8px 16px #042c28,
-        -8px -8px 16px #0eaea0;    
+    box-shadow: 17px 17px 34px #5a5c5e,
+    -17px -17px 34px #ffffff;
 }
 .fact-home {
     background: #e0e5ec;
@@ -385,9 +381,19 @@ body::-webkit-scrollbar {
     margin: auto;
     overflow-y: scroll;
 }
-.spin-window-holder {
+/* .spin-window-holder {
     width: 95%;
-    margin: 0 20px;
+    margin: 0 2;
+} */
+.pn-window-holder {
+    border-radius: 10px;
+    background: var(--main-bg);
+}
+.rev-int-window-holder {
+    /* background: var(--rev-color); */
+    border-radius: 10px;
+    /* box-shadow: inset 8px 8px 16px #595f94,
+        inset -8px -8px 16px #b5c1ff; */
 }
 .rw-window-holder {
     width: 95%;
@@ -448,10 +454,14 @@ body::-webkit-scrollbar {
     box-shadow: inset 5px 5px 19px #24065e,
                 inset -5px -5px 19px #9216ff;
 }
-.spin-window {
-    /* width: 50%; */
+.spin-window{
+    /* width: 45%; */
     height: 90%;
-    margin: 0;
+    margin: 18px;
+    border: 1px solid var(--main-bg);
+    background: var(--spin-color);
+    box-shadow: inset 5px 5px 19px #a16363,
+    inset -5px -5px 19px #ffcdcd;
 }
 .lw-window {
     width: 45%;
@@ -476,20 +486,21 @@ body::-webkit-scrollbar {
 }
 .pn-window {
     width: 45%;
-    margin:0 auto;
+    margin:30px auto;
     height: 90%;
+    background: var(--main-bg);
     background: linear-gradient(145deg, #08625a, #0a756b);
-    box-shadow: 16px 16px 32px #042c28,
-        -16px -16px 32px #0eaea0;
+    box-shadow: 16px 16px 32px #5a5c5e,
+        -16px -16px 32px #ffffff;
 }
 .rev-int-window,
-.rev-int-pdf-content {
+.rev-int-pdf {
     width: 45%;
     height: 90%;
-    margin: 0 auto;
+    margin: 30px auto;
     background: #e0e5ec;
-    box-shadow: 18px 18px 47px #6d75b5,
-    -18px -18px 47px #a1abff;
+    box-shadow: inset 8px 8px 16px #5a5c5e,
+        inset -8px -8px 16px #ffffff; 
 }
 .lnr-window {
     width: 45%;
@@ -568,13 +579,14 @@ form {
         -6px -6px 12px #8314ff;
 }
 .sw-form {
-    width: 90%;
-    /* height: 500px; */
-    justify-content: space-evenly;
+    width: 95%;
+    height: 95%;
+    /* justify-content: space-evenly; */
     color: var(--main-bg);
-    background: linear-gradient(145deg, #ffa3a3, #df8989);
-    box-shadow:  41px 41px 82px #633d3d,
-        -41px -41px 82px #fff3f3;
+    border: 1px solid var(--main-bg);
+    background: var(--spin-color);
+    box-shadow:   6px 6px 12px #a16363,
+    -6px -6px 12px #ffcdcd;
 }
 .lw-form {
     width: 90%;
@@ -672,6 +684,7 @@ form {
     box-shadow:  12px 12px 24px #042c28,
         -12px -12px 24px #0eaea0;
 }
+
 .pn-intro {
     height: 50px;
     margin: 0 auto;
@@ -718,11 +731,11 @@ form {
         -6px -6px 12px #8314ff;
 }
 .sw-input-holder {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(145deg, #ffa3a3, #df8989);
-    box-shadow:  8px 8px 14px #a66666,
-        -8px -8px 14px #ffcaca; 
+    
+    /* justify-content: space-between; */
+    background: var(--spin-color);
+    box-shadow: 6px 6px 12px #c17777,
+        -6px -6px 12px #ffb9b9;
     border-radius: 10px;  
 }
 .lw-input-holder {
@@ -825,11 +838,8 @@ form {
 }
 .sw-text-field {
     min-width: 140px;
-    height: 40px;
-    margin: auto ;
     color: var(--spin-color);
     padding: 10px;
-    border: 1px solid var(--spin-color);
     border-radius: 10px;
     background: var(--main-bg);
     box-shadow: inset 8px 8px 14px #a66666,
@@ -986,8 +996,8 @@ form {
 .rev-int-btn-check {
     color: var(--rev-color);
     background: #e0e5ec;
-    box-shadow: inset 10px 10px 32px #5a5c5e,
-        inset -10px -10px 32px #ffffff;
+    box-shadow: inset 5px 5px 32px #5a5c5e,
+        inset -5px -5px 32px #ffffff;
 }
 .lns-btn-check {
     color: var(--lnr-color);
@@ -1055,6 +1065,8 @@ form {
 .pn-btn-check:active,
 .pn-btn-check:hover,
 .pn-btn-check:focus {
+    border: 2px solid var(--main-bg);
+    font-weight: bold;
     background: #096d64;
     box-shadow: inset 15px 15px 30px #042c28,
         inset -15px -15px 30px #0eaea0;
@@ -1062,9 +1074,11 @@ form {
 .rev-int-btn-check:active,
 .rev-int-btn-check:focus,
 .rev-int-btn-check:hover {
-    background: #e0e5ec;
-    box-shadow: 10px 10px 32px #5a5c5e,
-        -10px -10px 32px #ffffff;
+    /* color: #e0e5ec; */
+    border: 2px solid var(--rev-color);
+    font-weight: bold;
+    /* box-shadow:  10px 10px 32px #5a5c5e,
+    -10px -10px 32px #ffffff; */
 }
 .lns-btn-check:active,
 .lns-btn-check:hover,
@@ -1083,9 +1097,10 @@ form {
 .rome-btn-check:active,
 .rome-btn-check:hover,
 .rome-text-check:focus {
-    background: var(--rome-color);
-    box-shadow: inset 24px 24px 48px #036f73,
-        inset -24px -24px 48px #07ffff;
+    background: var(--main-bg);
+    border: 2px solid var(--rome-color);
+    box-shadow: inset 24px 24px 48px #5a5c5e,
+        inset -24px -24px 48px #ffffff;
 }   
 /* STYLING RESPONSES */
 .pnRepoHolder,
@@ -1095,6 +1110,10 @@ form {
     margin: 0 auto;
     padding: 0;
    
+}
+.pnRepoHolder {
+    width: 100%;
+    height: 45px;
 }
 .romeRepoHolder {
     text-align: center;
@@ -1169,13 +1188,13 @@ form {
     height: 90%;
 }
 .sw-pdf {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    /* width: 45%; */
+    height: 90%;
+    /* display: flex;
+    flex-direction: column; */
     /* justify-content: space-evenly;
     align-items: center; */
-    margin: 0 15px;
+    /* margin: 0 0; */
 }
 .lw-pdf {
     height: 90%;
@@ -1251,14 +1270,14 @@ form {
                 inset -5px -5px 19px #9216ff;
 }
 .sw-pdf-content {
-    height: 90%;
-    width: 90%;
-    margin: 0 auto;
+    height: 100%;
+    /* width: 90%; */
+    /* margin: 20px auto; */
     border-radius: 10px;
-    border: 2px solid var(--spin-color);
+    border: 1px solid var(--main-bg);
     background: #f89898;
-    box-shadow: inset 10px 10px 20px #d38181,
-        inset -10px -10px 20px #ffafaf;
+    box-shadow: inset 5px 5px 19px #a16363,
+        inset -5px -5px 19px #ffcdcd;
 }
 .lw-pdf-content {
     height: 100%;
@@ -1279,14 +1298,15 @@ form {
 }
 .pn-pdf-content {
     height: 90%;
+    margin: 30px auto;
     border-radius: 10px;
     background: linear-gradient(145deg, #08625a, #0a756b);
-    box-shadow: 16px 16px 32px #042c28,
-        -16px -16px 32px #0eaea0;
+    box-shadow: 16px 16px 32px #5a5c5e,
+        -16px -16px 32px #ffffff;
 }
 .rev-int-pdf-content {
     height: 90%;
-    
+    margin: 30px auto;
     border-radius: 10px;
     /* background: #e0e5ec;
     box-shadow: 10px 10px 32px #5a5c5e,
@@ -1344,19 +1364,18 @@ form {
         -6px -6px 12px #8314ff;
 }
 .sw-pdf-frame {
-    height: 100%;
-    border: 2px solid var(--spin-color);
+    height: 98%;
+    border: 1px solid var(--main-bg);
     background: linear-gradient(145deg, #ffa3a3, #df8989);
     box-shadow:  5px 5px 10px #c17777,
-             -5px -5px 10px #ffb9b9;
+        -5px -5px 10px #ffb9b9;
 }
 .lw-pdf-frame {
-    
     border: 2px solid var(--llw-color);
     background: #35c048;
     box-shadow:  5px 5px 19px #237f30,
         -5px -5px 19px #47ff60;
-    
+
 }
 .fact-pdf-frame {
     height: 100%;
@@ -1724,9 +1743,16 @@ form {
     .two-form {
         padding: 0;
     }
-    .ts-input-holder {
+    .ts-input-holder,
+    .sw-input-holder {
         width: 100%;
         box-shadow: none;
+        border: none;
+        background: none;
+    }
+    .sw-text-field {
+        width: 50%;
+
     }
 }
 /* MAX-WIDTH 900PX */
@@ -1754,6 +1780,9 @@ form {
         justify-content: stretch;
         /* overflow-y: scroll; */
     }
+    .rev-int-window-holder {
+        background: transparent;
+    }
     .window,
     .pdf-holder {
         width: 95%;
@@ -1778,10 +1807,11 @@ form {
     .two-window {
         height: 50%;
     }
-    .ts-pdf-frame {
+    /* .ts-pdf-frame,
+    .sw-pdf-frame {
         height: 50%;
         width: 100%;
-    }
+    } */
     form {
         width: 90%;
         height: auto;
@@ -1795,6 +1825,7 @@ form {
     }
     .two-form,
     .ts-pdf-frame {
+        height: 50%;
         width: 95%;
         box-shadow:  5px 5px 10px #330884,
             -5px -5px 10px #8314ff;
@@ -1813,9 +1844,12 @@ form {
         box-shadow: 5px 5px 10px #31b343,
              -5px -5px 10px #39cd4d;
     }
-    .sw-form {
-        width: 100%;
-        margin: 0;
+    .sw-form,
+    .sw-pdf-frame {
+        width: 95%;
+        height: 50%;
+        box-shadow:  5px 5px 10px #c17777,
+            -5px -5px 10px #ffb9b9;
     }
     .pn-window,
     .pn-pdf-content,
@@ -1824,12 +1858,19 @@ form {
     .pn-btn-check,
     .pn-pdf-frame,
     .pnRepoHolder {
-        box-shadow: 4px 4px 12px #042c28,
-        -4px -4px 12px #0eaea0;
+        box-shadow: inset 4px 4px 12px #042c28,
+        inset -4px -4px 12px #0eaea0;
 
     }
+    
+    .pnRepoHolder {
+        width: 80%;
+        height: auto;
+        border-radius: 5px;
+    }
     .rev-int-window,
-    .rev-int-pdf-content{
+    .rev-int-pdf{
+        height: 50%;
         box-shadow: 12px 12px 24px #6d75b5,
         -12px -12px 24px #a1abff;
     }
@@ -1888,7 +1929,8 @@ form {
         border-radius: 8px;
         
     }
-    .ts-intro {
+    .ts-intro,
+    .sw-intro {
         margin:0 auto;
         margin-bottom: 10px;
     }
@@ -1921,22 +1963,23 @@ form {
         margin-bottom: 10px;
         justify-content: space-evenly;
     }
+    
     .two-nums,
     .two-target {
         height: 40px;
         width: 50%;
         text-align: center;
     }   
-    .sw-input-holder {
+    /* .sw-input-holder {
        background: none;
        box-shadow: none; 
-    }
+    } */
     .lw-input-holder {
         margin: 0 auto;
     }
+    .fact-input-holder,
     .pn-input-holder{
-       margin: 0 auto;
-       
+       margin: 0 auto; 
     }
     .sm-all-input-holder {
         margin: 0 auto;
@@ -1973,6 +2016,7 @@ form {
         width: 70%;
         margin-top: 3px;
     }
+    
     .sw-text-field {
         padding: 0 auto;
     }
@@ -1984,13 +2028,20 @@ form {
     .btn-check {
         width: 140px;
         height: 36px;
-        margin: 10px auto;
+        margin: 0 auto;
         font-size: 16px;
         border-radius: 8px;
     }
     .iso-btn-check {
         box-shadow: 6px 6px 12px #ccd0d7,
             -6px -6px 12px #f4faff;
+    }
+    .ts-btn-check {
+        margin-bottom: 10px;
+    }
+    .lw-btn-check {
+        margin-top: 8px;
+       
     }
     .sm-all-btn-check {
         color: var(--sum-all-color);
@@ -2102,6 +2153,10 @@ form {
         height: 50%;
         /* margin: 10px auto; */
     }
+    .rev-int-window {
+       margin: 6px auto;
+    }
+    
     .rome-window {
         margin-bottom: 0;
     }
@@ -2155,8 +2210,7 @@ form {
         padding: auto;
     }
     .intro,
-    .evals,
-    .sw-intro{
+    .evals{
         font-size: 18px;
     }
     /* .sw-intro {
@@ -2205,6 +2259,7 @@ form {
     }
     .fact-text-field {
         margin: auto;
+        margin-top: 0;
         width: 75%;
     }
     .text-field::placeholder {
@@ -2261,6 +2316,10 @@ form {
         margin:0px;
         height: auto;
     }
+    .rev-int-window,
+    .rev-int-pdf{
+        width: 95%
+    }
 }
 @media screen and (max-width: 375px) {
     .algo-dash-holder {
@@ -2281,6 +2340,7 @@ form {
     .ts-input-holder {
         height: 35px;
     }
+    
 
 }
 

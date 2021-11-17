@@ -72,9 +72,16 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // regex to check for non whole numbers
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
+
+        // regex for letter and special characters or just special characters
+        let specialChar = /[A-Za-z][!@#$%^&*()_+\=\[\]{};':"\\|,<>\/?]|[!@#$%^&*()_+\=\[\]{};':"\\|,<>\/?]/
+        
+        // regex for letts only
+        let letters = /[A-Za-z]/  
+        
         
         // check for input conditions and challenge constraints
-        if (num === "") {
+        if (num === "" || specialChar.test(num) || letters.test(num)) {
             showRevIntOutcome();
             revIntOutcome.innerHTML = "Please enter a number";
             
