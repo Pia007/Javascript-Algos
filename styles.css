@@ -24,7 +24,6 @@
     --js-header: #c32abbc9;
     --card-btn-shadows:  inset 9px 9px 17px #5a5c5e,
         inset -9px -9px 17px #ffffff;
-   
 
 }
 * {
@@ -152,9 +151,8 @@ body::-webkit-scrollbar {
     /* align-items: flex-end; */
 }
 
-
-
-.btn {
+.btn,
+.level {
     width: 40px; 
     height: 40px;
     /* margin-top: 10px; */
@@ -176,15 +174,27 @@ body::-webkit-scrollbar {
     
 }
 
+.level {
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+}
+.level-text {
+    font-size: 16px;
+    margin: 10.665px auto;
+}
 
-.download {
-    width: 25px;
-    height: 25px;
-    margin: 4px auto;
+.fa-circle {
+    margin: 15px auto;
+    font-size:20px;
+}
+.easy {
+    color: var(--easy);
+}
+.med {
+    color: var(--medium);
 }
 .fa-play {
-    /* width: 30px;
-    height: 30px; */
     margin: 8px auto;
     margin-left: 3px;
     font-size: 18px;
@@ -195,127 +205,51 @@ body::-webkit-scrollbar {
 .iso-play {
     color: var(--iso-color);
 }
-.iso-download {
-    fill: var(--iso-color);
-}
-.iso-btn:active,
-.iso-btn:hover,
-.iso-btn:focus {
-    border: 2px solid var(--iso-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 
 /* Palindrome Card */
 .pal,
 .pal-play {
     color: var(--pal-color);
 }
-.pal-download {
-    fill: var(--pal-color);
-}
-.pal-btn:active,
-.pal-btn:hover,
-.pal-btn:focus {
-    border: 2px solid var(--pal-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
+
 /* Two Sum Car */
 .two,
 .two-play {
     color: var(--two-color);
 }
-.two-download {
-    fill: var(--two-color);
-}
-.two-btn:active,
-.two-btn:hover,
-.two-btn:focus {
-    border: 2px solid var(--two-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
+
 /* Spin Card */
 .spin,
 .spin-play {
     color: var(--spin-color);
 }
 
-.spin-download{
-    fill: var(--spin-color);
-}
-.spin-btn:active,
-.spin-btn:hover,
-.spin-btn:focus {
-    border: 2px solid var(--spin-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 /* Longest .. Card */
 .llw,
 .llw-play {
     color: var(--llw-color);
 }
 
-.llw-download  {
-    fill: var(--llw-color);
-}
-.llw-btn:active,
-.llw-btn:hover,
-.llw-btn:focus {
-    border: 2px solid var(--llw-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 /* Factor Card */
 .fact,
 .fact-play {
     color: var(--fact-color);
 }
 
-.fact-download {
-    fill: var(--fact-color);
-}
-.fact-btn:active,
-.fact-btn:hover,
-.fact-btn:focus {
-    border: 2px solid var(--fact-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
+
 /* Palindrome Number Card*/
 .pn,
 .pn-play {
     color: var(--pn-color);
 }
 
-.pn-download {
-    fill: var(--pn-color);
-}
-.pn-btn:active,
-.pn-btn:hover,
-.pn-btn:focus {
-    border: 2px solid var(--pn-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
+
 /* Reverse Integer Card*/
 .rev,
 .rev-play {
     color: var(--rev-color);
 }
 
-.rev-download {
-    fill: var(--rev-color);
-}
-.rev-btn:active,
-.rev-btn:hover,
-.rev-btn:focus {
-    border: 2px solid var(--rev-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 
 /* Longest NON... Card*/
 .lnr,
@@ -323,66 +257,24 @@ body::-webkit-scrollbar {
     color: var(--lnr-color);
 }
 
-.lnr-download {
-    fill: var(--lnr-color);
-}
-.lnr-btn:active,
-.lnr-btn:hover,
-.lnr-btn:focus {
-    border: 2px solid var(--lnr-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
-
-
 /* Reverse a Word....Card */
 .rw,
 .rw-play {
     color: var(--rw-color);
 }
 
-.rw-download {
-    fill: var(--rw-color);
-}
-.rw-btn:active,
-.rw-btn:hover,
-.rw-btn:focus {
-    border: 2px solid var(--rw-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 /* Square Or Cube */
 .sum-all,
 .sum-all-play {
     color: var(--sum-all-color);
 }
 
-.sum-all-download {
-    fill: var(--sum-all-color);
-}
-.sum-all-btn:active,
-.sum-all-btn:hover,
-.sum-all-btn:focus {
-    border: 2px solid var(--sum-all-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 /* Rome and Back */
 .rome,
 .rome-play {
     color: var(--rome-color);
 }
 
-.rome-download{
-    fill: var(--rome-color);
-}
-.rome-btn:active,
-.rome-btn:hover,
-.rome-btn:focus {
-    border: 2px solid var(--rome-color);
-    box-shadow:  var(--card-btn-shadows);
-    cursor: pointer;
-}
 /* Breakpoints */
 @media (min-width: 500px) {
     .dashboard {
@@ -402,6 +294,9 @@ body::-webkit-scrollbar {
     .btn-holder .btn {
         margin-top: auto;
     }
+    .level {
+        margin-top:auto; 
+    }
 }
 @media (min-width: 600px) {
     
@@ -419,20 +314,7 @@ body::-webkit-scrollbar {
     .dashboard {
         padding: 40px;
     }
-    /* .title {
-        font-size: 2.5vw;
-    } */
-    /* .info {
-        font-size: .75em;
-    } */
-    .card-download-holder,
-    .play-holder { 
-        width: 43px;
-        height: 43px;
-        margin: 0 auto;
-        
-    
-    }
+
     .download {
         width: 33px;
         height: 33px;
@@ -443,25 +325,11 @@ body::-webkit-scrollbar {
         height: 35px;
         margin-top: 5px;
         margin-left: 5px;
-     
     }
 }
 @media (min-width: 1080px) {
     .dashboard {
         padding: 50px;
-    }
-    /* .title {
-        font-size: 24px;
-    } */
-    /* .info {
-        font-size: .75em;
-    } */
-    .card-download-holder,
-    .play-holder { 
-        width: 45px;
-        height: 45px;
-        margin: 0 auto;
-    
     }
     .btn-holder {
         width: 90%;
@@ -476,10 +344,13 @@ body::-webkit-scrollbar {
         width: 50px; 
         height:50px;
     }
-    .download {
-        width: 35px;
-        height: 35px;
-        margin: 4px auto;
+    .level {
+        width: 100px; 
+        height: 50px;
+    }
+    .level-text {
+        font-size: 20px;
+        margin: 13px auto;
     }
     .play {
         width: 38px;

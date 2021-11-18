@@ -1,7 +1,6 @@
 :root {
     --rubik: 'Rubik', sans-serif;
     --border: rgba(150, 150, 160, 0.753);
-    
     --main-bg: #e0e5ec;
 
 
@@ -25,7 +24,7 @@
 
     --js-header: #c32abbc9;
 
-    /* Footer Links */
+    /* social Links */
     --f-linkedin: #0077b5;
     --f-github: #333;
     --f-twitter: #1da1f2;
@@ -152,15 +151,7 @@ header {
         -10px -10px 20px #ffffff;
 }
 
-footer {
-    width: 100%;
-    height:auto;
-    bottom: 0;
-    /* margin: 0 auto; */
-    z-index: 3;
-    text-align: center;
-}
-.footer-holder {
+.social-holder {
     width:15%;
     height: auto;
     margin: auto;
@@ -170,7 +161,7 @@ footer {
     justify-content: left;
     align-items: center;
 }
-.footer-list {
+.social-list {
     display: flex;
     flex-direction: row;
     width: 240px;
@@ -180,7 +171,7 @@ footer {
     box-shadow: inset 20px 20px 15px #b8bcc2,
             inset -20px -20px 15px #ffffff; */
 }
-.footer-btn-item {
+.social-btn-item {
     width: 45px;
     height: 45px;
     margin: 15px;
@@ -195,23 +186,23 @@ footer {
         -17px -17px 34px #ffffff;
     
 }
-.footer-links {
+.social-links {
     width: 30px;
     height: 30px;
     text-align: center;
     border-radius:50%;
 }
-.footer-links:hover,
-.footer-links:active,
-.footer-links:focus {
+.social-links:hover,
+.social-links:active,
+.social-links:focus {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  inset 5px 5px 10px #5a5c5e,
         inset -5px -5px 10px #ffffff;
 }
 
-.footer-btn-item:hover,
-.footer-btn-item:active,
-.footer-btn-item:focus {
+.social-btn-item:hover,
+.social-btn-item:active,
+.social-btn-item:focus {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  inset 5px 5px 10px #5a5c5e,
         inset -5px -5px 10px #ffffff;
@@ -302,16 +293,16 @@ footer {
     #mb-header-title {
         display: block
     }
-    /* footer {
+    /* social {
         height: 80px;
     } */
-    .footer-list {
+    .social-list {
         width: 80%;
-        height: 55px;
+        height: 53px;
         min-width: 150px;
         justify-content: space-between;
     }
-    .footer-btn-item {
+    .social-btn-item {
         width: 40px;
         height: 40px;
         margin: 5px;
