@@ -59,22 +59,23 @@ body::-webkit-scrollbar {
 /* Main Container */
 .algo-dash-holder {
     width: 100%;
-    height: auto;
+    height: 75vh;
     margin: 10px 15px;
-    border: none;
+    /* border: 3px solid #ffffff; */
     outline: none;
     border-radius: 10px;
+    
     padding: 10px auto;
-    overflow: hidden;
+    overflow-y: auto;
 }
 .algo-dash-holder{
     display: none
 }
 .container {
     width: 90%;
-    margin: 10px auto;
+    margin: 15px auto;
     min-width: 340px;
-    height: 700px;
+    height: 75vh;
     max-height: 750px;
     min-height: 500px;
     display: flex;
@@ -82,7 +83,7 @@ body::-webkit-scrollbar {
     align-content: center;
     color: var(--main-bg);
     border-radius: 10px;
-    overflow:hidden;
+    /* overflow-y: auto; */
     
     
 }
@@ -379,7 +380,10 @@ body::-webkit-scrollbar {
     justify-content: space-evenly;
     
     margin: auto;
-    overflow-y: scroll;
+    
+    border-radius: 10px;
+    overflow-y: auto;
+    
 }
 /* .spin-window-holder {
     width: 95%;
