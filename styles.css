@@ -40,9 +40,9 @@ body {
     background:  var(--main-bg);
     overflow: hidden;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .dash-holder {
     /* CHECK THIS HEIGHT AT BREAKPOINTS */
@@ -152,6 +152,7 @@ body::-webkit-scrollbar {
 }
 
 .btn,
+.btn-play,
 .level {
     width: 40px; 
     height: 40px;
@@ -175,35 +176,40 @@ body::-webkit-scrollbar {
 }
 
 .level {
-    width: 80px;
+    width: 70px;
     height: 40px;
     border-radius: 8px;
+    box-shadow: none;
 }
 .level-text {
     font-size: 16px;
     margin: 10.665px auto;
 }
 
-.fa-circle {
-    margin: 15px auto;
-    font-size:20px;
-}
-.easy {
-    color: var(--easy);
-}
-.med {
-    color: var(--medium);
+.fa-star {
+    margin: 8px auto;
+    font-size:22px;
 }
 .fa-play {
     margin: 8px auto;
     margin-left: 3px;
     font-size: 18px;
 }
-
+.btn-play:hover,
+.btn-play:focus,
+.btn-play:active {
+    box-shadow: inset 7px 7px 14px #94979c,
+            inset -7px -7px 14px #ffffff;
+}
 /* Isogram card */
 .iso,
 .iso-play {
     color: var(--iso-color);
+}
+.iso-btn-play:hover,
+.iso-btn-play:focus,
+.iso-btn-play:active {
+    border: 2px solid var(--iso-color);
 }
 
 /* Palindrome Card */
@@ -211,17 +217,31 @@ body::-webkit-scrollbar {
 .pal-play {
     color: var(--pal-color);
 }
+.pal-btn-play:hover,
+.pal-btn-play:focus,
+.pal-btn-play:active {
+    border: 2px solid var(--pal-color);
+}
 
 /* Two Sum Car */
 .two,
 .two-play {
     color: var(--two-color);
 }
-
+.two-btn-play:hover,
+.two-btn-play:focus,
+.two-btn-play:active {
+    border: 2px solid var(--two-color);
+}
 /* Spin Card */
 .spin,
 .spin-play {
     color: var(--spin-color);
+}
+.spin-btn-play:hover,
+.spin-btn-play:focus,
+.spin-btn-play:active {
+    border: 2px solid var(--spin-color);
 }
 
 /* Longest .. Card */
@@ -229,25 +249,43 @@ body::-webkit-scrollbar {
 .llw-play {
     color: var(--llw-color);
 }
+.llw-btn-play:hover,
+.llw-btn-play:focus,
+.llw-btn-play:active {
+    border: 2px solid var(--llw-color);
+}
 
 /* Factor Card */
 .fact,
 .fact-play {
     color: var(--fact-color);
 }
-
+.fact-btn-play:hover,
+.fact-btn-play:focus,
+.fact-btn-play:active {
+    border: 2px solid var(--fact-color);
+}
 
 /* Palindrome Number Card*/
 .pn,
 .pn-play {
     color: var(--pn-color);
 }
-
+.pn-btn-play:hover,
+.pn-btn-play:focus,
+.pn-btn-play:active {
+    border: 2px solid var(--pn-color);
+}
 
 /* Reverse Integer Card*/
 .rev,
 .rev-play {
     color: var(--rev-color);
+}
+.rev-btn-play:hover,
+.rev-btn-play:focus,
+.rev-btn-play:active {
+    border: 2px solid var(--rev-color);
 }
 
 
@@ -256,23 +294,42 @@ body::-webkit-scrollbar {
 .lnr-play {
     color: var(--lnr-color);
 }
+.lnr-btn-play:hover,
+.lnr-btn-play:focus,
+.lnr-btn-play:active {
+    border: 2px solid var(--lnr-color);
+}
 
 /* Reverse a Word....Card */
 .rw,
 .rw-play {
     color: var(--rw-color);
 }
+.rw-btn-play:hover,
+.rw-btn-play:focus,
+.rw-btn-play:active {
+    border: 2px solid var(--rw-color);
+}
 
-/* Square Or Cube */
+/* Sum All */
 .sum-all,
 .sum-all-play {
     color: var(--sum-all-color);
 }
-
+.sum-all-btn-play:hover,
+.sum-all-btn-play:focus,
+.sum-all-btn-play:active {
+    border: 2px solid var(--sum-all-color);
+}
 /* Rome and Back */
 .rome,
 .rome-play {
     color: var(--rome-color);
+}
+.rome-btn-play:hover,  
+.rome-btn-play:focus,
+.rome-btn-play:active {
+    border: 2px solid var(--rome-color);
 }
 
 /* Breakpoints */
@@ -291,7 +348,8 @@ body::-webkit-scrollbar {
         height: 55px;
         
     }
-    .btn-holder .btn {
+    .btn-holder .btn,
+    .btn-holder .btn-play {
         margin-top: auto;
     }
     .level {
@@ -340,18 +398,20 @@ body::-webkit-scrollbar {
         justify-content: space-between;
         align-items: flex-end;
     }
-    .btn {
+    .btn,
+    .btn-play {
         width: 50px; 
         height:50px;
     }
     .level {
-        width: 100px; 
+        width: 80px; 
         height: 50px;
     }
-    .level-text {
-        font-size: 20px;
-        margin: 13px auto;
+    .fa-star {
+        font-size: 24px;
+        margin:12px auto;
     }
+    
     .play {
         width: 38px;
         height: 38px;

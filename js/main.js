@@ -3,16 +3,51 @@ document.addEventListener("DOMContentLoaded", () => {
     // DOM ELEMENTS
     const cardHolder = document.getElementById('dg-holder');
     const mainDash = document.getElementById('algo-dash');
+    const infoDash = document.getElementById('info-dash');
     // const btnHome = document.querySelectorAll('algo-dash');
 
     // Header Elements
     const info = document.getElementById('info-icon');
+    const infoBtn = document.getElementById('info-btn');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
 
-    //***************************CLOCK ********************/
+    //***********************  INFORMATION DASH ****************************/
+    function openInfo() {
+        infoDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = "none";
+        cardHolder.style.display = "none";
+        info.style.color = '#c32abbc9';  
+        title.style.color= '#c32abbc9';  
+        clock.style.color= '#c32abbc9'; 
+        mobileTitle.style.color= '#c32abbc9';
+    }
+    infoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    infoBtn.addEventListener('click', openInfo);
 
+    const closeInfo = document.getElementById('info-fact-btn-close');
+    closeInfo.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    closeInfo.addEventListener('click', showHome);
+    //***********************  /INFORMATION DASH ****************************/
+
+    //***************************CLOCK ********************/
     function Time() {
         // Creating object of the Date class
         var date = new Date();
@@ -46,10 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Append 0 before time elements if they are less than 10
     
     Time();
+    //***************************CLOCK ********************/
 
-
+    //***************************DASHBOARD ********************/
     // SHOW HOME PAGE
     function showHome() {
+        infoDash.style.display = 'none';
         isoDash.style.display = "none";
         palDash.style.display = "none";
         twoDash.style.display = "none";

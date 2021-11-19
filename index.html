@@ -46,7 +46,146 @@
     
     <!-- MAIN CONTENT -->
     <div class="dash-holder" id="dashboard-holder">
-        
+        <!-- INFORMATION  -->
+        <div class="information" id="info-dash">
+            
+            <div class="info-holder">
+               <div class="info-home-btn-holder">
+                <button id="info-fact-btn-close" class="btn-home info-home" aria-label="home">
+                    <box-icon name='home' class="icon-home info-home-icon"></box-icon>
+                </button>
+               </div>
+                <div class="info-content">
+                
+                    <h1 class="info-title">
+                        JavaScript Algorithms
+                    </h1>
+                    <p class="info-text">
+                        This site is a collection of JavaScript algorithms that I have created. 
+                        I hope you enjoy learning about them!
+                    </p>    
+                    <h2 class="subtitle">
+                        What is Javascript Algorithm?
+                    </h2>
+                        <p class="info-text">
+                            JavaScript(JS) is a popular scripting language that is used to create interactive web pages. There is much more to JS,
+                            but, for the purpose of this site, I am going to stop right there. An algorithm 
+                            is a set of instructions of steps that are executed in a certain order to accomplish a specific task.
+                            A JavaScript algorithm is a set of instructions written in JavaScript. 
+                        </p>
+                    <h2 class="subtitle">
+                        Why I made this site?
+                    </h2>   
+                        <p class="info-text">
+                            As a Frontend Developer, actually a brand new one, JS is the core programming languages. There is no
+                            way to avoid it, plain and simple. It powers the web. Having a solid understanding of JavaScript is crucial for developers. However,
+                            it is not always easy to learn. Early on in the learning process, one might feel like algorithms  
+                            are just blocks of code that you will never use in the real world.
+                            Similar to how you may have felt about calculus, geometry or any other subject. The truth is the average person does use algorithms.
+                            In fact, the average person uses algorithms in the following ways:
+                                <ul>
+                                    <li class="use-algo">
+                                        Calculating discounts in the grocery store.
+                                    </li>
+                                    <li class="use-algo">
+                                        Planning extracurricular activities.
+                                    </li>
+                                    <li class="use-algo">
+                                        Negotiating the price of car.
+                                    </li>
+                                    <li class="use-algo">
+                                        Writing a monthly budget.
+                                    </li>
+                                </ul>
+                            Those are just a few examples. Any time that you were presented with a problem, you created and implemented an algorithm to solve.
+                            Of course, writing algorithms in a specific program language is not easy because you have to learn the syntax of the language.
+                            I simply wanted to share that we are all programmers in one way or another.
+                        </p>
+                   
+                        <p class="info-text">
+                            Now, back to it! Many of the basic algorithms are difficult to visualize or connect to. That's why I decided
+                            to make this collection of JS algorithms. I wanted to see the algorithms in action. How could a user interact with 
+                            a simple block of code? And, I wanted to share the algorithms with other developers. 
+                        </p>
+                    
+                    <h2 class="subtitle">
+                        How to Use this Site?
+                    </h2>
+                    
+                    <p class="info-text">
+                        If you are reading this, you have already found the "info" button. Let's move on.
+                    </p>
+                        <h3 class="info-subtitle">
+                            The Cards
+                        </h3>
+                            <p class="info-text">
+                                The landing page has a series of cards that each represent an algorithm.
+                                The  the level of difficulty of the algorithm is indicated by the number of stars in the bottom left corner of each card.
+                                One star is easy and two stars is medium. Three stars is hard. As of now, I have only implemented easy and medium algorithms .
+                                <!-- change this image -->
+                                Each card has a button that opens an interactive dashboard.
+                                <img src="images/sample-card.PNG" alt="sample-card" class="sample-card" />
+                            </p>
+                        <h3 class="info-subtitle">
+                            The Dashboard
+                        </h3>
+                        <p class="info-text">
+                            Each dashboard has a home button, a simple instruction, input field of fields,
+                            and a button to run the algorithm. On the left side of the dashboard, 
+                            a pdf file of the algorithm is displayed. At the bottom of the pdf, there is a button
+                            that will download the pdf file.
+
+                            <!-- place image here -->
+                            
+                        </p>       
+
+                    <h2 class="subtitle">
+                        Resources
+                    </h2>
+                    <p>
+                        <ul>
+                            <li class="resources">
+                                Bootcamp: 
+                                    <ul>
+                                        <li class="camp-list">
+                                            <a href="https://www.reskillamericans.org/" alt="link to Reskill Ammericans Bootcamp">Reskill Americans</a>
+                                        </li>
+                                        <li class="camp-list">
+                                            <a href="https://www.freeCodeCamp.org/" alt="link to free code camp Bootcamp">freeCodeCamp</a>  
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li class="resources">
+                                Challenges:
+                                <ul>
+                                    <li class="challenge-list">   <a href="https://www.leetcode.com/" alt="link to LeetCode coding challenges">LeetCode</a></li> 
+                                    <li class="challenge-list">   <a href="https://www.codewars.com/" alt="link to LeetCode coding challenges">CodeWars</a></li> 
+                                </ul>
+                            </li>
+                            <li class="resources">
+                                Tutorials
+                                <ul>
+                                    <li class="tutorial-list">
+                                        <a href="https://developer.mozilla.org/en-US/" alt="link to MDN WEB DOCS">w3Schools</a>
+                                    </li> 
+                                    <li class="tutorial-list">
+                                        <a href="https://www.w3schools.com/" alt="link to W 3 SCHOOLS">MDN Web Docs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                              
+                        </ul>
+                    </p>
+                    <h2 class="subtitle">
+                        Contact
+                    </h2>
+                        
+                        
+                </div>
+            </div>
+        </div>
+
+        <!-- /INFORMATION  -->
 
         
         <!-- GRID CARDS -->
@@ -63,11 +202,13 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is easy">
                             <!-- <box-icon name='download' class="icon download iso-download" ></box-icon> -->
-                            <p class="level-text med iso">EASY</p>
+                            <i class="fas fa-star"></i>
+                            
+                            <!-- <p class="level-text med iso">EASY</p> -->
                         </div>
-                        <button class="btn iso-btn" id="iso-play-btn" aria-label="play">
+                        <button class="btn-play iso-btn-play" id="iso-play-btn" aria-label="play">
                             <i class="fas fa-play iso-play"></i>
                         </button>
                     </div>
@@ -88,11 +229,11 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is easy">
                             <!-- <box-icon name='download' class="icon download pal-download" ></box-icon> -->
-                            <p class="level-text med pal">EASY</p>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn pal-btn" id="pal-play-btn" aria-label="play">
+                        <button class="btn-play pal-btn-play" id="pal-play-btn" aria-label="play">
                             <i class="fas fa-play pal-play"></i>
                         </button>
                     </div>
@@ -110,11 +251,11 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is easy">
                             <!-- <box-icon name='download' class="icon download two-download"></box-icon> -->
-                            <p class="level-text med two">EASY</p>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn two-btn" id="two-play-btn" aria-label="play">
+                        <button class="btn-play two-btn-play" id="two-play-btn" aria-label="play">
                             <i class="fas fa-play two-play"></i>
                         </button>
                     </div>
@@ -133,15 +274,15 @@
                     </div>
                     <div class="btn-holder">
                         <!-- <div class="card-download-holder"> -->
-                            <div class="level"  aria-label="level of difficulty">
+                            <div class="level"  aria-label="level of difficulty is easy">
                                 
                                 <!-- <box-icon name='download' class="icon download spin-download" ></box-icon> -->
                                 <!-- <i class="fas fa-circle spin-level easy"></i> -->
-                                <p class="level-text med spin">EASY</p>
+                                <i class="fas fa-star"></i>
                             </div>
                         <!-- </div> 
                         <div class="play-holder"> -->
-                            <button class="btn spin-btn" id="spin-play-btn" aria-label="play">
+                            <button class="btn-play spin-btn-play" id="spin-play-btn" aria-label="play">
                                 <i class="fas fa-play spin-play"></i>
                                 <!-- <box-icon name='play' class="icon play spin-play"></box-icon> -->
                             </button>
@@ -162,12 +303,12 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is easy">
                             <!-- <box-icon name='download' class="icon download llw-download"></box-icon> -->
                             <!-- <i class="fas fa-circle llw-level easy"></i> -->
-                            <p class="level-text med llw">EASY</p>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn llw-btn" id="llw-play-btn" aria-label="play">
+                        <button class="btn-play llw-btn-play" id="llw-play-btn" aria-label="play">
                             <i class="fas fa-play llw-play"></i>
                         </button>
                     </div>
@@ -186,12 +327,12 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is easy">
                             <!-- <box-icon name='download' class="icon download fact-download"></box-icon> -->
                             <!-- <i class="fas fa-circle fact-level easy"></i> -->
-                            <p class="level-text med fact">EASY</p>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn fact-btn" id="fact-play-btn" aria-label="play">
+                        <button class="btn-play fact-btn-play" id="fact-play-btn" aria-label="play">
                             <i class="fas fa-play fact-play"></i>
                         </button>
                     </div>
@@ -209,12 +350,12 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is easy">
                             <!-- <box-icon name='download' class="icon download pn-download"></box-icon> -->
                             <!-- <i class="fas fa-circle pn-level easy"></i> -->
-                            <p class="level-text med pn">EASY</p>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn pn-btn" id="pn-play-btn" aria-label="play">
+                        <button class="btn-play pn-btn-play" id="pn-play-btn" aria-label="play">
                             <i class="fas fa-play pn-play"></i>
                         </button>
                     </div>
@@ -232,13 +373,14 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is medium">
                             <!-- <box-icon name='download' class="icon download rev-download"></box-icon> -->
                             <!-- <i class="fas fa-circle rev-int-level med"></i> -->
-                            <p class="level-text med rev">MEDIUM</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     
-                        <button class="btn rev-btn" id="rev-play-btn" aria-label="play">
+                        <button class="btn-play rev-btn-play" id="rev-play-btn" aria-label="play">
                             <i class="fas fa-play rev-play"></i>
                         </button>
                     </div>
@@ -256,12 +398,13 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is medium">
                             <!-- <box-icon name='download' class="icon download lnr-download"></box-icon> -->
                             <!-- <i class="fas fa-circle lnr-level med"></i> -->
-                            <p class="level-text med lnr">MEDIUM</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn lnr-btn" id="lnr-play-btn" aria-label="play">
+                        <button class="btn-play lnr-btn-play" id="lnr-play-btn" aria-label="play">
                             <i class="fas fa-play lnr-play"></i>
                         </button>
                     </div>
@@ -280,12 +423,13 @@
                     </div>
                     <div class="btn-holder">
                     
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is medium">
                             <!-- <box-icon name='download' class="icon download rw-download"></box-icon> -->
                             <!-- <i class="fas fa-circle rev-word-level med"></i> -->
-                            <p class="level-text med rw">MEDIUM</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn rw-btn" id="rw-play-btn" aria-label="play">
+                        <button class="btn-play rw-btn-play" id="rw-play-btn" aria-label="play">
                             <i class="fas fa-play rw-play"></i>
                         </button>
                    
@@ -304,12 +448,13 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is medium">
                             <!-- <box-icon name='download' class="icon download sum-all-download"></box-icon> -->
                             <!-- <i class="fas fa-circle sm-all-level med"></i> -->
-                            <p class="level-text med sum-all">MEDIUM</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn sum-all-btn" id="sum-all-play-btn" aria-label="play">
+                        <button class="btn-play sum-all-btn-play" id="sum-all-play-btn" aria-label="play">
                             <i class="fas fa-play sum-all-play"></i>
                         </button>
                     </div>
@@ -327,12 +472,13 @@
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <div class="level"  aria-label="level of difficulty">
+                        <div class="level"  aria-label="level of difficulty is medium">
                             <!-- <box-icon name='download' class="icon download rome-download"></box-icon> -->
                             <!-- <i class="fas fa-circle rome-level med"></i> -->
-                            <p class="level-text med rome">MEDIUM</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <button class="btn rome-btn" id="rome-play-btn" aria-label="play">
+                        <button class="btn-play rome-btn-play" id="rome-play-btn" aria-label="play">
                             
                             <i class="fas fa-play rome-play"></i>
                         </button>
