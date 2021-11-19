@@ -197,12 +197,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // DETERMINING IF THE STRING IS AN ISOGRAM
     function isIsogram() {
+        // get the user input
         var str = document.getElementById("isogramText").value;
-
-        // create an empty array for comparison to letters array
-        var newLetters = [];
+        // convert the string to a lowercase array
         var letters = str.toLowerCase().split('');
-
+        // get the length of the letters array and assign it to a variable
+        var lettersLength = letters.length;
+        // initialize an empty array for comparison to letters array 
+        var newLetters = [];
+        // get the length of the new array and assign it to a variable
+        var newLettersLength = newLetters.length;
+        
+       
         // Use ForEach() to iterate over each substring in the letters array and compare it to the newLetters array.
             // if the substring does not exist(indexOf -1) in the newLetters array, then add it.
         letters.forEach(function(item, i, arr){
@@ -215,8 +221,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // If they are strictly equal, then the word IS an isogram
             // Else, the length is not strictly equal, then the word is NOT an isogram
                 //WHY? Substrings that repeat, will not have an index of -1 and not be added to newLetters array, 
-                    // resulting in newLetters.length < letter.length
-        if(newLetters.length === letters.length) {
+                    // resulting in newLettersLength < letterLength
+        if(newLettersLength === lettersLength) {
             // return true;
             showRes();
             response.innerHTML = "'"+`${str}`+"'" + " IS an isogram."
