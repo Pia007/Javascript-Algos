@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     infoBtn.addEventListener('click', openInfo);
 
-    const closeInfo = document.getElementById('info-fact-btn-close');
+    const closeInfo = document.getElementById('info-btn-close');
     closeInfo.addEventListener('click', function(e) {
         e.preventDefault();
     });

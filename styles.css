@@ -176,19 +176,16 @@ body {
 }
 
 .level {
-    width: 70px;
+    width: 40px;
     height: 40px;
-    border-radius: 8px;
-    box-shadow: none;
-}
-.level-text {
-    font-size: 16px;
-    margin: 10.665px auto;
+    border-radius: 50%;
 }
 
-.fa-star {
-    margin: 8px auto;
-    font-size:22px;
+.fa-battery-three-quarters,
+.fa-battery-half {
+    margin: 11px auto;
+    font-size: 19px;
+    
 }
 .fa-play {
     margin: 8px auto;
@@ -331,6 +328,15 @@ body {
 .rome-btn-play:active {
     border: 2px solid var(--rome-color);
 }
+footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 8vh;
+    border: 1px solid black;
+    background: green;
+}
 
 /* Breakpoints */
 @media (min-width: 500px) {
@@ -404,12 +410,18 @@ body {
         height:50px;
     }
     .level {
-        width: 80px; 
+        width: 50px; 
         height: 50px;
+        border-radius: 50%;
     }
-    .fa-star {
+
+    .fa-battery-three-quarters,
+    .fa-battery-half {
+        margin: 8px auto;
+        font-size:24px;
+
         font-size: 24px;
-        margin:12px auto;
+        margin:13px auto;
     }
     
     .play {

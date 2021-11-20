@@ -58,43 +58,117 @@ body {
 /* Main Container */
 .information  {
     width: 95%;
-    height: 70vh;
+    height: 80vh;
     margin: 20px auto;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     background: var(--main-bg);
-    border: 1px solid red;
-    /* color: var(--js-black); */
-    font-size: 24px;
-    font-family: var(--rubik);
-    /* overflow-y: hidden; */
+    box-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
 }
 .information {
     display: none;
 }
-.info-holder {
+/* .info-holder {
     width: 90%;
     height: 90%;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-}
+} */
 .info-home  {
     float: right;
 }
+.info-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 26px;
+    color: black;
+}
+
 .info-content {
     width: 95%;
     height: 90%;
     margin: 10px auto;
+    margin-top: 0;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     color: black;
-    /* justify-content: center; */
-    align-items: center;
-    border: 1px solid black;
+    justify-content: flex-start;
+    border-radius: 10px;
+    box-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
+    overflow-y: auto;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.info-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+.info-text {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.4;
+    /* font-weight: 500; */
+}
+.info-img-holder {
+    width: 40%;
+    max-width: 380px;
+    min-width: 260px;
+    height: auto;
+    
+}
+.sample-image {
+    padding-left: 90px;
+    width: 100%;
+    border-radius: 10px;
+}
+.use-algo-list,
+.resources-list {
+    width: 100%;
+    padding-left: 85px;
+}
+.resources-list {
+    font-weight: 500;
+}
+.use-algo-item,
+.resources-item {
+    margin: 5px 0;
+    font-size: 18px;
+    
+}
+a.camp-links,
+a.challenge-links,
+a.tutorial-links {
+    /* padding-left: 10px; */
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--info-color);
+    text-decoration: none;
 }
 
 .algo-dash-holder {
@@ -191,7 +265,7 @@ body {
 }
 .info-home-btn-holder {
     width: 100%;
-    height: auto;
+    height: 60px;
     display: flex;
     justify-content: flex-end;
     outline: none;
@@ -221,6 +295,7 @@ body {
     cursor: pointer;
 }
 .info-home {
+    margin: 7.5px;
     background: var(--main-bg);
     box-shadow: inset 21px 21px 42px #8b8e92,
         inset -21px -21px 42px #ffffff;
@@ -1796,6 +1871,18 @@ form {
 }
 
 @media screen and (max-width: 1080px){
+    /* information */
+    /* .subtitle {
+        font-size: 22px;
+    }
+    .info-text {
+        font-weight: 18px;
+    }
+    .use-ago-list {
+        font-size: 18px;
+        width: 100%;
+    } */
+
     .two-form {
         padding: 0;
     }
@@ -1813,6 +1900,9 @@ form {
 }
 /* MAX-WIDTH 900PX */
 @media screen and (max-width: 900px) {
+    .info-text {
+        font-size: 18px;
+    }
     .algo-dash-holder {
         width: 100%;
         height: auto;
@@ -2166,8 +2256,69 @@ form {
         width: 100%;
         height: 90vh;
     }
-    /* body {
-        position: relative;
+    .info-home-btn-holder {
+        height: 50px;
+        margin-bottom: 0;
+    }
+    .information {
+        width: 100%;
+    }
+    .info-content {
+        padding: 10px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .info-text {
+        font-size: 16px;
+    }
+    .use-algo-list ,
+    .resources-list{
+        padding-left: 30px;
+    }
+    .use-algo-item,
+    .resources-item,
+    a.camp-links,
+    a.challenge-links,
+    a.tutorial-links {
+        font-size: 14px;
+    }
+    .info-img-holder {
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .sample-image {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    /* .subtitle {
+        font-size: 20px;
+    }
+    .info-subtitle,
+    .use-algo-item,
+    .resources-item {
+        font-size: 16px;
+    }
+    .resources-item {
+        font-size: 16px;
+    }
+    .use-algo-list,
+    .resources-list {
+        padding-left: 50px;
+    }
+    .info-text {
+        font-size: 16px;
+    }
+    .info-img-holder {
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        
+    }
+    .sample-image {
+        padding: 0 auto
     } */
     .algo-dash-holder {
         width: 100%;
@@ -2430,6 +2581,17 @@ form {
     }
 }
 @media screen and (max-width: 375px) {
+    
+    /* .info-img-holder {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .sample-image {
+        padding-left: 0;
+        margin: auto;
+    } */
     .algo-dash-holder {
         height: auto; 
         margin: 10px 0;
@@ -2455,30 +2617,3 @@ form {
 
 }
 
-/* @media (orientation: landscape) {
-    .algo-dash-holder {
-        height: auto; 
-        margin: 10px 0;
-        border-radius: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-    .container {
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-
-    }
-    .window-holder {
-        height: 300px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-    .text-field {
-        font-size: 16px;
-    }
-    .ts-input-holder {
-        height: 35px;
-    }
-
-} */
