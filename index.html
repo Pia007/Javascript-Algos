@@ -14,8 +14,8 @@
     <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="header-social.css" />
-    <link rel="stylesheet" href="dash.css" />
+    <!-- <link rel="stylesheet" href="header-footer.css" /> -->
+    <!-- <link rel="stylesheet" href="dash.css" /> -->
     
     
     <title>JavaScript Algorithms | Pia Torain</title>
@@ -28,12 +28,11 @@
                 <div class="hd-holder hd-btn-holder">
                     <button  class="header-btn" id="info-btn" aria-label="info-button">
                         <i class="fas fa-info header-info" name='info' id="info-icon"></i>
-                        <!-- <box-icon name='menu' class="header-menu" id="menu-icon" ></box-icon> -->
                     </button>
                 </div>
                 <div class="hd-holder hd-title-holder">
                     <p id="header-title" class="hd-title">JavaScript Algorithms</p>
-                    <p id="mb-header-title" class="hd-title">Js Algos</p>
+                    <p id="mb-header-title" class="hd-title">JS Algos</p>
                 </div>
                 <div class="hd-holder clock-holder">
                     <div id="clock" class="hd-clock"></div>
@@ -53,12 +52,6 @@
                     <box-icon name='home' class="icon-home info-home-icon"></box-icon>
                 </button>
             </div>
-            <!-- <h1 class="info-title">
-                JavaScript Algorithms
-            </h1>
-            <p class="sub-text">
-                This site is a growing collection of JavaScript algorithms. 
-            </p>  -->
             <div class="info-content">
                 <h2 class="subtitle">
                     What is a Javascript Algorithm?
@@ -73,102 +66,70 @@
                     Why I made this site?
                 </h2>   
                     <p class="info-text">
-                        As a Frontend Developer, actually a brand new one, JS is the core programming languages. There is no
-                        way to avoid it, plain and simple. It powers the web. Having a solid understanding of JavaScript is crucial for developers. However,
-                        it is not always easy to learn. Early on in the learning process, one might feel like algorithms  
-                        are just blocks of code that you will never use in the real world.
-                        Similar to how you may have felt about calculus, geometry or any other subject. The truth is the average person does use algorithms.
-                        In fact, the average person uses algorithms in the following ways:
+                        As a Frontend Developer, actually a brand new one, having a solid understanding of JavaScript is crucial.
+                        JS is the core programming language. There is no way to avoid it, plain and simple. However,
+                        it is not always easy to grasp. In fact, like all programming languages, the learning process is ongoing. And, the more 
+                        you practice, the more you learn. The idea for this site was born out of weekly coding challenges hosted by the bootcamp
+                        that I was enrolled in. I started accompanying each challenge with a simple dashboard that would help me to learn, improve and visualize 
+                        how the algorithm would work. Then, I started brainstorming about the functionality, aesthetics and accessibility of the dashboard. And then it was live! 
                     </p>
-                    <ul class="use-algo-list">
-                        <li class="use-algo-item">
-                            Calculating discounts in the grocery store.
-                        </li>
-                        <li class="use-algo-item">
-                            Planning extracurricular activities.
-                        </li>
-                        <li class="use-algo-item">
-                            Negotiating the price of car.
-                        </li>
-                        <li class="use-algo-item">
-                            Writing a monthly budget.
-                        </li>
-                    </ul>
-                    <p class="info-text">
-                        Those are just a few examples. Anytime that you were presented with a problem, you created and implemented an algorithm to solve.
-                        Of course, writing algorithms in a specific programming language is not learned overnight but does get easier with practice.
-                        I simply wanted to share that we are all programmers in one way or another.
-                    </p>
-                
-                    <p class="info-text">
-                        Now, back to it! Many of the basic algorithms are difficult to visualize or connect to. That's why I decided
-                        to make this collection of JS algorithms. I wanted to see the algorithms in action. How could a user interact with 
-                        a simple block of code? And, I wanted to share the algorithms with other developers. 
-                    </p>
-                
+                    
                 <h2 class="subtitle">
                     How to Use this Site?
                 </h2>
                 
                 <p class="info-text">
-                    If you are reading this, you have already found the "info" button. Let's move on.
+                    If you are reading this, you have already found the "info" button.
                 </p>
                     <h3 class="info-subtitle">
                         The Cards
                     </h3>
                         <p class="info-text">
-                            The landing page has a series of cards that each represent an algorithm.
-                            The  the level of difficulty of the algorithm is indicated by the number of stars in the bottom left corner of each card.
-                            One star is easy and two stars is medium. Three stars is hard. As of now, I have only implemented easy and medium algorithms .
-                            Each card has a button that opens an interactive dashboard.
+                            The landing page has a series of cards. Each card represents an algorithm.
+                            The level of difficulty is indicated by a battery icon in the lower left corner.
+                            A battery that is 3/4 full represents an easy algorithm. While a 1/2 full battery indicates an intermediate/medium difficulty. A 1/4 full and an empty battery represent hard and advanced; respectively. As of now, I have only implemented easy and medium algorithms.
+                            Each card has a "play" button in the lower right corner that opens an interactive dashboard.
                             <div class="info-img-holder">
-                                <img src="images/sample-card.png" alt="sample card image" class="sample-image" />
+                                <img src="images/sample-card.png" alt="sample card image" class="sample-image card-img" />
                             </div>
                         </p>
                     <h3 class="info-subtitle">
                         The Dashboard
                     </h3>
                         <p class="info-text">
-                            Each dashboard has a home button, a simple instruction, input field of fields,
+                            Each dashboard has a home button, a simple instruction, user input fields,
                             and a button to run the algorithm. On the left side of the dashboard, 
                             a pdf file of the algorithm is displayed. At the bottom of the pdf, there is a button
                             that will download the pdf file.
                         </p>
                         <div class="info-img-holder">
-                            <img src="images/sample-dash.png" alt="sample dashboard image" class="sample-image" />
+                            <img src="images/sample-dash.png" alt="sample dashboard image" class="sample-image dash-img" />
                         </div>
-                           
                 <h2 class="subtitle">
                     Resources
                 </h2>
-                <p>
-                    <ul class="resources-list">
-                        <li class="resources-item">
-                            Bootcamp: 
-                            <a class="camp-links" href="https://www.reskillamericans.org/" alt="link to Reskill Ammericans Bootcamp">Reskill Americans</a>
-                            &
-                            <a class="camp-links" href="https://www.freeCodeCamp.org/" alt="link to free code camp Bootcamp">freeCodeCamp</a>  
-                        </li>
-                        <li class="resources-item">
-                            Challenges: 
-                            <a class="challenge-links" href="https://www.leetcode.com/" alt="link to LeetCode coding challenges">LeetCode</a>
-                            &
-                            <a class="challenge-links" href="https://www.codewars.com/" alt="link to LeetCode coding challenges">CodeWars</a>
-                        </li>
-                        <li class="resources-item">
-                            Tutorials: 
-                            <a class="tutorial-links" href="https://developer.mozilla.org/en-US/" alt="link to MDN WEB DOCS">w3Schools</a>
-                            &
-                            <a class="tutorial-links" href="https://www.w3schools.com/" alt="link to W 3 SCHOOLS">MDN Web Docs</a>
-                        </li>   
-                    </ul>
-                </p>
-                <h2 class="subtitle">
-                    Contact
-                </h2>
+                <ul class="resources-list">
+                    <li class="resources-item">
+                        Bootcamp: 
+                        <a class="resources-links" href="https://www.reskillamericans.org/" alt="link to Reskill Ammericans Bootcamp">Reskill Americans</a>
+                        &
+                        <a class="resources-links" href="https://www.freeCodeCamp.org/" alt="link to free code camp Bootcamp">freeCodeCamp</a>  
+                    </li>
+                    <li class="resources-item">
+                        Challenges: 
+                        <a class="resources-links" href="https://www.leetcode.com/" alt="link to LeetCode coding challenges">LeetCode</a>
+                        &
+                        <a class="resources-links" href="https://www.codewars.com/" alt="link to LeetCode coding challenges">CodeWars</a>
+                    </li>
+                    <li class="resources-item">
+                        Tutorials: 
+                        <a class="resources-links" href="https://developer.mozilla.org/en-US/" alt="link to MDN WEB DOCS">w3Schools</a>
+                        &
+                        <a class="resources-links" href="https://www.w3schools.com/" alt="link to W 3 SCHOOLS">MDN Web Docs</a>
+                    </li>   
+                </ul>
             </div>
         </div>
-
         <!-- /INFORMATION  -->
 
         
@@ -182,23 +143,18 @@
                             <h3 class="title">ISOGRAM</h3>
                         </div>
                         <div class="algo-text">
-                            <p class="info">Is there only one instance of each letter in your word?</p>
+                            <p class="text-info">Is there only one instance of each letter in your word?</p>
                         </div>
                     </div>
                     <div class="btn-holder">
                         <div class="level"  aria-label="level of difficulty is easy">
-                            <!-- <box-icon name='download' class="icon download iso-download" ></box-icon> -->
                             <i class="fas fa-battery-three-quarters"></i>
-                            
-                        
                         </div>
                         <button class="btn-play iso-btn-play" id="iso-play-btn" aria-label="play">
                             <i class="fas fa-play iso-play"></i>
                         </button>
                     </div>
                 </div>
-
-                
                 <!-- /Isogram Card-->
 
                 <!-- Palindrome Card-->
@@ -208,13 +164,12 @@
                             <h3 class="title">PALINDROME</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Is your word/s a palindrome?</p>
+                            <p class="text-info">Is your word/s a palindrome?</p>
                             </p>
                         </div>
                     </div>
                     <div class="btn-holder">
                         <div class="level"  aria-label="level of difficulty is easy">
-                            <!-- <box-icon name='download' class="icon download pal-download" ></box-icon> -->
                             <i class="fas fa-battery-three-quarters"></i>
                         </div>
                         <button class="btn-play pal-btn-play" id="pal-play-btn" aria-label="play">
@@ -231,7 +186,7 @@
                             <h3 class="title">TWO SUM</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Are there two numbers whose sum is the target number? </p>
+                            <p class="text-info">Are there two numbers whose sum is the target number? </p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -252,22 +207,16 @@
                             <h3 class="title">SPIN WORDS</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">See what happens when you decide which words will be reversed.</p>
+                            <p class="text-info">See what happens when you decide which words will be reversed.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
-                        <!-- <div class="card-download-holder"> -->
-                            <div class="level"  aria-label="level of difficulty is easy">
-                                <i class="fas fa-battery-three-quarters"></i>
-                            </div>
-                        <!-- </div> 
-                        <div class="play-holder"> -->
-                            <button class="btn-play spin-btn-play" id="spin-play-btn" aria-label="play">
-                                <i class="fas fa-play spin-play"></i>
-                                <!-- <box-icon name='play' class="icon play spin-play"></box-icon> -->
-                            </button>
-                        <!-- </div> -->
-                        
+                        <div class="level"  aria-label="level of difficulty is easy">
+                            <i class="fas fa-battery-three-quarters"></i>
+                        </div>
+                        <button class="btn-play spin-btn-play" id="spin-play-btn" aria-label="play">
+                            <i class="fas fa-play spin-play"></i>
+                        </button>
                     </div>
                 </div>
                 <!-- /SpinWords  Card-->
@@ -279,7 +228,7 @@
                             <h3 class="title">LENGTH OF LONGEST WORD</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Find out which word is the longest and its length.</p>
+                            <p class="text-info">Find out which word is the longest and its length.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -301,7 +250,7 @@
                             <h3 class="title">FACTORIALIZE</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Get the factorial(!n) of a positive integer.</p>
+                            <p class="text-info">Get the factorial(!n) of a positive integer.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -322,7 +271,7 @@
                             <h3 class="title">PALINDROME NUMBER</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Check to see if a number is a palidrome.</p>
+                            <p class="text-info">Check to see if a number is a palidrome.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -343,7 +292,7 @@
                             <h3 class="title">REVERSE AN INTEGER</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Reverse an integer and maintain it's relation to 0. </p>
+                            <p class="text-info">Reverse an integer and maintain it's relation to 0. </p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -365,17 +314,14 @@
                             <h3 class="title">LONGEST NON-REPEATING SUBSTRING</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Get the longest unique substring and its length.</p>
+                            <p class="text-info">Get the longest unique substring and its length.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
                         <div class="level"  aria-label="level of difficulty is medium">
-                            
                             <i class="fas fa-battery-half"></i>
-                           
                         </div>
                         <button class="btn-play lnr-btn-play" id="lnr-play-btn" aria-label="play">
-                            
                             <i class="fas fa-play lnr-play"></i>
                         </button>
                     </div>
@@ -389,19 +335,16 @@
                             <h3 class="title">REVERSE THE WORDS</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Reverse the order of words in a string</p>
+                            <p class="text-info">Reverse the order of words in a string</p>
                         </div>
                     </div>
                     <div class="btn-holder">
-                    
                         <div class="level"  aria-label="level of difficulty is medium">
-                            
                             <i class="fas fa-battery-half"></i>
                         </div>
                         <button class="btn-play rw-btn-play" id="rw-play-btn" aria-label="play">
                             <i class="fas fa-play rw-play"></i>
                         </button>
-                   
                     </div>
                 </div>
                 <!-- /Reverse A Word in a String Card-->
@@ -413,7 +356,7 @@
                             <h3 class="title">SUM ALL</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Get the sum of two numbers and of the number between them.</p>
+                            <p class="text-info">Get the sum of two numbers and of the number between them.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -434,7 +377,7 @@
                             <h3 class="title">TO ROME & BACK</h3>
                         </div>
                         <div class="algo-info">
-                            <p class="info">Convert a Roman Numeral to an integer or vice versa.</p>
+                            <p class="text-info">Convert a Roman Numeral to an integer or vice versa.</p>
                         </div>
                     </div>
                     <div class="btn-holder">
@@ -442,7 +385,6 @@
                             <i class="fas fa-battery-half"></i>
                         </div>
                         <button class="btn-play rome-btn-play" id="rome-play-btn" aria-label="play">
-                            
                             <i class="fas fa-play rome-play"></i>
                         </button>
                     </div>
@@ -459,19 +401,6 @@
             <!-- Isogram Dashboard -->
             <div id="iso-container" class="container iso-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="is-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="is-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="is-twitter"aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="iso-btn-close" class="btn-home iso-home" aria-label="home">
                         <box-icon name='home' class="icon-home iso-home-icon"></box-icon>
                     </button>
@@ -519,19 +448,6 @@
             <!-- Palindrome Dashboard -->
             <div id="palindrome" class="container pal-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="pal-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="pal-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="pal-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="pal-btn-close" class="btn-home pal-home" aria-label="home">
                         <box-icon name='home' class="icon-home pal-home-icon"></box-icon>
                     </button>
@@ -581,19 +497,6 @@
             <!-- Two Sum Dashboard -->
             <div id="two-sum" class="container ts-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="two-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="two-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="two-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="ts-btn-close" class="btn-home two-home" aria-label="home">
                         <box-icon name='home' class="icon-home ts-home-icon"></box-icon>
                     </button>
@@ -650,19 +553,6 @@
             <!-- Spin Words Dashboard -->
             <div id="spin-words" class="container spin-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="spin-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="spin-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="spin-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="spin-btn-close" class="btn-home sw-home" aria-label="home">
                         <box-icon name='home' class="icon-home sw-home-icon"></box-icon>
                     </button>
@@ -717,19 +607,6 @@
             <!-- Length of Longest Word Dashboard -->
             <div id="longest-word" class="container lw-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="lw-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="lw-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="lw-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="lw-btn-close" class="btn-home lw-home" aria-label="home">
                         <box-icon name='home' class="icon-home lw-home-icon"></box-icon>
                     </button>
@@ -779,19 +656,6 @@
             <!-- Factorialize a Number Dashboard -->
             <div id="factorialize" class="container fact-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="fact-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="fact-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="fact-twitter" aria-label="twitter logo">
-                                <a  href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="fact-btn-close" class="btn-home fact-home" aria-label="home">
                         <box-icon name='home' class="icon-home fact-home-icon"></box-icon>
                     </button>
@@ -841,19 +705,6 @@
             <!-- Palindrome Number Dashboard -->
             <div id="pal-num" class="container pn-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="pn-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="pn-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="pn-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="pn-btn-close" class="btn-home pn-home" aria-label="home">
                         <box-icon name='home' class="icon-home pn-home-icon"></box-icon>
                     </button>
@@ -904,19 +755,6 @@
             <!-- Reverse an Integer Dashboard -->
             <div id="reverse-int" class="container rev-int-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="rv-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="rv-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="rv-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="rev-int-btn-close" class="btn-home rev-int-home" aria-label="home">
                         <box-icon name='home' class="icon-home rev-int-home-icon"></box-icon>
                     </button>
@@ -965,19 +803,6 @@
             <!-- Longest Non-Repeating Substring Dashboard -->
             <div id="lnr" class="container lnr-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="lnr-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="lnr-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="lnr-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="lnr-btn-close" class="btn-home lnr-home" aria-label="home">
                         <box-icon name='home' class="icon-home lnr-home-icon"></box-icon>
                     </button>
@@ -1026,19 +851,6 @@
             <!-- Reverse A Word in a String Dashboard -->
             <div id="rev-word" class="container rev-word-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="rw-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="rw-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="rw-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="rev-word-btn-close" class="btn-home rev-word-home" aria-label="home">
                         <box-icon name='home' class="icon-home rev-word-home-icon"></box-icon>
                     </button>
@@ -1088,19 +900,6 @@
 
             <div id="sm-all" class="container sm-all-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="sm-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="sm-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="sm-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="sm-all-btn-close" class="btn-home sm-all-home" aria-label="home">
                         <box-icon name='home' class="icon-home sm-all-home-icon"></box-icon>
                     </button>
@@ -1150,19 +949,6 @@
             <!-- To Rome and Back -->
             <div id="rome" class="container rome-container">
                 <div class="home-btn-holder">
-                    <div class="social-holder">
-                        <div class="social-list">
-                            <button class="social-btn-item" id="rome-linkedin" aria-label="linkedin logo">
-                                <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="rome-github" aria-label="github logo">
-                                <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
-                            </button>
-                            <button class="social-btn-item" id="rome-twitter" aria-label="twitter logo">
-                                <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
-                            </li>
-                        </div>
-                    </div>
                     <button id="rome-btn-close" class="btn-home rome-home" aria-label="home">
                         <box-icon name='home' class="icon-home rome-home-icon"></box-icon>
                     </button>
@@ -1213,7 +999,24 @@
         <!-- /ALGORITHMS -->
     </div>
     <!-- /MAIN CONTENT --> 
-    <footer></footer> 
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-holder">
+            <div class="social-list">
+                <button class="social-btn-item" id="linkedin" aria-label="linkedin logo">
+                    <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                </button>
+                <button class="social-btn-item" id="github" aria-label="github logo">
+                    <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
+                </button>
+                <button class="social-btn-item" id="twitter" aria-label="twitter logo">
+                    <a href="https://twitter.com/FeenixRizn" class="social-links" alt="developer's twitter profile link" aria-label="twitter"><i class='bx bxl-twitter f-icon f-twitter'></i></box-icon></a>
+                </button>
+            </div>
+        </div>
+    </footer> 
+    <!-- /FOOTER -->
     
     
    

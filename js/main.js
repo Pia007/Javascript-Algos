@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
 
+    // Footer Elements
+    const linkedIn = document.getElementById('linkedin');
+    const github = document.getElementById('github');
+    const twitter = document.getElementById('twitter');
+
     //***********************  INFORMATION DASH ****************************/
     function openInfo() {
         infoDash.style.display = 'block';
@@ -30,10 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = "none";
         cardHolder.style.display = "none";
-        info.style.color = '#c32abbc9';  
-        title.style.color= '#c32abbc9';  
-        clock.style.color= '#c32abbc9'; 
-        mobileTitle.style.color= '#c32abbc9';
+        info.style.color = '#6d88c8'; 
+
+        title.style.color= '#6d88c8';  
+        clock.style.color= '#6d88c8'; 
+        mobileTitle.style.color= '#6d88c8';
+        linkedIn.style.border = ' 2px solid #6d88c8';
+        github.style.border = '2px solid #6d88c8';
+        twitter.style.border = '2px solid #6d88c8';
     }
     infoBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -105,6 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#c32abbc9';  
         clock.style.color= '#c32abbc9'; 
         mobileTitle.style.color= '#c32abbc9';
+        linkedIn.style.border = ' 2px solid #c32abbc9';
+        github.style.border = '2px solid #c32abbc9';
+        twitter.style.border = '2px solid #c32abbc9';
 
     }
     // ******************ISOGRAM******************************
@@ -112,9 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // ISOGRAM CONTAINER
     const isoDash = document.getElementById('iso-container');
     const isoBtn = document.getElementById('iso-play-btn');
-    const isoLinked = document.getElementById('is-linkedin');
-    const isoGit= document.getElementById('is-github');
-    const isoTwit = document.getElementById('is-twitter');
     const isoHomeBtn = document.getElementById("iso-btn-close");
     
     // SHOW ISOGRAM FROM HOMEPAGE
@@ -137,9 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#37A4C8';  
         clock.style.color= '#37A4C8';
         mobileTitle.style.color= '#37A4C8';
-        isoLinked.style.border = '2px solid #37A4C8';
-        isoGit.style.color = '2px solid #37A4C8';
-        isoTwit.style.color = '2px solid #37A4C8';
+        linkedIn.style.border = '2px solid #37A4C8';
+        github.style.color = '2px solid #37A4C8';
+        twitter.style.color = '2px solid #37A4C8';
     }
     // PLAY ISOGRAM FROM HOMEPAGE
     isoBtn.addEventListener('click', function(e) {
@@ -285,9 +294,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // PALINDROME DASH ELEMENTS
     const palDash = document.getElementById('palindrome');
     const palBtn = document.getElementById('pal-play-btn');
-    const palLinked = document.getElementById('pal-linkedin');
-    const palGit = document.getElementById('pal-github');
-    const palTwit = document.getElementById('pal-twitter');
     const palHomeBtn = document.getElementById("pal-btn-close");
 
     // OPEN PALINDROME DASH FROM HOMEPAGE
@@ -310,9 +316,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#FFA500';  
         clock.style.color= '#FFA500';
         mobileTitle.style.color= '#FFA500';
-        palLinked.style.border = '2px solid #FFA500';
-        palGit.style.border = '2px solid #FFA500';
-        palTwit.style.border = '2px solid #FFA500';
+        linkedIn.style.border = '2px solid #FFA500';
+        github.style.border = '2px solid #FFA500';
+        twitter.style.border = '2px solid #FFA500';
     }
     // PLAY BUTTON TO OPEN PALINDROME DASH
     palBtn.addEventListener('click', function(e) {
@@ -385,9 +391,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // TWO SUM CONTAINER ELEMENTS
     const twoDash = document.getElementById('two-sum');
     const twoBtn = document.getElementById('two-play-btn');
-    const twoLinked = document.getElementById('two-linkedin');
-    const twoGit = document.getElementById('two-github');
-    const twoTwit = document.getElementById('two-twitter');
     const twoHomeBtn = document.getElementById("ts-btn-close");
 
     // OPEN TWO SUM DASH FROM HOMEPAGE
@@ -410,9 +413,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#5b0eeb';  
         clock.style.color= '#5b0eeb'; 
         mobileTitle.style.color= '#5b0eeb'; 
-        twoLinked.style.border = '2px solid #5b0eeb';
-        twoGit.style.border = '2px solid #5b0eeb';
-        twoTwit.style.border = '2px solid #5b0eeb';
+        linkedIn.style.border = '2px solid #5b0eeb';
+        github.style.border = '2px solid #5b0eeb';
+        twitter.style.border = '2px solid #5b0eeb';
     }
 
     // PLAY BUTTON TO OPEN TWO SUM DASH
@@ -556,9 +559,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // SPIN WORDS DASH ELEMENTS
     const spinDash = document.getElementById('spin-words');
     const spinBtn = document.getElementById('spin-play-btn');
-    const spinLinked = document.getElementById('spin-linkedin');
-    const spinGit = document.getElementById('spin-github');
-    const spinTwit = document.getElementById('spin-twitter');
     const spinHomeBtn = document.getElementById('spin-btn-close');
     
 
@@ -582,9 +582,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#f89898';  
         clock.style.color= '#f89898'; 
         mobileTitle.style.color= '#f89898'; 
-        spinLinked.style.border = '2px solid #f89898';
-        spinGit.style.border = '2px solid #f89898';
-        spinTwit.style.border = '2px solid #f89898';
+        linkedIn.style.border = '2px solid #f89898';
+        github.style.border = '2px solid #f89898';
+        twitter.style.border = '2px solid #f89898';
     }
     // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
     spinBtn.addEventListener('click', function(e) {
@@ -731,9 +731,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // LENGTH OF THE LONGEST WORD DASHBOARD ELEMENTS
     const llwDash = document.getElementById('longest-word');
     const llwBtn = document.getElementById('llw-play-btn');
-    const llwLinked = document.getElementById('lw-linkedin');
-    const llwGit = document.getElementById('lw-github');
-    const llwTwit = document.getElementById('lw-twitter');
     const llwHomeBtn = document.getElementById('lw-btn-close');
     
 
@@ -757,9 +754,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#35c048';  
         clock.style.color= '#35c048';  
         mobileTitle.style.color= '#35c048'; 
-        llwLinked.style.border = '2px solid #35c048';
-        llwGit.style.border = '2px solid #35c048';
-        llwTwit.style.border = '2px solid #35c048';
+        linkedIn.style.border = '2px solid #35c048';
+        github.style.border = '2px solid #35c048';
+        twitter.style.border = '2px solid #35c048';
     }
 
     // PLAY LENGTH OF THE LONGEST WORD BUTTON
@@ -855,12 +852,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Factorialize a Number Container
     const factDash = document.getElementById('factorialize');
     const factBtn = document.getElementById('fact-play-btn');
-    const factLinked = document.getElementById('fact-linkedin');
-    const factGit = document.getElementById('fact-github');
-    const factTwit = document.getElementById('fact-twitter');
     const factHomeBtn = document.getElementById('fact-btn-close');
-
-    
 
     // OPEN FACTORIALIZE DASHBOARD
     function showFact() {
@@ -882,9 +874,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#eb0e96';  
         clock.style.color= '#eb0e96';   
         mobileTitle.style.color= '#eb0e96';
-        factLinked.style.border = '2px solid #eb0e96';
-        factGit.style.border = '2px solid #eb0e96';
-        factTwit.style.border = '2px solid #eb0e96';
+        linkedIn.style.border = '2px solid #eb0e96';
+        github.style.border = '2px solid #eb0e96';
+        twitter.style.border = '2px solid #eb0e96';
     }
 
     // PLAY FACTORIALIZE BUTTON
@@ -975,9 +967,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // PALINDROME NUMBER DASHBOARD ELEMENTS
     const palNumDash = document.getElementById('pal-num');
     const palNumBtn = document.getElementById('pn-play-btn');
-    const palNumLinked = document.getElementById('pn-linkedin');
-    const palNumGit = document.getElementById('pn-github');
-    const palNumTwit = document.getElementById('pn-twitter');
     const palNumHomeBtn = document.getElementById('pn-btn-close');
     
 
@@ -1001,9 +990,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#0b7c739d';  
         clock.style.color= '#0b7c739d';  
         mobileTitle.style.color= '#0b7c739d';
-        palNumLinked.style.border = '2px solid #0b7c739d';
-        palNumGit.style.border = '2px solid #0b7c739d';
-        palNumTwit.style.border = '2px solid #0b7c739d';
+        linkedIn.style.border = '2px solid #0b7c739d';
+        github.style.border = '2px solid #0b7c739d';
+        twitter.style.border = '2px solid #0b7c739d';
 
     
     }
@@ -1091,9 +1080,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // REVERSE INTEGER DASHBOARD ELEMENTS
     const revIntDash = document.getElementById('reverse-int');
     const revIntBtn = document.getElementById('rev-play-btn');
-    const revIntLinked = document.getElementById('rv-linkedin');
-    const revIntGit = document.getElementById('rv-github');
-    const revIntTwit = document.getElementById('rv-twitter');
     const revIntHomeBtn = document.getElementById('rev-int-btn-close');
     
 
@@ -1118,9 +1104,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#8790e0';  
         clock.style.color= '#8790e0';   
         mobileTitle.style.color= '#8790e0'; 
-        revIntLinked.style.border = '2px solid #8790e0';
-        revIntGit.style.border = '2px solid #8790e0';
-        revIntTwit.style.border = '2px solid #8790e0';
+        linkedIn.style.border = '2px solid #8790e0';
+        github.style.border = '2px solid #8790e0';
+        twitter.style.border = '2px solid #8790e0';
     }
     // PLAY REVERSE INTEGER BUTTON
     revIntBtn.addEventListener('click', function(e) {
@@ -1224,9 +1210,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Longest Non-Repeating Substring Container
     const lnsDash = document.getElementById('lnr');
     const lnsBtn = document.getElementById('lnr-play-btn');
-    const lnsLinked = document.getElementById('lnr-linkedin');
-    const lnsGit = document.getElementById('lnr-github');
-    const lnsTwit = document.getElementById('lnr-twitter');
     const lnsHomeBtn = document.getElementById('lnr-btn-close');
     
 
@@ -1250,9 +1233,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#ff0000';  
         clock.style.color= '#ff0000'; 
         mobileTitle.style.color= '#ff0000'; 
-        lnsLinked.style.border = '2px solid #ff0000';
-        lnsGit.style.border = '2px solid #ff0000';
-        lnsTwit.style.border = '2px solid #ff0000';
+        linkedIn.style.border = '2px solid #ff0000';
+        github.style.border = '2px solid #ff0000';
+        twitter.style.border = '2px solid #ff0000';
     }
     // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
     lnsBtn.addEventListener('click', function(e) {
@@ -1411,9 +1394,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // REVERSE WORD/S DASHBOARD ELEMENTS
     const revWordDash = document.getElementById('rev-word');
     const revWordBtn = document.getElementById('rw-play-btn');
-    const revWordLinked = document.getElementById('rw-linkedin');
-    const revWordGit = document.getElementById('rw-github');
-    const revWordTwit = document.getElementById('rw-twitter');
     const revWordHomeBtn = document.getElementById('rev-word-btn-close');
 
     // OPEN REVERSE WORD/S DASHBOARD
@@ -1436,9 +1416,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#8e06fdda';  
         clock.style.color= '#8e06fdda'; 
         mobileTitle.style.color= '#8e06fdda'; 
-        revWordLinked.style.border = '2px solid #8e06fdda';
-        revWordGit.style.border = '2px solid #8e06fdda';
-        revWordTwit.style.border = '2px solid #8e06fdda';
+        linkedIn.style.border = '2px solid #8e06fdda';
+        github.style.border = '2px solid #8e06fdda';
+        twitter.style.border = '2px solid #8e06fdda';
     }
 
     // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
@@ -1522,9 +1502,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // SUM ALL IN A RANGE DASHBOARD ELEMENTS
     const sumAllDash = document.getElementById('sm-all');
     const sumAllBtn = document.getElementById('sum-all-play-btn');
-    const sumAllLinked = document.getElementById('sm-linkedin');
-    const sumAllGit = document.getElementById('sm-github');
-    const sumAllTwit = document.getElementById('sm-twitter');
     const sumAllHomeBtn = document.getElementById('sm-all-btn-close');
 
     // OPEN SUM ALL IN A RANGE DASHBOARD
@@ -1548,9 +1525,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#f36c36ed';  
         clock.style.color= '#f36c36ed'; 
         mobileTitle.style.color= '#f36c36ed'; 
-        sumAllLinked.style.border = '2px solid #f36c36ed';
-        sumAllGit.style.border = '2px solid #f36c36ed';
-        sumAllTwit.style.border = '2px solid #f36c36ed';
+        linkedIn.style.border = '2px solid #f36c36ed';
+        github.style.border = '2px solid #f36c36ed';
+        twitter.style.border = '2px solid #f36c36ed';
         
     }
     sumAllBtn.addEventListener('click', function(e) {
@@ -1649,9 +1626,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // To Rome and Back Container
     const toRomeDash = document.getElementById('rome');
     const toRomeBtn = document.getElementById('rome-play-btn');
-    const toRomeLinked = document.getElementById('rome-linkedin');
-    const toRomeGit = document.getElementById('rome-github');
-    const toRomeTwit = document.getElementById('rome-twitter');
     const toRomeHomeBtn = document.getElementById('rome-btn-close');
 
     // To Rome and Back Dashboard
@@ -1674,9 +1648,9 @@ document.addEventListener("DOMContentLoaded", () => {
         title.style.color= '#05c0c7';  
         clock.style.color= '#05c0c7'; 
         mobileTitle.style.color= '#05c0c7'; 
-        toRomeLinked.style.border = '2px solid #05c0c7';
-        toRomeGit.style.border = '2px solid #05c0c7';
-        toRomeTwit.style.border = '2px solid #05c0c7';
+        linkedIn.style.border = '2px solid #05c0c7';
+        github.style.border = '2px solid #05c0c7';
+        twitter.style.border = '2px solid #05c0c7';
     };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){

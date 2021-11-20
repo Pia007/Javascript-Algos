@@ -1,9 +1,14 @@
 :root {
-    --rubik: 'Rubik', sans-serif;
-    --border: rgba(150, 150, 160, 0.753);
-    
-    --main-bg: #e0e5ec;
-    --info-color: #103ea8;
+    /* font */
+   --rubik: 'Rubik', sans-serif;
+
+   --border: rgba(150, 150, 160, 0.753);
+
+   /* Background */
+   --main-bg: #e0e5ec;
+
+   /* Landing color */
+   --js-header: #c32abbc9;
 
 
     /* Card Colors */
@@ -19,10 +24,6 @@
     --rw-color: #8e06fdda;
     --sum-all-color: #f36c36ed;
     --rome-color: #05c0c7;
-    --outcome-gen: #FFA500;
-    --outcome-red: #FF1919;
-    --outcome-green: #1a5f25;
-    --extra-color: #2b923c;
 
     /*shadows */
     --iso-active-btn: 4px -4px 6px 0px #3bafd6,
@@ -33,8 +34,14 @@
         -4px -4px 6px 0px rgba(116,125,136,0.2),
         inset -4px -4px 6px -0px rgba(255,255,255,0.5),
         inset 4px 4px 6px -0px rgba(116,125,136,0.3); 
-    
+    --card-btn-shadows:  inset 9px 9px 17px #5a5c5e,
+        inset -9px -9px 17px #ffffff;
 
+
+    /* footer */
+    --f-linkedin: #0077b5;
+    --f-github: #333;
+    --f-twitter: #1da1f2;
 
 }
 *,
@@ -49,15 +56,11 @@ body {
     width: 100%;
     height: 100vh;
     font-family: var(--rubik);
-    /* overflow-y: hidden; */
-    
 }
-/* body::-webkit-scrollbar {
-    display: none;
-} */
-/* Main Container */
+/* *****************************************ALL POP UPS ***********************************/
+/* INFORMATION POPUP */
 .information  {
-    width: 95%;
+    width: 90%;
     height: 80vh;
     margin: 20px auto;
     margin-bottom: 0;
@@ -147,7 +150,6 @@ body {
     width: 100%;
     border-radius: 10px;
 }
-.use-algo-list,
 .resources-list {
     width: 100%;
     padding-left: 85px;
@@ -155,7 +157,6 @@ body {
 .resources-list {
     font-weight: 500;
 }
-.use-algo-item,
 .resources-item {
     margin: 5px 0;
     font-size: 18px;
@@ -278,7 +279,7 @@ a.tutorial-links {
     width: 100%;
     height: 75px;
     display: flex;
-    /* border: 2px solid var(--pal-color); */
+    justify-content: flex-end;
     
 }
 .btn-home {
@@ -296,9 +297,10 @@ a.tutorial-links {
 }
 .info-home {
     margin: 7.5px;
+    border: 1px solid var(--info-color);
     background: var(--main-bg);
-    box-shadow: inset 21px 21px 42px #8b8e92,
-        inset -21px -21px 42px #ffffff;
+    box-shadow:  17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
 }
 .iso-home {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
@@ -370,8 +372,8 @@ a.tutorial-links {
 .info-home:focus,
 .info-home:active {
     border: 2px solid var(--info-color);
-    box-shadow: inset 21px 21px 42px #8b8e92,
-        inset -21px -21px 42px #ffffff;
+    box-shadow:  inset 5px 5px 9px #5a5c5e,
+    inset -5px -5px 9px #ffffff;
 }
 .iso-home:active,
 .iso-home:hover,
@@ -2272,16 +2274,16 @@ form {
     .info-text {
         font-size: 16px;
     }
-    .use-algo-list ,
+    
     .resources-list{
         padding-left: 30px;
     }
-    .use-algo-item,
+    
     .resources-item,
     a.camp-links,
     a.challenge-links,
     a.tutorial-links {
-        font-size: 14px;
+        font-size: 16px;
     }
     .info-img-holder {
         width: 80%;
@@ -2293,33 +2295,7 @@ form {
         padding: 0;
         margin: 0 auto;
     }
-    /* .subtitle {
-        font-size: 20px;
-    }
-    .info-subtitle,
-    .use-algo-item,
-    .resources-item {
-        font-size: 16px;
-    }
-    .resources-item {
-        font-size: 16px;
-    }
-    .use-algo-list,
-    .resources-list {
-        padding-left: 50px;
-    }
-    .info-text {
-        font-size: 16px;
-    }
-    .info-img-holder {
-        width: 80%;
-        height: 100%;
-        margin: 0;
-        
-    }
-    .sample-image {
-        padding: 0 auto
-    } */
+    
     .algo-dash-holder {
         width: 100%;
         /* height: 100vh; */
