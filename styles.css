@@ -198,6 +198,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background: var(--main-bg);
     border: 2px solid var(--js-header);
     border-radius: 50%;
     box-shadow: 17px 17px 34px #5a5c5e,
