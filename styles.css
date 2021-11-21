@@ -160,7 +160,8 @@ footer {
     height: 8vh;
     text-align: center;
 }
-.social-holder {
+.social-holder,
+.social-holder-mb {
     width:15%;
     height: auto;
     margin: 0 auto;
@@ -170,6 +171,14 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.social-holder-mb {
+    width: auto;
+    margin-left: 0;
+}
+.social-holder-mb {
+    display: none;
+}
+    
 .social-list {
     display: flex;
     flex-direction: row;
@@ -225,6 +234,15 @@ footer {
     .hd-title {
         font-size: 22px;
     }
+}
+@media (max-width: 900px) {
+    .social-holder {
+        display: none;
+    }
+    .social-holder-mb {
+        display: flex;
+    }
+    
 }
 @media (max-width: 875px) {
     header {
@@ -1881,7 +1899,7 @@ form {
 .pnRepoHolder,
 .romeRepoHolder {
     width: 80%;
-    height: 50px;
+   
     margin: 0 auto;
     padding: 0;
    
@@ -1892,7 +1910,8 @@ form {
 }
 .romeRepoHolder {
     text-align: center;
-    height: 70px;
+    vertical-align: middle;
+    height: 30px;
     color: var(--main-bg);
     background: var(--rome-color);
     border-radius: 10px;
@@ -1913,7 +1932,9 @@ form {
     padding: auto;
     font-size: 22px;
 }
-
+.lwEval {
+    margin-top: 8px
+}
 .factEval {
     color: var(--main-bg);
 }
@@ -1923,7 +1944,8 @@ form {
     padding: auto;
 }
 .romeEval {
-    margin: 10px auto;
+    margin: auto;
+    vertical-align: middle;
 }
 
 /* PDFs */
@@ -2764,6 +2786,9 @@ form {
         font-size: 18px;
         margin: 0 auto;
     }
+    .pnEval{
+        margin: 5px auto;
+    }
     .sumEval {
         height: auto;
         margin-bottom: 8px;
@@ -3021,6 +3046,10 @@ form {
         margin-bottom: 10px;
         justify-content: space-between;
     }
+    .fact-input-holder {
+        height: 40px;
+        
+    }
     .text-field {
         width: 95%;
         margin: 10px;
@@ -3040,6 +3069,7 @@ form {
     .evals{
         font-size: 18px;
     }
+    
     /* .sw-intro {
         font-size: 18px;
     } */
@@ -3102,6 +3132,7 @@ form {
     /* .swEval {
         height: auto;
     } */
+    
     .lnsEval {
         padding: 10px;
     }
