@@ -2045,7 +2045,7 @@ form {
     margin:  30px auto;
     margin-bottom: 20px;
     
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* border: 2px solid black; */
 }
 .iso-pdf-content {
