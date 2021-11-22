@@ -20,6 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const mbLinkedin = document.getElementById('mb-linkedin');
     const mbGithub = document.getElementById('mb-github');
     const mbTwitter = document.getElementById('mb-twitter');
+    
+    // var options = {
+      
+    //     pdfOpenParams: { view: 'Fit' },
+    // }
 
     //***********************  INFORMATION DASH ****************************/
     function openInfo() {
@@ -1741,7 +1746,7 @@ document.addEventListener("DOMContentLoaded", () => {
         romeLinkedIn.style.border = '2px solid #05c0c7';
         romeGithub.style.border = '2px solid #05c0c7';
         romeTwitter.style.border = '2px solid #05c0c7';
-        // PDFObject.embed("pdf/Rome.pdf", "#romanpdf")
+        // PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
     };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){

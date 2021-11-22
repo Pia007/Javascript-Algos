@@ -1791,8 +1791,8 @@ form {
 .pn-btn-check {
     color: var(--main-bg);
     background: var(--pn-color);
-    box-shadow: inset 10px 10px 32px #154d1d,
-        inset -10px -10px 32px #55ff73;
+    box-shadow: 4px 4px 12px #042c28,
+        -4px -4px 12px #0eaea0;
 }
 .rev-int-btn-check {
     color: var(--rev-color);
