@@ -1713,6 +1713,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const romeLinkedIn = document.getElementById('mb-linkedin-rome');
     const romeGithub = document.getElementById('mb-github-rome');   
     const romeTwitter = document.getElementById('mb-twitter-rome');
+    // const romanPdf = document.getElementById("romepdf");
 
     // To Rome and Back Dashboard
     function showToRome() {
@@ -1740,6 +1741,7 @@ document.addEventListener("DOMContentLoaded", () => {
         romeLinkedIn.style.border = '2px solid #05c0c7';
         romeGithub.style.border = '2px solid #05c0c7';
         romeTwitter.style.border = '2px solid #05c0c7';
+        PDFObject.embed("pdf/Rome.pdf", "#romanpdf")
     };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){
@@ -1752,6 +1754,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const romeOutcome = document.getElementById("romeResponse");
     const romeOutcomeHolder = document.getElementById("romeRepoHolder");
     const buttonRome = document.getElementById("rome-btn");
+    
 
     // TO ROME AND BACK RESPONSE FUNCTION
     function hideRomeOutcome() {
@@ -1911,6 +1914,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     };
+
+    // var romanpdf = $("romanpdf");
+    //     PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
 
     // CLOSE TO ROME AND BACK DASHBOARD
     toRomeHomeBtn.addEventListener('click', function(e) {

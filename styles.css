@@ -1470,8 +1470,7 @@ form {
 
 .pn-intro,
 .pn-text-field,
-.pnRepoHolder,
-.pn-btn-check {
+.pnRepoHolder{
     color: var(--main-bg);
     border-radius: 10px;
     background: linear-gradient(145deg, #0a756b, #08625a);
@@ -1753,6 +1752,7 @@ form {
     font-weight: 500;
     border:none;
     border-radius: 10px;
+    background: var(--main-bg);
     
 }
 .iso-btn-check {
@@ -1778,6 +1778,7 @@ form {
 }
 .sw-btn-check {
     color: var(--spin-color);
+    background-color: var(--main-bg);
     box-shadow: inset 8px 8px 14px #a66666,
         inset -8px -8px 14px #ffcaca;
 }
@@ -1787,27 +1788,29 @@ form {
     box-shadow: inset 10px 10px 32px #154d1d,
         inset -10px -10px 32px #55ff73;
 }
+.pn-btn-check {
+    color: var(--main-bg);
+    background: var(--pn-color);
+    box-shadow: inset 10px 10px 32px #154d1d,
+        inset -10px -10px 32px #55ff73;
+}
 .rev-int-btn-check {
     color: var(--rev-color);
-    background: #e0e5ec;
     box-shadow: inset 5px 5px 32px #5a5c5e,
         inset -5px -5px 32px #ffffff;
 }
 .lns-btn-check {
     color: var(--lnr-color);
-    background: #e0e5ec;
     box-shadow: inset 10px 10px 32px #5a5c5e,
         inset -10px -10px 32px #ffffff;
 }
 .rev-word-btn-check {
     color: var(--rw-color);
-    background: #e0e5ec;
     box-shadow: inset 10px 10px 32px #5a5c5e,
         inset -10px -10px 32px #ffffff;
 }
 .sm-all-btn-check {
     color: var(--sum-all-color);
-    background: #e0e5ec;
     box-shadow:  23px 23px 46px #8f4020,
              -23px -23px 46px #ff984c;
 }
@@ -3120,9 +3123,10 @@ form {
         margin-top: 0;
         width: 75%;
     }
-    .sm-all-text-field {
-        box-shadow: 8px 8px 16px #cc5b2d,
-            -8px -8px 16px #ff7d3f;
+    .sm-all-text-field,
+    .sm-all-btn-check {
+        box-shadow: inset 8px 8px 16px #5a5c5e,
+            inset -8px -8px 16px #ffffff;
     }
     .text-field::placeholder {
         font-size: 16px;
@@ -3144,26 +3148,15 @@ form {
         /* font-size: 3.5vw; */
         font-weight: 500;
     }
-    .sm-all-btn-check {
-        box-shadow:   5px 5px 10px #cc5b2d,
-        -5px -5px 10px #ff7d3f;
-    }
+    
     .rome-btn-check {
         box-shadow:   5px 5px 10px #bcc0c6,
         -5px -5px 10px #ffffff;
     }
     
-    /* .lw-btn-check,
-    .fact-btn-check {
-        margin-bottom: 0;
-    } */
-    /* .pn-intro {
-        font-size: 16px;
-    } */
     .pdf-holder {
         width: 100%;
         height: auto;
-        /* margin: 0 auto; */
     }
     .pdf-content {
         width: 100%;

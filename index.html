@@ -15,6 +15,11 @@
     <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     
+
+
+
+
+    
     
     
     <title>JavaScript Algorithms Dashboard| Pia Torain</title>
@@ -1136,8 +1141,9 @@
                         </form>
                     </div>
                     <div class="pdf-holder rome-pdf">
-                        <div class="pdf-content rome-pdf-content">
-                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" title="Roman Numerals" src="pdf/Rome.pdf#view=fitH,top"  height="50%" width="50%"></iframe>
+                        <div class="pdf-content rome-pdf-content" id="">
+                            <div id="romanpdf" class="pdf-frame rome-pdf-frame" title="Roman Numerals"></div>
+                            <!-- <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" title="Roman Numerals" src="pdf/Rome.pdf#view=fitH,top"  height="50%" width="50%"></iframe> -->
                             <div class="download-holder rome-download-holder">
                                 <button class="btn rome-btn rome-pdf-btn" id="rome-pdf-download-btn" aria-label="download">
                                     <a class="dl-link" href="pdf/Rome.pdf" download="" alt="download to roman numeral converter file">
@@ -1178,7 +1184,12 @@
 
     <!-- SCRIPTS -->
     <script src="js/main.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js" integrity="sha512-g16L6hyoieygYYZrtuzScNFXrrbJo/lj9+1AYsw+0CYYYZ6lx5J3x9Yyzsm+D37/7jMIGh0fDqdvyYkNWbuYuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script>
+        var romanpdf = $("romanpdf");
+        PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
+    </script> -->
 
 
 </body>
