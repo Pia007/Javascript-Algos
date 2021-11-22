@@ -3183,16 +3183,14 @@ form {
         margin: 10px auto;
         
     }
-    .pdf-frame {
-        height: 75%;
-        width: 95%;
-        margin: 10px auto;
-        
-    }
-    
+
     .fact-pdf-frame {
        box-shadow:  6px 6px 12px #bcc0c6,
        -6px -6px 12px #ffffff;
+    }
+    .pdf-frame[src=""] {
+        width: 20%;
+        
     }
     .download-holder {
         margin:0px;
