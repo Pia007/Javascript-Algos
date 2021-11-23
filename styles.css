@@ -2634,6 +2634,7 @@ form {
     .pal-form,
     .pal-pdf-frame {
         width: 95%;
+        margin: 10px auto;
         box-shadow: 4px 4px 16px #606265,
         -4px -4px 16px #ffffff;;
     }
