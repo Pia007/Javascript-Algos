@@ -10,9 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-    <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+        crossorigin="anonymous" />
+   
+    <!-- <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script> -->
+    
     <link rel="stylesheet" href="styles.css" />
     
 
@@ -448,7 +451,8 @@
                     </div>
                     <div class="pdf-holder iso-pdf">
                         <div class="pdf-content iso-pdf-content">
-                            <iframe id="iso-pdf-frame" class="pdf-frame iso-pdf-frame" title="Isogram" src="pdf/isogram.pdf#view=fitH"  height="50%" width="50%"></iframe>
+                            <embed src="pdf/isogram.pdf#view=fitH,100,200,250" class="pdf-frame iso-pdf-frame" type="application/pdf" width="100%" height="600px" />
+                            <!-- <iframe id="iso-pdf-frame" class="pdf-frame iso-pdf-frame" title="Isogram" src="pdf/isogram.pdf#view=fitH"  height="50%" width="50%"></iframe> -->
                             <div class="download-holder iso-download-holder" id="iso-download-holder">
                                 <button class="btn-dl iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download" type="button">
                                     <a class="dl-link" href="pdf/isogram.pdf" download="isogram.pdf" alt="download isogram file">
@@ -1142,7 +1146,28 @@
                     </div>
                     <div class="pdf-holder rome-pdf">
                         <div class="pdf-content rome-pdf-content" id="">
-                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" title="To Rome and Back" src="pdf/Rome.pdf#view=fitH,top"  height="50%" width="50%"></iframe>
+                            <div class="topbar">
+                                <button class="pdf-bar-btn" id="prev-page">
+                                    <i class="fas fa-arrow-circle-left"></i> Prev
+                                </button>
+                                <button class="pdf-bar-btn" id="next-page">
+                                    Next <i class="fas fa-arrow-circle-right"></i> 
+                                </button>
+                                <span class="page-info"></span>
+                                   <span class="bar-text">
+                                        Pg <span id="page-num"></span> of <span id="page-count" class="count"></span>
+                                    </span>
+                                <span class="zoom-controls">
+                                    <button class="pdf-bar-btn" id="zoom-in">
+                                        <i class="fas fa-search-plus"></i> 
+                                    </button>
+                                    <button class="pdf-bar-btn" id="zoom-out">
+                                        <i class="fas fa-search-minus"></i> 
+                                    </button>
+                                </span>
+                            </div>
+                            <canvas id="rome-pdf-render" class="pdf-frame rome-pdf-frame" title="To Rome and Back" ></canvas>
+                            <!-- <iframe id="rome-pdf-frame" class="" title="To Rome and Back" src="pdf/Rome.pdf"  height="50%" width="50%"></iframe> -->
                             
                             <div class="download-holder rome-download-holder">
                                 <button class="btn rome-btn rome-pdf-btn" id="rome-pdf-download-btn" aria-label="download">
@@ -1183,13 +1208,14 @@
    
 
     <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="js/pdf.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js" integrity="sha512-g16L6hyoieygYYZrtuzScNFXrrbJo/lj9+1AYsw+0CYYYZ6lx5J3x9Yyzsm+D37/7jMIGh0fDqdvyYkNWbuYuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script>
-        var romanpdf = $("romanpdf");
-        PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
-    </script> -->
+    <!-- <script src="js/pdf.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js" integrity="sha512-g16L6hyoieygYYZrtuzScNFXrrbJo/lj9+1AYsw+0CYYYZ6lx5J3x9Yyzsm+D37/7jMIGh0fDqdvyYkNWbuYuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
 
 
 </body>
