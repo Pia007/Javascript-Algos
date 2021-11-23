@@ -2035,7 +2035,7 @@ form {
 }
 
 .rome-pdf {
-    height:95%;
+    height:100%;
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;
@@ -2139,41 +2139,12 @@ form {
             inset -14px -14px 28px #6d6868;
 }
 .rome-pdf-content {
-    height: 95%;
+    height: 100%;
     width: 90%;
     margin: 30px auto;
     background: #e0e5ec;
     box-shadow: inset 14px 14px 28px #5a5c5e,
             inset -14px -14px 28px #6d6868;
-}
-/* pdf toolbar  */
-.topbar {
-    background: #333;
-    color: var(--main-bg);
-    padding: 3px;
-    font-family: var(--rubik);
-}
-.pdf-bar-btn {
-    background: #333;
-    color: var(--main-bg);
-    padding: 3px;
-    border: none;
-    margin: 0 5px;
-    cursor: pointer;
-}
-.pdf-bar-btn:hover {
-    opacity: .7;
-}
-.bar-text {
-    font-size: 13px;
-    font-family: var(--rubik);
-    color: var(--main-bg);
-    margin: 0 5px;
-}
-.error {
-    background: orangered;
-    color: white;
-    padding: .5rem;
 }
 
 .iso-pdf-frame {
@@ -2245,8 +2216,8 @@ form {
             inset -14px -14px 28px #6d6868;
 }
 .rome-pdf-frame {
-    height: 95%;
-    margin: 10px auto;
+    height: 90%;
+    /* margin: 10px auto; */
     margin-bottom: 0px;
     border: 2px solid var(--rome-color);
     background: #e0e5ec;
