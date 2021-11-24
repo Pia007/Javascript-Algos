@@ -1474,17 +1474,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // initialize an empty array to store reversed words that are not empty
         let newArr = [];
         
-        // let specialChar = /[A-Za-z][@$%^&*()_+\=\[\]{};':"\\|,<>\/]|[#%^&*()_+\=\[\]{};':"\\|,<>\/?]/
-        // let letNum = /[a-zA-Z ]/
-        // if (letNum.test(arr)) {
-        //     console.log("true");
-        // }else {
-        //     console.log("false");
-        // }
-
-        // if the array satisfies the constraints
         
-        if(lengthArr <= Math.pow(10, 4) || arr >= 1) {
+        // if the array satisfies the constraints
+        if(lengthArr <= Math.pow(10, 4) || arr >= 1 ) {
                 
             // loop through the array
             for (let i = lengthArr - 1; i >= 0; i--) {

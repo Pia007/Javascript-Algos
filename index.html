@@ -10,11 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
-        crossorigin="anonymous" />
-   
-    <link rel="stylesheet" href="assets/css/styles.css  " />
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/9794dd2b19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>JavaScript Algorithm Dashboards| Pia Torain</title>
 </head>
 <body>
@@ -95,9 +93,9 @@
                     </h3>
                         <p class="info-text">
                             Each dashboard has a home button, a simple instruction, user input fields,
-                            and a button to run the algorithm. On the left side of the dashboard, 
+                            and a button to run the algorithm. On the right side of the dashboard, in the desktop view,
                             a pdf file of the algorithm is displayed. At the bottom of the pdf, there is a button
-                            that will download the pdf file.
+                            that will download the pdf file. In the mobile view, the pdf file is note displayed.
                         </p>
                         <div class="info-img-holder">
                             <img src="assets/images/sample-dash.png" alt="sample dashboard image" class="sample-image dash-img" />
@@ -428,7 +426,7 @@
                     </div>
                     <div class="pdf-holder iso-pdf">
                         <div class="pdf-content iso-pdf-content">
-                            <iframe src="assets/pdf/isogram.pdf#scrollbar=1&toolbar=1&zoom=75" class="pdf-frame iso-pdf-frame" title="Isogram" type="application/pdf"  ></iframe>
+                            <iframe src="assets/pdf/isogram.pdf#zoom=75&scrollbar=1&toolbar=1" class="pdf-frame iso-pdf-frame" title="Isogram" type="application/pdf"  ></iframe>
                             
                             <div class="download-holder iso-download-holder" id="iso-download-holder">
                                 <button class="btn-dl iso-btn iso-pdf-btn" id="iso-pdf-download-btn" aria-label="download" type="button">
@@ -478,7 +476,7 @@
                     </div>
                     <div class="pdf-holder pal-pdf">
                         <div class="pdf-content pal-pdf-content">
-                            <iframe id="pal-pdf-frame" class="pdf-frame pal-pdf-frame" title="Palindrome" src="assets/pdf/palindrome.pdf#zoom=50&scrollbar=1&toolbar=1"  ></iframe>
+                            <iframe id="pal-pdf-frame" class="pdf-frame pal-pdf-frame" title="Palindrome" src="assets/pdf/palindrome.pdf#zoom=75&scrollbar=1&toolbar=1"  ></iframe>
                             <div class="download-holder pal-download-holder">
                                 <button class="btn-dl pal-btn pal-pdf-btn" id="pal-pdf-download-btn" aria-label="download">
                                     <a class="dl-link" href="assets/pdf/palindrome.pdf" download="palindrome.pdf" alt="download palindrome file">
@@ -533,10 +531,10 @@
                     </div>
                     <div class="pdf-holder ts-pdf">
                         <div class="pdf-content ts-pdf-content">
-                            <iframe id="ts-pdf-frame" class="pdf-frame ts-pdf-frame" title="Two Sum" src="assets/pdf/twoSum.pdf#view=fitH&scrollbar=1&toolbar=0"  height="100%" width="100%"></iframe>
+                            <iframe id="ts-pdf-frame" class="pdf-frame ts-pdf-frame" title="Two Sum" src="assets/pdf/two-sum.pdf#zoom=75&scrollbar=1&toolbar=1"  ></iframe>
                             <div class="download-holder ts-download-holder">
                                 <button class="btn-dl ts-btn ts-pdf-btn" id="ts-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/twoSum.pdf" download="two-sum.pdf" alt="download two some file">
+                                    <a class="dl-link" href="assets/pdf/two-sum.pdf" download="two-sum.pdf" alt="download two some file">
                                         <box-icon id="ts-pdf-download" name='download' class="icon download ts-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -587,7 +585,7 @@
                     </div>
                     <div class="pdf-holder sw-pdf">
                         <div class="pdf-content sw-pdf-content">
-                            <iframe id="sw-pdf-frame" class="pdf-frame sw-pdf-frame" title="Spin Words" src="assets/pdf/spinwords.pdf#view=fitH&scrollbar=1&toolbar=0"  height="100%" width="100%"></iframe>
+                            <iframe id="sw-pdf-frame" class="pdf-frame sw-pdf-frame" title="Spin Words" src="assets/pdf/spinwords.pdf#zoom=75&scrollbar=1&toolbar=1"></iframe>
                             <div class="download-holder sw-download-holder">
                                 <button class="btn-dl sw-btn sw-pdf-btn" id="sw-pdf-download-btn" aria-label="download">
                                     <a class="dl-link" href="assets/pdf/spinwords.pdf" download="spinwords.pdf" alt="download spin words file">
@@ -636,10 +634,10 @@
                     </div>
                     <div class="pdf-holder lw-pdf">
                         <div class="pdf-content lw-pdf-content">
-                            <iframe id="lw-pdf-frame" class="pdf-frame lw-pdf-frame" title="Length of the longest word" src="assets/pdf/LongestLengthWord.pdf#view=fitH&scrollbar=1&toolbar=0"  height="100%" width="100%"></iframe>
+                            <iframe id="lw-pdf-frame" class="pdf-frame lw-pdf-frame" title="Length of the longest word" src="assets/pdf/longest-length-word.pdf#zoom=75&scrollbar=1&toolbar=1"></iframe>
                             <div class="download-holder lw-download-holder">
                                 <button class="btn-dl lw-btn lw-pdf-btn" id="lw-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/LongestLengthWord.pdf" download="lengthLongestWord.pdf" alt="download length of longest word file">
+                                    <a class="dl-link" href="assets/pdf/longest-length-word.pdf" download="longest-length-word.pdf" alt="download length of longest word file">
                                         <box-icon id="lw-pdf-download" name='download' class="icon download lw-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -686,10 +684,10 @@
                     </div>
                     <div class="pdf-holder fact-pdf">
                         <div class="pdf-content fact-pdf-content">
-                            <iframe id="fact-pdf-frame" class="pdf-frame fact-pdf-frame" title="Factorialize" src="assets/pdf/Factorial.pdf#view=fitH&scrollbar=1&toolbar=0"  height="100%" width="100%"></iframe>
+                            <iframe id="fact-pdf-frame" class="pdf-frame fact-pdf-frame" title="Factorialize" src="assets/pdf/factorial.pdf#zoom=75&scrollbar=1&toolbar=1"></iframe>
                             <div class="download-holder fact-download-holder">
                                 <button class="btn-dl fact-btn fact-pdf-btn" id="fact-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/Factorial.pdf" download="factorial.pdf" alt="download factorialize file">
+                                    <a class="dl-link" href="assets/pdf/factorial.pdf" download="factorial.pdf" alt="download factorialize file">
                                         <box-icon id="fact-pdf-download" name='download' class="icon download fact-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -736,10 +734,10 @@
                     </div>
                     <div class="pdf-holder pn-pdf">
                         <div class="pdf-content pn-pdf-content">
-                            <iframe id="pn-pdf-frame" class="pdf-frame pn-pdf-frame" title="Palindrome Number" src="assets/pdf/palindromeNum.pdf#view=fitH&scrollbar=1&toolbar=0"  height="100%" width="100%"></iframe>
+                            <iframe id="pn-pdf-frame" class="pdf-frame pn-pdf-frame" title="Palindrome Number" src="assets/pdf/palindrome-num.pdf#zoom=75&scrollbar=1&toolbar=1"></iframe>
                             <div class="download-holder pn-download-holder">
                                 <button class="btn-dl pn-btn pn-pdf-btn" id="pn-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/palindromeNum.pdf" download="palindromeNum.pdf" alt="download palindrome number file">
+                                    <a class="dl-link" href="assets/pdf/palindrome-num.pdf" download="palindrome-num.pdf" alt="download palindrome number file">
                                         <box-icon id="pn-pdf-download" name='download' class="icon download pn-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -784,10 +782,10 @@
                     </div>
                     <div class="pdf-holder rev-int-pdf">
                         <div class="pdf-content rev-int-pdf-content">
-                            <iframe id="rev-int-pdf-frame" class="pdf-frame rev-int-pdf-frame" title="Reverse an Integer" src="assets/pdf/reverseInt.pdf#zoom=50&scrollbar=1&toolbar=1" ></iframe>
+                            <iframe id="rev-int-pdf-frame" class="pdf-frame rev-int-pdf-frame" title="Reverse an Integer" src="assets/pdf/reverse-int.pdf#zoom=75&scrollbar=1&toolbar=1" ></iframe>
                             <div class="download-holder rev-int-download-holder">
                                 <button class="btn-dl rev-int-btn rev-int-pdf-btn" id="rev-int-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/reverseInt.pdf" download="reverseInt.pdf" alt="download reverse integer file">
+                                    <a class="dl-link" href="assets/pdf/reverse-int.pdf" download="reverse-int.pdf" alt="download reverse integer file">
                                         <box-icon id="rev-int-pdf-download" name='download' class="icon download rev-int-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -832,10 +830,10 @@
                     </div>
                     <div class="pdf-holder lns-pdf">
                         <div class="pdf-content lns-pdf-content">
-                            <iframe id="lns-pdf-frame" class="pdf-frame lns-pdf-frame" title="Longest non-repeating substring" src="assets/pdf/LongestNonRepeating.pdf#zoom=50&scrollbar=1&toolbar=1" ></iframe>
+                            <iframe id="lns-pdf-frame" class="pdf-frame lns-pdf-frame" title="Longest non-repeating substring" src="assets/pdf/longest-non-repeating.pdf#zoom=75&scrollbar=1&toolbar=1" ></iframe>
                             <div class="download-holder lns-download-holder">
                                 <button class="btn-dl lns-btn lns-pdf-btn" id="lns-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/LongestNonRepeating.pdf" download="longestNonRepeating.pdf" alt="download longest non-repeating substring file">
+                                    <a class="dl-link" href="assets/pdf/longest-non-repeating.pdf" download="longest-non-repeating.pdf" alt="download longest non-repeating substring file">
                                         <box-icon id="lns-pdf-download" name='download' class="icon download lns-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -880,10 +878,10 @@
                     </div>
                     <div class="pdf-holder rev-word-pdf">
                         <div class="pdf-content rev-word-pdf-content">
-                            <iframe id="ref-word-pdf-frame" class="pdf-frame rev-word-pdf-frame" title="Reverse Words" src="assets/pdf/ReverseWords.pdf#zoom=50&scrollbar=1&toolbar=1"  ></iframe>
+                            <iframe id="ref-word-pdf-frame" class="pdf-frame rev-word-pdf-frame" title="Reverse Words" src="assets/pdf/reverse-words.pdf#zoom=75&scrollbar=1&toolbar=1"  ></iframe>
                             <div class="download-holder rev-word-download-holder">
                                 <button class="btn-dl rev-word-btn rev-word-pdf-btn" id="rev-word-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/ReverseWords.pdf" download="ReverseWords.pdf" alt="download reverse words in a string file">
+                                    <a class="dl-link" href="assets/pdf/reverse-words.pdf" download="reverse-words.pdf" alt="download reverse words in a string file">
                                         <box-icon id="rev-word-pdf-download" name='download' class="icon download rev-word-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -929,10 +927,10 @@
                     </div>
                     <div class="pdf-holder sm-all-pdf">
                         <div class="pdf-content sm-all-pdf-content">
-                            <iframe id="sm-all-pdf-frame" class="pdf-frame sm-all-pdf-frame" title="Sum All Values In A Range" src="assets/pdf/SumAll.pdf#zoom=50&scrollbar=1&toolbar=1"  ></iframe>
+                            <iframe id="sm-all-pdf-frame" class="pdf-frame sm-all-pdf-frame" title="Sum All Values In A Range" src="assets/pdf/sum-all.pdf#zoom=75&scrollbar=1&toolbar=1"  ></iframe>
                             <div class="download-holder sm-all-download-holder">
                                 <button class="btn-dl sm-all-btn sm-all-pdf-btn" id="sm-all-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link sm-all-dl-link" href="assets/pdf/SumAll.pdf" download="squareOrCube.pdf" alt="download sum all numbers in a range file">
+                                    <a class="dl-link sm-all-dl-link" href="assets/pdf/sum-all.pdf" download="sum-all.pdf" alt="download sum all numbers in a range file">
                                         <box-icon id="sm-all-pdf-download" name='download' class="icon download sm-all-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -980,10 +978,10 @@
                     </div>
                     <div class="pdf-holder rome-pdf">
                         <div class="pdf-content rome-pdf-content" id="">
-                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" title="To Rome and Back" src="assets/pdf/Rome.pdf#zoom=50&scrollbar=1&toolbar=1"></iframe>
+                            <iframe id="rome-pdf-frame" class="pdf-frame rome-pdf-frame" title="To Rome and Back" src="assets/pdf/rome.pdf#zoom=75&scrollbar=1&toolbar=1"></iframe>
                             <div class="download-holder rome-download-holder">
                                 <button class="btn-dl rome-btn rome-pdf-btn" id="rome-pdf-download-btn" aria-label="download">
-                                    <a class="dl-link" href="assets/pdf/Rome.pdf" download="" alt="download to roman numeral converter file">
+                                    <a class="dl-link" href="assets/pdf/rome.pdf" download="rome.pdf" alt="download to roman numeral converter file">
                                         <box-icon id="rome-pdf-download" name='download' class="icon download rome-dl" ></box-icon>
                                     </a>
                                 </button>
@@ -1004,6 +1002,7 @@
             <div class="social-list">
                 <button class="social-btn-item" id="linkedin" aria-label="linkedin logo">
                     <a href="https://www.linkedin.com/in/pia-torain-dev/" class="social-links" alt="developer's linkedIn profile link" aria-label="linkedin"><i class='bx bxl-linkedin-square f-icon f-linkedin' ></i></a>
+                    
                 </button>
                 <button class="social-btn-item" id="github" aria-label="github logo">
                     <a href="https://github.com/Pia007/Pia007" class="social-links" alt="develper's github profile link" aria-label="github"><i class='bx bxl-github f-icon f-github' ></i></a>
@@ -1020,7 +1019,7 @@
    
 
     <!-- SCRIPTS -->
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    
     <script src="assets/js/main.js"></script>
     
     
