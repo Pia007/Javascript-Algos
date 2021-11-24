@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const linkedIn = document.getElementById('linkedin');
     const github = document.getElementById('github');
     const twitter = document.getElementById('twitter');
-    const mbLinkedin = document.getElementById('mb-linkedin');
-    const mbGithub = document.getElementById('mb-github');
-    const mbTwitter = document.getElementById('mb-twitter');
     
     // var options = {
       
@@ -127,9 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = ' 2px solid #c32abbc9';
         github.style.border = '2px solid #c32abbc9';
         twitter.style.border = '2px solid #c32abbc9';
-        // mbLinkedin.style.border = '2px solid #c32abbc9';
-        // mbGithub.style.border = '2px solid #c32abbc9';
-        // mbTwitter.style.border = '2px solid #c32abbc9';
 
     }
     // ******************ISOGRAM******************************
@@ -138,9 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const isoDash = document.getElementById('iso-container');
     const isoBtn = document.getElementById('iso-play-btn');
     const isoHomeBtn = document.getElementById("iso-btn-close");
-    const isoLinkedin = document.getElementById('mb-linkedin-iso');
-    const isoGithub = document.getElementById('mb-github-iso');
-    const isoTwitter = document.getElementById('mb-twitter-iso');
     
     // SHOW ISOGRAM FROM HOMEPAGE
     function showIso() {
@@ -165,9 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #37A4C8';
         github.style.border = '2px solid #37A4C8';
         twitter.style.border = '2px solid #37A4C8';
-        isoLinkedin.style.border = '2px solid #37A4C8';
-        isoGithub.style.border = '2px solid #37A4C8';
-        isoTwitter.style.border = '2px solid #37A4C8';
     }
     // PLAY ISOGRAM FROM HOMEPAGE
     isoBtn.addEventListener('click', function(e) {
@@ -312,9 +300,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const palDash = document.getElementById('palindrome');
     const palBtn = document.getElementById('pal-play-btn');
     const palHomeBtn = document.getElementById("pal-btn-close");
-    const palLinkedin = document.getElementById("mb-linkedin-pal");
-    const palGithub = document.getElementById("mb-github-pal");
-    const palTwitter = document.getElementById("mb-twitter-pal");
 
     // OPEN PALINDROME DASH FROM HOMEPAGE
     function showPal() {
@@ -339,9 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #FFA500';
         github.style.border = '2px solid #FFA500';
         twitter.style.border = '2px solid #FFA500';
-        palLinkedin.style.border = '2px solid #FFA500';
-        palGithub.style.border = '2px solid #FFA500';
-        palTwitter.style.border = '2px solid #FFA500';
     }
     // PLAY BUTTON TO OPEN PALINDROME DASH
     palBtn.addEventListener('click', function(e) {
@@ -418,9 +400,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const twoDash = document.getElementById('two-sum');
     const twoBtn = document.getElementById('two-play-btn');
     const twoHomeBtn = document.getElementById("ts-btn-close");
-    const twoLinkedin = document.getElementById("mb-linkedin-two");
-    const twoGithub = document.getElementById("mb-github-two");
-    const twoTwitter = document.getElementById("mb-twitter-two");
 
     // OPEN TWO SUM DASH FROM HOMEPAGE
     function showTwo() {
@@ -445,9 +424,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #5b0eeb';
         github.style.border = '2px solid #5b0eeb';
         twitter.style.border = '2px solid #5b0eeb';
-        twoLinkedin.style.border = '2px solid #5b0eeb';
-        twoGithub.style.border = '2px solid #5b0eeb';
-        twoTwitter.style.border = '2px solid #5b0eeb';
     }
 
     // PLAY BUTTON TO OPEN TWO SUM DASH
@@ -592,9 +568,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const spinDash = document.getElementById('spin-words');
     const spinBtn = document.getElementById('spin-play-btn');
     const spinHomeBtn = document.getElementById('spin-btn-close');
-    const spinLinkedIn = document.getElementById('mb-linkedin-spin');
-    const spinGithub = document.getElementById('mb-github-spin');
-    const spinTwitter = document.getElementById('mb-twitter-spin');
     
 
     // OPEN SPIN WORDS DASH FUNCTION
@@ -620,9 +593,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #f89898';
         github.style.border = '2px solid #f89898';
         twitter.style.border = '2px solid #f89898';
-        spinLinkedIn.style.border = '2px solid #f89898';
-        spinGithub.style.border = '2px solid #f89898';
-        spinTwitter.style.border = '2px solid #f89898';
     }
     // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
     spinBtn.addEventListener('click', function(e) {
@@ -770,9 +740,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const llwDash = document.getElementById('longest-word');
     const llwBtn = document.getElementById('llw-play-btn');
     const llwHomeBtn = document.getElementById('lw-btn-close');
-    const llwLinkedin = document.getElementById('mb-linkedin-llw');
-    const llwGithub = document.getElementById('mb-github-llw');
-    const llwTwitter = document.getElementById('mb-twitter-llw');
     
 
     // OPEN LENGTH OF THE LONGEST WORD DASHBOARD
@@ -798,9 +765,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #35c048';
         github.style.border = '2px solid #35c048';
         twitter.style.border = '2px solid #35c048';
-        llwLinkedin.style.border = '2px solid #35c048';
-        llwGithub.style.border = '2px solid #35c048';
-        llwTwitter.style.border = '2px solid #35c048';
     }
 
     // PLAY LENGTH OF THE LONGEST WORD BUTTON
@@ -897,9 +861,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const factDash = document.getElementById('factorialize');
     const factBtn = document.getElementById('fact-play-btn');
     const factHomeBtn = document.getElementById('fact-btn-close');
-    const factLinkedin = document.getElementById('mb-linkedin-fact');
-    const factGithub = document.getElementById('mb-github-fact');
-    const factTwitter = document.getElementById('mb-twitter-fact');
 
     // OPEN FACTORIALIZE DASHBOARD
     function showFact() {
@@ -924,9 +885,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #eb0e96';
         github.style.border = '2px solid #eb0e96';
         twitter.style.border = '2px solid #eb0e96';
-        factLinkedin.style.border = '2px solid #eb0e96';
-        factGithub.style.border = '2px solid #eb0e96';
-        factTwitter.style.border = '2px solid #eb0e96';
     }
 
     // PLAY FACTORIALIZE BUTTON
@@ -1018,9 +976,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const palNumDash = document.getElementById('pal-num');
     const palNumBtn = document.getElementById('pn-play-btn');
     const palNumHomeBtn = document.getElementById('pn-btn-close');
-    const palNumLinkedin = document.getElementById('mb-linkedin-pn');
-    const palNumGithub = document.getElementById('mb-github-pn');
-    const palNumTwitter = document.getElementById('mb-twitter-pn');
     
 
     // OPEN PALINDROME NUMBER DASHBOARD
@@ -1046,9 +1001,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #0b7c739d';
         github.style.border = '2px solid #0b7c739d';
         twitter.style.border = '2px solid #0b7c739d';
-        palNumLinkedin.style.border = '2px solid #0b7c739d';
-        palNumGithub.style.border = '2px solid #0b7c739d';
-        palNumTwitter.style.border = '2px solid #0b7c739d';
     }
     // PLAY PALINDROME NUMBER BUTTON
     palNumBtn.addEventListener('click', function(e) {
@@ -1135,9 +1087,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const revIntDash = document.getElementById('reverse-int');
     const revIntBtn = document.getElementById('rev-play-btn');
     const revIntHomeBtn = document.getElementById('rev-int-btn-close');
-    const revIntLinkedin = document.getElementById('mb-linkedin-rev');
-    const revIntGithub = document.getElementById('mb-github-rev');
-    const revIntTwitter = document.getElementById('mb-twitter-rev');
     
 
     // OPEN REVERSE INTEGER DASHBOARD
@@ -1164,9 +1113,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #8790e0';
         github.style.border = '2px solid #8790e0';
         twitter.style.border = '2px solid #8790e0';
-        revIntLinkedin.style.border = '2px solid #8790e0';
-        revIntGithub.style.border = '2px solid #8790e0';
-        revIntTwitter.style.border = '2px solid #8790e0';
     }
     // PLAY REVERSE INTEGER BUTTON
     revIntBtn.addEventListener('click', function(e) {
@@ -1271,9 +1217,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const lnsDash = document.getElementById('lnr');
     const lnsBtn = document.getElementById('lnr-play-btn');
     const lnsHomeBtn = document.getElementById('lnr-btn-close');
-    const lnsLinkedin = document.getElementById('mb-linkedin-lnr');
-    const lnsGithub = document.getElementById('mb-github-lnr');
-    const lnsTwitter = document.getElementById('mb-twitter-lnr');
     
 
     // OPEN LONGEST NON-REPEATING SUBSTRING DASHBOARD
@@ -1299,9 +1242,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #ff0000';
         github.style.border = '2px solid #ff0000';
         twitter.style.border = '2px solid #ff0000';
-        lnsLinkedin.style.border = '2px solid #ff0000';
-        lnsGithub.style.border = '2px solid #ff0000';
-        lnsTwitter.style.border = '2px solid #ff0000';
     }
     // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
     lnsBtn.addEventListener('click', function(e) {
@@ -1461,9 +1401,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const revWordDash = document.getElementById('rev-word');
     const revWordBtn = document.getElementById('rw-play-btn');
     const revWordHomeBtn = document.getElementById('rev-word-btn-close');
-    const revWordLinkedin = document.getElementById('mb-linkedin-rev-word');
-    const revWordGithub = document.getElementById('mb-github-rev-word');
-    const revWordTwitter = document.getElementById('mb-twitter-rev-word');
 
     // OPEN REVERSE WORD/S DASHBOARD
     function showRevWord() {
@@ -1488,9 +1425,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #8e06fdda';
         github.style.border = '2px solid #8e06fdda';
         twitter.style.border = '2px solid #8e06fdda';
-        revWordLinkedin.style.border = '2px solid #8e06fdda';
-        revWordGithub.style.border = '2px solid #8e06fdda';
-        revWordTwitter.style.border = '2px solid #8e06fdda';
     }
 
     // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
@@ -1585,9 +1519,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const sumAllDash = document.getElementById('sm-all');
     const sumAllBtn = document.getElementById('sum-all-play-btn');
     const sumAllHomeBtn = document.getElementById('sm-all-btn-close');
-    const sumAllLinkedin = document.getElementById('mb-linkedin-sm-all');
-    const sumAllGithub = document.getElementById('mb-github-sm-all');
-    const sumAllTwitter = document.getElementById('mb-twitter-sm-all');
 
     // OPEN SUM ALL IN A RANGE DASHBOARD
     function showSumAll() {  
@@ -1613,9 +1544,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #f36c36ed';
         github.style.border = '2px solid #f36c36ed';
         twitter.style.border = '2px solid #f36c36ed';
-        sumAllLinkedin.style.border = '2px solid #f36c36ed';
-        sumAllGithub.style.border = '2px solid #f36c36ed';
-        sumAllTwitter.style.border = '2px solid #f36c36ed';
         
     }
     sumAllBtn.addEventListener('click', function(e) {
@@ -1715,10 +1643,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const toRomeDash = document.getElementById('rome');
     const toRomeBtn = document.getElementById('rome-play-btn');
     const toRomeHomeBtn = document.getElementById('rome-btn-close');
-    const romeLinkedIn = document.getElementById('mb-linkedin-rome');
-    const romeGithub = document.getElementById('mb-github-rome');   
-    const romeTwitter = document.getElementById('mb-twitter-rome');
-    // const romanPdf = document.getElementById("romepdf");
 
     // To Rome and Back Dashboard
     function showToRome() {
@@ -1743,10 +1667,6 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #05c0c7';
         github.style.border = '2px solid #05c0c7';
         twitter.style.border = '2px solid #05c0c7';
-        romeLinkedIn.style.border = '2px solid #05c0c7';
-        romeGithub.style.border = '2px solid #05c0c7';
-        romeTwitter.style.border = '2px solid #05c0c7';
-        // PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
     };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){
