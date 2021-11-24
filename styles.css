@@ -315,6 +315,7 @@ footer {
     .hd-title {
         width: 75%;
         font-size: 18px;
+        margin: 12.5px auto;
     }
     #header-title {
         display: none;
@@ -701,7 +702,7 @@ footer {
 /* INFORMATION POPUP */
 .information  {
     width: 90%;
-    height: 80vh;
+    height: 70vh;
     margin: 20px auto;
     margin-bottom: 0;
     display: flex;
@@ -740,7 +741,7 @@ footer {
 
 .info-content {
     width: 95%;
-    height: 90%;
+    height: 85%;
     margin: 10px auto;
     margin-top: 0;
     padding: 15px;
