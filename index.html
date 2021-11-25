@@ -483,7 +483,12 @@
                     </div>
                     <div class="pdf-holder pal-pdf">
                         <div class="pdf-content pal-pdf-content">
-                            <iframe id="pal-pdf-frame" class="pdf-frame pal-pdf-frame" title="Palindrome" src="assets/pdf/palindrome.pdf#zoom=75&scrollbar=1&toolbar=1"  ></iframe>
+                            <object data="assets/pdf/palindrome.pdf#scale=1&scrollbar=1&toolbar=1"  type="application/pdf" class="pdf-frame pal-pdf-frame" title="Palindrome">
+                                <iframe src="assets/pdf/palindrome.pdf#zoom=75&scrollbar=1&toolbar=1" class="pdf-frame pal-pdf-frame" title="Palindrome" type="application/pdf"  >
+                                <!-- This browser does not support PDFs. Please download the PDF to view it: 
+                                <a href="../pdf/sample-3pp.pdf">Download PDF</a> -->
+                                </iframe>
+                            <!-- <iframe id="pal-pdf-frame" class="pdf-frame pal-pdf-frame" title="Palindrome" src="assets/pdf/palindrome.pdf#zoom=75&scrollbar=1&toolbar=1"  ></iframe> -->
                             <div class="download-holder pal-download-holder">
                                 <button class="btn-dl pal-btn pal-pdf-btn" id="pal-pdf-download-btn" aria-label="download">
                                     <a class="dl-link" href="assets/pdf/palindrome.pdf" download="palindrome.pdf" alt="download palindrome file">
