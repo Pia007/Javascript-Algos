@@ -1684,14 +1684,14 @@ form {
 .sw-btn-check {
     color: var(--spin-color);
     background-color: var(--main-bg);
-    box-shadow: inset 8px 8px 14px #a66666,
-        inset -8px -8px 14px #ffcaca;
+    box-shadow: inset 4px 4px 14px #a66666,
+        inset -4px -4px 14px #ffcaca;
 }
 .lw-btn-check {
     color: var(--main-bg);
     background: #35c048;
-    box-shadow: inset 10px 10px 32px #154d1d,
-        inset -10px -10px 32px #55ff73;
+    box-shadow: 19px 19px 55px #acb0b6,
+             -19px -19px 55px #ffffff;
 }
 .pn-btn-check {
     color: var(--main-bg);
@@ -1746,23 +1746,32 @@ form {
 .sw-btn-check:active,
 .sw-btn-check:focus,
 .sw-btn-check:hover {
-    background: linear-gradient(145deg, #f0f5fd, #caced4);
-    box-shadow:  23px 23px 78px #633d3d,
-        -23px -23px 78px #fff3f3;
+    background: var(--spin-color);
+    color: var(--main-bg);
+    border: 2px solid #ffffff;
+    box-shadow:  19px 19px 34px #dd8787,
+    -19px -19px 34px #ffa9a9;
+    font-weight: bold;
 }
 .lw-btn-check:active,
 .lw-btn-check:hover,
 .lw-btn-check:focus {
-    background: #35c048;
-    box-shadow:  10px 10px 32px #154d1d,
-         -10px -10px 32px #55ff73;
+    background: var(--main-bg);
+    color: var(--llw-color);
+    border: 2px solid var(--llw-color);
+    box-shadow: inset 4px 4px 8px #5a5c5e,
+        inset -4px -4px 8px #ffffff;
+    font-weight: bold;
 }
 .fact-btn-check:active,
 .fact-btn-check:focus,
 .fact-btn-check:hover {
-    background: #e0e5ec;
-    box-shadow: 7px 7px 14px #5a5c5e,
-        -7px -7px 14px #ffffff;
+    background: var(--fact-color);
+    color: #ffffff;
+    border: 2px solid var(--main-bg);
+    box-shadow: inset 4px 4px 8px #5a5c5e,
+        inset -4px -4px 8px #ffffff;
+    font-weight: bold;
 }
 .pn-btn-check:active,
 .pn-btn-check:hover,
@@ -1777,29 +1786,48 @@ form {
 .rev-int-btn-check:focus,
 .rev-int-btn-check:hover {
     border: 2px solid var(--rev-color);
+    background: #ffffff;
     font-weight: bold;
 }
 .lns-btn-check:active,
 .lns-btn-check:hover,
 .lns-btn-check:focus {
-    background: linear-gradient(145deg, #f0f5fd, #caced4);
-    box-shadow:  15px 15px 30px #5a5c5e,
-        -15px -15px 30px #ffffff;
+    color: #ffffff;
+    background: var(--lnr-color);
+    border: 2px solid #ffffff;
+    box-shadow: inset 10px 10px 71px #780000,
+        inset -10px -10px 71px #ff0000;
+    font-weight: bold;
 }
 .rev-word-btn-check:active,
 .rev-word-btn-check:focus,
 .rev-word-btn-check:hover {
-    background: linear-gradient(145deg, #f0f5fd, #caced4);
-    box-shadow: 10px 10px 20px #6904bb,
-        -10px -10px 20px #b308ff;
+    background: var(--rw-color);
+    color: #ffffff;
+    border: 2px solid var(--main-bg);
+    box-shadow: inset 5px 5px 10px #6904bb,
+        inset -5px -5px 10px #b308ff;
+    font-weight: bold;
+}
+.sm-all-btn-check:active,
+.sm-all-btn-check:focus,
+.sm-all-btn-check:hover {
+    background: var(--sum-all-color);
+    color: #ffffff;
+    border:  2px solid #ffffff;
+    box-shadow: inset 2px 2px 10px #5a5c5e,
+    inset -2px -2px 10px #ffffff;
+    font-weight: bold;  
 }
 .rome-btn-check:active,
 .rome-btn-check:hover,
 .rome-text-check:focus {
     background: var(--main-bg);
+    color: var(--rome-color);
     border: 2px solid var(--rome-color);
-    box-shadow: inset 24px 24px 48px #5a5c5e,
-        inset -24px -24px 48px #ffffff;
+    box-shadow: inset 5px 5px 10px #5a5c5e,
+        inset -5px -5px 10px #ffffff;
+    font-weight: bold;
 }   
 /* STYLING RESPONSES */
 .pnRepoHolder,
@@ -1817,7 +1845,7 @@ form {
 .romeRepoHolder {
     text-align: center;
     vertical-align: middle;
-    height: 40px;
+    height: 60px;
     color: var(--main-bg);
     background: var(--rome-color);
     border-radius: 10px;
@@ -2046,6 +2074,8 @@ form {
 }
 .ts-pdf-frame {
     height: 98%;
+    width: 95%;
+    margin: 14.34px auto;
     border: 2px solid var(--two-color);
     background: #5b0eeb;
     box-shadow:  6px 6px 12px #330884,
@@ -2053,6 +2083,8 @@ form {
 }
 .sw-pdf-frame {
     height: 98%;
+    width: 95%;
+    margin: 14.34px auto;
     border: 1px solid var(--main-bg);
     background: linear-gradient(145deg, #ffa3a3, #df8989);
     box-shadow:  5px 5px 10px #c17777,
@@ -2691,6 +2723,9 @@ form {
     .revEval {
         margin-top: 8px;
     }
+    .romeRepoHolder {
+        height: auto;
+    }
     /*  check buttons */
     .btn-check {
         width: 140px;
@@ -2856,10 +2891,7 @@ form {
         width: 100%;
         margin: 0;
     }
-    .sw-window-holder {
-        width: 100%;
-        margin: 0;
-    }
+    
     .window {
         height: 75%;
         margin-bottom: 10px;
@@ -2886,13 +2918,14 @@ form {
     .iso-form {
         width: 95%;
     }
-    .two-form,
-    .sw-form {
+    .two-form {
         height: 95%;
         margin: 10px auto;
     }
     .sw-form {
+        height: 94%;
         padding: 0px 0;
+        margin: 10px auto;
     }
     .lns-form {
         width: 95%;
@@ -3023,10 +3056,12 @@ form {
     }
     .pal-pdf {
         width: 100%;
+        height: 50px;
         margin: 0 auto;
     }
     .pal-pdf-content {
         width: 95%;
+        height: 100%;
         margin: 0 10px;
         margin-top: 0;
     }
@@ -3078,6 +3113,11 @@ form {
         border-radius: 10px;
         box-shadow:  2px 2px 5px #5a5c5e,
         -2px -2px 5px #6d6868;
+    }
+    .pal-pdf-btn {
+        
+        margin: 3px auto;
+        
     }
     /* footer items */
     .social-btn-item {
