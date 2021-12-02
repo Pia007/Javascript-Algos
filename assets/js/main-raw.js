@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const linkedIn = document.getElementById('linkedin');
     const github = document.getElementById('github');
     const twitter = document.getElementById('twitter');
+    const polywork = document.getElementById('polywork');
     
     // var options = {
       
@@ -47,9 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = ' 2px solid #6d88c8';
         github.style.border = '2px solid #6d88c8';
         twitter.style.border = '2px solid #6d88c8';
-        // mbLinkedin.style.border = '2px solid #6d88c8';
-        // mbGithub.style.border = '2px solid #6d88c8';
-        // mbTwitter.style.border = '2px solid #6d88c8';
+        polywork.style.border = '2px solid #6d88c8';
     }
     infoBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -124,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = ' 2px solid #c32abbc9';
         github.style.border = '2px solid #c32abbc9';
         twitter.style.border = '2px solid #c32abbc9';
+        polywork.style.border = '2px solid #c32abbc9';
 
     }
     // ******************ISOGRAM******************************
@@ -156,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #37A4C8';
         github.style.border = '2px solid #37A4C8';
         twitter.style.border = '2px solid #37A4C8';
+        polywork.style.border = '2px solid #37A4C8';
     }
     // PLAY ISOGRAM FROM HOMEPAGE
     isoBtn.addEventListener('click', function(e) {
@@ -324,6 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #FFA500';
         github.style.border = '2px solid #FFA500';
         twitter.style.border = '2px solid #FFA500';
+        polywork.style.border = '2px solid #FFA500';
     }
     // PLAY BUTTON TO OPEN PALINDROME DASH
     palBtn.addEventListener('click', function(e) {
@@ -424,6 +426,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #5b0eeb';
         github.style.border = '2px solid #5b0eeb';
         twitter.style.border = '2px solid #5b0eeb';
+        polywork.style.border = '2px solid #5b0eeb';
     }
 
     // PLAY BUTTON TO OPEN TWO SUM DASH
@@ -593,6 +596,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #f89898';
         github.style.border = '2px solid #f89898';
         twitter.style.border = '2px solid #f89898';
+        polywork.style.border = '2px solid #f89898';
     }
     // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
     spinBtn.addEventListener('click', function(e) {
@@ -765,6 +769,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #35c048';
         github.style.border = '2px solid #35c048';
         twitter.style.border = '2px solid #35c048';
+        polywork.style.border = '2px solid #35c048';
     }
 
     // PLAY LENGTH OF THE LONGEST WORD BUTTON
@@ -885,6 +890,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #eb0e96';
         github.style.border = '2px solid #eb0e96';
         twitter.style.border = '2px solid #eb0e96';
+        polywork.style.border = '2px solid #eb0e96';
     }
 
     // PLAY FACTORIALIZE BUTTON
@@ -1001,6 +1007,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #0b7c739d';
         github.style.border = '2px solid #0b7c739d';
         twitter.style.border = '2px solid #0b7c739d';
+        polywork.style.border = '2px solid #0b7c739d';
     }
     // PLAY PALINDROME NUMBER BUTTON
     palNumBtn.addEventListener('click', function(e) {
@@ -1113,6 +1120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #8790e0';
         github.style.border = '2px solid #8790e0';
         twitter.style.border = '2px solid #8790e0';
+        polywork.style.border = '2px solid #8790e0';
     }
     // PLAY REVERSE INTEGER BUTTON
     revIntBtn.addEventListener('click', function(e) {
@@ -1242,6 +1250,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #ff0000';
         github.style.border = '2px solid #ff0000';
         twitter.style.border = '2px solid #ff0000';
+        polywork.style.border = '2px solid #ff0000';
     }
     // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
     lnsBtn.addEventListener('click', function(e) {
@@ -1425,6 +1434,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #8e06fdda';
         github.style.border = '2px solid #8e06fdda';
         twitter.style.border = '2px solid #8e06fdda';
+        polywork.style.border = '2px solid #8e06fdda';
     }
 
     // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
@@ -1536,6 +1546,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #f36c36ed';
         github.style.border = '2px solid #f36c36ed';
         twitter.style.border = '2px solid #f36c36ed';
+        polywork.style.border = '2px solid #f36c36ed';
         
     }
     sumAllBtn.addEventListener('click', function(e) {
@@ -1659,6 +1670,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedIn.style.border = '2px solid #05c0c7';
         github.style.border = '2px solid #05c0c7';
         twitter.style.border = '2px solid #05c0c7';
+        polywork.style.border = '2px solid #05c0c7';
     };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){

@@ -162,7 +162,7 @@ footer {
     text-align: center;
 }
 .social-holder {
-    width:15%;
+    width:auto;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -174,7 +174,7 @@ footer {
 .social-list {
     display: flex;
     flex-direction: row;
-    width: 240px;
+    width: 300px;
     height: 70px;
     justify-content: space-between;
 }
@@ -209,7 +209,12 @@ footer {
 }
 .f-icon {
     font-size: 30px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+}
+.poly {
+    width: 22px;
+    height: 22px;
+    margin: 4px auto;
 }
 .f-linkedin {
     color: var(--f-linkedin);
@@ -300,7 +305,7 @@ footer {
         display: block
     }
     .social-list {
-        width: 80%;
+        width: 260px;
         height: 53px;
         min-width: 150px;
         justify-content: space-between;
