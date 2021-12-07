@@ -2,7 +2,7 @@
 
 <p style="text-align: center;"><img style="border-radius: 10px" src="https://user-images.githubusercontent.com/66088725/145095383-078c5f39-f4d4-478d-a6f3-5326902e0a2e.png" width=30% height=30%  ></p>
 
-<h3 align="center"><a href="js-algorithms.com">JavaScript Algorithms</a> is a collection of interactive dashboards based on coding challenges from <a href="https://www.codewars.com/">CodeWars</a>, <a href="https://leetcode.com/">LeetCode</a> and <a href="https://freecodecamp.org/">freeCodeCamp</a>.
+<h3 align="center"><a href="https://www.js-algorithms.com">JavaScript Algorithms</a> is a collection of interactive dashboards based on coding challenges from <a href="https://www.codewars.com/">CodeWars</a>, <a href="https://leetcode.com/">LeetCode</a> and <a href="https://freecodecamp.org/">freeCodeCamp</a>.
 </h3> 
 
 # Details 
