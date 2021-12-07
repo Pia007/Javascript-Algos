@@ -1,8 +1,8 @@
-<h1 style="text-align: center;">Javascript Algorithms</h1>
+<h1 style="text-align: center;">Javascript Algorithms Interactive Dashboards</h1>
 
 <p style="text-align: center;"><img style="border-radius: 10px" src="https://user-images.githubusercontent.com/66088725/145095383-078c5f39-f4d4-478d-a6f3-5326902e0a2e.png" width=30% height=30%  ></p>
 
-<h3 align="center"><a href="https://www.js-algorithms.com">JavaScript Algorithms</a> is a collection of interactive dashboards based on coding challenges from <a href="https://www.codewars.com/">CodeWars</a>, <a href="https://leetcode.com/">LeetCode</a> and <a href="https://freecodecamp.org/">freeCodeCamp</a>.
+<h3 align="center"><a href="https://www.js-algorithms.com">JavaScript Algorithms Interactive Dashboards</a> is a collection of interactive dashboards based on coding challenges from <a href="https://www.codewars.com/">CodeWars</a>, <a href="https://leetcode.com/">LeetCode</a> and <a href="https://freecodecamp.org/">freeCodeCamp</a>.
 </h3> 
 
 # Details 
@@ -12,7 +12,7 @@
 - [About](#about)
 - [Instructions](#instructions)
   - [Homepage](#homepage)
-  - [Dashboard](#dashboard)
+  - [Dashboards](#dashboards)
 - [Stack](#stack)
 - [Acknowledgments](#acknowledgments)
   - [Author](#author)
@@ -38,7 +38,7 @@ Each card has a title, a brief description, a difficulty level and a play button
 <img src="https://user-images.githubusercontent.com/66088725/145101571-4129e069-6df3-4824-9af5-ef1e952816ba.png" width=25% height=25% style="border-radius: 10px">
 
 <br/>
-## Dashboard
+## Dashboards
 Once the user selects the play button, as dashboard is accessed. The dashboard containes a title, input field and a button to run the algorithm. The input fields display examples of how the user should input data. When the algorithm is run, the user will receive feedback.  The inputs will automatically reset after 2.5 - 5secs. On the right of the dashboard, a pdf of the algorithm is displayed. The user can opt to download the pdf by using the "download" button at the bottom of the pdf viewer. There is a home button at the top right corner of the dashboard.
 
 <br />
