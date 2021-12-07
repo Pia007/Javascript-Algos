@@ -1620,7 +1620,7 @@ form {
 }
 .pal-text-field::placeholder {
     color: var(--pal-color);
-    opacity: 75%;
+    opacity: 80%;
 }
 .ts-text-field::placeholder {
     color: var(--two-color);
@@ -1645,7 +1645,7 @@ form {
 .lns-text-field::placeholder,
 .rev-word-text-field::placeholder {
     color: var(--main-bg);
-    opacity: 65%;
+    opacity: 70%;
 }
 .sm-all-text-field::placeholder {
     color: var(--sum-all-color);
