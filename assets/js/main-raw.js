@@ -19,10 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const twitter = document.getElementById('twitter');
     const polywork = document.getElementById('polywork');
     
-    // var options = {
-      
-    //     pdfOpenParams: { view: 'Fit' },
-    // }
+    function updateColor(color) {
+        info.style.color = color;  
+        title.style.color= color;  
+        clock.style.color= color; 
+        mobileTitle.style.color= color;
+        linkedIn.style.border = color;
+        github.style.border = color;
+        twitter.style.border = color;
+        polywork.style.border = color;
+    }
+    
 
     //***********************  INFORMATION DASH ****************************/
     function openInfo() {
@@ -41,10 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = "none";
         cardHolder.style.display = "none";
-        info.style.color = '#6d88c8'; 
-        title.style.color= '#6d88c8';  
-        clock.style.color= '#6d88c8'; 
-        mobileTitle.style.color= '#6d88c8';
+        updateColor('#6d88c8');
+        // info.style.color = '#6d88c8'; 
+        // title.style.color= '#6d88c8';  
+        // clock.style.color= '#6d88c8'; 
+        // mobileTitle.style.color= '#6d88c8';
         linkedIn.style.border = ' 2px solid #6d88c8';
         github.style.border = '2px solid #6d88c8';
         twitter.style.border = '2px solid #6d88c8';
@@ -116,10 +124,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = "none";
         cardHolder.style.display = "block";
-        info.style.color = '#c32abbc9';  
-        title.style.color= '#c32abbc9';  
-        clock.style.color= '#c32abbc9'; 
-        mobileTitle.style.color= '#c32abbc9';
+        updateColor('#c32abbc9');
+        // info.style.color = '#c32abbc9';  
+        // title.style.color= '#c32abbc9';  
+        // clock.style.color= '#c32abbc9'; 
+        // mobileTitle.style.color= '#c32abbc9';
         linkedIn.style.border = ' 2px solid #c32abbc9';
         github.style.border = '2px solid #c32abbc9';
         twitter.style.border = '2px solid #c32abbc9';
@@ -318,10 +327,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none';
-        info.style.color = '#FFA500';  
-        title.style.color= '#FFA500';  
-        clock.style.color= '#FFA500';
-        mobileTitle.style.color= '#FFA500';
+        updateColor('#FFA500');
+        // info.style.color = '#FFA500';  
+        // title.style.color= '#FFA500';  
+        // clock.style.color= '#FFA500';
+        // mobileTitle.style.color= '#FFA500';
         linkedIn.style.border = '2px solid #FFA500';
         github.style.border = '2px solid #FFA500';
         twitter.style.border = '2px solid #FFA500';
@@ -419,10 +429,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none'; 
-        info.style.color = '#5b0eeb';  
-        title.style.color= '#5b0eeb';  
-        clock.style.color= '#5b0eeb'; 
-        mobileTitle.style.color= '#5b0eeb'; 
+        updateColor('#5b0eeb');
+        // info.style.color = '#5b0eeb';  
+        // title.style.color= '#5b0eeb';  
+        // clock.style.color= '#5b0eeb'; 
+        // mobileTitle.style.color= '#5b0eeb'; 
         linkedIn.style.border = '2px solid #5b0eeb';
         github.style.border = '2px solid #5b0eeb';
         twitter.style.border = '2px solid #5b0eeb';
@@ -589,10 +600,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none'; 
-        info.style.color = '#f89898';  
-        title.style.color= '#f89898';  
-        clock.style.color= '#f89898'; 
-        mobileTitle.style.color= '#f89898'; 
+        updateColor('#f89898');
+        // info.style.color = '#f89898';  
+        // title.style.color= '#f89898';  
+        // clock.style.color= '#f89898'; 
+        // mobileTitle.style.color= '#f89898'; 
         linkedIn.style.border = '2px solid #f89898';
         github.style.border = '2px solid #f89898';
         twitter.style.border = '2px solid #f89898';
@@ -762,10 +774,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none'; 
-        info.style.color = '#35c048';  
-        title.style.color= '#35c048';  
-        clock.style.color= '#35c048';  
-        mobileTitle.style.color= '#35c048'; 
+        updateColor('#35c048');
+        // info.style.color = '#35c048';  
+        // title.style.color= '#35c048';  
+        // clock.style.color= '#35c048';  
+        // mobileTitle.style.color= '#35c048'; 
         linkedIn.style.border = '2px solid #35c048';
         github.style.border = '2px solid #35c048';
         twitter.style.border = '2px solid #35c048';
@@ -883,10 +896,11 @@ document.addEventListener("DOMContentLoaded", () => {
         sumAllDash.style.display = "none";
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none';
-        info.style.color = '#eb0e96';  
-        title.style.color= '#eb0e96';  
-        clock.style.color= '#eb0e96';   
-        mobileTitle.style.color= '#eb0e96';
+        updateColor('#eb0e96');
+        // info.style.color = '#eb0e96';  
+        // title.style.color= '#eb0e96';  
+        // clock.style.color= '#eb0e96';   
+        // mobileTitle.style.color= '#eb0e96';
         linkedIn.style.border = '2px solid #eb0e96';
         github.style.border = '2px solid #eb0e96';
         twitter.style.border = '2px solid #eb0e96';
@@ -1000,10 +1014,11 @@ document.addEventListener("DOMContentLoaded", () => {
         sumAllDash.style.display = "none";
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none'; 
-        info.style.color = '#0b7c739d';  
-        title.style.color= '#0b7c739d';  
-        clock.style.color= '#0b7c739d';  
-        mobileTitle.style.color= '#0b7c739d';
+        updateColor('#0b7c739d');
+        // info.style.color = '#0b7c739d';  
+        // title.style.color= '#0b7c739d';  
+        // clock.style.color= '#0b7c739d';  
+        // mobileTitle.style.color= '#0b7c739d';
         linkedIn.style.border = '2px solid #0b7c739d';
         github.style.border = '2px solid #0b7c739d';
         twitter.style.border = '2px solid #0b7c739d';
@@ -1113,10 +1128,11 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none'; 
         lnsDash.style.display = 'none';
-        info.style.color = '#8790e0';  
-        title.style.color= '#8790e0';  
-        clock.style.color= '#8790e0';   
-        mobileTitle.style.color= '#8790e0'; 
+        updateColor('#8790e0');
+        // info.style.color = '#8790e0';  
+        // title.style.color= '#8790e0';  
+        // clock.style.color= '#8790e0';   
+        // mobileTitle.style.color= '#8790e0'; 
         linkedIn.style.border = '2px solid #8790e0';
         github.style.border = '2px solid #8790e0';
         twitter.style.border = '2px solid #8790e0';
@@ -1243,10 +1259,11 @@ document.addEventListener("DOMContentLoaded", () => {
         sumAllDash.style.display = "none";
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none'; 
-        info.style.color = '#ff0000';  
-        title.style.color= '#ff0000';  
-        clock.style.color= '#ff0000'; 
-        mobileTitle.style.color= '#ff0000'; 
+        updateColor('#ff0000');
+        // info.style.color = '#ff0000';  
+        // title.style.color= '#ff0000';  
+        // clock.style.color= '#ff0000'; 
+        // mobileTitle.style.color= '#ff0000'; 
         linkedIn.style.border = '2px solid #ff0000';
         github.style.border = '2px solid #ff0000';
         twitter.style.border = '2px solid #ff0000';
@@ -1427,10 +1444,11 @@ document.addEventListener("DOMContentLoaded", () => {
         sumAllDash.style.display = "none";
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none';
-        info.style.color = '#8e06fdda';  
-        title.style.color= '#8e06fdda';  
-        clock.style.color= '#8e06fdda'; 
-        mobileTitle.style.color= '#8e06fdda'; 
+        updateColor('#8e06fdda');
+        // info.style.color = '#8e06fdda';  
+        // title.style.color= '#8e06fdda';  
+        // clock.style.color= '#8e06fdda'; 
+        // mobileTitle.style.color= '#8e06fdda'; 
         linkedIn.style.border = '2px solid #8e06fdda';
         github.style.border = '2px solid #8e06fdda';
         twitter.style.border = '2px solid #8e06fdda';
@@ -1539,10 +1557,11 @@ document.addEventListener("DOMContentLoaded", () => {
         revWordDash.style.display = "none";
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none';
-        info.style.color = '#f36c36ed';  
-        title.style.color= '#f36c36ed';  
-        clock.style.color= '#f36c36ed'; 
-        mobileTitle.style.color= '#f36c36ed'; 
+        updateColor('#f36c36ed');
+        // info.style.color = '#f36c36ed';  
+        // title.style.color= '#f36c36ed';  
+        // clock.style.color= '#f36c36ed'; 
+        // mobileTitle.style.color= '#f36c36ed'; 
         linkedIn.style.border = '2px solid #f36c36ed';
         github.style.border = '2px solid #f36c36ed';
         twitter.style.border = '2px solid #f36c36ed';
@@ -1617,6 +1636,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // makes sure array is numbers
         arr = arr.map(Number)
+        
 
         // find the largest number in the array
         let max = Math.max(arr[0], arr[1]);
@@ -1663,10 +1683,11 @@ document.addEventListener("DOMContentLoaded", () => {
         revWordDash.style.display = "none";
         sumAllDash.style.display = "none";
         cardHolder.style.display = 'none';
-        info.style.color = '#05c0c7';  
-        title.style.color= '#05c0c7';  
-        clock.style.color= '#05c0c7'; 
-        mobileTitle.style.color= '#05c0c7'; 
+        updateColor('#05c0c7');
+        // info.style.color = '#05c0c7';  
+        // title.style.color= '#05c0c7';  
+        // clock.style.color= '#05c0c7'; 
+        // mobileTitle.style.color= '#05c0c7'; 
         linkedIn.style.border = '2px solid #05c0c7';
         github.style.border = '2px solid #05c0c7';
         twitter.style.border = '2px solid #05c0c7';

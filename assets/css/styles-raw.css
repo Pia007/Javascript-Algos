@@ -3129,6 +3129,7 @@ form {
     /* footer items */
     .social-btn-item {
         margin: 0 ;
+        border: 2px solid white;
     }
 }
 @media screen and (max-width: 375px) {
