@@ -1,1 +1,1805 @@
-const _0x4d91d5=_0x1490;function _0x42ed(){const _0x4fc699=['spin-btn-close','#f36c36ed','rev-word','DOMContentLoaded','split','info-btn-close','sw-form','Enter\x20a\x20number','#5b0eeb','sm-all-btn','\x20is\x20NOT\x20in\x20[','The\x20factorial\x20of\x20','\x20is\x20NOT\x20an\x20isogram.','Please\x20enter\x20a\x20number\x20greater\x20than\x200','preventDefault','\x20has\x20atleast\x20one\x20special\x20character.','Please\x20enter\x20a\x20number','linkedin','two-sum','\x20and\x20','lnr','reverse-int','rev-word-btn-close','\x20is\x20not\x20within\x20the\x20constraints','pn-play-btn','Please\x20a\x20roman\x20numeral\x20between\x20I\x20and\x20\x20MMMCMXCIX','#6d88c8','Enter\x20only\x20numbers','8dYLEsb','polywork','\x20characters\x20\x20long','The\x20string\x20must\x20be\x201-10,000\x20characters','#FFA500','rome-play-btn','2px\x20solid\x20#35c048','\x202px\x20solid\x20#6d88c8','sw-spin','Please\x20enter\x20a\x20whole\x20number','Please\x20enter\x20a\x20number\x20from\x201\x20to\x203999','rw-play-btn','reset','2px\x20solid\x20#f36c36ed','#0b7c739d','click','dg-holder','spin-words','iso-container','rome-btn-close','2px\x20solid\x20#eb0e96','#8790e0','pn-btn-close','push','max','The\x20sum\x20of\x20\x20','sw-text','twitter','pal-text','pn-text','2355241iIMjfr','Please\x20enter\x20a\x20valid\x20roman\x20number\x20or\x20number','isogramText','log','palResponse','pn-btn','addEventListener','rev-word-form','forEach','2px\x20solid\x20#f89898','toString','#f89898','#37A4C8','test','pow','\x20has\x20atleast\x20one\x20number\x20and\x20special\x20character.','check-sum','iso-btn-close','none','spin-play-btn','sumAllResponse','373914wZOWBZ','Enter\x20only\x20numbers\x20in\x20the\x20number\x20field','rev-int-text','\x20:\x20','30676jTzgAg','targetNumber','algo-dash','pal-play-btn','lwResponse','\x20is\x20NOT\x20a\x20whole\x20number','pal-check-string','iso-play-btn','rome-form','3670200NWjvOL','rev-int-btn','indexOf','\x20is\x20not\x20a\x20single\x20word\x20and\x20has\x20atleast\x20one\x20number.','join','toUpperCase','\x20is\x20a\x20Palindrome\x20Number','display','#ff0000','2px\x20solid\x20#FFA500','#35c048','29MVeuZh','rev-int-btn-close','rev-word-btn','\x20is\x20the\x20factorial\x20of\x20','pnRepoHolder','456kVsswJ','lw-form','Try\x20again!\x20','fact-play-btn','lw-text','\x27:\x20','getMinutes','block','Enter\x20only\x20letters','info-dash','innerHTML','2px\x20solid\x20#ff0000','2px\x20solid\x20#05c0c7','randomNumbers','2px\x20solid\x20#5b0eeb','border','pal-form','abs','pal-btn-close','#e0e5ec','2px\x20solid\x20#37A4C8','value','palindrome','\x20IS\x20a\x20palindrome','#eb0e96','\x20is\x20not\x20a\x20single\x20word\x20and\x20has\x20atleast\x20one\x20number\x20and\x20special\x20character.','#c32abbc9','\x20has\x20atleast\x20one\x20number.','\x20is\x20the\x20sum\x20of\x20all\x20numbers\x20between\x20','16535BTRRQi','sw-num','\x20is\x20not\x20a\x20single\x20word\x20and\x20has\x20atleast\x20one\x20special\x20character.','substr','2px\x20solid\x20#8e06fdda','rome','#8e06fdda','map','pal-num','info-icon','min','ts-btn-close','rev-word-text','get','eval','Roman','2px\x20solid\x20#c32abbc9','pnResponse','Enter\x20only\x20letters\x20in\x20the\x20text\x20field','sm-all-form','style','33CAuRbO','2px\x20solid\x20#8790e0','Please\x20enter\x20a\x20valid\x20roman\x20numeral','form','set','mb-header-title','lnsResponse','two-play-btn','sm-all-text','2238894fgJjhP','\x20is\x20not\x20an\x20integer','color','clock','length','\x20IS\x20an\x20isogram.','#05c0c7','check-input','rome-text','\x20is\x20the\x20sum\x20of\x20the\x20values\x20at\x20indices\x20[','2px\x20solid\x20#0b7c739d','sm-all','\x20is\x20NOT\x20an\x20integer','github','llw-play-btn','ts-form','sm-all-btn-close','lns-text','sum-all-play-btn','toLowerCase','1481520GxWJCv','Please\x20enter\x20a\x20word/words','\x20letters\x20long','reverse','romeResponse','getElementById','2px\x20solid\x20#6d88c8','\x202px\x20solid\x20#c32abbc9','\x20is\x20'];_0x42ed=function(){return _0x4fc699;};return _0x42ed();}function _0x1490(_0x460542,_0x5311aa){const _0x42edd3=_0x42ed();return _0x1490=function(_0x1490b5,_0x360de9){_0x1490b5=_0x1490b5-0x146;let _0x1b6353=_0x42edd3[_0x1490b5];return _0x1b6353;},_0x1490(_0x460542,_0x5311aa);}(function(_0x310077,_0x5b04d6){const _0x31822=_0x1490,_0x1dbcd0=_0x310077();while(!![]){try{const _0x4cc018=parseInt(_0x31822(0x1b4))/0x1*(parseInt(_0x31822(0x1a0))/0x2)+parseInt(_0x31822(0x19c))/0x3+-parseInt(_0x31822(0x1b9))/0x4*(parseInt(_0x31822(0x1d6))/0x5)+parseInt(_0x31822(0x1f4))/0x6+parseInt(_0x31822(0x187))/0x7*(-parseInt(_0x31822(0x169))/0x8)+-parseInt(_0x31822(0x1a9))/0x9+-parseInt(_0x31822(0x208))/0xa*(-parseInt(_0x31822(0x1eb))/0xb);if(_0x4cc018===_0x5b04d6)break;else _0x1dbcd0['push'](_0x1dbcd0['shift']());}catch(_0x532676){_0x1dbcd0['push'](_0x1dbcd0['shift']());}}}(_0x42ed,0x40e38),document[_0x4d91d5(0x18d)](_0x4d91d5(0x150),()=>{const _0x5d10bf=_0x4d91d5,_0x1b0528=document[_0x5d10bf(0x149)](_0x5d10bf(0x179)),_0x1f08e3=document[_0x5d10bf(0x149)](_0x5d10bf(0x1a2)),_0x3e299d=document[_0x5d10bf(0x149)](_0x5d10bf(0x1c2)),_0x322a90=document['getElementById'](_0x5d10bf(0x1df)),_0x1ee07b=document['getElementById']('info-btn'),_0xb4a8fa=document[_0x5d10bf(0x149)]('header-title'),_0x48db1b=document[_0x5d10bf(0x149)]('clock'),_0x4def72=document[_0x5d10bf(0x149)](_0x5d10bf(0x1f0)),_0xc152c9=document[_0x5d10bf(0x149)](_0x5d10bf(0x15e)),_0x5d09fd=document[_0x5d10bf(0x149)](_0x5d10bf(0x201)),_0x1b6937=document[_0x5d10bf(0x149)](_0x5d10bf(0x184)),_0x240651=document[_0x5d10bf(0x149)](_0x5d10bf(0x16a));function _0x4e4163(){const _0x47f214=_0x5d10bf;_0x3e299d[_0x47f214(0x1ea)]['display']=_0x47f214(0x1c0),_0x5e9367[_0x47f214(0x1ea)]['display']=_0x47f214(0x199),_0x4c18ac[_0x47f214(0x1ea)][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x27536b['style']['display']=_0x47f214(0x199),_0xb43665[_0x47f214(0x1ea)][_0x47f214(0x1b0)]='none',_0x1e1a7c[_0x47f214(0x1ea)][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x4aa466['style'][_0x47f214(0x1b0)]='none',_0x27f22a[_0x47f214(0x1ea)][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x52b733[_0x47f214(0x1ea)][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x4ce687['style'][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x5d7cfb['style'][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x30af7d['style'][_0x47f214(0x1b0)]=_0x47f214(0x199),_0x3c084a[_0x47f214(0x1ea)][_0x47f214(0x1b0)]='none',_0x1f08e3[_0x47f214(0x1ea)][_0x47f214(0x1b0)]='none',_0x1b0528[_0x47f214(0x1ea)][_0x47f214(0x1b0)]='none',_0x322a90['style'][_0x47f214(0x1f6)]='#6d88c8',_0xb4a8fa['style'][_0x47f214(0x1f6)]=_0x47f214(0x167),_0x48db1b[_0x47f214(0x1ea)][_0x47f214(0x1f6)]='#6d88c8',_0x4def72['style'][_0x47f214(0x1f6)]='#6d88c8',_0xc152c9[_0x47f214(0x1ea)][_0x47f214(0x1c8)]=_0x47f214(0x170),_0x5d09fd[_0x47f214(0x1ea)][_0x47f214(0x1c8)]='2px\x20solid\x20#6d88c8',_0x1b6937['style'][_0x47f214(0x1c8)]='2px\x20solid\x20#6d88c8',_0x240651[_0x47f214(0x1ea)][_0x47f214(0x1c8)]=_0x47f214(0x14a);}_0x1ee07b[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0xd7e71){_0xd7e71['preventDefault']();}),_0x1ee07b['addEventListener'](_0x5d10bf(0x178),_0x4e4163);const _0x309f3c=document[_0x5d10bf(0x149)](_0x5d10bf(0x152));_0x309f3c[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x2cfd6c){const _0x1c2bba=_0x5d10bf;_0x2cfd6c[_0x1c2bba(0x15b)]();}),_0x309f3c['addEventListener'](_0x5d10bf(0x178),_0x4e76c8);function _0xb8b082(){const _0x2476c1=_0x5d10bf;var _0x582640=new Date(),_0x473719=_0x582640['getHours'](),_0x5b558f=_0x582640[_0x2476c1(0x1bf)](),_0x361aea=_0x582640['getSeconds']();_0x473719=_0x30a8e7(_0x473719),_0x5b558f=_0x30a8e7(_0x5b558f),_0x361aea=_0x30a8e7(_0x361aea),document[_0x2476c1(0x149)](_0x2476c1(0x1f7))[_0x2476c1(0x1c3)]=_0x473719+_0x2476c1(0x19f)+_0x5b558f+_0x2476c1(0x19f)+_0x361aea,setTimeout(_0xb8b082,0x3e8);function _0x30a8e7(_0x5b6905){return _0x5b6905<0xa?'0'+_0x5b6905:_0x5b6905;}}_0xb8b082();function _0x4e76c8(){const _0x1cedcd=_0x5d10bf;_0x3e299d['style'][_0x1cedcd(0x1b0)]='none',_0x5e9367[_0x1cedcd(0x1ea)]['display']=_0x1cedcd(0x199),_0x4c18ac[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]='none',_0x27536b[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]='none',_0xb43665['style'][_0x1cedcd(0x1b0)]=_0x1cedcd(0x199),_0x1e1a7c[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]=_0x1cedcd(0x199),_0x4aa466[_0x1cedcd(0x1ea)]['display']=_0x1cedcd(0x199),_0x27f22a[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]=_0x1cedcd(0x199),_0x52b733[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]=_0x1cedcd(0x199),_0x4ce687[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]='none',_0x5d7cfb['style'][_0x1cedcd(0x1b0)]=_0x1cedcd(0x199),_0x30af7d[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]='none',_0x3c084a[_0x1cedcd(0x1ea)][_0x1cedcd(0x1b0)]=_0x1cedcd(0x199),_0x1f08e3[_0x1cedcd(0x1ea)]['display']='none',_0x1b0528[_0x1cedcd(0x1ea)]['display']=_0x1cedcd(0x1c0),_0x322a90[_0x1cedcd(0x1ea)][_0x1cedcd(0x1f6)]=_0x1cedcd(0x1d3),_0xb4a8fa[_0x1cedcd(0x1ea)][_0x1cedcd(0x1f6)]=_0x1cedcd(0x1d3),_0x48db1b[_0x1cedcd(0x1ea)][_0x1cedcd(0x1f6)]=_0x1cedcd(0x1d3),_0x4def72[_0x1cedcd(0x1ea)][_0x1cedcd(0x1f6)]=_0x1cedcd(0x1d3),_0xc152c9[_0x1cedcd(0x1ea)][_0x1cedcd(0x1c8)]=_0x1cedcd(0x14b),_0x5d09fd[_0x1cedcd(0x1ea)][_0x1cedcd(0x1c8)]=_0x1cedcd(0x1e6),_0x1b6937['style'][_0x1cedcd(0x1c8)]='2px\x20solid\x20#c32abbc9',_0x240651['style'][_0x1cedcd(0x1c8)]='2px\x20solid\x20#c32abbc9';}const _0x5e9367=document[_0x5d10bf(0x149)](_0x5d10bf(0x17b)),_0x51b07e=document[_0x5d10bf(0x149)](_0x5d10bf(0x1a7)),_0x38dded=document[_0x5d10bf(0x149)](_0x5d10bf(0x198));function _0x2c3ddd(){const _0x53213c=_0x5d10bf;_0x5e9367[_0x53213c(0x1ea)][_0x53213c(0x1b0)]=_0x53213c(0x1c0),_0x4c18ac[_0x53213c(0x1ea)][_0x53213c(0x1b0)]=_0x53213c(0x199),_0x27536b['style'][_0x53213c(0x1b0)]=_0x53213c(0x199),_0xb43665[_0x53213c(0x1ea)]['display']=_0x53213c(0x199),_0x1e1a7c[_0x53213c(0x1ea)][_0x53213c(0x1b0)]=_0x53213c(0x199),_0x4aa466[_0x53213c(0x1ea)][_0x53213c(0x1b0)]='none',_0x27f22a[_0x53213c(0x1ea)]['display']=_0x53213c(0x199),_0x52b733[_0x53213c(0x1ea)][_0x53213c(0x1b0)]=_0x53213c(0x199),_0x4ce687['style'][_0x53213c(0x1b0)]=_0x53213c(0x199),_0x5d7cfb[_0x53213c(0x1ea)]['display']='none',_0x30af7d['style'][_0x53213c(0x1b0)]=_0x53213c(0x199),_0x3c084a[_0x53213c(0x1ea)][_0x53213c(0x1b0)]='none',_0x1f08e3[_0x53213c(0x1ea)][_0x53213c(0x1b0)]=_0x53213c(0x1c0),_0x1b0528[_0x53213c(0x1ea)][_0x53213c(0x1b0)]=_0x53213c(0x199),_0x322a90[_0x53213c(0x1ea)][_0x53213c(0x1f6)]=_0x53213c(0x193),_0xb4a8fa[_0x53213c(0x1ea)][_0x53213c(0x1f6)]=_0x53213c(0x193),_0x48db1b[_0x53213c(0x1ea)][_0x53213c(0x1f6)]=_0x53213c(0x193),_0x4def72[_0x53213c(0x1ea)]['color']=_0x53213c(0x193),_0xc152c9[_0x53213c(0x1ea)][_0x53213c(0x1c8)]=_0x53213c(0x1cd),_0x5d09fd[_0x53213c(0x1ea)][_0x53213c(0x1c8)]=_0x53213c(0x1cd),_0x1b6937[_0x53213c(0x1ea)][_0x53213c(0x1c8)]=_0x53213c(0x1cd),_0x240651['style'][_0x53213c(0x1c8)]=_0x53213c(0x1cd);}_0x51b07e['addEventListener'](_0x5d10bf(0x178),function(_0xd6ed7a){_0xd6ed7a['preventDefault']();}),_0x51b07e[_0x5d10bf(0x18d)]('click',_0x2c3ddd);const _0x2678a6=document[_0x5d10bf(0x149)](_0x5d10bf(0x1ee)),_0x4fe690=document[_0x5d10bf(0x149)](_0x5d10bf(0x1fb)),_0x26ab38=document[_0x5d10bf(0x149)](_0x5d10bf(0x1e4));function _0x41f359(){const _0x3e3c84=_0x5d10bf;_0x26ab38[_0x3e3c84(0x1ea)][_0x3e3c84(0x1b0)]='none',_0x4fe690[_0x3e3c84(0x1ea)][_0x3e3c84(0x1b0)]=_0x3e3c84(0x1c0);}function _0x5c7e5e(){const _0xcdab11=_0x5d10bf;_0x26ab38['style']['display']=_0xcdab11(0x1c0),_0x26ab38[_0xcdab11(0x1ea)]['color']=_0xcdab11(0x193),_0x4fe690[_0xcdab11(0x1ea)]['display']=_0xcdab11(0x199);}function _0x3df02d(){setTimeout(function(){const _0x480af9=_0x1490;_0x2678a6[_0x480af9(0x175)](),_0x41f359();},0x9c4);};_0x4fe690[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x1a37dd){_0x1a37dd['preventDefault']();}),_0x4fe690[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x48280a);function _0x48280a(_0x2afa1c){const _0x591f7b=_0x5d10bf;_0x2afa1c=document['getElementById']('isogramText')[_0x591f7b(0x1ce)];for(let _0x224ca9=0x0;_0x224ca9<_0x2afa1c[_0x591f7b(0x1f8)]-0x1;_0x224ca9++){let _0x5e8646=/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/,_0x3205af=/\d/;if(_0x5e8646[_0x591f7b(0x194)](_0x2afa1c)&&_0x3205af[_0x591f7b(0x194)](_0x2afa1c)&&_0x2afa1c[_0x591f7b(0x1ab)]('\x20')>=0x1)_0x5c7e5e(),_0x26ab38[_0x591f7b(0x1c3)]=_0x591f7b(0x1bb)+(''+_0x2afa1c)+_0x591f7b(0x1d2);else{if(_0x2afa1c['indexOf']('\x20')>=0x1&&_0x5e8646[_0x591f7b(0x194)](_0x2afa1c))_0x5c7e5e(),_0x26ab38[_0x591f7b(0x1c3)]=_0x591f7b(0x1bb)+'\x27'+(''+_0x2afa1c)+'\x27'+_0x591f7b(0x1d8);else{if(_0x2afa1c['indexOf']('\x20')>=0x1&&_0x3205af[_0x591f7b(0x194)](_0x2afa1c))_0x5c7e5e(),_0x26ab38['innerHTML']=_0x591f7b(0x1bb)+'\x27'+(''+_0x2afa1c)+'\x27'+_0x591f7b(0x1ac);else{if(_0x5e8646[_0x591f7b(0x194)](_0x2afa1c)&&_0x3205af[_0x591f7b(0x194)](_0x2afa1c))_0x5c7e5e(),_0x26ab38[_0x591f7b(0x1c3)]=_0x591f7b(0x1bb)+'\x27'+(''+_0x2afa1c)+'\x27'+_0x591f7b(0x196);else{if(_0x2afa1c[_0x591f7b(0x1ab)]('\x20')>=0x0)_0x5c7e5e(),_0x26ab38['innerHTML']=_0x591f7b(0x1bb)+'\x27'+(''+_0x2afa1c)+'\x27'+'\x20is\x20not\x20a\x20single\x20word.';else{if(_0x5e8646[_0x591f7b(0x194)](_0x2afa1c))_0x5c7e5e(),_0x26ab38[_0x591f7b(0x1c3)]=_0x591f7b(0x1bb)+'\x27'+(''+_0x2afa1c)+'\x27'+_0x591f7b(0x15c);else _0x3205af[_0x591f7b(0x194)](_0x2afa1c)?(_0x5c7e5e(),_0x26ab38[_0x591f7b(0x1c3)]=_0x591f7b(0x1bb)+'\x27'+(''+_0x2afa1c)+'\x27'+_0x591f7b(0x1d4)):_0x27e930();}}}}}_0x3df02d();};};function _0x27e930(){const _0xea4bf6=_0x5d10bf;var _0x23f0c3=document[_0xea4bf6(0x149)](_0xea4bf6(0x189))['value'],_0x522574=_0x23f0c3[_0xea4bf6(0x207)]()[_0xea4bf6(0x151)](''),_0x1abbf3=[];_0x522574[_0xea4bf6(0x18f)](function(_0x192c55,_0x6825a3,_0x4a902c){const _0x440b99=_0xea4bf6;_0x1abbf3[_0x440b99(0x1ab)](_0x192c55)===-0x1&&_0x1abbf3[_0x440b99(0x180)](_0x192c55);}),_0x1abbf3[_0xea4bf6(0x1f8)]===_0x522574[_0xea4bf6(0x1f8)]?(_0x5c7e5e(),_0x26ab38[_0xea4bf6(0x1c3)]='\x27'+(''+_0x23f0c3)+'\x27'+_0xea4bf6(0x1f9)):(_0x5c7e5e(),_0x26ab38['innerHTML']='\x27'+(''+_0x23f0c3)+'\x27'+_0xea4bf6(0x159));};_0x38dded[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x565d8b){const _0x90ceb1=_0x5d10bf;_0x565d8b[_0x90ceb1(0x15b)]();}),_0x38dded[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x4c18ac=document['getElementById'](_0x5d10bf(0x1cf)),_0x540c86=document['getElementById'](_0x5d10bf(0x1a3)),_0x2deb67=document['getElementById'](_0x5d10bf(0x1cb));function _0x47be3d(){const _0x2d3cff=_0x5d10bf;_0x4c18ac[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]='block',_0x5e9367[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x27536b['style'][_0x2d3cff(0x1b0)]='none',_0xb43665[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x1e1a7c[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x4aa466[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x27f22a[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]='none',_0x52b733[_0x2d3cff(0x1ea)]['display']='none',_0x4ce687[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x5d7cfb[_0x2d3cff(0x1ea)]['display']=_0x2d3cff(0x199),_0x30af7d['style'][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x3c084a['style']['display']='none',_0x1f08e3[_0x2d3cff(0x1ea)]['display']=_0x2d3cff(0x1c0),_0x1b0528[_0x2d3cff(0x1ea)][_0x2d3cff(0x1b0)]=_0x2d3cff(0x199),_0x322a90[_0x2d3cff(0x1ea)][_0x2d3cff(0x1f6)]=_0x2d3cff(0x16d),_0xb4a8fa[_0x2d3cff(0x1ea)][_0x2d3cff(0x1f6)]='#FFA500',_0x48db1b[_0x2d3cff(0x1ea)]['color']=_0x2d3cff(0x16d),_0x4def72['style'][_0x2d3cff(0x1f6)]=_0x2d3cff(0x16d),_0xc152c9[_0x2d3cff(0x1ea)][_0x2d3cff(0x1c8)]='2px\x20solid\x20#FFA500',_0x5d09fd[_0x2d3cff(0x1ea)][_0x2d3cff(0x1c8)]=_0x2d3cff(0x1b2),_0x1b6937['style']['border']=_0x2d3cff(0x1b2),_0x240651[_0x2d3cff(0x1ea)]['border']='2px\x20solid\x20#FFA500';}_0x540c86['addEventListener'](_0x5d10bf(0x178),function(_0x5dba31){const _0x477269=_0x5d10bf;_0x5dba31[_0x477269(0x15b)]();}),_0x540c86[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x47be3d);const _0x3fbb1d=document[_0x5d10bf(0x149)](_0x5d10bf(0x1c9)),_0x4613bc=document['getElementById'](_0x5d10bf(0x18b)),_0x5e1268=document['getElementById'](_0x5d10bf(0x1a6));function _0xf8b04(){const _0x60b2ab=_0x5d10bf;_0x4613bc[_0x60b2ab(0x1ea)][_0x60b2ab(0x1b0)]=_0x60b2ab(0x199),_0x5e1268['style'][_0x60b2ab(0x1b0)]='block';}function _0x3db246(){const _0x2b83b6=_0x5d10bf;_0x4613bc[_0x2b83b6(0x1ea)][_0x2b83b6(0x1b0)]=_0x2b83b6(0x1c0),_0x4613bc[_0x2b83b6(0x1ea)][_0x2b83b6(0x1f6)]='#FFA500',_0x5e1268['style'][_0x2b83b6(0x1b0)]='none';}function _0x684381(){setTimeout(function(){_0x3fbb1d['reset'](),_0xf8b04();},0xdac);};_0x5e1268['addEventListener'](_0x5d10bf(0x178),function(_0x4bf9f3){_0x4bf9f3['preventDefault']();}),_0x5e1268[_0x5d10bf(0x18d)]('click',_0x2379bd);function _0x2379bd(_0x2544b0){const _0x463790=_0x5d10bf;let _0x2a8a94=document[_0x463790(0x149)](_0x463790(0x185))[_0x463790(0x1ce)],_0x331bc0=/[^a-z0-9]/gi,_0x5c89e8=_0x2a8a94['replace'](_0x331bc0,'')[_0x463790(0x207)]()[_0x463790(0x151)](''),_0xed5e0d=_0x5c89e8[_0x463790(0x1ad)](''),_0x47e4b1=_0x5c89e8[_0x463790(0x147)]()[_0x463790(0x1ad)]('');_0xed5e0d===_0x47e4b1?(_0x3db246(),_0x4613bc[_0x463790(0x1c3)]='\x27\x20'+(''+_0x2a8a94)+'\x20\x27'+_0x463790(0x1d0)):(_0x3db246(),_0x4613bc['innerHTML']='\x27\x20'+(''+_0x2a8a94)+'\x20\x27'+'\x20is\x20NOT\x20a\x20palindrome'),_0x684381();}_0x2deb67[_0x5d10bf(0x18d)]('click',function(_0x1860bf){const _0x5eee2=_0x5d10bf;_0x1860bf[_0x5eee2(0x15b)]();}),_0x2deb67[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x27536b=document[_0x5d10bf(0x149)](_0x5d10bf(0x15f)),_0x4783aa=document[_0x5d10bf(0x149)](_0x5d10bf(0x1f2)),_0x121a0e=document[_0x5d10bf(0x149)](_0x5d10bf(0x1e1));function _0x49fd27(){const _0x437ac1=_0x5d10bf;_0x27536b['style']['display']=_0x437ac1(0x1c0),_0x5e9367[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x4c18ac['style'][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0xb43665[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x1e1a7c[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x4aa466[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x27f22a[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x52b733['style'][_0x437ac1(0x1b0)]='none',_0x4ce687[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x5d7cfb[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x30af7d[_0x437ac1(0x1ea)]['display']=_0x437ac1(0x199),_0x3c084a['style']['display']=_0x437ac1(0x199),_0x1f08e3[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x1c0),_0x1b0528[_0x437ac1(0x1ea)][_0x437ac1(0x1b0)]=_0x437ac1(0x199),_0x322a90[_0x437ac1(0x1ea)][_0x437ac1(0x1f6)]='#5b0eeb',_0xb4a8fa[_0x437ac1(0x1ea)][_0x437ac1(0x1f6)]=_0x437ac1(0x155),_0x48db1b[_0x437ac1(0x1ea)]['color']=_0x437ac1(0x155),_0x4def72['style'][_0x437ac1(0x1f6)]=_0x437ac1(0x155),_0xc152c9[_0x437ac1(0x1ea)][_0x437ac1(0x1c8)]=_0x437ac1(0x1c7),_0x5d09fd[_0x437ac1(0x1ea)][_0x437ac1(0x1c8)]=_0x437ac1(0x1c7),_0x1b6937[_0x437ac1(0x1ea)][_0x437ac1(0x1c8)]=_0x437ac1(0x1c7),_0x240651[_0x437ac1(0x1ea)][_0x437ac1(0x1c8)]=_0x437ac1(0x1c7);}_0x4783aa['addEventListener'](_0x5d10bf(0x178),function(_0x4a9fd7){const _0x273f35=_0x5d10bf;_0x4a9fd7[_0x273f35(0x15b)]();}),_0x4783aa[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x49fd27);const _0x97ebbe=document['getElementById'](_0x5d10bf(0x203)),_0x3d2975=document[_0x5d10bf(0x149)]('sumResponse'),_0x1b5094=document['getElementById'](_0x5d10bf(0x197));function _0x1ae772(){const _0x3e53a6=_0x5d10bf;_0x3d2975[_0x3e53a6(0x1ea)]['display']='none',_0x1b5094[_0x3e53a6(0x1ea)][_0x3e53a6(0x1b0)]=_0x3e53a6(0x1c0);}function _0x3c6ea7(){const _0x2552bc=_0x5d10bf;_0x3d2975[_0x2552bc(0x1ea)][_0x2552bc(0x1b0)]=_0x2552bc(0x1c0),_0x3d2975['style']['color']=_0x2552bc(0x1cc),_0x1b5094[_0x2552bc(0x1ea)]['display']=_0x2552bc(0x199);}function _0x9b6b02(){setTimeout(function(_0x2ccce4){const _0x35b1d4=_0x1490;_0x97ebbe[_0x35b1d4(0x175)](),_0x1ae772();},0xbb8);};_0x1b5094[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x1c3137){const _0x150c49=_0x5d10bf;_0x1c3137[_0x150c49(0x15b)]();}),_0x1b5094[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x44a57b);function _0x44a57b(_0x1236f1){const _0x48b780=_0x5d10bf;_0x1236f1=document[_0x48b780(0x149)](_0x48b780(0x1c6))[_0x48b780(0x1ce)];for(let _0x4c09b1=0x0;_0x4c09b1<_0x1236f1[_0x48b780(0x1f8)]-0x1;_0x4c09b1++){let _0x545d21=/[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;_0x545d21['test'](_0x1236f1)?(_0x3c6ea7(),_0x3d2975['innerHTML']=_0x48b780(0x168)):_0x479b20(),_0x9b6b02();}}function _0x479b20(_0x4d55a3){const _0x2eeea0=_0x5d10bf;_0x4d55a3=document[_0x2eeea0(0x149)](_0x2eeea0(0x1a1))[_0x2eeea0(0x1ce)];let _0x4a52f1=/[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;_0x4a52f1[_0x2eeea0(0x194)](_0x4d55a3)?(_0x3c6ea7(),_0x3d2975[_0x2eeea0(0x1c3)]=_0x2eeea0(0x154)):_0x58e560(),_0x9b6b02();}function _0x58e560(_0x12ddb7,_0x1064bf){const _0x5eedaa=_0x5d10bf;_0x1064bf=document['getElementById'](_0x5eedaa(0x1a1))[_0x5eedaa(0x1ce)],_0x12ddb7=document[_0x5eedaa(0x149)](_0x5eedaa(0x1c6))[_0x5eedaa(0x1ce)]['split']('\x20'),_0x12ddb7=_0x12ddb7[_0x5eedaa(0x1dd)](Number);let _0x2b8237={};for(let _0x6a48bf=0x0;_0x6a48bf<_0x12ddb7['length'];_0x6a48bf++){let _0x30e28e=_0x12ddb7[_0x6a48bf],_0x216572=_0x1064bf-_0x30e28e;if(_0x2b8237[_0x30e28e]!==undefined){let _0x420429=_0x2b8237[_0x30e28e],_0x18586c=_0x6a48bf;_0x3c6ea7(),_0x3d2975[_0x5eedaa(0x1c3)]=''+_0x1064bf+_0x5eedaa(0x1fd)+(''+_0x420429)+',\x20'+(''+_0x18586c)+'].';break;}else{_0x2b8237[_0x216572]=_0x6a48bf;let _0x57b97b=_0x12ddb7[_0x5eedaa(0x1ad)](',\x20');_0x3c6ea7(),_0x3d2975[_0x5eedaa(0x1c3)]=_0x5eedaa(0x182)+(''+_0x1064bf)+_0x5eedaa(0x157)+(''+_0x57b97b)+']';}_0x9b6b02();}}_0x121a0e['addEventListener'](_0x5d10bf(0x178),function(_0x48111c){_0x48111c['preventDefault']();}),_0x121a0e[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0xb43665=document['getElementById'](_0x5d10bf(0x17a)),_0x58eebc=document[_0x5d10bf(0x149)](_0x5d10bf(0x19a)),_0x5e20b0=document[_0x5d10bf(0x149)](_0x5d10bf(0x14d));function _0x4747ff(){const _0x3372db=_0x5d10bf;_0xb43665[_0x3372db(0x1ea)][_0x3372db(0x1b0)]='block',_0x5e9367['style'][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x4c18ac[_0x3372db(0x1ea)][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x27536b[_0x3372db(0x1ea)][_0x3372db(0x1b0)]='none',_0x1e1a7c[_0x3372db(0x1ea)][_0x3372db(0x1b0)]='none',_0x4aa466[_0x3372db(0x1ea)][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x27f22a[_0x3372db(0x1ea)]['display']=_0x3372db(0x199),_0x52b733['style'][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x4ce687[_0x3372db(0x1ea)][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x5d7cfb[_0x3372db(0x1ea)][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x30af7d[_0x3372db(0x1ea)][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x3c084a['style'][_0x3372db(0x1b0)]=_0x3372db(0x199),_0x1f08e3['style']['display']=_0x3372db(0x1c0),_0x1b0528['style']['display']=_0x3372db(0x199),_0x322a90[_0x3372db(0x1ea)][_0x3372db(0x1f6)]='#f89898',_0xb4a8fa[_0x3372db(0x1ea)][_0x3372db(0x1f6)]=_0x3372db(0x192),_0x48db1b[_0x3372db(0x1ea)][_0x3372db(0x1f6)]=_0x3372db(0x192),_0x4def72[_0x3372db(0x1ea)][_0x3372db(0x1f6)]=_0x3372db(0x192),_0xc152c9[_0x3372db(0x1ea)][_0x3372db(0x1c8)]=_0x3372db(0x190),_0x5d09fd[_0x3372db(0x1ea)][_0x3372db(0x1c8)]=_0x3372db(0x190),_0x1b6937[_0x3372db(0x1ea)][_0x3372db(0x1c8)]=_0x3372db(0x190),_0x240651['style'][_0x3372db(0x1c8)]=_0x3372db(0x190);}_0x58eebc[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x2b1091){const _0x37a1c0=_0x5d10bf;_0x2b1091[_0x37a1c0(0x15b)]();}),_0x58eebc[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4747ff);const _0x11cbf3=document[_0x5d10bf(0x149)](_0x5d10bf(0x153)),_0xe047f6=document[_0x5d10bf(0x149)]('swResponse'),_0xd41d5f=document[_0x5d10bf(0x149)](_0x5d10bf(0x171));function _0x8f81dd(){const _0x134bc3=_0x5d10bf;_0xe047f6['style'][_0x134bc3(0x1b0)]='none',_0xd41d5f['style'][_0x134bc3(0x1b0)]=_0x134bc3(0x1c0);}function _0x75b447(){const _0x5a4fe6=_0x5d10bf;_0xe047f6[_0x5a4fe6(0x1ea)][_0x5a4fe6(0x1b0)]=_0x5a4fe6(0x1c0),_0xe047f6[_0x5a4fe6(0x1ea)]['color']=_0x5a4fe6(0x1cc),_0xd41d5f[_0x5a4fe6(0x1ea)][_0x5a4fe6(0x1b0)]='none';}function _0x38521a(){setTimeout(function(){const _0x36a936=_0x1490;_0x11cbf3[_0x36a936(0x175)](),_0x8f81dd();},0x1388);};_0xd41d5f[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x381be2){const _0x156aa5=_0x5d10bf;_0x381be2[_0x156aa5(0x15b)]();}),_0xd41d5f[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4b66df);function _0x4b66df(_0x4a6626,_0x2892a9){const _0x2b332f=_0x5d10bf;var _0x4a6626=document[_0x2b332f(0x149)](_0x2b332f(0x183))['value'],_0x2892a9=Number(document[_0x2b332f(0x149)](_0x2b332f(0x1d7))[_0x2b332f(0x1ce)]);_0x1ae8a6(_0x4a6626,_0x2892a9);function _0x1ae8a6(_0x2059c9,_0x4e0406){const _0x5ac395=_0x2b332f;if(_0x4e0406=='0'&&_0x2059c9=='')_0x75b447(),_0xe047f6[_0x5ac395(0x1c3)]='Please\x20enter\x20a\x20word/words\x20and\x20a\x20number\x20greater\x20than\x200';else{if(_0x4e0406=='0'&&_0x2059c9!='')_0x75b447(),_0xe047f6[_0x5ac395(0x1c3)]=_0x5ac395(0x15a);else _0x4e0406!='0'&&_0x2059c9==''?(_0x75b447(),_0xe047f6[_0x5ac395(0x1c3)]=_0x5ac395(0x209)):_0x1927fd();}_0x38521a();}function _0x1927fd(){const _0xa0e44d=_0x2b332f;for(let _0x4c5d4c=0x0;_0x4c5d4c<_0x4a6626[_0xa0e44d(0x1f8)]-0x1;_0x4c5d4c++){let _0x155da0=/[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/,_0x2b00cc=/[A-Za-z]/,_0x2997fe=/[A-Za-z]\d|\d/;if(_0x155da0[_0xa0e44d(0x194)](_0x4a6626)||_0x2997fe[_0xa0e44d(0x194)](_0x4a6626))_0xe047f6[_0xa0e44d(0x1c3)]=_0xa0e44d(0x1e8),_0x75b447();else _0x2b00cc[_0xa0e44d(0x194)](_0x2892a9)||_0x155da0[_0xa0e44d(0x194)](_0x2892a9)?(_0xe047f6['innerHTML']=_0xa0e44d(0x19d),_0x75b447()):_0x2e31ee();}_0x38521a();}function _0x2e31ee(){const _0x46e641=_0x2b332f;let _0x179976=document['getElementById'](_0x46e641(0x183))[_0x46e641(0x1ce)]['toLowerCase']()[_0x46e641(0x151)]('\x20'),_0x851fe8=document[_0x46e641(0x149)]('sw-num')[_0x46e641(0x1ce)];for(let _0x17aac8=0x0;_0x17aac8<_0x179976[_0x46e641(0x1f8)];_0x17aac8++){if(_0x179976[_0x17aac8][_0x46e641(0x1f8)]>=_0x851fe8){_0x179976[_0x17aac8]=_0x179976[_0x17aac8][_0x46e641(0x207)]()[_0x46e641(0x151)]('')['reverse']()[_0x46e641(0x1ad)]('');let _0x13a57c=_0x179976[_0x46e641(0x1ad)]('\x20\x20');_0x75b447(),_0xe047f6[_0x46e641(0x1c3)]=''+_0x13a57c;}else{let _0x44ef6f=_0x179976[_0x46e641(0x1ad)]('\x20\x20');_0x75b447(),_0xe047f6[_0x46e641(0x1c3)]='There\x20are\x20NO\x20words\x20that\x20are\x20'+(''+_0x851fe8)+_0x46e641(0x16b);}}}}_0x5e20b0[_0x5d10bf(0x18d)]('click',function(_0x4f66fd){const _0x3bc649=_0x5d10bf;_0x4f66fd[_0x3bc649(0x15b)]();}),_0x5e20b0['addEventListener']('click',_0x4e76c8);const _0x1e1a7c=document[_0x5d10bf(0x149)]('longest-word'),_0x44e618=document[_0x5d10bf(0x149)](_0x5d10bf(0x202)),_0x2ed50e=document['getElementById']('lw-btn-close');function _0x293142(){const _0x1312d7=_0x5d10bf;_0x1e1a7c[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x1c0),_0x5e9367[_0x1312d7(0x1ea)]['display']=_0x1312d7(0x199),_0x4c18ac[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]='none',_0x27536b[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0xb43665['style'][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0x4aa466[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0x27f22a[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0x52b733[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0x4ce687[_0x1312d7(0x1ea)]['display']=_0x1312d7(0x199),_0x5d7cfb[_0x1312d7(0x1ea)]['display']=_0x1312d7(0x199),_0x30af7d[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]='none',_0x3c084a[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0x1f08e3[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x1c0),_0x1b0528[_0x1312d7(0x1ea)][_0x1312d7(0x1b0)]=_0x1312d7(0x199),_0x322a90[_0x1312d7(0x1ea)]['color']=_0x1312d7(0x1b3),_0xb4a8fa[_0x1312d7(0x1ea)][_0x1312d7(0x1f6)]='#35c048',_0x48db1b[_0x1312d7(0x1ea)][_0x1312d7(0x1f6)]=_0x1312d7(0x1b3),_0x4def72[_0x1312d7(0x1ea)][_0x1312d7(0x1f6)]=_0x1312d7(0x1b3),_0xc152c9[_0x1312d7(0x1ea)][_0x1312d7(0x1c8)]=_0x1312d7(0x16f),_0x5d09fd[_0x1312d7(0x1ea)][_0x1312d7(0x1c8)]=_0x1312d7(0x16f),_0x1b6937[_0x1312d7(0x1ea)]['border']=_0x1312d7(0x16f),_0x240651['style']['border']=_0x1312d7(0x16f);}_0x44e618[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x340c85){_0x340c85['preventDefault']();}),_0x44e618[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x293142);const _0x987480=document[_0x5d10bf(0x149)](_0x5d10bf(0x1ba)),_0x189c11=document[_0x5d10bf(0x149)](_0x5d10bf(0x1a4)),_0x1f484d=document[_0x5d10bf(0x149)]('lw-check-string');function _0x2160fd(){const _0x2ccbe5=_0x5d10bf;_0x189c11[_0x2ccbe5(0x1ea)][_0x2ccbe5(0x1b0)]=_0x2ccbe5(0x199),_0x1f484d[_0x2ccbe5(0x1ea)]['display']=_0x2ccbe5(0x1c0);}function _0x12cf1b(){const _0x58ed46=_0x5d10bf;_0x189c11[_0x58ed46(0x1ea)][_0x58ed46(0x1b0)]='block',_0x189c11[_0x58ed46(0x1ea)][_0x58ed46(0x1f6)]=_0x58ed46(0x1b3),_0x1f484d[_0x58ed46(0x1ea)][_0x58ed46(0x1b0)]=_0x58ed46(0x199);}function _0x1f1404(){setTimeout(function(){_0x987480['reset'](),_0x2160fd();},0x1388);};_0x1f484d[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x5e9ece){const _0x2cdb8d=_0x5d10bf;_0x5e9ece[_0x2cdb8d(0x15b)]();}),_0x1f484d[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x442f19);function _0x442f19(_0x548654){const _0x56a03d=_0x5d10bf;var _0x548654=document['getElementById'](_0x56a03d(0x1bd))[_0x56a03d(0x1ce)];for(let _0x592c35=0x0;_0x592c35<_0x548654[_0x56a03d(0x1f8)]-0x1;_0x592c35++){let _0x6e0b6b=/[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/,_0x5a7991=/[A-Za-z]\d|\d/;_0x6e0b6b[_0x56a03d(0x194)](_0x548654)||_0x5a7991[_0x56a03d(0x194)](_0x548654)?(_0x12cf1b(),_0x189c11[_0x56a03d(0x1c3)]='Enter\x20only\x20letters'):_0x13ae7c(),_0x1f1404();}}function _0x13ae7c(_0x149aa4){const _0x125535=_0x5d10bf;let _0x462a3e=document['getElementById']('lw-text')['value'][_0x125535(0x151)]('\x20'),_0x5678a0=0x0;for(let _0x4b8fbc=0x0;_0x4b8fbc<_0x462a3e[_0x125535(0x1f8)];_0x4b8fbc++){_0x462a3e[_0x4b8fbc][_0x125535(0x1f8)]>_0x5678a0&&(_0x5678a0=_0x462a3e[_0x4b8fbc][_0x125535(0x1f8)],theWord=_0x462a3e[_0x4b8fbc],_0x12cf1b(),_0x189c11[_0x125535(0x1c3)]='\x27'+(''+theWord)+_0x125535(0x1be)+(''+_0x5678a0));}}_0x2ed50e[_0x5d10bf(0x18d)]('click',function(_0x5900bf){const _0x285b06=_0x5d10bf;_0x5900bf[_0x285b06(0x15b)]();}),_0x2ed50e['addEventListener'](_0x5d10bf(0x178),_0x4e76c8);const _0x4aa466=document[_0x5d10bf(0x149)]('factorialize'),_0xb30aea=document[_0x5d10bf(0x149)](_0x5d10bf(0x1bc)),_0x3b97bd=document[_0x5d10bf(0x149)]('fact-btn-close');function _0x36a1b0(){const _0xfa1b0b=_0x5d10bf;_0x4aa466[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x1c0),_0x1f08e3[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x1c0),_0x5e9367[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x199),_0x4c18ac[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x199),_0x27536b[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x199),_0xb43665[_0xfa1b0b(0x1ea)]['display']=_0xfa1b0b(0x199),_0x1e1a7c[_0xfa1b0b(0x1ea)]['display']=_0xfa1b0b(0x199),_0x27f22a['style'][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x199),_0x52b733[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x199),_0x4ce687[_0xfa1b0b(0x1ea)]['display']=_0xfa1b0b(0x199),_0x5d7cfb['style'][_0xfa1b0b(0x1b0)]='none',_0x30af7d['style'][_0xfa1b0b(0x1b0)]=_0xfa1b0b(0x199),_0x3c084a[_0xfa1b0b(0x1ea)]['display']=_0xfa1b0b(0x199),_0x1b0528[_0xfa1b0b(0x1ea)]['display']=_0xfa1b0b(0x199),_0x322a90[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1f6)]='#eb0e96',_0xb4a8fa[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1f6)]=_0xfa1b0b(0x1d1),_0x48db1b[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1f6)]=_0xfa1b0b(0x1d1),_0x4def72[_0xfa1b0b(0x1ea)]['color']=_0xfa1b0b(0x1d1),_0xc152c9[_0xfa1b0b(0x1ea)][_0xfa1b0b(0x1c8)]=_0xfa1b0b(0x17d),_0x5d09fd[_0xfa1b0b(0x1ea)]['border']=_0xfa1b0b(0x17d),_0x1b6937[_0xfa1b0b(0x1ea)]['border']=_0xfa1b0b(0x17d),_0x240651['style'][_0xfa1b0b(0x1c8)]='2px\x20solid\x20#eb0e96';}_0xb30aea[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x2f1e5f){_0x2f1e5f['preventDefault']();}),_0xb30aea['addEventListener'](_0x5d10bf(0x178),_0x36a1b0);const _0x265091=document[_0x5d10bf(0x149)]('fact-form'),_0x376f3d=document['getElementById']('factResponse'),_0x464341=document['getElementById']('fact-btn');function _0x3f1ca6(){const _0x209014=_0x5d10bf;_0x376f3d[_0x209014(0x1ea)]['display']=_0x209014(0x199),_0x464341[_0x209014(0x1ea)][_0x209014(0x1b0)]=_0x209014(0x1c0);}function _0x322017(){const _0x2f282f=_0x5d10bf;_0x376f3d[_0x2f282f(0x1ea)][_0x2f282f(0x1f6)]=_0x2f282f(0x1cc),_0x376f3d[_0x2f282f(0x1ea)][_0x2f282f(0x1b0)]=_0x2f282f(0x1c0),_0x464341[_0x2f282f(0x1ea)][_0x2f282f(0x1b0)]=_0x2f282f(0x199);}function _0x1b694a(){setTimeout(function(){const _0x54c060=_0x1490;_0x265091[_0x54c060(0x175)](),_0x3f1ca6();},0xdac);};_0x464341['addEventListener'](_0x5d10bf(0x178),function(_0x30dc2a){const _0x1b01b6=_0x5d10bf;_0x30dc2a[_0x1b01b6(0x15b)]();}),_0x464341['addEventListener']('click',_0x368a7b);function _0x368a7b(){const _0xf805b5=_0x5d10bf;var _0x51d41a=document[_0xf805b5(0x149)]('fact-text')[_0xf805b5(0x1ce)];let _0x528038=Number(_0x51d41a),_0x24ef82=/^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/,_0xd33f76=0x1;if(_0x528038===0x1||_0x528038===0x0)_0x322017(),_0x376f3d[_0xf805b5(0x1c3)]=_0xf805b5(0x158)+(''+_0x528038)+'\x20is\x201';else{if(_0x528038<0x0&&_0x24ef82[_0xf805b5(0x194)](_0x528038))_0x322017(),_0x376f3d[_0xf805b5(0x1c3)]=''+_0x528038+_0xf805b5(0x200);else{if(_0x528038<0x0)_0x322017(),_0x376f3d[_0xf805b5(0x1c3)]='The\x20factorial\x20of\x20'+(''+_0x528038)+'\x20is\x20UNDEFINED';else{if(_0x24ef82[_0xf805b5(0x194)](_0x528038))_0x322017(),_0x376f3d[_0xf805b5(0x1c3)]=''+_0x528038+_0xf805b5(0x1a5);else for(let _0x491f0c=0x1;_0x491f0c<=_0x528038;_0x491f0c++){_0xd33f76*=_0x491f0c,_0x322017(),_0x376f3d[_0xf805b5(0x1c3)]=''+_0xd33f76+_0xf805b5(0x1b7)+(''+_0x528038);}}}}_0x1b694a();}_0x3b97bd[_0x5d10bf(0x18d)]('click',function(_0x4f719d){const _0x1b5bdf=_0x5d10bf;_0x4f719d[_0x1b5bdf(0x15b)]();}),_0x3b97bd[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x27f22a=document[_0x5d10bf(0x149)](_0x5d10bf(0x1de)),_0x725425=document[_0x5d10bf(0x149)](_0x5d10bf(0x165)),_0x14eb94=document[_0x5d10bf(0x149)](_0x5d10bf(0x17f));function _0x9f21c6(){const _0x5e4cb7=_0x5d10bf;_0x27f22a[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x1c0),_0x1f08e3[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]='block',_0x5e9367[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x4c18ac[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x27536b[_0x5e4cb7(0x1ea)]['display']=_0x5e4cb7(0x199),_0xb43665[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x1e1a7c[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x4aa466[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x52b733[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x4ce687[_0x5e4cb7(0x1ea)]['display']=_0x5e4cb7(0x199),_0x5d7cfb[_0x5e4cb7(0x1ea)]['display']='none',_0x30af7d['style'][_0x5e4cb7(0x1b0)]='none',_0x3c084a[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1b0)]='none',_0x1b0528['style'][_0x5e4cb7(0x1b0)]=_0x5e4cb7(0x199),_0x322a90[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1f6)]=_0x5e4cb7(0x177),_0xb4a8fa[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1f6)]='#0b7c739d',_0x48db1b['style'][_0x5e4cb7(0x1f6)]='#0b7c739d',_0x4def72[_0x5e4cb7(0x1ea)]['color']=_0x5e4cb7(0x177),_0xc152c9[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1c8)]=_0x5e4cb7(0x1fe),_0x5d09fd[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1c8)]=_0x5e4cb7(0x1fe),_0x1b6937[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1c8)]=_0x5e4cb7(0x1fe),_0x240651[_0x5e4cb7(0x1ea)][_0x5e4cb7(0x1c8)]=_0x5e4cb7(0x1fe);}_0x725425[_0x5d10bf(0x18d)]('click',function(_0x215914){const _0x348977=_0x5d10bf;_0x215914[_0x348977(0x15b)]();}),_0x725425[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x9f21c6);const _0x4abd99=document[_0x5d10bf(0x149)]('pn-form'),_0x5ff746=document[_0x5d10bf(0x149)](_0x5d10bf(0x1b8)),_0x8ccd27=document[_0x5d10bf(0x149)](_0x5d10bf(0x1e7)),_0x5399db=document['getElementById'](_0x5d10bf(0x18c));function _0x446eab(){const _0x5c1184=_0x5d10bf;_0x5ff746[_0x5c1184(0x1ea)]['display']=_0x5c1184(0x199),_0x8ccd27[_0x5c1184(0x1ea)]['display']=_0x5c1184(0x199),_0x5399db[_0x5c1184(0x1ea)][_0x5c1184(0x1b0)]='block';}function _0x7bc22f(){const _0xf0b9d8=_0x5d10bf;_0x5ff746[_0xf0b9d8(0x1ea)][_0xf0b9d8(0x1b0)]=_0xf0b9d8(0x1c0),_0x8ccd27[_0xf0b9d8(0x1ea)][_0xf0b9d8(0x1b0)]=_0xf0b9d8(0x1c0),_0x8ccd27['style']['color']=_0xf0b9d8(0x1cc),_0x5399db[_0xf0b9d8(0x1ea)]['display']=_0xf0b9d8(0x199);}function _0xfe60d3(){setTimeout(function(){_0x4abd99['reset'](),_0x446eab();},0xdac);};_0x5399db[_0x5d10bf(0x18d)]('click',function(_0x54395b){const _0x491fb4=_0x5d10bf;_0x54395b[_0x491fb4(0x15b)]();}),_0x5399db[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x1cb01b);function _0x1cb01b(_0x3d33d5){const _0x495cd1=_0x5d10bf;var _0x3d33d5=document[_0x495cd1(0x149)](_0x495cd1(0x186))[_0x495cd1(0x1ce)];let _0x41121c=parseInt(_0x3d33d5[_0x495cd1(0x191)]()[_0x495cd1(0x151)]('')[_0x495cd1(0x147)]()[_0x495cd1(0x1ad)]('')),_0x2a31eb=/^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/;if(_0x2a31eb[_0x495cd1(0x194)](_0x3d33d5))_0x7bc22f(),_0x8ccd27['innerHTML']=''+_0x3d33d5+_0x495cd1(0x200),_0xfe60d3();else{if(_0x3d33d5>=Math[_0x495cd1(0x195)](0x2,0x1f)-0x1||_0x3d33d5<=Math[_0x495cd1(0x195)](-0x2,0x1f))_0x7bc22f(),_0x8ccd27['innerHTML']=''+_0x3d33d5+_0x495cd1(0x164),_0xfe60d3();else _0x41121c==_0x3d33d5?(_0x7bc22f(),_0x8ccd27[_0x495cd1(0x1c3)]=''+_0x3d33d5+_0x495cd1(0x1af),_0xfe60d3()):(_0x7bc22f(),_0x8ccd27[_0x495cd1(0x1c3)]=''+_0x3d33d5+'\x20is\x20NOT\x20a\x20Palindrome\x20Number',_0xfe60d3());}}_0x14eb94[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0xa6a240){_0xa6a240['preventDefault']();}),_0x14eb94[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x52b733=document[_0x5d10bf(0x149)](_0x5d10bf(0x162)),_0x36e21c=document[_0x5d10bf(0x149)]('rev-play-btn'),_0x2dcd51=document[_0x5d10bf(0x149)](_0x5d10bf(0x1b5));function _0x1928ab(){const _0x5e2d36=_0x5d10bf;_0x52b733[_0x5e2d36(0x1ea)][_0x5e2d36(0x1b0)]='block',_0x1f08e3['style']['display']=_0x5e2d36(0x1c0),_0x5e9367[_0x5e2d36(0x1ea)][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x4c18ac['style'][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x27536b[_0x5e2d36(0x1ea)]['display']=_0x5e2d36(0x199),_0xb43665['style'][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x1e1a7c['style']['display']=_0x5e2d36(0x199),_0x4aa466['style'][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x27f22a['style']['display']=_0x5e2d36(0x199),_0x4ce687[_0x5e2d36(0x1ea)]['display']=_0x5e2d36(0x199),_0x5d7cfb[_0x5e2d36(0x1ea)][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x30af7d[_0x5e2d36(0x1ea)][_0x5e2d36(0x1b0)]='none',_0x3c084a['style'][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x1b0528[_0x5e2d36(0x1ea)][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x4ce687[_0x5e2d36(0x1ea)][_0x5e2d36(0x1b0)]=_0x5e2d36(0x199),_0x322a90[_0x5e2d36(0x1ea)][_0x5e2d36(0x1f6)]=_0x5e2d36(0x17e),_0xb4a8fa[_0x5e2d36(0x1ea)][_0x5e2d36(0x1f6)]=_0x5e2d36(0x17e),_0x48db1b[_0x5e2d36(0x1ea)][_0x5e2d36(0x1f6)]=_0x5e2d36(0x17e),_0x4def72[_0x5e2d36(0x1ea)][_0x5e2d36(0x1f6)]=_0x5e2d36(0x17e),_0xc152c9[_0x5e2d36(0x1ea)][_0x5e2d36(0x1c8)]=_0x5e2d36(0x1ec),_0x5d09fd[_0x5e2d36(0x1ea)]['border']='2px\x20solid\x20#8790e0',_0x1b6937[_0x5e2d36(0x1ea)]['border']='2px\x20solid\x20#8790e0',_0x240651[_0x5e2d36(0x1ea)]['border']=_0x5e2d36(0x1ec);}_0x36e21c[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x1099b8){_0x1099b8['preventDefault']();}),_0x36e21c[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x1928ab);const _0x47715d=document[_0x5d10bf(0x149)]('rev-int-form'),_0x2d10c5=document[_0x5d10bf(0x149)]('revResponse'),_0x21f84f=document[_0x5d10bf(0x149)](_0x5d10bf(0x1aa));function _0x1cc7d4(){const _0x48e9f0=_0x5d10bf;_0x2d10c5[_0x48e9f0(0x1ea)][_0x48e9f0(0x1b0)]=_0x48e9f0(0x199),_0x21f84f['style'][_0x48e9f0(0x1b0)]=_0x48e9f0(0x1c0);}function _0x117063(){const _0x1127c6=_0x5d10bf;_0x2d10c5['style']['display']='block',_0x2d10c5[_0x1127c6(0x1ea)][_0x1127c6(0x1f6)]=_0x1127c6(0x1cc),_0x21f84f[_0x1127c6(0x1ea)][_0x1127c6(0x1b0)]=_0x1127c6(0x199);}function _0x578d50(){setTimeout(function(){const _0x299af5=_0x1490;_0x47715d[_0x299af5(0x175)](),_0x1cc7d4();},0xbb8);};_0x21f84f[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x4889e3){const _0x416e14=_0x5d10bf;_0x4889e3[_0x416e14(0x15b)]();}),_0x21f84f['addEventListener'](_0x5d10bf(0x178),_0x2c80d2);function _0x2c80d2(_0x18579b){const _0x1b1abf=_0x5d10bf;var _0x18579b=document[_0x1b1abf(0x149)](_0x1b1abf(0x19e))[_0x1b1abf(0x1ce)];let _0x53727a=parseInt(_0x18579b[_0x1b1abf(0x191)]()[_0x1b1abf(0x151)]('')['reverse']()[_0x1b1abf(0x1ad)]('')),_0x2a7e34=/^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/,_0x4f3530=/[A-Za-z][!@#$%^&*()_+\=\[\]{};':"\\|,<>\/?]|[!@#$%^&*()_+\=\[\]{};':"\\|,<>\/?]/,_0x1a1929=/[A-Za-z]/;if(_0x18579b===''||_0x4f3530[_0x1b1abf(0x194)](_0x18579b)||_0x1a1929[_0x1b1abf(0x194)](_0x18579b))_0x117063(),_0x2d10c5[_0x1b1abf(0x1c3)]=_0x1b1abf(0x15d);else{if(_0x18579b=='0')_0x117063(),_0x2d10c5[_0x1b1abf(0x1c3)]=''+_0x18579b;else{if(_0x2a7e34['test'](_0x18579b))_0x117063(),_0x2d10c5[_0x1b1abf(0x1c3)]=''+_0x18579b+_0x1b1abf(0x1f5);else{if(_0x18579b>=Math[_0x1b1abf(0x195)](0x2,0x1f)-0x1||_0x18579b<=Math[_0x1b1abf(0x195)](-0x2,0x1f))_0x117063(),_0x2d10c5[_0x1b1abf(0x1c3)]=''+_0x18579b+_0x1b1abf(0x164);else{if(_0x18579b<0x0){let _0x357a1=-Math['abs'](_0x53727a);_0x117063(),_0x2d10c5[_0x1b1abf(0x1c3)]=''+_0x357a1;}else{_0x18579b>0x0?_0x117063():_0x117063();let _0x451a8d=Math[_0x1b1abf(0x1ca)](_0x53727a);_0x2d10c5['innerHTML']=''+_0x451a8d;}}}}}_0x578d50();}_0x2dcd51[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x3b378d){const _0x33cb78=_0x5d10bf;_0x3b378d[_0x33cb78(0x15b)]();}),_0x2dcd51[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x4ce687=document[_0x5d10bf(0x149)](_0x5d10bf(0x161)),_0x14d313=document[_0x5d10bf(0x149)]('lnr-play-btn'),_0x10066a=document[_0x5d10bf(0x149)]('lnr-btn-close');function _0x26740e(){const _0x5db1db=_0x5d10bf;_0x4ce687['style'][_0x5db1db(0x1b0)]='block',_0x1f08e3['style'][_0x5db1db(0x1b0)]=_0x5db1db(0x1c0),_0x5e9367[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x4c18ac[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x27536b[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0xb43665[_0x5db1db(0x1ea)]['display']=_0x5db1db(0x199),_0x1e1a7c[_0x5db1db(0x1ea)]['display']='none',_0x4aa466[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x27f22a[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x52b733[_0x5db1db(0x1ea)]['display']='none',_0x5d7cfb['style'][_0x5db1db(0x1b0)]='none',_0x30af7d[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x3c084a[_0x5db1db(0x1ea)][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x1b0528['style'][_0x5db1db(0x1b0)]=_0x5db1db(0x199),_0x322a90['style'][_0x5db1db(0x1f6)]=_0x5db1db(0x1b1),_0xb4a8fa[_0x5db1db(0x1ea)][_0x5db1db(0x1f6)]='#ff0000',_0x48db1b[_0x5db1db(0x1ea)][_0x5db1db(0x1f6)]=_0x5db1db(0x1b1),_0x4def72[_0x5db1db(0x1ea)][_0x5db1db(0x1f6)]=_0x5db1db(0x1b1),_0xc152c9[_0x5db1db(0x1ea)][_0x5db1db(0x1c8)]=_0x5db1db(0x1c4),_0x5d09fd[_0x5db1db(0x1ea)]['border']=_0x5db1db(0x1c4),_0x1b6937[_0x5db1db(0x1ea)][_0x5db1db(0x1c8)]=_0x5db1db(0x1c4),_0x240651['style'][_0x5db1db(0x1c8)]=_0x5db1db(0x1c4);}_0x14d313[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x592508){const _0x2bac37=_0x5d10bf;_0x592508[_0x2bac37(0x15b)]();}),_0x14d313['addEventListener']('click',_0x26740e);const _0x5a3160=document[_0x5d10bf(0x149)]('lns-form'),_0x18482c=document['getElementById'](_0x5d10bf(0x1f1)),_0xa467a3=document[_0x5d10bf(0x149)]('lns-btn');function _0x555ef0(){const _0x5ce655=_0x5d10bf;_0x18482c[_0x5ce655(0x1ea)][_0x5ce655(0x1b0)]=_0x5ce655(0x199),_0xa467a3[_0x5ce655(0x1ea)]['display']=_0x5ce655(0x1c0);}function _0x1bec14(){const _0x270775=_0x5d10bf;_0x18482c[_0x270775(0x1ea)][_0x270775(0x1b0)]=_0x270775(0x1c0),_0x18482c[_0x270775(0x1ea)][_0x270775(0x1f6)]=_0x270775(0x1cc),_0xa467a3['style']['display']=_0x270775(0x199);};function _0x2ded92(){setTimeout(function(){_0x5a3160['reset'](),_0x555ef0();},0xbb8);};_0xa467a3[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x140849){const _0x31ab32=_0x5d10bf;_0x140849[_0x31ab32(0x15b)]();}),_0xa467a3['addEventListener'](_0x5d10bf(0x178),_0x350c1d);function _0x350c1d(_0x2861e0){const _0x316b25=_0x5d10bf;var _0x2861e0=document[_0x316b25(0x149)](_0x316b25(0x205))[_0x316b25(0x1ce)];if(_0x2861e0!='')for(let _0x48b57c=0x0;_0x48b57c<_0x2861e0[_0x316b25(0x1f8)]-0x1;_0x48b57c++){let _0x1d44fd=/[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/,_0x2728a6=/[A-Za-z]\d|\d/;_0x1d44fd[_0x316b25(0x194)](_0x2861e0)||_0x2728a6[_0x316b25(0x194)](_0x2861e0)?(_0x18482c['innerHTML']=_0x316b25(0x1c1),_0x1bec14()):_0x341d4b(),_0x2ded92();}else _0x1bec14(),_0x18482c[_0x316b25(0x1c3)]='0',_0x2ded92();}function _0x341d4b(_0x144c8e){const _0x506f26=_0x5d10bf;var _0x144c8e=document[_0x506f26(0x149)](_0x506f26(0x205))[_0x506f26(0x1ce)];let _0x15582f,_0x2870e5=_0x144c8e[_0x506f26(0x1f8)],_0x52897d=0x0,_0x4e9602,_0x5cae0b=0x0,_0x5188ac,_0x46f119=new Map();_0x46f119[_0x506f26(0x1ef)](_0x144c8e[0x0],0x0);for(let _0x33a702=0x1;_0x33a702<_0x2870e5;_0x33a702++){if(!_0x46f119['has'](_0x144c8e[_0x33a702]))_0x46f119[_0x506f26(0x1ef)](_0x144c8e[_0x33a702],_0x33a702);else _0x46f119[_0x506f26(0x1e3)](_0x144c8e[_0x33a702])>=_0x52897d&&(_0x4e9602=_0x33a702-_0x52897d,_0x5cae0b<_0x4e9602&&(_0x5cae0b=_0x4e9602,_0x5188ac=_0x52897d),_0x52897d=_0x46f119[_0x506f26(0x1e3)](_0x144c8e[_0x33a702])+0x1);_0x46f119[_0x506f26(0x1ef)](_0x144c8e[_0x33a702],_0x33a702);}_0x5cae0b<_0x15582f-_0x52897d&&(_0x5cae0b=_0x15582f-_0x52897d,_0x5188ac=_0x52897d);let _0x36ebe6=_0x144c8e[_0x506f26(0x1d9)](_0x5188ac,_0x5cae0b),_0x323317=_0x36ebe6[_0x506f26(0x1f8)];_0x1bec14(),_0x18482c[_0x506f26(0x1c3)]='\x27'+_0x36ebe6+'\x27'+_0x506f26(0x14c)+_0x323317+_0x506f26(0x146);}_0x2ded92(),_0x10066a['addEventListener'](_0x5d10bf(0x178),function(_0x37cfd9){const _0x11d7f1=_0x5d10bf;_0x37cfd9[_0x11d7f1(0x15b)]();}),_0x10066a[_0x5d10bf(0x18d)]('click',_0x4e76c8);const _0x5d7cfb=document[_0x5d10bf(0x149)](_0x5d10bf(0x14f)),_0x33afa6=document[_0x5d10bf(0x149)](_0x5d10bf(0x174)),_0x1e6a07=document[_0x5d10bf(0x149)](_0x5d10bf(0x163));function _0x310139(){const _0x2b02e5=_0x5d10bf;_0x5d7cfb['style']['display']='block',_0x1f08e3[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]='block',_0x5e9367[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]=_0x2b02e5(0x199),_0x4c18ac['style']['display']='none',_0x27536b['style']['display']='none',_0xb43665['style'][_0x2b02e5(0x1b0)]=_0x2b02e5(0x199),_0x1e1a7c[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]=_0x2b02e5(0x199),_0x4aa466[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]=_0x2b02e5(0x199),_0x27f22a[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]='none',_0x52b733[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]='none',_0x4ce687[_0x2b02e5(0x1ea)]['display']=_0x2b02e5(0x199),_0x30af7d[_0x2b02e5(0x1ea)]['display']=_0x2b02e5(0x199),_0x3c084a[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]=_0x2b02e5(0x199),_0x1b0528[_0x2b02e5(0x1ea)][_0x2b02e5(0x1b0)]=_0x2b02e5(0x199),_0x322a90[_0x2b02e5(0x1ea)][_0x2b02e5(0x1f6)]=_0x2b02e5(0x1dc),_0xb4a8fa[_0x2b02e5(0x1ea)]['color']='#8e06fdda',_0x48db1b[_0x2b02e5(0x1ea)][_0x2b02e5(0x1f6)]=_0x2b02e5(0x1dc),_0x4def72['style'][_0x2b02e5(0x1f6)]=_0x2b02e5(0x1dc),_0xc152c9[_0x2b02e5(0x1ea)][_0x2b02e5(0x1c8)]=_0x2b02e5(0x1da),_0x5d09fd[_0x2b02e5(0x1ea)][_0x2b02e5(0x1c8)]=_0x2b02e5(0x1da),_0x1b6937['style'][_0x2b02e5(0x1c8)]='2px\x20solid\x20#8e06fdda',_0x240651[_0x2b02e5(0x1ea)][_0x2b02e5(0x1c8)]=_0x2b02e5(0x1da);}_0x33afa6[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x5a4a0a){const _0x252d18=_0x5d10bf;_0x5a4a0a[_0x252d18(0x15b)]();}),_0x33afa6['addEventListener']('click',_0x310139);const _0x22f4c0=document[_0x5d10bf(0x149)](_0x5d10bf(0x18e)),_0x5c1e6e=document[_0x5d10bf(0x149)]('revWordResponse'),_0x18e57f=document[_0x5d10bf(0x149)](_0x5d10bf(0x1b6));function _0x8728e(){const _0x3ffd1d=_0x5d10bf;_0x5c1e6e[_0x3ffd1d(0x1ea)][_0x3ffd1d(0x1b0)]=_0x3ffd1d(0x199),_0x18e57f[_0x3ffd1d(0x1ea)][_0x3ffd1d(0x1b0)]=_0x3ffd1d(0x1c0);}function _0xe4c33f(){const _0x137be7=_0x5d10bf;_0x5c1e6e[_0x137be7(0x1ea)][_0x137be7(0x1f6)]=_0x137be7(0x1cc),_0x5c1e6e[_0x137be7(0x1ea)]['display']=_0x137be7(0x1c0),_0x18e57f[_0x137be7(0x1ea)]['display']=_0x137be7(0x199);}function _0x2abb11(){setTimeout(function(){const _0x36293e=_0x1490;_0x22f4c0[_0x36293e(0x175)](),_0x8728e();},0xdac);};_0x18e57f[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x48c995){_0x48c995['preventDefault']();}),_0x18e57f[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x389def);function _0x389def(){const _0x59d0b0=_0x5d10bf;let _0x194a13=document['getElementById'](_0x59d0b0(0x1e2))['value']['split']('\x20')[_0x59d0b0(0x147)](),_0xbfd989=_0x194a13[_0x59d0b0(0x1f8)],_0x58afcc=[];if(_0xbfd989<=Math[_0x59d0b0(0x195)](0xa,0x4)||_0x194a13>=0x1){for(let _0x24a8f1=_0xbfd989-0x1;_0x24a8f1>=0x0;_0x24a8f1--){_0x194a13[_0x24a8f1][_0x59d0b0(0x1f8)]>0x0&&_0x58afcc['push'](_0x194a13[_0x24a8f1]);}_0xe4c33f(),_0x5c1e6e[_0x59d0b0(0x1c3)]=_0x58afcc[_0x59d0b0(0x147)]()['join']('\x20');}else _0x5d7cfb[_0x59d0b0(0x1c3)]=_0x59d0b0(0x16c);_0x2abb11();}_0x1e6a07['addEventListener'](_0x5d10bf(0x178),function(_0x1bc0ac){const _0x3caa07=_0x5d10bf;_0x1bc0ac[_0x3caa07(0x15b)]();}),_0x1e6a07[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x30af7d=document['getElementById'](_0x5d10bf(0x1ff)),_0x5ba459=document['getElementById'](_0x5d10bf(0x206)),_0x2a1e15=document[_0x5d10bf(0x149)](_0x5d10bf(0x204));function _0x5dd2dc(){const _0x7d97d9=_0x5d10bf;_0x30af7d[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]=_0x7d97d9(0x1c0),_0x1f08e3[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]=_0x7d97d9(0x1c0),_0x5e9367['style'][_0x7d97d9(0x1b0)]='none',_0x4c18ac[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]=_0x7d97d9(0x199),_0x27536b[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]=_0x7d97d9(0x199),_0xb43665[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]=_0x7d97d9(0x199),_0x1e1a7c[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]='none',_0x4aa466['style'][_0x7d97d9(0x1b0)]=_0x7d97d9(0x199),_0x27f22a[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]='none',_0x52b733[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]='none',_0x4ce687[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]=_0x7d97d9(0x199),_0x5d7cfb[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]='none',_0x3c084a[_0x7d97d9(0x1ea)][_0x7d97d9(0x1b0)]='none',_0x1b0528[_0x7d97d9(0x1ea)]['display']=_0x7d97d9(0x199),_0x322a90[_0x7d97d9(0x1ea)][_0x7d97d9(0x1f6)]=_0x7d97d9(0x14e),_0xb4a8fa[_0x7d97d9(0x1ea)][_0x7d97d9(0x1f6)]=_0x7d97d9(0x14e),_0x48db1b[_0x7d97d9(0x1ea)][_0x7d97d9(0x1f6)]='#f36c36ed',_0x4def72[_0x7d97d9(0x1ea)][_0x7d97d9(0x1f6)]=_0x7d97d9(0x14e),_0xc152c9[_0x7d97d9(0x1ea)]['border']=_0x7d97d9(0x176),_0x5d09fd[_0x7d97d9(0x1ea)][_0x7d97d9(0x1c8)]=_0x7d97d9(0x176),_0x1b6937[_0x7d97d9(0x1ea)][_0x7d97d9(0x1c8)]=_0x7d97d9(0x176),_0x240651[_0x7d97d9(0x1ea)][_0x7d97d9(0x1c8)]=_0x7d97d9(0x176);}_0x5ba459[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x533332){const _0x402262=_0x5d10bf;_0x533332[_0x402262(0x15b)]();}),_0x5ba459['addEventListener'](_0x5d10bf(0x178),_0x5dd2dc);const _0x2224b6=document['getElementById'](_0x5d10bf(0x1e9)),_0x4ed272=document['getElementById'](_0x5d10bf(0x19b)),_0x239640=document[_0x5d10bf(0x149)](_0x5d10bf(0x156));function _0x3e2f04(){const _0x2f3b13=_0x5d10bf;_0x4ed272[_0x2f3b13(0x1ea)][_0x2f3b13(0x1b0)]=_0x2f3b13(0x199),_0x239640[_0x2f3b13(0x1ea)][_0x2f3b13(0x1b0)]=_0x2f3b13(0x1c0);}function _0x4f47c9(){const _0x17a856=_0x5d10bf;_0x4ed272[_0x17a856(0x1ea)][_0x17a856(0x1b0)]=_0x17a856(0x1c0),_0x4ed272[_0x17a856(0x1ea)][_0x17a856(0x1f6)]='#e0e5ec',_0x239640['style']['display']='none';}function _0x1568b6(){setTimeout(function(_0x42fbf0){const _0x166deb=_0x1490;_0x2224b6[_0x166deb(0x175)](),_0x3e2f04();},0xbb8);};_0x239640[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x27e73d){const _0x344c1d=_0x5d10bf;_0x27e73d[_0x344c1d(0x15b)]();}),_0x239640[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x126ce4);function _0x126ce4(_0x30b37f){const _0x39e652=_0x5d10bf;_0x30b37f=document[_0x39e652(0x149)]('sm-all-text')[_0x39e652(0x1ce)];for(let _0x214c26=0x0;_0x214c26<_0x30b37f['length']-0x1;_0x214c26++){let _0x31b36f=/[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;_0x31b36f[_0x39e652(0x194)](_0x30b37f)?(_0x4f47c9(),_0x4ed272[_0x39e652(0x1c3)]=_0x39e652(0x168)):_0xe95765(),_0x1568b6();}}function _0xe95765(_0x553a8a){const _0x4d8053=_0x5d10bf;_0x553a8a=document[_0x4d8053(0x149)](_0x4d8053(0x1f3))['value'][_0x4d8053(0x151)]('\x20'),_0x553a8a=_0x553a8a[_0x4d8053(0x1dd)](Number);let _0x27c00a=Math[_0x4d8053(0x181)](_0x553a8a[0x0],_0x553a8a[0x1]),_0x37d86e=Math[_0x4d8053(0x1e0)](_0x553a8a[0x0],_0x553a8a[0x1]),_0x5c9011=0x0;for(let _0x2e027a=_0x37d86e;_0x2e027a<=_0x27c00a;_0x2e027a++){_0x5c9011+=_0x2e027a;}_0x4f47c9(),_0x4ed272[_0x4d8053(0x1c3)]=_0x5c9011+_0x4d8053(0x1d5)+_0x37d86e+_0x4d8053(0x160)+_0x27c00a,_0x1568b6();}_0x2a1e15[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x387595){const _0x2385d2=_0x5d10bf;_0x387595[_0x2385d2(0x15b)]();}),_0x2a1e15[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);const _0x3c084a=document[_0x5d10bf(0x149)](_0x5d10bf(0x1db)),_0x31b7ad=document[_0x5d10bf(0x149)](_0x5d10bf(0x16e)),_0x359317=document['getElementById'](_0x5d10bf(0x17c));function _0x240d13(){const _0x23ae62=_0x5d10bf;_0x3c084a[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x1c0),_0x1f08e3[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x1c0),_0x5e9367[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x4c18ac['style'][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x27536b[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0xb43665[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x1e1a7c[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x4aa466[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x27f22a[_0x23ae62(0x1ea)]['display']=_0x23ae62(0x199),_0x52b733['style'][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x4ce687[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]='none',_0x5d7cfb[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]='none',_0x30af7d[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x1b0528[_0x23ae62(0x1ea)][_0x23ae62(0x1b0)]=_0x23ae62(0x199),_0x322a90[_0x23ae62(0x1ea)]['color']='#05c0c7',_0xb4a8fa['style']['color']=_0x23ae62(0x1fa),_0x48db1b[_0x23ae62(0x1ea)][_0x23ae62(0x1f6)]=_0x23ae62(0x1fa),_0x4def72[_0x23ae62(0x1ea)]['color']=_0x23ae62(0x1fa),_0xc152c9[_0x23ae62(0x1ea)][_0x23ae62(0x1c8)]=_0x23ae62(0x1c5),_0x5d09fd[_0x23ae62(0x1ea)][_0x23ae62(0x1c8)]=_0x23ae62(0x1c5),_0x1b6937[_0x23ae62(0x1ea)][_0x23ae62(0x1c8)]=_0x23ae62(0x1c5),_0x240651['style'][_0x23ae62(0x1c8)]=_0x23ae62(0x1c5);};_0x31b7ad[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x1b73bd){const _0x54205d=_0x5d10bf;_0x1b73bd[_0x54205d(0x15b)]();}),_0x31b7ad[_0x5d10bf(0x18d)]('click',_0x240d13);const _0x4cada9=document['getElementById'](_0x5d10bf(0x1a8)),_0x2254b7=document['getElementById'](_0x5d10bf(0x148)),_0x3b8322=document['getElementById']('romeRepoHolder'),_0xa9f063=document['getElementById']('rome-btn');function _0x2eb064(){const _0x5cf5ba=_0x5d10bf;_0x3b8322[_0x5cf5ba(0x1ea)][_0x5cf5ba(0x1b0)]=_0x5cf5ba(0x199),_0x2254b7[_0x5cf5ba(0x1ea)][_0x5cf5ba(0x1b0)]=_0x5cf5ba(0x199),_0xa9f063[_0x5cf5ba(0x1ea)][_0x5cf5ba(0x1b0)]='block';}function _0x444765(){const _0x377c03=_0x5d10bf;_0x3b8322[_0x377c03(0x1ea)][_0x377c03(0x1b0)]=_0x377c03(0x1c0),_0x2254b7[_0x377c03(0x1ea)][_0x377c03(0x1f6)]=_0x377c03(0x1cc),_0x2254b7['style'][_0x377c03(0x1b0)]=_0x377c03(0x1c0),_0xa9f063[_0x377c03(0x1ea)][_0x377c03(0x1b0)]=_0x377c03(0x199);}function _0x531ab4(){setTimeout(function(){const _0x31994a=_0x1490;_0x4cada9[_0x31994a(0x175)](),_0x2eb064();},0xdac);};_0xa9f063[_0x5d10bf(0x18d)](_0x5d10bf(0x178),function(_0x14ef33){_0x14ef33['preventDefault']();}),_0xa9f063[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x1d5f94);function _0x1d5f94(_0x1a8826){const _0x1f47e3=_0x5d10bf;_0x1a8826=document[_0x1f47e3(0x149)](_0x1f47e3(0x1fc))[_0x1f47e3(0x1ce)],_0x1a8826=_0x1a8826[_0x1f47e3(0x1ae)](),console[_0x1f47e3(0x18a)](_0x1a8826);let _0x4fa74b=/^(M{1,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|M{0,4}(CM|C?D|D?C{1,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|M{0,4}(CM|CD|D?C{0,3})(XC|X?L|L?X{1,3})(IX|IV|V?I{0,3})|M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|I?V|V?I{1,3}))$/,_0x2f0959=/^[0-9]/,_0x168fdb=/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;if(_0x168fdb[_0x1f47e3(0x194)](_0x1a8826)&&_0x2f0959[_0x1f47e3(0x194)](_0x1a8826))_0x2254b7[_0x1f47e3(0x1c3)]=_0x1f47e3(0x172),_0x444765();else{if(_0x4fa74b[_0x1f47e3(0x194)](_0x1a8826))console[_0x1f47e3(0x18a)](_0x1f47e3(0x1e5)),_0x7875dd();else _0x2f0959['test'](_0x1a8826)?(console[_0x1f47e3(0x18a)]('Numbers'),_0x268494()):(_0x2254b7[_0x1f47e3(0x1c3)]=_0x1f47e3(0x188),_0x444765());}_0x531ab4();};function _0x268494(_0x30632e){const _0x469e4d=_0x5d10bf;_0x30632e=Number(document[_0x469e4d(0x149)](_0x469e4d(0x1fc))[_0x469e4d(0x1ce)]);if(_0x30632e<=0x0||_0x30632e>0xf9f)_0x444765(),_0x2254b7[_0x469e4d(0x1c3)]=_0x469e4d(0x173);else{const _0x2ccd14=new Map([[0x3e8,'M'],[0x384,'CM'],[0x1f4,'D'],[0x190,'CD'],[0x64,'C'],[0x5a,'XC'],[0x32,'L'],[0x28,'XL'],[0xa,'X'],[0x9,'IX'],[0x5,'V'],[0x4,'IV'],[0x1,'I']]);let _0x23d534='';while(_0x30632e>0x0){for(let [_0x50ba28,_0x127c80]of _0x2ccd14){if(_0x30632e>=_0x50ba28){_0x23d534+=_0x127c80,_0x30632e-=_0x50ba28;break;}}_0x444765(),_0x2254b7['innerHTML']=_0x23d534,console['log'](_0x23d534);}}}function _0x7875dd(_0x4c477d){const _0x16f066=_0x5d10bf;_0x4c477d=document[_0x16f066(0x149)](_0x16f066(0x1fc))[_0x16f066(0x1ce)][_0x16f066(0x1ae)](),strLength=_0x4c477d[_0x16f066(0x1f8)];const _0x52d79f=new Map([['I',0x1],['V',0x5],['X',0xa],['L',0x32],['C',0x64],['D',0x1f4],['M',0x3e8]]);if(strLength<=0x0||strLength>0xf)_0x444765(),_0x2254b7['innerHTML']=_0x16f066(0x1ed);else{let _0x4dbe41=strLength-0x1,_0x2c4744=_0x52d79f[_0x16f066(0x1e3)](_0x4c477d[_0x4dbe41]);console[_0x16f066(0x18a)](_0x2c4744);while(_0x4dbe41>0x0){const _0x26058b=_0x52d79f[_0x16f066(0x1e3)](_0x4c477d[_0x4dbe41]),_0x5024f5=_0x52d79f[_0x16f066(0x1e3)](_0x4c477d[_0x4dbe41-0x1]);_0x5024f5>=_0x26058b?_0x2c4744+=_0x5024f5:_0x2c4744-=_0x5024f5,_0x4dbe41--;}_0x2c4744>0xf9f?(_0x444765(),_0x2254b7['innerHTML']=_0x16f066(0x166)):(_0x444765(),_0x2254b7[_0x16f066(0x1c3)]=_0x2c4744);}};_0x359317['addEventListener'](_0x5d10bf(0x178),function(_0x26dbde){_0x26dbde['preventDefault']();}),_0x359317[_0x5d10bf(0x18d)](_0x5d10bf(0x178),_0x4e76c8);}));
+// HOME PAGE 
+document.addEventListener("DOMContentLoaded", () => {
+    // DOM ELEMENTS
+    const cardHolder = document.getElementById('dg-holder');
+    const mainDash = document.getElementById('algo-dash');
+    const infoDash = document.getElementById('info-dash');
+
+    // Header Elements
+    const info = document.getElementById('info-icon');
+    const infoBtn = document.getElementById('info-btn');
+    const title = document.getElementById('header-title');
+    const clock = document.getElementById('clock');
+    const mobileTitle = document.getElementById('mb-header-title');
+
+    // Footer Elements
+    const linkedIn = document.getElementById('linkedin');
+    const github = document.getElementById('github');
+    const twitter = document.getElementById('twitter');
+    const polywork = document.getElementById('polywork');
+    
+    function updateColor(color) {         //Refactor to use a single function
+        info.style.color = color;  
+        title.style.color= color;  
+        clock.style.color= color; 
+        mobileTitle.style.color= color;
+    }
+    
+
+    //***********************  INFORMATION DASH ****************************/
+    function openInfo() {
+        infoDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = "none";
+        cardHolder.style.display = "none";
+        updateColor('#6d88c8');
+        linkedIn.style.border = ' 2px solid #6d88c8';
+        github.style.border = '2px solid #6d88c8';
+        twitter.style.border = '2px solid #6d88c8';
+        polywork.style.border = '2px solid #6d88c8';
+    }
+    infoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    infoBtn.addEventListener('click', openInfo);
+
+    const closeInfo = document.getElementById('info-btn-close');
+    closeInfo.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    closeInfo.addEventListener('click', showHome);
+    //***********************  /INFORMATION DASH ****************************/
+
+    //***************************CLOCK ********************/
+    function Time() {
+        var date = new Date();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        
+        hour = update(hour);
+        minute = update(minute);
+        second = update(second);
+        document.getElementById("clock").innerHTML = hour + " : " + minute + " : " + second;
+        setTimeout(Time, 1000);
+    
+        function update(t) {
+            if (t < 10) {
+                return "0" + t;
+            } else {
+                return t;
+            }
+        }
+    }
+    
+    Time();
+    //***************************CLOCK ********************/
+
+    //***************************DASHBOARD ********************/
+    // SHOW HOME PAGE
+    function showHome() {
+        infoDash.style.display = 'none';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = "none";
+        cardHolder.style.display = "block";
+        updateColor('#c32abbc9');
+        linkedIn.style.border = ' 2px solid #c32abbc9';
+        github.style.border = '2px solid #c32abbc9';
+        twitter.style.border = '2px solid #c32abbc9';
+        polywork.style.border = '2px solid #c32abbc9';
+
+    }
+    // ******************ISOGRAM******************************
+
+    // ISOGRAM CONTAINER
+    const isoDash = document.getElementById('iso-container');
+    const isoBtn = document.getElementById('iso-play-btn');
+    const isoHomeBtn = document.getElementById("iso-btn-close");
+    
+    // SHOW ISOGRAM FROM HOMEPAGE
+    function showIso() {
+        isoDash.style.display = 'block';
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none';
+        updateColor('#37A4C8'); 
+        linkedIn.style.border = '2px solid #37A4C8';
+        github.style.border = '2px solid #37A4C8';
+        twitter.style.border = '2px solid #37A4C8';
+        polywork.style.border = '2px solid #37A4C8';
+    }
+    // PLAY ISOGRAM FROM HOMEPAGE
+    isoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    isoBtn.addEventListener('click', showIso);
+
+    // ISOGRAM FORM ELEMENTS
+    const form = document.getElementById("form");
+    const button = document.getElementById("check-input");
+    const response = document.getElementById("eval");
+
+    // ISOGRAM RESPONSE FUNCTIONS
+    function hideRes() {
+        response.style.display = "none"
+        button.style.display = "block"
+    }
+    function showRes() {
+        response.style.display = "block"
+        response.style.color = "#37A4C8"
+        button.style.display = "none"
+    }
+    // CLEARS ISOGRAM FORM
+    function clearForm() {
+        setTimeout(function() {
+            form.reset();
+            hideRes();
+        }, 2500);
+    };
+
+    // PREVENT THE DEFAULT BEHAVIOR OF THE BUTTON AND CALL ISOGRAM CRITERIA EVALUATION FUNCTION
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    button.addEventListener('click', evalString);
+
+    // EVALUATE THE STRING AGAINST CRITERIA
+    function evalString(str) {
+        
+        str = document.getElementById("isogramText").value;
+
+        // ISOGRAM CRITERIA
+        for (let i = 0; i < str.length - 1; i++){
+            let specialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+            let numbers = /\d/
+            
+            if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
+                showRes();
+                response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
+                
+
+            }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
+                showRes();
+                response.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
+            
+
+            }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
+                showRes();
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
+                
+
+            }else if(specialChar.test(str) && numbers.test(str)){
+                showRes();
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
+                
+
+            }else if(str.indexOf(' ') >= 0){
+                showRes();
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
+
+
+            }else if(specialChar.test(str)) {
+                showRes();
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
+                
+
+            }else if(numbers.test(str)) {
+                showRes();
+                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
+                
+            }
+            else {
+                // CALL THE ISOGRAM FUNCTION
+                isIsogram();
+            }     
+            clearForm();
+        };
+        
+    };    
+
+    // DETERMINING IF THE STRING IS AN ISOGRAM
+    function isIsogram() {
+        // get the user input
+        var str = document.getElementById("isogramText").value;
+        // convert the string to a lowercase array
+        var letters = str.toLowerCase().split('');
+        
+        // initialize an empty array for comparison to letters array 
+        var newLetters = [];
+        
+        
+       
+        // Use ForEach() to iterate over each substring in the letters array and compare it to the newLetters array.
+            // if the substring does not exist(indexOf -1) in the newLetters array, then add it.
+        letters.forEach(function(item, i, arr){
+            if (newLetters.indexOf(item) === -1) {
+                newLetters.push(item);
+            }
+        });
+
+        // Compare the length the arrays
+            // If they are strictly equal, then the word IS an isogram
+            // Else, the length is not strictly equal, then the word is NOT an isogram
+                //WHY? Substrings that repeat, will not have an index of -1 and not be added to newLetters array, 
+                    // resulting in newLettersLength < letterLength
+        if(newLetters.length === letters.length) {
+            // return true;
+            showRes();
+            response.innerHTML = "'"+`${str}`+"'" + " IS an isogram."
+           
+        }else {
+            // return false;
+            showRes();
+            response.innerHTML = "'"+`${str}`+"'" + " is NOT an isogram."
+        }
+        
+    };
+
+    // CLOSE ISOGRAM 
+    isoHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    isoHomeBtn.addEventListener('click', showHome);
+
+
+    // ******************PALINDROME******************************
+
+    // PALINDROME DASH ELEMENTS
+    const palDash = document.getElementById('palindrome');
+    const palBtn = document.getElementById('pal-play-btn');
+    const palHomeBtn = document.getElementById("pal-btn-close");
+
+    // OPEN PALINDROME DASH FROM HOMEPAGE
+    function showPal() {
+        palDash.style.display = 'block';
+        isoDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none';
+        updateColor('#FFA500');
+        linkedIn.style.border = '2px solid #FFA500';
+        github.style.border = '2px solid #FFA500';
+        twitter.style.border = '2px solid #FFA500';
+        polywork.style.border = '2px solid #FFA500';
+    }
+    // PLAY BUTTON TO OPEN PALINDROME DASH
+    palBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    palBtn.addEventListener('click', showPal);
+
+    // PALINDROME FORM ELEMENTS
+    const palForm = document.getElementById("pal-form");
+    const palOutcome = document.getElementById("palResponse");
+    const buttonCheckPal = document.getElementById("pal-check-string");
+
+    // PALINDROME RESPONSE FUNCTIONS
+    function hidePalOutcome() {
+        palOutcome.style.display ="none";
+        buttonCheckPal.style.display = "block";
+    }
+    function showPalOutcome() {
+        palOutcome.style.display ="block";
+        palOutcome.style.color = "#FFA500";
+        buttonCheckPal.style.display = "none";
+
+    }
+    
+    // CLEAR PALINDROME FORM
+    function clearPalForm() {
+        setTimeout(function() {
+            palForm.reset();
+            hidePalOutcome();
+        }, 3500);
+    };
+
+    // BUTTON TO CHECK PALINDROME STRING INPUT
+    buttonCheckPal.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonCheckPal.addEventListener('click', palindromeChecker);
+
+
+    // PALINDROME CHECK STRING FUNCTION
+    function palindromeChecker(str) {
+        let words = document.getElementById("pal-text").value;
+
+        // Use regex to search for occurences of only letters and numbers
+        let regEx = /[^a-z0-9]/gi;
+        // 
+        let newStrArr = words.replace(regEx,'').toLowerCase().split('');
+        // 
+        let newStr = newStrArr.join('');
+        // 
+        let revNewStr = newStrArr.reverse().join('');
+        if( newStr === revNewStr ) {
+            showPalOutcome();
+            palOutcome.innerHTML ="' " + `${words}`+ " '"  + " IS a palindrome"; 
+        }else {
+            showPalOutcome();
+            palOutcome.innerHTML = "' " + `${words}`+ " '"  +  " is NOT a palindrome";
+        }
+        clearPalForm()
+    }
+
+    // CLOSE PALINDROME DASH
+    palHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    palHomeBtn.addEventListener('click', showHome);
+
+
+    /****************************TWO SUM********************************************/
+    
+    // TWO SUM CONTAINER ELEMENTS
+    const twoDash = document.getElementById('two-sum');
+    const twoBtn = document.getElementById('two-play-btn');
+    const twoHomeBtn = document.getElementById("ts-btn-close");
+
+    // OPEN TWO SUM DASH FROM HOMEPAGE
+    function showTwo() {
+        twoDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none'; 
+        updateColor('#5b0eeb');
+        linkedIn.style.border = '2px solid #5b0eeb';
+        github.style.border = '2px solid #5b0eeb';
+        twitter.style.border = '2px solid #5b0eeb';
+        polywork.style.border = '2px solid #5b0eeb';
+    }
+
+    // PLAY BUTTON TO OPEN TWO SUM DASH
+    twoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    twoBtn.addEventListener('click', showTwo);
+
+    // TWO SUM FORM ELEMENTS
+    const tsForm = document.getElementById("ts-form");
+    const sumOutcome = document.getElementById("sumResponse");
+    const buttonSum = document.getElementById("check-sum");
+
+
+    // TWO SUM RESPONSE FUNCTIONS
+    function hideOutcome() {
+        sumOutcome.style.display ="none";
+        buttonSum.style.display = "block";
+    }
+    function showOutcome() {
+        sumOutcome.style.display ="block";
+        sumOutcome.style.color = "#e0e5ec";
+        buttonSum.style.display = "none";
+    }
+
+    // TWO SUM CLEAR FORM
+    function clearTsForm() {
+        setTimeout(function(e) {
+            tsForm.reset();
+            hideOutcome();
+        }, 3000);
+    };
+
+    // TWO SUM BUTTON TO CHECK INPUT
+    buttonSum.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonSum.addEventListener('click', checkTsInput);
+
+    // CHECK TWO SUM CONDITION
+    // CHECK THE ARRAY
+    function checkTsInput(arr) {
+        arr = document.getElementById("randomNumbers").value;
+        // Loop through the arr
+        for (let i = 0; i < arr.length - 1; i++){
+
+            // regex for letter and special characters or just letters or just special characters
+            let specialCases = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+            
+            //if the array contains letters or special characters
+            if(specialCases.test(arr)) {
+
+                // if yes, user gets prompted to enter the correct data type
+                showOutcome();
+                sumOutcome.innerHTML = "Enter only numbers";
+    
+            }else{
+                //otherwise, check if target is a number
+                checkTarget()
+            }
+            // clear the form after the function runs
+            clearTsForm()
+        }   
+    }
+
+    // CHECK TARGET NUMBER
+    function checkTarget(target) {
+        target = document.getElementById("targetNumber").value;
+
+        // regex for letter and special characters or just special characters
+        let specialCases = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+            
+        // if the target contains letters or special characters
+        if(specialCases.test(target)) {
+            showOutcome();
+            sumOutcome.innerHTML = "Enter a number";
+            
+        } else{
+        //otherwise, call length of twoSum function
+            twoSum()
+        }
+        // clear the form after the function runs
+        clearTsForm()
+    }
+
+    // TWO SUM FUNCTION       
+    function twoSum(arr, target) {
+        // var twoSum = true
+        // get value of target 
+        target = document.getElementById("targetNumber").value;
+
+        // get DOM input and separates at each space between numbers
+        arr = document.getElementById("randomNumbers").value.split(" ");
+
+        // makes sure array is numbers
+        arr = arr.map(Number)
+
+        // create an object/hash map to store key-value pairs
+        let numsObj = {};
+
+        // use a loop to check if the two numbers are present
+        for (let i = 0; i < arr.length; i++) {
+            //assign someNum to the first number found in the array
+            let someNum = arr[i];
+
+            // find the second value and assign it to numDifference
+            let numDifference = target - someNum;
+            
+            // in the object, if the value of the first number is in the object, its NOT undefined
+            if (numsObj[someNum] !== undefined ) {
+                //get the index of the first number from the original array and assign it
+                let indexOne = numsObj[someNum];
+                // get the index of the second number and assign it
+                let indexTwo = i;
+                
+                // the two sums were found
+                showOutcome();
+                sumOutcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
+                break;
+            }else { 
+                // the two sums were not found
+                numsObj[numDifference] = i
+                let newArr = arr.join(", ")
+                showOutcome();
+                sumOutcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
+                
+            }
+            clearTsForm()
+        }
+    } 
+
+    // CLOSE TWO SUM DASH
+    twoHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    twoHomeBtn.addEventListener('click', showHome);
+
+    // **************************************SPIN WORDS****************************************************
+    // SPIN WORDS DASH ELEMENTS
+    const spinDash = document.getElementById('spin-words');
+    const spinBtn = document.getElementById('spin-play-btn');
+    const spinHomeBtn = document.getElementById('spin-btn-close');
+    
+
+    // OPEN SPIN WORDS DASH FUNCTION
+    function showSpin() {
+        spinDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none'; 
+        updateColor('#f89898');
+        linkedIn.style.border = '2px solid #f89898';
+        github.style.border = '2px solid #f89898';
+        twitter.style.border = '2px solid #f89898';
+        polywork.style.border = '2px solid #f89898';
+    }
+    // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
+    spinBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    spinBtn.addEventListener('click', showSpin);
+
+    // SPIN WORD FORM ELEMENTS
+    const swForm = document.getElementById("sw-form");
+    const swOutcome = document.getElementById("swResponse");
+    const buttonSpin = document.getElementById("sw-spin");
+
+    // SPIN RESPONSE FUNCTIONS
+    function hideSwOutcome() {
+        swOutcome.style.display ="none";
+        buttonSpin.style.display = "block";
+    }
+    function showSwOutcome() {
+        swOutcome.style.display ="block";
+        swOutcome.style.color = "#e0e5ec";
+        buttonSpin.style.display = "none";
+    }
+
+    // SPIN WORDS FORM FUNCTION
+    function clearSwForm() {
+        setTimeout(function() {
+            swForm.reset();
+            hideSwOutcome();
+        }, 5000);
+    };
+
+    // CHECK SPIN INPUT 
+    buttonSpin.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonSpin.addEventListener('click', checkSwInput);
+
+    // CHECK SPIN INPUT FUNCTION
+    function checkSwInput(str, num) {
+        var str = document.getElementById("sw-text").value;
+        var num = Number(document.getElementById("sw-num").value);
+        doFirst(str, num);
+
+        // CHECK STRING FUNCTION
+        function doFirst(str, num) {
+            if (num == "0" && str == "") {
+                showSwOutcome();
+                swOutcome.innerHTML = "Please enter a word/words and a number greater than 0";
+                
+                // clearSwForm();
+           
+            }else if(num =="0" && str != "") {
+                showSwOutcome();
+                swOutcome.innerHTML = "Please enter a number greater than 0";
+                
+                // clearSwForm();
+            }else if ( num != "0" && str == "") {
+                showSwOutcome();
+                swOutcome.innerHTML = "Please enter a word/words";
+                
+                // clearSwForm();
+
+            }else{
+                checkValues()
+            
+            }
+            clearSwForm();
+        }   
+        
+    
+        // CHECK VALUES FUNCTION   
+        function checkValues() {
+            
+            for (let i = 0; i < str.length-1; i++){
+                // regex for letter and special characters or just special characters
+                let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+                let letters = /[A-Za-z]/
+                //regev for letters and numbers or just numbers
+                let numbers = /[A-Za-z]\d|\d/
+    
+                
+                //check if either regex pattern is present in the string
+                if(specialChar.test(str) || numbers.test(str)) {
+                    // if yes, user gets prompted to enter the correct data type
+                    swOutcome.innerHTML = "Enter only letters in the text field";
+                    showSwOutcome();
+
+                } else if (letters.test(num) || specialChar.test(num)) {
+                    // if yes, user gets prompted to enter the correct data type
+                    swOutcome.innerHTML = "Enter only numbers in the number field";
+                    showSwOutcome();
+                } else{
+                    //otherwise, call spin words function
+                    spinWords()
+                }
+                // clear the form after the function runs
+            }
+            clearSwForm()
+        }   
+    
+        // SPIN WORDS FUNCTION
+        function spinWords() {
+
+            //convert the string to an array
+            let words = document.getElementById("sw-text").value.toLowerCase().split(" ");
+            let userNum = document.getElementById("sw-num").value;
+
+            //using a for loop, check each word, i, in the array
+            for(let i = 0; i < words.length; i++){
+                //if a word in the array has "userNum" or more letters
+                if(words[i].length >= userNum) {
+                    // split the word, reverse it, then join the letters
+                    
+                    words[i] = words[i].toLowerCase().split("").reverse().join("");
+                    // convert the array to a string 
+                    let spin = words.join("  ");
+                    // user feedback
+                    showSwOutcome();
+                    swOutcome.innerHTML = `${spin}`;   
+                    
+                } else {
+                    // the array has no words with 5 or more letters
+                    // convert the original array to a string and assign it locally
+                    let original = words.join("  ")
+                    //user feedback
+                    showSwOutcome();
+                    swOutcome.innerHTML = "There are NO words that are " + `${userNum}`+ " characters  long";    
+                }
+            }
+        }
+    }
+
+    // CLOSE SPIN WORDS DASH
+    spinHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    spinHomeBtn.addEventListener('click', showHome);
+
+
+    //****************************************LENGTH OF THE LONGEST WORD****************************************************************** */
+
+    // LENGTH OF THE LONGEST WORD DASHBOARD ELEMENTS
+    const llwDash = document.getElementById('longest-word');
+    const llwBtn = document.getElementById('llw-play-btn');
+    const llwHomeBtn = document.getElementById('lw-btn-close');
+    
+
+    // OPEN LENGTH OF THE LONGEST WORD DASHBOARD
+    function showLength() {
+        llwDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        mainDash.style.display = 'block';
+        cardHolder.style.display = 'none'; 
+        updateColor('#35c048');
+        linkedIn.style.border = '2px solid #35c048';
+        github.style.border = '2px solid #35c048';
+        twitter.style.border = '2px solid #35c048';
+        polywork.style.border = '2px solid #35c048';
+    }
+
+    // PLAY LENGTH OF THE LONGEST WORD BUTTON
+    llwBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    llwBtn.addEventListener('click', showLength);
+
+    // LENGTH OF THE LONGEST WORD FORM ELEMENTS
+    const lwForm = document.getElementById("lw-form");
+    const lwOutcome = document.getElementById("lwResponse");
+    const buttonCheckLongest = document.getElementById("lw-check-string");
+
+    // LENGTH OF THE LONGEST WORD RESPONSE FUNCTIONS
+    function hideLwOutcome() {
+        lwOutcome.style.display ="none";
+        buttonCheckLongest.style.display = "block";
+    }
+    function showLwOutcome() {
+        lwOutcome.style.display = "block";
+        lwOutcome.style.color = "#35c048";
+        buttonCheckLongest.style.display = "none";
+    }
+    // CLEAR LENGTH OF THE LONGEST WORD FORM
+    function clearLwForm() {
+        setTimeout(function() {
+            lwForm.reset();
+            hideLwOutcome();
+        }, 5000);
+    };
+
+    // CHECK LENGTH OF THE LONGEST WORD BUTTON
+    buttonCheckLongest.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonCheckLongest.addEventListener('click', checkLwInput);
+
+    // CHECK LENGTH OF THE LONGEST WORD INPUT FUNCTION
+    function checkLwInput(str) {
+        var str = document.getElementById("lw-text").value;
+
+        // Loop through the string
+        for (let i = 0; i < str.length - 1; i++){
+            // regex for letter and special characters or just special characters
+            let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+            
+            //regev for letters and numbers or just numbers
+            let numbers = /[A-Za-z]\d|\d/
+
+            //check if either regex pattern is present in the string
+            if(specialChar.test(str) || numbers.test(str)) {
+
+                // if yes, user gets prompted to enter the correct data type
+                showLwOutcome();
+                lwOutcome.innerHTML = "Enter only letters";
+                
+    
+            }else{
+                //otherwise, call spin words function
+                findLongestWord()
+            }
+            // clear the form after the function runs
+            clearLwForm()
+        }   
+    }
+
+    // FIND LONGEST WORD FUNCTION
+    function findLongestWord(str) {
+        let strArr = document.getElementById("lw-text").value.split(' ');
+        let longestWordLength = 0;
+        
+        for(let i = 0; i < strArr.length; i++) {
+            if(strArr[i].length > longestWordLength) {
+                longestWordLength = strArr[i].length;
+                theWord = strArr[i]
+                
+                showLwOutcome();
+                lwOutcome.innerHTML = "'" +`${theWord}`+"': " + `${longestWordLength}`;
+            }
+        }
+    }
+    // CLOSE LENGTH OF THE LONGEST WORD DASH
+    llwHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    llwHomeBtn.addEventListener('click', showHome);
+
+    /* *************************    FACTORIALIZE    ******************************************************* */
+
+
+    // Factorialize a Number Container
+    const factDash = document.getElementById('factorialize');
+    const factBtn = document.getElementById('fact-play-btn');
+    const factHomeBtn = document.getElementById('fact-btn-close');
+
+    // OPEN FACTORIALIZE DASHBOARD
+    function showFact() {
+        factDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        cardHolder.style.display = 'none';
+        updateColor('#eb0e96');
+        linkedIn.style.border = '2px solid #eb0e96';
+        github.style.border = '2px solid #eb0e96';
+        twitter.style.border = '2px solid #eb0e96';
+        polywork.style.border = '2px solid #eb0e96';
+    }
+
+    // PLAY FACTORIALIZE BUTTON
+    factBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    factBtn.addEventListener('click', showFact);
+
+    // FACTOIRALIZE FORM ELEMENTS
+    const factForm = document.getElementById("fact-form");
+    const factOutcome = document.getElementById("factResponse");
+    const buttonGetFact = document.getElementById("fact-btn");
+
+    // FACTOIRALIZE RESPONSE FUNCTIONS
+    function hideFactOutcome() {
+        factOutcome.style.display ="none";
+        buttonGetFact.style.display = "block";
+    }
+    function showFactOutcome() {
+        factOutcome.style.color = "#e0e5ec";
+        factOutcome.style.display ="block";
+        buttonGetFact.style.display = "none";
+    }
+    // CLEAR FACTOIRALIZE FORM
+    function clearFactForm() {
+        setTimeout(function() {
+            factForm.reset();
+            hideFactOutcome();
+        }, 3500);
+    };
+    // FACTOIRALIZE BUTTON
+    buttonGetFact.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonGetFact.addEventListener('click', Factorial);
+
+    // FACTORIALIZE FUNCTION
+    function Factorial() {
+        //get input from form
+        var num = document.getElementById("fact-text").value;
+        // console.log(num);
+        let integer = Number(num);
+        // console.log(integer);
+        // assign conditions to variables
+        let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
+        let fact = 1
+        
+        
+        if (integer === 1 || integer === 0) {
+            showFactOutcome()
+            factOutcome.innerHTML ="The factorial of " +`${integer}`+ " is 1";
+            //clearFactForm();
+
+        }else if (integer < 0 && decimalCheck.test(integer)) {
+            showFactOutcome()
+            factOutcome.innerHTML = `${integer}`+ " is NOT an integer";
+            //clearFactForm();
+        }else if (integer < 0) {
+            showFactOutcome()
+            factOutcome.innerHTML = "The factorial of " +`${integer}`+ " is UNDEFINED";
+            //clearFactForm();
+        }else if (decimalCheck.test(integer)) {
+            showFactOutcome()
+            factOutcome.innerHTML = `${integer}` + " is NOT a whole number";
+            //clearFactForm();
+        } else {
+            for(let i = 1; i <= integer; i++) {
+                fact *= i;
+                showFactOutcome()
+                factOutcome.innerHTML = `${fact}` + " is the factorial of " + `${integer}`;
+                
+            }
+        }
+        clearFactForm();
+    }
+
+    // CLOSE FACTORIALIZE DASH
+    factHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    factHomeBtn.addEventListener('click', showHome);
+
+
+    // ****************************************   PALINDROME NUMBER    *********************************************
+
+    // PALINDROME NUMBER DASHBOARD ELEMENTS
+    const palNumDash = document.getElementById('pal-num');
+    const palNumBtn = document.getElementById('pn-play-btn');
+    const palNumHomeBtn = document.getElementById('pn-btn-close');
+    
+
+    // OPEN PALINDROME NUMBER DASHBOARD
+    function showPalNum() {
+        palNumDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        cardHolder.style.display = 'none'; 
+        updateColor('#0b7c739d');
+        linkedIn.style.border = '2px solid #0b7c739d';
+        github.style.border = '2px solid #0b7c739d';
+        twitter.style.border = '2px solid #0b7c739d';
+        polywork.style.border = '2px solid #0b7c739d';
+    }
+    // PLAY PALINDROME NUMBER BUTTON
+    palNumBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    palNumBtn.addEventListener('click', showPalNum);
+
+
+    // PALINDROME NUMBER FORM ELEMENTS
+    const palNumForm = document.getElementById("pn-form");
+    const palNumOutcomeHolder = document.getElementById("pnRepoHolder");
+    const palNumOutcome = document.getElementById("pnResponse");
+    const buttonIsPalNum = document.getElementById("pn-btn");
+    
+
+    // PALINDROME NUMBER RESPONSE FUNCTIONS
+    function hidePalNumOutcome() {
+        palNumOutcomeHolder.style.display ="none";
+        palNumOutcome.style.display ="none";
+        buttonIsPalNum.style.display ="block";
+    }
+    function showPalNumOutcome() {
+        palNumOutcomeHolder.style.display ="block";
+        palNumOutcome.style.display ="block";
+        palNumOutcome.style.color = "#e0e5ec";
+        buttonIsPalNum.style.display ="none";
+    }
+    // CLEAR PALINDROME NUMBER FORM
+    function clearPalNumForm() {
+        setTimeout(function() {
+            palNumForm.reset();
+            hidePalNumOutcome();
+        }, 3500);
+    };
+
+    // PALINDROME NUMBER BUTTON
+    buttonIsPalNum.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonIsPalNum.addEventListener('click', isPalNum);
+
+    // PALINDROME NUMBER FUNCTION
+    function isPalNum(num) {
+        // get input from form
+        var num = document.getElementById("pn-text").value;
+        // convert input to an array, reverse it, and join it back together
+        let intArr =  parseInt(num.toString().split("").reverse().join(""))
+        
+        // regex for non-whole numbers
+        let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
+    
+        // check for input conditions and challenge constraints
+        if (decimalCheck.test(num)) {
+            showPalNumOutcome();
+            palNumOutcome.innerHTML = `${num}`+ " is NOT an integer";
+            clearPalNumForm();
+
+        } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
+            showPalNumOutcome();
+            palNumOutcome.innerHTML = `${num}`+ " is not within the constraints";
+            clearPalNumForm();
+        }else if(intArr == num ) {
+            showPalNumOutcome();
+            palNumOutcome.innerHTML = `${num}`+ " is a Palindrome Number";
+            clearPalNumForm();
+        }else {
+            showPalNumOutcome();
+            palNumOutcome.innerHTML = `${num}`+ " is NOT a Palindrome Number";
+            clearPalNumForm();
+        }
+    }
+
+    // CLOSE PALINDROME NUMBER DASH
+    palNumHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    palNumHomeBtn.addEventListener('click', showHome);
+
+
+    // ********************************     REVERSE INTEGER       ********************************************************
+
+    // REVERSE INTEGER DASHBOARD ELEMENTS
+    const revIntDash = document.getElementById('reverse-int');
+    const revIntBtn = document.getElementById('rev-play-btn');
+    const revIntHomeBtn = document.getElementById('rev-int-btn-close');
+    
+
+    // OPEN REVERSE INTEGER DASHBOARD
+    function showRevInt() {
+        revIntDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        cardHolder.style.display = 'none'; 
+        lnsDash.style.display = 'none';
+        updateColor('#8790e0'); 
+        linkedIn.style.border = '2px solid #8790e0';
+        github.style.border = '2px solid #8790e0';
+        twitter.style.border = '2px solid #8790e0';
+        polywork.style.border = '2px solid #8790e0';
+    }
+    // PLAY REVERSE INTEGER BUTTON
+    revIntBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    revIntBtn.addEventListener('click', showRevInt);
+
+    // REVERSE INTEGER FORM ELEMENTS
+    const revIntForm = document.getElementById("rev-int-form");
+    const revIntOutcome = document.getElementById("revResponse");
+    const buttonRevInt = document.getElementById("rev-int-btn");
+
+    
+    // REVERSE INTEGER RESPONSE FUNCTIONS
+    function hideRevIntOutcome() {
+        revIntOutcome.style.display ="none";
+        buttonRevInt.style.display = "block";
+    }
+    function showRevIntOutcome() {
+        revIntOutcome.style.display ="block";
+        revIntOutcome.style.color = "#e0e5ec";
+        buttonRevInt.style.display = "none";
+    }
+    // CLEAR REVERSE INTEGER FORM
+    function clearRevIntForm() {
+        setTimeout(function() {
+            revIntForm.reset();
+            hideRevIntOutcome();
+        }, 3000);
+    };
+
+    // REVERSE INTEGER BUTTON
+    buttonRevInt.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonRevInt.addEventListener('click', reverseInt);
+
+    // REVERSE INTEGER FUNCTION
+    function reverseInt(num) {
+        // Get the input value
+        var num = document.getElementById("rev-int-text").value;
+
+        // Check if the input is empty
+        let intArr =  parseInt(num.toString().split("").reverse().join(""))
+        
+        // regex to check for non whole numbers
+        let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
+
+        // regex for letter and special characters or just special characters
+        let specialChar = /[A-Za-z][!@#$%^&*()_+\=\[\]{};':"\\|,<>\/?]|[!@#$%^&*()_+\=\[\]{};':"\\|,<>\/?]/
+        
+        // regex for letts only
+        let letters = /[A-Za-z]/  
+        
+        
+        // check for input conditions and challenge constraints
+        if (num === "" || specialChar.test(num) || letters.test(num)) {
+            showRevIntOutcome();
+            revIntOutcome.innerHTML = "Please enter a number";
+            
+        } else if (num == "0"){
+            showRevIntOutcome();
+            revIntOutcome.innerHTML = `${num}`;
+            
+        }else if (decimalCheck.test(num)) {
+            showRevIntOutcome();
+            revIntOutcome.innerHTML = `${num}`+ " is not an integer";
+           
+
+        } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
+            showRevIntOutcome();
+            revIntOutcome.innerHTML = `${num}`+ " is not within the constraints";
+            
+        }else if(num < 0 ) {
+            // Consider -/+ inputs using
+            let negInt = -Math.abs(intArr)
+
+            showRevIntOutcome();
+            revIntOutcome.innerHTML = `${negInt}`;
+            
+        }else {
+            num > 0 ? showRevIntOutcome() : showRevIntOutcome();
+            // showRevIntOutcome
+            let revInt = Math.abs(intArr)
+            revIntOutcome.innerHTML = `${revInt}`;
+            
+        }
+        clearRevIntForm();
+    }
+
+
+    // CLOSE REVERSE INTEGER DASH
+    revIntHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    revIntHomeBtn.addEventListener('click', showHome);
+
+    // ********************************  LONGEST NON-REPEATING SUBSTRING      ********************************************************
+
+    // Longest Non-Repeating Substring Container
+    const lnsDash = document.getElementById('lnr');
+    const lnsBtn = document.getElementById('lnr-play-btn');
+    const lnsHomeBtn = document.getElementById('lnr-btn-close');
+    
+
+    // OPEN LONGEST NON-REPEATING SUBSTRING DASHBOARD
+    function showLns() {
+        lnsDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        cardHolder.style.display = 'none'; 
+        updateColor('#ff0000');
+        linkedIn.style.border = '2px solid #ff0000';
+        github.style.border = '2px solid #ff0000';
+        twitter.style.border = '2px solid #ff0000';
+        polywork.style.border = '2px solid #ff0000';
+    }
+    // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
+    lnsBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    lnsBtn.addEventListener('click', showLns);
+
+    // DOM Elements
+    const lnsForm = document.getElementById("lns-form");
+    const lnsOutcome = document.getElementById("lnsResponse");
+    const buttonCheckStr = document.getElementById("lns-btn");
+   
+    // LONGEST NON-REPEATING SUBSTRING RESPONSE FUNCTIONS
+    function hideLsOutcome() {
+        lnsOutcome.style.display ="none";
+        buttonCheckStr.style.display = "block";
+    }
+    // show the output text
+    function showLsOutcome() {
+        lnsOutcome.style.display ="block";
+        lnsOutcome.style.color = "#e0e5ec";
+        buttonCheckStr.style.display = "none";
+    };
+    // CLEAR LONGEST NON-REPEATING SUBSTRING FORM
+    function clearLnsForm() {
+        setTimeout(function() {
+            lnsForm.reset();
+            hideLsOutcome();
+        }, 3000);
+    };
+
+    // CHECK LONGEST NON-REPEATING SUBSTRING BUTTON
+    buttonCheckStr.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonCheckStr.addEventListener('click', checkLsInput);
+
+
+    // CHECK LONGEST NON-REPEATING SUBSTRING INPUT FUNCTION
+    function checkLsInput(str) {
+        // Get the input value
+        var str = document.getElementById("lns-text").value;
+
+        // Loop through the string
+        if (str != ""){
+            for (let i = 0; i < str.length - 1; i++){
+                // regex for letter and special characters or just special characters
+                let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+                
+                //regev for letters and numbers or just numbers
+                let numbers = /[A-Za-z]\d|\d/
+
+                //check if either regex pattern is present in the string
+                if(specialChar.test(str) || numbers.test(str)) {
+
+                    // if yes, user gets prompted to enter the correct data type
+                    lnsOutcome.innerHTML = "Enter only letters";
+                    showLsOutcome();
+                
+                }else{
+                    //otherwise, call length of string function
+                    getLongestSubstring()
+                }
+                // clear the form after the function runs
+                clearLnsForm()
+            } 
+        }else{
+            showLsOutcome();
+            lnsOutcome.innerHTML = "0";
+            clearLnsForm()
+        }  
+    }
+
+    // LONGEST NON-REPEATING SUBSTRING FUNCTION
+    function getLongestSubstring(str) {
+        var str = document.getElementById("lns-text").value;
+        
+        let i;
+        let strLength = str.length;
+    
+        // assign the starting point of current substring.
+        let currentStart = 0;
+    
+        // assign the length of current substring.
+        let currentLength;
+    
+        // assign the max length substring without repeating characters.
+        let maxLength = 0;
+    
+        // assign the starting index of max length substring.
+        let maxLengthStart;
+    
+        // create a Hash Map to store last instance of each
+            // visited letter.
+        let visitedMap = new Map();
+    
+        // index the last instance of the first letter at 0;
+        visitedMap.set(str[0], 0);
+    
+        // loop through the string
+        for (let i = 1; i < strLength; i++) {
+            
+            // use Map.has() to check if the letter is NOT in the visited map,
+                // if true, use Map.set() to add it to the visited map.
+            if (!visitedMap.has(str[i])) {
+                visitedMap.set(str[i], i) ;
+    
+            }else if (visitedMap.get(str[i]) >= currentStart){
+                // if the letter IS in visited map, then
+                    // use Map.get() to check if is was before
+                    // or after the start of the current substring.
+
+                // find length of current substring
+                currentLength = i - currentStart;
+                    if (maxLength < currentLength) {
+                        //if the maxLength is less than currentLength,
+                            // update maxLength and maxLengthStart
+                        maxLength = currentLength;
+                        maxLengthStart = currentStart;
+                    }
+                // update currentStart to the last instance of
+                    // the current letter.
+                currentStart = visitedMap.get(str[i]) + 1;
+            }
+            // Update last instance of current letter in visited map.
+            visitedMap.set(str[i], i);
+        }
+    
+        // Compare length of last substring with maxLength 
+            // update maxLength and maxLengthStart
+        if (maxLength < i - currentStart) {
+            maxLength = i - currentStart;
+            maxLengthStart = currentStart;
+        }
+        // GET LONGEST NON-REPEATING SUBSTRING AND ITS LENGTH
+        let longestUniqueSub =  str.substr(maxLengthStart,maxLength);
+        let lengthOfUniqueSub = longestUniqueSub.length;
+
+        showLsOutcome();
+        lnsOutcome.innerHTML = "'"+ longestUniqueSub + "'" + " is " + lengthOfUniqueSub + " letters long" 
+    }
+    clearLnsForm();
+
+    // CLOSE LONGEST NON-REPEATING SUBSTRING 
+    lnsHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+    });
+    lnsHomeBtn.addEventListener('click', showHome);
+
+
+    // ********************************  REVERSE WORD/S     ********************************************************
+
+
+    // REVERSE WORD/S DASHBOARD ELEMENTS
+    const revWordDash = document.getElementById('rev-word');
+    const revWordBtn = document.getElementById('rw-play-btn');
+    const revWordHomeBtn = document.getElementById('rev-word-btn-close');
+
+    // OPEN REVERSE WORD/S DASHBOARD
+    function showRevWord() {
+        revWordDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        cardHolder.style.display = 'none';
+        updateColor('#8e06fdda');
+        linkedIn.style.border = '2px solid #8e06fdda';
+        github.style.border = '2px solid #8e06fdda';
+        twitter.style.border = '2px solid #8e06fdda';
+        polywork.style.border = '2px solid #8e06fdda';
+    }
+
+    // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
+    revWordBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    revWordBtn.addEventListener('click', showRevWord);
+
+    // REVERSE WORD/S FORM ELEMENTS
+    const revWordForm = document.getElementById("rev-word-form");
+    const revWordOutcome = document.getElementById("revWordResponse");
+    const buttonRevWord = document.getElementById("rev-word-btn");
+
+    
+
+    // REVERSE WORD/S RESPONSE FUNCTION
+    function hideRevWordOutcome() {
+        revWordOutcome.style.display ="none";
+        buttonRevWord.style.display = "block";
+    }
+    function showRevWordOutcome() {
+        revWordOutcome.style.color = "#e0e5ec";
+        revWordOutcome.style.display ="block";
+        buttonRevWord.style.display = "none";
+    }
+    // CLEAR REVERSE WORD/S FORM
+    function clearRevWordForm() {
+        setTimeout(function() {
+            revWordForm.reset();
+            hideRevWordOutcome();
+        }, 3500);
+    };
+    // REVERSE WORD/S BUTTON
+    buttonRevWord.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonRevWord.addEventListener('click', reverseWords);
+
+
+    // REVERSE WORD/S FUNCTION
+    function reverseWords() {
+        //convert string to array, reverse it and assign it 
+        let arr = document.getElementById("rev-word-text").value.split(" ").reverse();
+    
+        // get the length of the reversed array
+        let lengthArr = arr.length;
+        // initialize an empty array to store reversed words that are not empty
+        let newArr = [];
+        
+        
+        // if the array satisfies the constraints
+        if(lengthArr <= Math.pow(10, 4) || arr >= 1 ) {
+                
+            // loop through the array
+            for (let i = lengthArr - 1; i >= 0; i--) {
+
+                // if a word is not empty
+                if (arr[i].length > 0) {
+                    // push the word to the new array
+                    newArr.push(arr[i]);
+                }
+            }
+            // convert the new array to a string
+            showRevWordOutcome();
+            revWordOutcome.innerHTML = newArr.reverse().join(" ");
+            // return newArr.reverse().join(' ');
+        }else{
+            // the array does not satify the constraints 
+            revWordDash.innerHTML = "The string must be 1-10,000 characters";
+        }
+        
+        clearRevWordForm();
+    }
+
+    // CLOSE REVERSE WORD/S DASHBOARD
+    revWordHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    revWordHomeBtn.addEventListener('click', showHome);
+
+    // ********************************  SUM ALL IN A RANGE    ********************************************************
+
+    // SUM ALL IN A RANGE DASHBOARD ELEMENTS
+    const sumAllDash = document.getElementById('sm-all');
+    const sumAllBtn = document.getElementById('sum-all-play-btn');
+    const sumAllHomeBtn = document.getElementById('sm-all-btn-close');
+
+    // OPEN SUM ALL IN A RANGE DASHBOARD
+    function showSumAll() {  
+       
+        sumAllDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        toRomeDash.style.display = "none";
+        cardHolder.style.display = 'none';
+        updateColor('#f36c36ed');
+        linkedIn.style.border = '2px solid #f36c36ed';
+        github.style.border = '2px solid #f36c36ed';
+        twitter.style.border = '2px solid #f36c36ed';
+        polywork.style.border = '2px solid #f36c36ed';
+        
+    }
+    sumAllBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    sumAllBtn.addEventListener('click', showSumAll);
+
+    // SUM ALL IN A RANGE FORM ELEMENTS
+    const sumAllForm = document.getElementById("sm-all-form");
+    const sumAllOutcome = document.getElementById("sumAllResponse");
+    const buttonSumAll = document.getElementById("sm-all-btn");
+
+    // SUM ALL IN A RANGE RESPONSE FUNCTION
+    
+    function hideSumAllOutcome() {
+        sumAllOutcome.style.display ="none";
+        buttonSumAll.style.display = "block";
+    }
+    function showSumAllOutcome() {
+        sumAllOutcome.style.display ="block";
+        sumAllOutcome.style.color = "#e0e5ec";
+        buttonSumAll.style.display = "none";
+    }
+
+    // CLEAR SUM ALL IN A RANGE FORM
+    function clearSumAllForm() {
+        setTimeout(function(e) {
+            sumAllForm.reset();
+            hideSumAllOutcome();
+        }, 3000);
+    };
+
+    // SUM ALL IN A RANGE BUTTON
+    buttonSumAll.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonSumAll.addEventListener('click', checkSumAllInput);
+
+    // SUM ALL IN A RANGE CHECK INPUT FUNCTION
+    function checkSumAllInput(arr) {
+        // get the input value and convert it to an array
+        arr = document.getElementById("sm-all-text").value;
+
+        // loop through the array
+        for (let i = 0; i < arr.length - 1; i++){
+
+            // regex for letter and special characters or just letters or just special characters
+            let specialCases = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+            
+            //if the array contains letters or special characters
+            if(specialCases.test(arr)) {
+                // if yes, user gets prompted to enter the correct data type
+                showSumAllOutcome();
+                sumAllOutcome.innerHTML = "Enter only numbers";
+            }else{
+                //otherwise, check if target is a number
+                sumAll();
+            }
+            // clear the form after the function runs
+            clearSumAllForm();
+        }   
+    }
+
+    // SUM ALL IN A RANGE FUNCTION
+    function sumAll(arr) {
+        // get DOM input and separates at each space between numbers
+        arr = document.getElementById("sm-all-text").value.split(" ");
+
+        // makes sure array is numbers
+        arr = arr.map(Number)
+        
+
+        // find the largest number in the array
+        let max = Math.max(arr[0], arr[1]);
+        // find the smallest number in the array
+        let min = Math.min(arr[0], arr[1]);
+        // sum between the min and max
+        let sum = 0;
+        // loop through the array
+        for (let i = min; i <= max; i++) {
+            sum += i;
+        }
+        showSumAllOutcome();
+        sumAllOutcome.innerHTML = sum + " is the sum of all numbers between " + min + " and " + max;
+        clearSumAllForm();
+    }
+    
+    // CLOSES SUM ALL IN A RANGE DASHBOARD
+    sumAllHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    sumAllHomeBtn.addEventListener('click', showHome);
+
+
+    // ********************************  TO ROME AND BACK   ********************************************************
+
+    // To Rome and Back Container
+    const toRomeDash = document.getElementById('rome');
+    const toRomeBtn = document.getElementById('rome-play-btn');
+    const toRomeHomeBtn = document.getElementById('rome-btn-close');
+
+    // To Rome and Back Dashboard
+    function showToRome() {
+        toRomeDash.style.display = 'block';
+        mainDash.style.display = 'block';
+        isoDash.style.display = "none";
+        palDash.style.display = "none";
+        twoDash.style.display = "none";
+        spinDash.style.display = "none";
+        llwDash.style.display = "none";
+        factDash.style.display = "none";
+        palNumDash.style.display = "none";
+        revIntDash.style.display = "none";
+        lnsDash.style.display = "none";
+        revWordDash.style.display = "none";
+        sumAllDash.style.display = "none";
+        cardHolder.style.display = 'none';
+        updateColor('#05c0c7');
+        linkedIn.style.border = '2px solid #05c0c7';
+        github.style.border = '2px solid #05c0c7';
+        twitter.style.border = '2px solid #05c0c7';
+        polywork.style.border = '2px solid #05c0c7';
+    };
+    // OPEN TO ROME AND BACK DASHBOARD
+    toRomeBtn.addEventListener('click', function(e){
+        e.preventDefault();
+    })
+    toRomeBtn.addEventListener('click', showToRome);
+
+    // TO ROME AND BACK FORM ELEMENTS
+    const romeForm = document.getElementById("rome-form");
+    const romeOutcome = document.getElementById("romeResponse");
+    const romeOutcomeHolder = document.getElementById("romeRepoHolder");
+    const buttonRome = document.getElementById("rome-btn");
+    
+
+    // TO ROME AND BACK RESPONSE FUNCTION
+    function hideRomeOutcome() {
+        romeOutcomeHolder.style.display = "none";
+        romeOutcome.style.display ="none";
+        buttonRome.style.display = "block";
+    }
+    function showRomeOutcome() {
+        romeOutcomeHolder.style.display = "block";
+        romeOutcome.style.color = "#e0e5ec";
+        romeOutcome.style.display ="block";
+        buttonRome.style.display = "none";
+    }
+    // CLEAR TO ROME AND BACK FORM
+    function clearRomeForm() {
+        setTimeout(function() {
+            romeForm.reset();
+            hideRomeOutcome();
+        }, 3500);
+    };
+
+    // CHECK TO ROME AND BACK INPUT FUNCTION 
+    buttonRome.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    buttonRome.addEventListener('click', checkRome);
+
+    // TO ROME AND BACK CHECK INPUT FUNCTION
+    function checkRome(input) {
+        // get the value of the input
+        input = document.getElementById("rome-text").value;
+        // convert the input to upper case
+        input = input.toUpperCase();
+        // check case
+        console.log(input);
+
+        // regex for roman numerals
+        let roman = /^(M{1,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|M{0,4}(CM|C?D|D?C{1,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|M{0,4}(CM|CD|D?C{0,3})(XC|X?L|L?X{1,3})(IX|IV|V?I{0,3})|M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|I?V|V?I{1,3}))$/;
+        // regex for numbers
+        let numbers = /^[0-9]/;
+        // regex for special characters
+        let specialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+
+        // check if the input contains special characters & numbers
+        if (specialChar.test(input) && numbers.test(input)) {
+            romeOutcome.innerHTML = "Please enter a whole number";
+            showRomeOutcome();
+            // return 'roman';
+
+          // is input a roman numeral if so convert to number
+        } else if (roman.test(input)) {
+            console.log("Roman");
+            toInt();
+
+          // is input a number if so convert to roman numeral
+        } else if(numbers.test(input)) {
+            console.log("Numbers")
+            toRoman();
+
+          // otherwise input is invalid
+        }else {
+            romeOutcome.innerHTML = "Please enter a valid roman number or number";
+            showRomeOutcome();
+        }
+        clearRomeForm();
+    };
+
+    // CONVERT TO ROMAN NUMERALS FUNCTION
+    function toRoman(num) {
+            // convert the input to a number
+            num = Number(document.getElementById("rome-text").value);
+        // check constraints
+        if (num <= 0 || num > 3999) {
+            showRomeOutcome();
+            romeOutcome.innerHTML = "Please enter a number from 1 to 3999";
+
+            // satifies contraints, convert to roman numeral
+        } else {
+            // create a map of key value pairs to convert to roman numerals
+            const intMap = new Map([[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'], 
+                                [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], 
+                                [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']]);
+            // assign 'roman' to an empty string
+            let roman = '';
+            // loop through the map object
+            while (num > 0) {
+            // access the key-value pairs of the map
+                for (let [key, value] of intMap) {
+                    // if the value of the key is less than or equal to the num
+                    if (num >= key) {
+                        // add the value to the roman string
+                        roman += value;
+                        // subtract the value from the num
+                        num -= key;
+                        // break out of the loop
+                        break;
+                    }
+                }
+                //return roman;
+                showRomeOutcome();
+                romeOutcome.innerHTML = roman;
+                console.log(roman);
+            }
+            
+        }
+    }
+
+    // CONVERT TO INTEGER FUNCTION
+    function toInt(str) {
+        // assign the input to a variable
+        str = document.getElementById("rome-text").value.toUpperCase();
+        
+        // assign the length of the string to a variable;
+        strLength = str.length;
+        // create a map that contains the key - value pairs of roman numerals - integers
+        const romanMap = new Map([['I', 1], ['V', 5], ['X', 10], ['L', 50], ['C', 100], 
+            ['D', 500], ['M', 1000]]);
+
+        // check constraints
+        if (strLength <= 0 || strLength > 15) {
+            // return 'invalid';
+            showRomeOutcome();
+            romeOutcome.innerHTML = "Please enter a valid roman numeral";
+
+            // satifies contraints, convert to integer  
+        } else {
+            // assign the difference of the string's length and 1 to a variable
+            let i = strLength - 1;
+            // assign the value at that key to a variable
+            let int = romanMap.get(str[i]);
+            console.log(int);
+            // loop through the string as long as the length is greater than 0
+            while (i > 0) {
+                // assign the value at the key to a variable to get the current value
+                const curr = romanMap.get(str[i]);
+                // assign the value at map key-1 to a variable to get the previous value
+                const prev = romanMap.get(str[i - 1]);
+
+            // if the current value is less than the previous value
+            if (prev >= curr) {
+                // add the previous value to the integer
+                int += prev;
+            } else {
+                // otherwise, subtract the previous value from the integer
+                int -= prev;
+            }
+            // decrement by 1 for each loop
+                i--;
+            }
+            // contraints - check the returned integer 
+            if (int > 3999) {
+                showRomeOutcome();
+                romeOutcome.innerHTML = "Please a roman numeral between I and  MMMCMXCIX";
+            } else {
+                showRomeOutcome()
+                romeOutcome.innerHTML = int;
+            }
+        }
+    };
+
+    // var romanpdf = $("romanpdf");
+    //     PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
+
+    // CLOSE TO ROME AND BACK DASHBOARD
+    toRomeHomeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+    });
+    toRomeHomeBtn.addEventListener('click', showHome);
+});
