@@ -4,6 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardHolder = document.getElementById('dg-holder');
     const mainDash = document.getElementById('algo-dash');
     const infoDash = document.getElementById('info-dash');
+    const isoDash = document.getElementById('iso-container');
+    const palDash = document.getElementById('palindrome');
+    const twoDash = document.getElementById('two-sum');
+    const spinDash = document.getElementById('spin-words');
+    const llwDash = document.getElementById('longest-word');
+    const factDash = document.getElementById('factorialize');
+    const palNumDash = document.getElementById('pal-num');
+    const revIntDash = document.getElementById('reverse-int');
+    const lnsDash = document.getElementById('lnr');
+    const revWordDash = document.getElementById('rev-word');
+    const sumAllDash = document.getElementById('sm-all');
+    const toRomeDash = document.getElementById('rome');
+
 
     // Header Elements
     const info = document.getElementById('info-icon');
@@ -12,59 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
 
-    const copy = document.getElementById('cp');   
-
-    //  get all class social-btn-items
+    // Footer Elements
     const socialBtns = document.querySelectorAll('.social-btn-item');
-
-    function changeSocBtnColor(color) {
-        socialBtns.forEach(function(btn) {
-            btn.style.border = `2px solid ${color}`;
-        })
-    }
-
+    const copy = document.getElementById('cp');   
     const year = new Date().getFullYear();
-
-    function updateColor(color) {         //Refactor to use a single function
-        info.style.color = color;  
-        title.style.color= color;  
-        clock.style.color= color; 
-        mobileTitle.style.color= color;
-        copy.style.color = color;
-        changeSocBtnColor(color);
-    }
-
-
-    //***********************  INFORMATION DASH ****************************/
-    function openInfo() {
-        infoDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = "none";
-        cardHolder.style.display = "none";
-        updateColor('#6d88c8');
-    }
-    infoBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-    });
-    infoBtn.addEventListener('click', openInfo);
-
-    const closeInfo = document.getElementById('info-btn-close');
-    closeInfo.addEventListener('click', function(e) {
-        e.preventDefault();
-    });
-    closeInfo.addEventListener('click', showHome);
-    //***********************  /INFORMATION DASH ****************************/
 
     //***************************CLOCK ********************/
     function Time() {
@@ -87,9 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
-    
     Time();
-    //***************************CLOCK ********************/
 
     //***************************DASHBOARD ********************/
     // SHOW HOME PAGE
@@ -111,38 +73,77 @@ document.addEventListener("DOMContentLoaded", () => {
         cardHolder.style.display = "block";
         updateColor('#c32abbc9');
     }
+
+    // Create an array of dashboard
+    const dashboards = [
+        infoDash,isoDash, palDash, twoDash, spinDash,
+        llwDash, factDash, palNumDash, revIntDash,
+        lnsDash, revWordDash, sumAllDash, toRomeDash,
+        mainDash, cardHolder
+    ];
+
+    // create a reusable function to show a specifc dash board and hide others. For example show the infodash and hide the rest
+    function showDash(dash, color) {
+        dashboards.forEach(function(dashboard) {
+            dashboard.style.display = 'none';
+        })
+        if (dash === cardHolder) {
+            dash.style.display = 'block';
+            updateColor(color);
+        } else {
+            dash.style.display = 'block';
+            mainDash.style.display = 'block';
+            updateColor(color);
+        }
+    }
+
+    function changeSocBtnColor(color) {
+        socialBtns.forEach(function(btn) {
+            btn.style.border = `2px solid ${color}`;
+        })
+    }
+
+    function updateColor(color) {         //Refactor to use a single function
+        info.style.color = color;  
+        title.style.color= color;  
+        clock.style.color= color; 
+        mobileTitle.style.color= color;
+        copy.style.color = color;
+        changeSocBtnColor(color);
+    }
+    
+
+
+    //***********************  INFORMATION DASH ****************************/
+    infoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        showDash(infoDash,  '#6d88c8');
+    });
+
+    const closeInfo = document.getElementById('info-btn-close');
+    closeInfo.addEventListener('click', function(e) {
+        e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
+    });
+    //***********************  /INFORMATION DASH ****************************/
+
+    
+    //***************************CLOCK ********************/
+
+    
     // ******************ISOGRAM******************************
 
     // ISOGRAM CONTAINER
-    const isoDash = document.getElementById('iso-container');
+    // const isoDash = document.getElementById('iso-container');
     const isoBtn = document.getElementById('iso-play-btn');
     const isoHomeBtn = document.getElementById("iso-btn-close");
     
-    // SHOW ISOGRAM FROM HOMEPAGE
-    function showIso() {
-        isoDash.style.display = 'block';
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = 'block';
-        cardHolder.style.display = 'none';
-        cp.style.color = '#37A4C8';
-        updateColor('#37A4C8');
-    }
     // PLAY ISOGRAM FROM HOMEPAGE
     isoBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(isoDash, '#37A4C8');
         
     });
-    isoBtn.addEventListener('click', showIso);
 
     // ISOGRAM FORM ELEMENTS
     const form = document.getElementById("form");
@@ -251,42 +252,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE ISOGRAM 
     isoHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(cardHolder, '#c32abbc9');
     });
-    isoHomeBtn.addEventListener('click', showHome);
-
-
     // ******************PALINDROME******************************
 
     // PALINDROME DASH ELEMENTS
-    const palDash = document.getElementById('palindrome');
+    // const palDash = document.getElementById('palindrome');
     const palBtn = document.getElementById('pal-play-btn');
     const palHomeBtn = document.getElementById("pal-btn-close");
 
-    // OPEN PALINDROME DASH FROM HOMEPAGE
-    function showPal() {
-        palDash.style.display = 'block';
-        isoDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = 'block';
-        cardHolder.style.display = 'none';
-        updateColor('#FFA500');
-    }
+    
     // PLAY BUTTON TO OPEN PALINDROME DASH
     palBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(palDash, '#FFA500');
         
     });
-    palBtn.addEventListener('click', showPal);
+    // palBtn.addEventListener('click', showPal);
 
     // PALINDROME FORM ELEMENTS
     const palForm = document.getElementById("pal-form");
@@ -345,43 +327,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE PALINDROME DASH
     palHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(cardHolder, '#c32abbc9');
     });
-    palHomeBtn.addEventListener('click', showHome);
 
 
     /****************************TWO SUM********************************************/
     
     // TWO SUM CONTAINER ELEMENTS
-    const twoDash = document.getElementById('two-sum');
+    // const twoDash = document.getElementById('two-sum');
     const twoBtn = document.getElementById('two-play-btn');
     const twoHomeBtn = document.getElementById("ts-btn-close");
-
-    // OPEN TWO SUM DASH FROM HOMEPAGE
-    function showTwo() {
-        twoDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = 'block';
-        cardHolder.style.display = 'none'; 
-        updateColor('#5b0eeb');
-    }
 
     // PLAY BUTTON TO OPEN TWO SUM DASH
     twoBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(twoDash, '#5b0eeb');
     });
-    twoBtn.addEventListener('click', showTwo);
+    // twoBtn.addEventListener('click', showTwo);
 
     // TWO SUM FORM ELEMENTS
     const tsForm = document.getElementById("ts-form");
@@ -508,41 +470,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE TWO SUM DASH
     twoHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(cardHolder, '#c32abbc9');
     });
-    twoHomeBtn.addEventListener('click', showHome);
 
     // **************************************SPIN WORDS****************************************************
     // SPIN WORDS DASH ELEMENTS
-    const spinDash = document.getElementById('spin-words');
+    // const spinDash = document.getElementById('spin-words');
     const spinBtn = document.getElementById('spin-play-btn');
     const spinHomeBtn = document.getElementById('spin-btn-close');
     
-
-    // OPEN SPIN WORDS DASH FUNCTION
-    function showSpin() {
-        spinDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = 'block';
-        cardHolder.style.display = 'none'; 
-        updateColor('#f89898');
-    }
     // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
     spinBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(spinDash, '#f89898');
     });
-    spinBtn.addEventListener('click', showSpin);
+    // spinBtn.addEventListener('click', showSpin);
 
     // SPIN WORD FORM ELEMENTS
     const swForm = document.getElementById("sw-form");
@@ -659,44 +601,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE SPIN WORDS DASH
     spinHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(cardHolder, '#c32abbc9');
     });
-    spinHomeBtn.addEventListener('click', showHome);
-
 
     //****************************************LENGTH OF THE LONGEST WORD****************************************************************** */
 
     // LENGTH OF THE LONGEST WORD DASHBOARD ELEMENTS
-    const llwDash = document.getElementById('longest-word');
     const llwBtn = document.getElementById('llw-play-btn');
     const llwHomeBtn = document.getElementById('lw-btn-close');
-    
-
-    // OPEN LENGTH OF THE LONGEST WORD DASHBOARD
-    function showLength() {
-        llwDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = 'block';
-        cardHolder.style.display = 'none'; 
-        updateColor('#35c048');
-    }
 
     // PLAY LENGTH OF THE LONGEST WORD BUTTON
     llwBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(llwDash, '#35c048');
     });
-    llwBtn.addEventListener('click', showLength);
 
     // LENGTH OF THE LONGEST WORD FORM ELEMENTS
     const lwForm = document.getElementById("lw-form");
@@ -769,42 +687,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE LENGTH OF THE LONGEST WORD DASH
     llwHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    llwHomeBtn.addEventListener('click', showHome);
 
     /* *************************    FACTORIALIZE    ******************************************************* */
 
 
     // Factorialize a Number Container
-    const factDash = document.getElementById('factorialize');
     const factBtn = document.getElementById('fact-play-btn');
     const factHomeBtn = document.getElementById('fact-btn-close');
-
-    // OPEN FACTORIALIZE DASHBOARD
-    function showFact() {
-        factDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        cardHolder.style.display = 'none';
-        updateColor('#eb0e96');
-    }
 
     // PLAY FACTORIALIZE BUTTON
     factBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
+        showDash(factDash, '#eb0e96');
     });
-    factBtn.addEventListener('click', showFact);
 
     // FACTOIRALIZE FORM ELEMENTS
     const factForm = document.getElementById("fact-form");
@@ -870,40 +767,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE FACTORIALIZE DASH
     factHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    factHomeBtn.addEventListener('click', showHome);
 
     // ****************************************   PALINDROME NUMBER    *********************************************
 
     // PALINDROME NUMBER DASHBOARD ELEMENTS
-    const palNumDash = document.getElementById('pal-num');
+    // const palNumDash = document.getElementById('pal-num');
     const palNumBtn = document.getElementById('pn-play-btn');
     const palNumHomeBtn = document.getElementById('pn-btn-close');
     
-
-    // OPEN PALINDROME NUMBER DASHBOARD
-    function showPalNum() {
-        palNumDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        cardHolder.style.display = 'none'; 
-        updateColor('#0b7c739d');
-    }
     // PLAY PALINDROME NUMBER BUTTON
     palNumBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(palNumDash, '#0b7c739d');
     });
-    palNumBtn.addEventListener('click', showPalNum);
+    // palNumBtn.addEventListener('click', showPalNum);
 
 
     // PALINDROME NUMBER FORM ELEMENTS
@@ -971,41 +850,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE PALINDROME NUMBER DASH
     palNumHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    palNumHomeBtn.addEventListener('click', showHome);
-
 
     // ********************************     REVERSE INTEGER       ********************************************************
 
     // REVERSE INTEGER DASHBOARD ELEMENTS
-    const revIntDash = document.getElementById('reverse-int');
     const revIntBtn = document.getElementById('rev-play-btn');
     const revIntHomeBtn = document.getElementById('rev-int-btn-close');
     
-    // OPEN REVERSE INTEGER DASHBOARD
-    function showRevInt() {
-        revIntDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        cardHolder.style.display = 'none'; 
-        lnsDash.style.display = 'none';
-        updateColor('#8790e0'); 
-    }
     // PLAY REVERSE INTEGER BUTTON
     revIntBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(revIntDash, '#8790e0');
     });
-    revIntBtn.addEventListener('click', showRevInt);
+    // revIntBtn.addEventListener('click', showRevInt);
 
     // REVERSE INTEGER FORM ELEMENTS
     const revIntForm = document.getElementById("rev-int-form");
@@ -1085,39 +944,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE REVERSE INTEGER DASH
     revIntHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    revIntHomeBtn.addEventListener('click', showHome);
 
     // ********************************  LONGEST NON-REPEATING SUBSTRING      ********************************************************
 
     // Longest Non-Repeating Substring Container
-    const lnsDash = document.getElementById('lnr');
+    // const lnsDash = document.getElementById('lnr');
     const lnsBtn = document.getElementById('lnr-play-btn');
     const lnsHomeBtn = document.getElementById('lnr-btn-close');
     
-    // OPEN LONGEST NON-REPEATING SUBSTRING DASHBOARD
-    function showLns() {
-        lnsDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        cardHolder.style.display = 'none'; 
-        updateColor('#ff0000');
-    }
     // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
     lnsBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(lnsDash, '#ff0000');
     });
-    lnsBtn.addEventListener('click', showLns);
+    // lnsBtn.addEventListener('click', showLns);
 
     // DOM Elements
     const lnsForm = document.getElementById("lns-form");
@@ -1254,42 +1096,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE LONGEST NON-REPEATING SUBSTRING 
     lnsHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    lnsHomeBtn.addEventListener('click', showHome);
-
 
     // ********************************  REVERSE WORD/S     ********************************************************
 
 
     // REVERSE WORD/S DASHBOARD ELEMENTS
-    const revWordDash = document.getElementById('rev-word');
     const revWordBtn = document.getElementById('rw-play-btn');
     const revWordHomeBtn = document.getElementById('rev-word-btn-close');
-
-    // OPEN REVERSE WORD/S DASHBOARD
-    function showRevWord() {
-        revWordDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        cardHolder.style.display = 'none';
-        updateColor('#8e06fdda');
-    }
 
     // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
     revWordBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(revWordDash, '#8e06fdda');
     });
-    revWordBtn.addEventListener('click', showRevWord);
 
     // REVERSE WORD/S FORM ELEMENTS
     const revWordForm = document.getElementById("rev-word-form");
@@ -1357,38 +1178,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE REVERSE WORD/S DASHBOARD
     revWordHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    revWordHomeBtn.addEventListener('click', showHome);
 
     // ********************************  SUM ALL IN A RANGE    ********************************************************
 
     // SUM ALL IN A RANGE DASHBOARD ELEMENTS
-    const sumAllDash = document.getElementById('sm-all');
     const sumAllBtn = document.getElementById('sum-all-play-btn');
     const sumAllHomeBtn = document.getElementById('sm-all-btn-close');
 
-    // OPEN SUM ALL IN A RANGE DASHBOARD
-    function showSumAll() {  
-        sumAllDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        cardHolder.style.display = 'none';
-        updateColor('#f36c36ed');
-    }
     sumAllBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(sumAllDash, '#f36c36ed');
     });
-    sumAllBtn.addEventListener('click', showSumAll);
+    // sumAllBtn.addEventListener('click', showSumAll);
 
     // SUM ALL IN A RANGE FORM ELEMENTS
     const sumAllForm = document.getElementById("sm-all-form");
@@ -1470,40 +1273,20 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSES SUM ALL IN A RANGE DASHBOARD
     sumAllHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    sumAllHomeBtn.addEventListener('click', showHome);
-
 
     // ********************************  TO ROME AND BACK   ********************************************************
 
     // To Rome and Back Container
-    const toRomeDash = document.getElementById('rome');
     const toRomeBtn = document.getElementById('rome-play-btn');
     const toRomeHomeBtn = document.getElementById('rome-btn-close');
 
-    // To Rome and Back Dashboard
-    function showToRome() {
-        toRomeDash.style.display = 'block';
-        mainDash.style.display = 'block';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        cardHolder.style.display = 'none';
-        updateColor('#05c0c7');
-    };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){
         e.preventDefault();
+        showDash(toRomeDash, '#05c0c7');
     })
-    toRomeBtn.addEventListener('click', showToRome);
 
     // TO ROME AND BACK FORM ELEMENTS
     const romeForm = document.getElementById("rome-form");
@@ -1666,6 +1449,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE TO ROME AND BACK DASHBOARD
     toRomeHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
+        showDash(cardHolder, '#c32abbc9');
     });
-    toRomeHomeBtn.addEventListener('click', showHome);
 });
