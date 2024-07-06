@@ -12,19 +12,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
 
-    // Footer Elements
-    const linkedIn = document.getElementById('linkedin');
-    const github = document.getElementById('github');
-    const twitter = document.getElementById('twitter');
-    const polywork = document.getElementById('polywork');
-    
+    const copy = document.getElementById('cp');   
+
+    //  get all class social-btn-items
+    const socialBtns = document.querySelectorAll('.social-btn-item');
+
+    function changeSocBtnColor(color) {
+        socialBtns.forEach(function(btn) {
+            btn.style.border = `2px solid ${color}`;
+        })
+    }
+
+    const year = new Date().getFullYear();
+
     function updateColor(color) {         //Refactor to use a single function
         info.style.color = color;  
         title.style.color= color;  
         clock.style.color= color; 
         mobileTitle.style.color= color;
+        copy.style.color = color;
+        changeSocBtnColor(color);
     }
-    
+
 
     //***********************  INFORMATION DASH ****************************/
     function openInfo() {
@@ -44,10 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainDash.style.display = "none";
         cardHolder.style.display = "none";
         updateColor('#6d88c8');
-        linkedIn.style.border = ' 2px solid #6d88c8';
-        github.style.border = '2px solid #6d88c8';
-        twitter.style.border = '2px solid #6d88c8';
-        polywork.style.border = '2px solid #6d88c8';
     }
     infoBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -105,11 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainDash.style.display = "none";
         cardHolder.style.display = "block";
         updateColor('#c32abbc9');
-        linkedIn.style.border = ' 2px solid #c32abbc9';
-        github.style.border = '2px solid #c32abbc9';
-        twitter.style.border = '2px solid #c32abbc9';
-        polywork.style.border = '2px solid #c32abbc9';
-
     }
     // ******************ISOGRAM******************************
 
@@ -134,11 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none';
-        updateColor('#37A4C8'); 
-        linkedIn.style.border = '2px solid #37A4C8';
-        github.style.border = '2px solid #37A4C8';
-        twitter.style.border = '2px solid #37A4C8';
-        polywork.style.border = '2px solid #37A4C8';
+        cp.style.color = '#37A4C8';
+        updateColor('#37A4C8');
     }
     // PLAY ISOGRAM FROM HOMEPAGE
     isoBtn.addEventListener('click', function(e) {
@@ -190,37 +187,24 @@ document.addEventListener("DOMContentLoaded", () => {
             if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
                 showRes();
                 response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
-                
-
             }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
                 showRes();
                 response.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
-            
-
             }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
                 showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
-                
-
             }else if(specialChar.test(str) && numbers.test(str)){
                 showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
-                
-
             }else if(str.indexOf(' ') >= 0){
                 showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
-
-
             }else if(specialChar.test(str)) {
                 showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
-                
-
             }else if(numbers.test(str)) {
                 showRes();
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
-                
             }
             else {
                 // CALL THE ISOGRAM FUNCTION
@@ -241,8 +225,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // initialize an empty array for comparison to letters array 
         var newLetters = [];
         
-        
-       
         // Use ForEach() to iterate over each substring in the letters array and compare it to the newLetters array.
             // if the substring does not exist(indexOf -1) in the newLetters array, then add it.
         letters.forEach(function(item, i, arr){
@@ -257,12 +239,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 //WHY? Substrings that repeat, will not have an index of -1 and not be added to newLetters array, 
                     // resulting in newLettersLength < letterLength
         if(newLetters.length === letters.length) {
-            // return true;
             showRes();
             response.innerHTML = "'"+`${str}`+"'" + " IS an isogram."
-           
         }else {
-            // return false;
             showRes();
             response.innerHTML = "'"+`${str}`+"'" + " is NOT an isogram."
         }
@@ -301,10 +280,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none';
         updateColor('#FFA500');
-        linkedIn.style.border = '2px solid #FFA500';
-        github.style.border = '2px solid #FFA500';
-        twitter.style.border = '2px solid #FFA500';
-        polywork.style.border = '2px solid #FFA500';
     }
     // PLAY BUTTON TO OPEN PALINDROME DASH
     palBtn.addEventListener('click', function(e) {
@@ -399,10 +374,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none'; 
         updateColor('#5b0eeb');
-        linkedIn.style.border = '2px solid #5b0eeb';
-        github.style.border = '2px solid #5b0eeb';
-        twitter.style.border = '2px solid #5b0eeb';
-        polywork.style.border = '2px solid #5b0eeb';
     }
 
     // PLAY BUTTON TO OPEN TWO SUM DASH
@@ -480,7 +451,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if(specialCases.test(target)) {
             showOutcome();
             sumOutcome.innerHTML = "Enter a number";
-            
         } else{
         //otherwise, call length of twoSum function
             twoSum()
@@ -566,10 +536,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none'; 
         updateColor('#f89898');
-        linkedIn.style.border = '2px solid #f89898';
-        github.style.border = '2px solid #f89898';
-        twitter.style.border = '2px solid #f89898';
-        polywork.style.border = '2px solid #f89898';
     }
     // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
     spinBtn.addEventListener('click', function(e) {
@@ -619,9 +585,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (num == "0" && str == "") {
                 showSwOutcome();
                 swOutcome.innerHTML = "Please enter a word/words and a number greater than 0";
-                
-                // clearSwForm();
-           
             }else if(num =="0" && str != "") {
                 showSwOutcome();
                 swOutcome.innerHTML = "Please enter a number greater than 0";
@@ -630,17 +593,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }else if ( num != "0" && str == "") {
                 showSwOutcome();
                 swOutcome.innerHTML = "Please enter a word/words";
-                
-                // clearSwForm();
-
             }else{
                 checkValues()
-            
             }
             clearSwForm();
         }   
         
-    
         // CHECK VALUES FUNCTION   
         function checkValues() {
             
@@ -651,13 +609,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 //regev for letters and numbers or just numbers
                 let numbers = /[A-Za-z]\d|\d/
     
-                
                 //check if either regex pattern is present in the string
                 if(specialChar.test(str) || numbers.test(str)) {
                     // if yes, user gets prompted to enter the correct data type
                     swOutcome.innerHTML = "Enter only letters in the text field";
                     showSwOutcome();
-
                 } else if (letters.test(num) || specialChar.test(num)) {
                     // if yes, user gets prompted to enter the correct data type
                     swOutcome.innerHTML = "Enter only numbers in the number field";
@@ -666,7 +622,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     //otherwise, call spin words function
                     spinWords()
                 }
-                // clear the form after the function runs
             }
             clearSwForm()
         }   
@@ -683,14 +638,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 //if a word in the array has "userNum" or more letters
                 if(words[i].length >= userNum) {
                     // split the word, reverse it, then join the letters
-                    
                     words[i] = words[i].toLowerCase().split("").reverse().join("");
                     // convert the array to a string 
                     let spin = words.join("  ");
                     // user feedback
                     showSwOutcome();
                     swOutcome.innerHTML = `${spin}`;   
-                    
                 } else {
                     // the array has no words with 5 or more letters
                     // convert the original array to a string and assign it locally
@@ -736,10 +689,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainDash.style.display = 'block';
         cardHolder.style.display = 'none'; 
         updateColor('#35c048');
-        linkedIn.style.border = '2px solid #35c048';
-        github.style.border = '2px solid #35c048';
-        twitter.style.border = '2px solid #35c048';
-        polywork.style.border = '2px solid #35c048';
     }
 
     // PLAY LENGTH OF THE LONGEST WORD BUTTON
@@ -786,18 +735,14 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < str.length - 1; i++){
             // regex for letter and special characters or just special characters
             let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-            
             //regev for letters and numbers or just numbers
             let numbers = /[A-Za-z]\d|\d/
 
             //check if either regex pattern is present in the string
             if(specialChar.test(str) || numbers.test(str)) {
-
                 // if yes, user gets prompted to enter the correct data type
                 showLwOutcome();
                 lwOutcome.innerHTML = "Enter only letters";
-                
-    
             }else{
                 //otherwise, call spin words function
                 findLongestWord()
@@ -816,7 +761,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if(strArr[i].length > longestWordLength) {
                 longestWordLength = strArr[i].length;
                 theWord = strArr[i]
-                
                 showLwOutcome();
                 lwOutcome.innerHTML = "'" +`${theWord}`+"': " + `${longestWordLength}`;
             }
@@ -825,7 +769,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE LENGTH OF THE LONGEST WORD DASH
     llwHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
     });
     llwHomeBtn.addEventListener('click', showHome);
 
@@ -854,10 +797,6 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none';
         updateColor('#eb0e96');
-        linkedIn.style.border = '2px solid #eb0e96';
-        github.style.border = '2px solid #eb0e96';
-        twitter.style.border = '2px solid #eb0e96';
-        polywork.style.border = '2px solid #eb0e96';
     }
 
     // PLAY FACTORIALIZE BUTTON
@@ -906,30 +845,23 @@ document.addEventListener("DOMContentLoaded", () => {
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
         let fact = 1
         
-        
         if (integer === 1 || integer === 0) {
             showFactOutcome()
             factOutcome.innerHTML ="The factorial of " +`${integer}`+ " is 1";
-            //clearFactForm();
-
         }else if (integer < 0 && decimalCheck.test(integer)) {
             showFactOutcome()
             factOutcome.innerHTML = `${integer}`+ " is NOT an integer";
-            //clearFactForm();
         }else if (integer < 0) {
             showFactOutcome()
             factOutcome.innerHTML = "The factorial of " +`${integer}`+ " is UNDEFINED";
-            //clearFactForm();
         }else if (decimalCheck.test(integer)) {
             showFactOutcome()
             factOutcome.innerHTML = `${integer}` + " is NOT a whole number";
-            //clearFactForm();
         } else {
             for(let i = 1; i <= integer; i++) {
                 fact *= i;
                 showFactOutcome()
                 factOutcome.innerHTML = `${fact}` + " is the factorial of " + `${integer}`;
-                
             }
         }
         clearFactForm();
@@ -938,10 +870,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE FACTORIALIZE DASH
     factHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
     });
     factHomeBtn.addEventListener('click', showHome);
-
 
     // ****************************************   PALINDROME NUMBER    *********************************************
 
@@ -968,15 +898,10 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none'; 
         updateColor('#0b7c739d');
-        linkedIn.style.border = '2px solid #0b7c739d';
-        github.style.border = '2px solid #0b7c739d';
-        twitter.style.border = '2px solid #0b7c739d';
-        polywork.style.border = '2px solid #0b7c739d';
     }
     // PLAY PALINDROME NUMBER BUTTON
     palNumBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
     });
     palNumBtn.addEventListener('click', showPalNum);
 
@@ -1020,7 +945,6 @@ document.addEventListener("DOMContentLoaded", () => {
         var num = document.getElementById("pn-text").value;
         // convert input to an array, reverse it, and join it back together
         let intArr =  parseInt(num.toString().split("").reverse().join(""))
-        
         // regex for non-whole numbers
         let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/
     
@@ -1029,7 +953,6 @@ document.addEventListener("DOMContentLoaded", () => {
             showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is NOT an integer";
             clearPalNumForm();
-
         } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
             showPalNumOutcome();
             palNumOutcome.innerHTML = `${num}`+ " is not within the constraints";
@@ -1059,7 +982,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const revIntBtn = document.getElementById('rev-play-btn');
     const revIntHomeBtn = document.getElementById('rev-int-btn-close');
     
-
     // OPEN REVERSE INTEGER DASHBOARD
     function showRevInt() {
         revIntDash.style.display = 'block';
@@ -1078,10 +1000,6 @@ document.addEventListener("DOMContentLoaded", () => {
         cardHolder.style.display = 'none'; 
         lnsDash.style.display = 'none';
         updateColor('#8790e0'); 
-        linkedIn.style.border = '2px solid #8790e0';
-        github.style.border = '2px solid #8790e0';
-        twitter.style.border = '2px solid #8790e0';
-        polywork.style.border = '2px solid #8790e0';
     }
     // PLAY REVERSE INTEGER BUTTON
     revIntBtn.addEventListener('click', function(e) {
@@ -1094,7 +1012,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const revIntOutcome = document.getElementById("revResponse");
     const buttonRevInt = document.getElementById("rev-int-btn");
 
-    
     // REVERSE INTEGER RESPONSE FUNCTIONS
     function hideRevIntOutcome() {
         revIntOutcome.style.display ="none";
@@ -1141,33 +1058,25 @@ document.addEventListener("DOMContentLoaded", () => {
         if (num === "" || specialChar.test(num) || letters.test(num)) {
             showRevIntOutcome();
             revIntOutcome.innerHTML = "Please enter a number";
-            
         } else if (num == "0"){
             showRevIntOutcome();
             revIntOutcome.innerHTML = `${num}`;
-            
         }else if (decimalCheck.test(num)) {
             showRevIntOutcome();
             revIntOutcome.innerHTML = `${num}`+ " is not an integer";
-           
-
         } else if(num >= Math.pow(2, 31)-1 || num <= Math.pow(-2,31)) {
             showRevIntOutcome();
             revIntOutcome.innerHTML = `${num}`+ " is not within the constraints";
-            
         }else if(num < 0 ) {
             // Consider -/+ inputs using
             let negInt = -Math.abs(intArr)
-
             showRevIntOutcome();
             revIntOutcome.innerHTML = `${negInt}`;
-            
         }else {
             num > 0 ? showRevIntOutcome() : showRevIntOutcome();
             // showRevIntOutcome
             let revInt = Math.abs(intArr)
             revIntOutcome.innerHTML = `${revInt}`;
-            
         }
         clearRevIntForm();
     }
@@ -1176,7 +1085,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE REVERSE INTEGER DASH
     revIntHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
     });
     revIntHomeBtn.addEventListener('click', showHome);
 
@@ -1187,7 +1095,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const lnsBtn = document.getElementById('lnr-play-btn');
     const lnsHomeBtn = document.getElementById('lnr-btn-close');
     
-
     // OPEN LONGEST NON-REPEATING SUBSTRING DASHBOARD
     function showLns() {
         lnsDash.style.display = 'block';
@@ -1205,15 +1112,10 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none'; 
         updateColor('#ff0000');
-        linkedIn.style.border = '2px solid #ff0000';
-        github.style.border = '2px solid #ff0000';
-        twitter.style.border = '2px solid #ff0000';
-        polywork.style.border = '2px solid #ff0000';
     }
     // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
     lnsBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
     });
     lnsBtn.addEventListener('click', showLns);
 
@@ -1258,17 +1160,13 @@ document.addEventListener("DOMContentLoaded", () => {
             for (let i = 0; i < str.length - 1; i++){
                 // regex for letter and special characters or just special characters
                 let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-                
                 //regev for letters and numbers or just numbers
                 let numbers = /[A-Za-z]\d|\d/
-
                 //check if either regex pattern is present in the string
                 if(specialChar.test(str) || numbers.test(str)) {
-
                     // if yes, user gets prompted to enter the correct data type
                     lnsOutcome.innerHTML = "Enter only letters";
                     showLsOutcome();
-                
                 }else{
                     //otherwise, call length of string function
                     getLongestSubstring()
@@ -1356,7 +1254,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLOSE LONGEST NON-REPEATING SUBSTRING 
     lnsHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        
     });
     lnsHomeBtn.addEventListener('click', showHome);
 
@@ -1386,10 +1283,6 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none';
         updateColor('#8e06fdda');
-        linkedIn.style.border = '2px solid #8e06fdda';
-        github.style.border = '2px solid #8e06fdda';
-        twitter.style.border = '2px solid #8e06fdda';
-        polywork.style.border = '2px solid #8e06fdda';
     }
 
     // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
@@ -1439,13 +1332,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // initialize an empty array to store reversed words that are not empty
         let newArr = [];
         
-        
         // if the array satisfies the constraints
         if(lengthArr <= Math.pow(10, 4) || arr >= 1 ) {
                 
             // loop through the array
             for (let i = lengthArr - 1; i >= 0; i--) {
-
                 // if a word is not empty
                 if (arr[i].length > 0) {
                     // push the word to the new array
@@ -1460,7 +1351,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // the array does not satify the constraints 
             revWordDash.innerHTML = "The string must be 1-10,000 characters";
         }
-        
         clearRevWordForm();
     }
 
@@ -1479,7 +1369,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // OPEN SUM ALL IN A RANGE DASHBOARD
     function showSumAll() {  
-       
         sumAllDash.style.display = 'block';
         mainDash.style.display = 'block';
         isoDash.style.display = "none";
@@ -1495,11 +1384,6 @@ document.addEventListener("DOMContentLoaded", () => {
         toRomeDash.style.display = "none";
         cardHolder.style.display = 'none';
         updateColor('#f36c36ed');
-        linkedIn.style.border = '2px solid #f36c36ed';
-        github.style.border = '2px solid #f36c36ed';
-        twitter.style.border = '2px solid #f36c36ed';
-        polywork.style.border = '2px solid #f36c36ed';
-        
     }
     sumAllBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -1544,10 +1428,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // loop through the array
         for (let i = 0; i < arr.length - 1; i++){
-
             // regex for letter and special characters or just letters or just special characters
             let specialCases = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-            
             //if the array contains letters or special characters
             if(specialCases.test(arr)) {
                 // if yes, user gets prompted to enter the correct data type
@@ -1569,7 +1451,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // makes sure array is numbers
         arr = arr.map(Number)
-        
 
         // find the largest number in the array
         let max = Math.max(arr[0], arr[1]);
@@ -1617,10 +1498,6 @@ document.addEventListener("DOMContentLoaded", () => {
         sumAllDash.style.display = "none";
         cardHolder.style.display = 'none';
         updateColor('#05c0c7');
-        linkedIn.style.border = '2px solid #05c0c7';
-        github.style.border = '2px solid #05c0c7';
-        twitter.style.border = '2px solid #05c0c7';
-        polywork.style.border = '2px solid #05c0c7';
     };
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){
@@ -1681,19 +1558,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (specialChar.test(input) && numbers.test(input)) {
             romeOutcome.innerHTML = "Please enter a whole number";
             showRomeOutcome();
-            // return 'roman';
-
           // is input a roman numeral if so convert to number
         } else if (roman.test(input)) {
             console.log("Roman");
             toInt();
-
-          // is input a number if so convert to roman numeral
         } else if(numbers.test(input)) {
             console.log("Numbers")
             toRoman();
-
-          // otherwise input is invalid
         }else {
             romeOutcome.innerHTML = "Please enter a valid roman number or number";
             showRomeOutcome();
@@ -1757,8 +1628,6 @@ document.addEventListener("DOMContentLoaded", () => {
             // return 'invalid';
             showRomeOutcome();
             romeOutcome.innerHTML = "Please enter a valid roman numeral";
-
-            // satifies contraints, convert to integer  
         } else {
             // assign the difference of the string's length and 1 to a variable
             let i = strLength - 1;
@@ -1793,9 +1662,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     };
-
-    // var romanpdf = $("romanpdf");
-    //     PDFObject.embed("pdf/Rome.pdf", "#romanpdf");
 
     // CLOSE TO ROME AND BACK DASHBOARD
     toRomeHomeBtn.addEventListener('click', function(e) {
