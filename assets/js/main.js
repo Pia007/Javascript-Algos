@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Header Elements
     const info = document.getElementById('info-icon');
     const infoBtn = document.getElementById('info-btn');
+    const closeInfo = document.getElementById('info-btn-close');
     const title = document.getElementById('header-title');
     const clock = document.getElementById('clock');
     const mobileTitle = document.getElementById('mb-header-title');
@@ -23,6 +24,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const revWordDash = document.getElementById('rev-word');
     const sumAllDash = document.getElementById('sm-all');
     const toRomeDash = document.getElementById('rome');
+
+    // Dash Open Buttons 
+    const isoBtn = document.getElementById('iso-play-btn');
+    const palBtn = document.getElementById('pal-play-btn');
+    const twoBtn = document.getElementById('two-play-btn');
+    const spinBtn = document.getElementById('spin-play-btn');
+    const llwBtn = document.getElementById('llw-play-btn');
+    const factBtn = document.getElementById('fact-play-btn');
+    const palNumBtn = document.getElementById('pn-play-btn');
+    const revIntBtn = document.getElementById('rev-play-btn');
+    const lnsBtn = document.getElementById('lnr-play-btn');
+    const revWordBtn = document.getElementById('rw-play-btn');
+    const sumAllBtn = document.getElementById('sum-all-play-btn');
+    const toRomeBtn = document.getElementById('rome-play-btn');
+
+    // Dash Close Buttons
+    const isoHomeBtn = document.getElementById("iso-btn-close");
+    const palHomeBtn = document.getElementById("pal-btn-close");
+    const twoHomeBtn = document.getElementById("ts-btn-close");
+    const spinHomeBtn = document.getElementById('spin-btn-close');
+    const llwHomeBtn = document.getElementById('lw-btn-close');
+    const factHomeBtn = document.getElementById('fact-btn-close');
+    const palNumHomeBtn = document.getElementById('pn-btn-close');
+    const revIntHomeBtn = document.getElementById('rev-int-btn-close');
+    const lnsHomeBtn = document.getElementById('lnr-btn-close');
+    const revWordHomeBtn = document.getElementById('rev-word-btn-close');
+    const sumAllHomeBtn = document.getElementById('sm-all-btn-close');
+    const toRomeHomeBtn = document.getElementById('rome-btn-close');
 
 
     // Footer Elements
@@ -53,27 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     Time();
 
-    //*************************** HOME ********************/
-    // SHOW HOME PAGE
-    function showHome() {
-        infoDash.style.display = 'none';
-        isoDash.style.display = "none";
-        palDash.style.display = "none";
-        twoDash.style.display = "none";
-        spinDash.style.display = "none";
-        llwDash.style.display = "none";
-        factDash.style.display = "none";
-        palNumDash.style.display = "none";
-        revIntDash.style.display = "none";
-        lnsDash.style.display = "none";
-        revWordDash.style.display = "none";
-        sumAllDash.style.display = "none";
-        toRomeDash.style.display = "none";
-        mainDash.style.display = "none";
-        cardHolder.style.display = "block";
-        updateColor('#c32abbc9');
-    }
-
     // Create an array of dashboard
     const dashboards = [
         infoDash,isoDash, palDash, twoDash, spinDash,
@@ -97,14 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-
     function changeSocBtnColor(color) {
         socialBtns.forEach(function(btn) {
             btn.style.border = `2px solid ${color}`;
         })
     }
 
-    function updateColor(color) {         //Refactor to use a single function
+    function updateColor(color) {    
         info.style.color = color;  
         title.style.color= color;  
         clock.style.color= color; 
@@ -112,10 +119,33 @@ document.addEventListener("DOMContentLoaded", () => {
         copy.style.color = color;
         changeSocBtnColor(color);
     }
-    
-    // showDash(cardHolder, '#c32abbc9');
-    
 
+    function hideResponse(res, btn) {
+        res.style.display = "none";
+        btn.style.display = "block";
+    }
+
+    function showResponse(res, btn) {
+        res.style.display = "block";
+        btn.style.display = "none";
+    }
+
+    function clearForm(dashForm, res, btn) {
+        setTimeout(function() {
+            if(dashForm) {
+                dashForm.reset();
+                hideResponse(res, btn);
+            } else {
+                console.error('Form not found');
+            }
+        }, 2500);
+    }
+
+    
+    //*************************** HOME ********************/
+    // SHOW HOME PAGE
+    showDash(cardHolder, '#c32abbc9');
+    
 
     //***********************  INFORMATION DASH ****************************/
     infoBtn.addEventListener('click', function(e) {
@@ -123,23 +153,12 @@ document.addEventListener("DOMContentLoaded", () => {
         showDash(infoDash,  '#6d88c8');
     });
 
-    const closeInfo = document.getElementById('info-btn-close');
     closeInfo.addEventListener('click', function(e) {
         e.preventDefault();
         showDash(cardHolder, '#c32abbc9');
     });
-    //***********************  /INFORMATION DASH ****************************/
 
-    
-    //***************************CLOCK ********************/
-
-    
     // ******************ISOGRAM******************************
-
-    // ISOGRAM CONTAINER
-    // const isoDash = document.getElementById('iso-container');
-    const isoBtn = document.getElementById('iso-play-btn');
-    const isoHomeBtn = document.getElementById("iso-btn-close");
     
     // PLAY ISOGRAM FROM HOMEPAGE
     isoBtn.addEventListener('click', function(e) {
@@ -148,73 +167,52 @@ document.addEventListener("DOMContentLoaded", () => {
         
     });
 
-    // ISOGRAM FORM ELEMENTS
-    const form = document.getElementById("form");
-    const button = document.getElementById("check-input");
-    const response = document.getElementById("eval");
-
-    // ISOGRAM RESPONSE FUNCTIONS
-    function hideRes() {
-        response.style.display = "none"
-        button.style.display = "block"
-    }
-    function showRes() {
-        response.style.display = "block"
-        response.style.color = "#37A4C8"
-        button.style.display = "none"
-    }
-    // CLEARS ISOGRAM FORM
-    function clearForm() {
-        setTimeout(function() {
-            form.reset();
-            hideRes();
-        }, 2500);
-    };
+    const isoForm = document.getElementById("form");
+    const isoSubmitBtn = document.getElementById("check-input");
+    const isoResponse = document.getElementById("eval");
 
     // PREVENT THE DEFAULT BEHAVIOR OF THE BUTTON AND CALL ISOGRAM CRITERIA EVALUATION FUNCTION
-    button.addEventListener('click', function(e) {
+    isoSubmitBtn.addEventListener('click', function(e) {
         e.preventDefault();
         
     });
-    button.addEventListener('click', evalString);
+    isoSubmitBtn.addEventListener('click', evalString);
 
     // EVALUATE THE STRING AGAINST CRITERIA
     function evalString(str) {
-        
         str = document.getElementById("isogramText").value;
-
         // ISOGRAM CRITERIA
         for (let i = 0; i < str.length - 1; i++){
             let specialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
             let numbers = /\d/
             
             if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
             }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
             }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
             }else if(specialChar.test(str) && numbers.test(str)){
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
             }else if(str.indexOf(' ') >= 0){
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
             }else if(specialChar.test(str)) {
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
             }else if(numbers.test(str)) {
-                showRes();
+                showResponse(isoResponse, isoSubmitBtn);
                 response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
             }
             else {
                 // CALL THE ISOGRAM FUNCTION
                 isIsogram();
             }     
-            clearForm();
+            clearForm(isoForm, isoResponse, isoSubmitBtn);
         };
         
     };    
@@ -243,11 +241,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 //WHY? Substrings that repeat, will not have an index of -1 and not be added to newLetters array, 
                     // resulting in newLettersLength < letterLength
         if(newLetters.length === letters.length) {
-            showRes();
-            response.innerHTML = "'"+`${str}`+"'" + " IS an isogram."
+            showResponse(isoResponse, isoSubmitBtn);
+            isoResponse.innerHTML = "'"+`${str}`+"'" + " IS an isogram."
         }else {
-            showRes();
-            response.innerHTML = "'"+`${str}`+"'" + " is NOT an isogram."
+            showResponse(isoResponse, isoSubmitBtn);
+            isoResponse.innerHTML = "'"+`${str}`+"'" + " is NOT an isogram."
         }
         
     };
@@ -257,46 +255,21 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         showDash(cardHolder, '#c32abbc9');
     });
+
     // ******************PALINDROME******************************
 
-    // PALINDROME DASH ELEMENTS
-    // const palDash = document.getElementById('palindrome');
-    const palBtn = document.getElementById('pal-play-btn');
-    const palHomeBtn = document.getElementById("pal-btn-close");
-
-    
     // PLAY BUTTON TO OPEN PALINDROME DASH
     palBtn.addEventListener('click', function(e) {
         e.preventDefault();
         showDash(palDash, '#FFA500');
         
     });
-    // palBtn.addEventListener('click', showPal);
 
     // PALINDROME FORM ELEMENTS
     const palForm = document.getElementById("pal-form");
     const palOutcome = document.getElementById("palResponse");
     const buttonCheckPal = document.getElementById("pal-check-string");
 
-    // PALINDROME RESPONSE FUNCTIONS
-    function hidePalOutcome() {
-        palOutcome.style.display ="none";
-        buttonCheckPal.style.display = "block";
-    }
-    function showPalOutcome() {
-        palOutcome.style.display ="block";
-        palOutcome.style.color = "#FFA500";
-        buttonCheckPal.style.display = "none";
-
-    }
-    
-    // CLEAR PALINDROME FORM
-    function clearPalForm() {
-        setTimeout(function() {
-            palForm.reset();
-            hidePalOutcome();
-        }, 3500);
-    };
 
     // BUTTON TO CHECK PALINDROME STRING INPUT
     buttonCheckPal.addEventListener('click', function(e) {
@@ -318,13 +291,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // 
         let revNewStr = newStrArr.reverse().join('');
         if( newStr === revNewStr ) {
-            showPalOutcome();
+            showResponse(palOutcome, buttonCheckPal);
             palOutcome.innerHTML ="' " + `${words}`+ " '"  + " IS a palindrome"; 
         }else {
-            showPalOutcome();
+            showResponse(palOutcome, buttonCheckPal);
             palOutcome.innerHTML = "' " + `${words}`+ " '"  +  " is NOT a palindrome";
         }
-        clearPalForm()
+        clearForm(palForm, palOutcome, buttonCheckPal);
     }
 
     // CLOSE PALINDROME DASH
@@ -335,12 +308,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /****************************TWO SUM********************************************/
-    
-    // TWO SUM CONTAINER ELEMENTS
-    // const twoDash = document.getElementById('two-sum');
-    const twoBtn = document.getElementById('two-play-btn');
-    const twoHomeBtn = document.getElementById("ts-btn-close");
-
     // PLAY BUTTON TO OPEN TWO SUM DASH
     twoBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -355,23 +322,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // TWO SUM RESPONSE FUNCTIONS
-    function hideOutcome() {
-        sumOutcome.style.display ="none";
-        buttonSum.style.display = "block";
-    }
-    function showOutcome() {
-        sumOutcome.style.display ="block";
-        sumOutcome.style.color = "#e0e5ec";
-        buttonSum.style.display = "none";
-    }
+    // function hideOutcome() {
+    //     sumOutcome.style.display ="none";
+    //     buttonSum.style.display = "block";
+    // }
+    // function showOutcome() {
+    //     sumOutcome.style.display ="block";
+    //     sumOutcome.style.color = "#e0e5ec";
+    //     buttonSum.style.display = "none";
+    // }
 
-    // TWO SUM CLEAR FORM
-    function clearTsForm() {
-        setTimeout(function(e) {
-            tsForm.reset();
-            hideOutcome();
-        }, 3000);
-    };
+    // // TWO SUM CLEAR FORM
+    // function clearTsForm() {
+    //     setTimeout(function(e) {
+    //         tsForm.reset();
+    //         hideOutcome();
+    //     }, 3000);
+    // };
 
     // TWO SUM BUTTON TO CHECK INPUT
     buttonSum.addEventListener('click', function(e) {
@@ -393,7 +360,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if(specialCases.test(arr)) {
 
                 // if yes, user gets prompted to enter the correct data type
-                showOutcome();
+                showResponse(sumOutcome, buttonSum);
                 sumOutcome.innerHTML = "Enter only numbers";
     
             }else{
@@ -401,7 +368,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 checkTarget()
             }
             // clear the form after the function runs
-            clearTsForm()
+            clearForm(tsForm, sumOutcome, buttonSum);
         }   
     }
 
@@ -414,14 +381,14 @@ document.addEventListener("DOMContentLoaded", () => {
             
         // if the target contains letters or special characters
         if(specialCases.test(target)) {
-            showOutcome();
+            showResponse(sumOutcome, buttonSum);
             sumOutcome.innerHTML = "Enter a number";
         } else{
         //otherwise, call length of twoSum function
             twoSum()
         }
         // clear the form after the function runs
-        clearTsForm()
+        clearForm(tsForm, sumOutcome, buttonSum);
     }
 
     // TWO SUM FUNCTION       
@@ -455,18 +422,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 let indexTwo = i;
                 
                 // the two sums were found
-                showOutcome();
+                showResponse(sumOutcome, buttonSum);
                 sumOutcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
                 break;
             }else { 
                 // the two sums were not found
                 numsObj[numDifference] = i
                 let newArr = arr.join(", ")
-                showOutcome();
+                showResponse(sumOutcome, buttonSum);
                 sumOutcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
                 
             }
-            clearTsForm()
+            clearForm(tsForm, sumOutcome, buttonSum);
         }
     } 
 
@@ -477,11 +444,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // **************************************SPIN WORDS****************************************************
-    // SPIN WORDS DASH ELEMENTS
-    // const spinDash = document.getElementById('spin-words');
-    const spinBtn = document.getElementById('spin-play-btn');
-    const spinHomeBtn = document.getElementById('spin-btn-close');
-    
+
     // PLAY BUTTON TO OPEN SPIN WORDS DASHBOARD
     spinBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -608,11 +571,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     //****************************************LENGTH OF THE LONGEST WORD****************************************************************** */
-
-    // LENGTH OF THE LONGEST WORD DASHBOARD ELEMENTS
-    const llwBtn = document.getElementById('llw-play-btn');
-    const llwHomeBtn = document.getElementById('lw-btn-close');
-
     // PLAY LENGTH OF THE LONGEST WORD BUTTON
     llwBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -695,11 +653,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* *************************    FACTORIALIZE    ******************************************************* */
 
-
-    // Factorialize a Number Container
-    const factBtn = document.getElementById('fact-play-btn');
-    const factHomeBtn = document.getElementById('fact-btn-close');
-
     // PLAY FACTORIALIZE BUTTON
     factBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -774,11 +727,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ****************************************   PALINDROME NUMBER    *********************************************
-
-    // PALINDROME NUMBER DASHBOARD ELEMENTS
-    // const palNumDash = document.getElementById('pal-num');
-    const palNumBtn = document.getElementById('pn-play-btn');
-    const palNumHomeBtn = document.getElementById('pn-btn-close');
     
     // PLAY PALINDROME NUMBER BUTTON
     palNumBtn.addEventListener('click', function(e) {
@@ -857,10 +805,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ********************************     REVERSE INTEGER       ********************************************************
-
-    // REVERSE INTEGER DASHBOARD ELEMENTS
-    const revIntBtn = document.getElementById('rev-play-btn');
-    const revIntHomeBtn = document.getElementById('rev-int-btn-close');
     
     // PLAY REVERSE INTEGER BUTTON
     revIntBtn.addEventListener('click', function(e) {
@@ -951,11 +895,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ********************************  LONGEST NON-REPEATING SUBSTRING      ********************************************************
-
-    // Longest Non-Repeating Substring Container
-    // const lnsDash = document.getElementById('lnr');
-    const lnsBtn = document.getElementById('lnr-play-btn');
-    const lnsHomeBtn = document.getElementById('lnr-btn-close');
     
     // PLAY LONGEST NON-REPEATING SUBSTRING BUTTON
     lnsBtn.addEventListener('click', function(e) {
@@ -1104,11 +1043,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ********************************  REVERSE WORD/S     ********************************************************
 
-
-    // REVERSE WORD/S DASHBOARD ELEMENTS
-    const revWordBtn = document.getElementById('rw-play-btn');
-    const revWordHomeBtn = document.getElementById('rev-word-btn-close');
-
     // PLAY BUTTON FOR REVERSE WORD/S DASHBOARD
     revWordBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -1185,10 +1119,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ********************************  SUM ALL IN A RANGE    ********************************************************
-
-    // SUM ALL IN A RANGE DASHBOARD ELEMENTS
-    const sumAllBtn = document.getElementById('sum-all-play-btn');
-    const sumAllHomeBtn = document.getElementById('sm-all-btn-close');
 
     sumAllBtn.addEventListener('click', function(e) {
         e.preventDefault();
@@ -1280,10 +1210,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ********************************  TO ROME AND BACK   ********************************************************
-
-    // To Rome and Back Container
-    const toRomeBtn = document.getElementById('rome-play-btn');
-    const toRomeHomeBtn = document.getElementById('rome-btn-close');
 
     // OPEN TO ROME AND BACK DASHBOARD
     toRomeBtn.addEventListener('click', function(e){
