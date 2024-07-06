@@ -1,6 +1,13 @@
 // HOME PAGE 
 document.addEventListener("DOMContentLoaded", () => {
-    // DOM ELEMENTS
+    // Header Elements
+    const info = document.getElementById('info-icon');
+    const infoBtn = document.getElementById('info-btn');
+    const title = document.getElementById('header-title');
+    const clock = document.getElementById('clock');
+    const mobileTitle = document.getElementById('mb-header-title');
+
+    // Dashboards
     const cardHolder = document.getElementById('dg-holder');
     const mainDash = document.getElementById('algo-dash');
     const infoDash = document.getElementById('info-dash');
@@ -17,13 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const sumAllDash = document.getElementById('sm-all');
     const toRomeDash = document.getElementById('rome');
 
-
-    // Header Elements
-    const info = document.getElementById('info-icon');
-    const infoBtn = document.getElementById('info-btn');
-    const title = document.getElementById('header-title');
-    const clock = document.getElementById('clock');
-    const mobileTitle = document.getElementById('mb-header-title');
 
     // Footer Elements
     const socialBtns = document.querySelectorAll('.social-btn-item');
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     Time();
 
-    //***************************DASHBOARD ********************/
+    //*************************** HOME ********************/
     // SHOW HOME PAGE
     function showHome() {
         infoDash.style.display = 'none';
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dashboards.forEach(function(dashboard) {
             dashboard.style.display = 'none';
         })
-        if (dash === cardHolder) {
+        if (dash === cardHolder || dash === infoDash) {
             dash.style.display = 'block';
             updateColor(color);
         } else {
@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
             updateColor(color);
         }
     }
+
 
     function changeSocBtnColor(color) {
         socialBtns.forEach(function(btn) {
@@ -111,6 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
         copy.style.color = color;
         changeSocBtnColor(color);
     }
+    
+    // showDash(cardHolder, '#c32abbc9');
     
 
 
