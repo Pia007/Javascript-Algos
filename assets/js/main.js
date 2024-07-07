@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error('Form not found');
             }
-        }, 2500);
+        }, 3000);
     }
 
     //*************************** HOME ********************/
@@ -301,50 +301,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttonSum.addEventListener('click', function(e) {
         e.preventDefault();
-        checkLsInput();
+        checkTsInput();
     });
 
     // validate the input
-    function checkTsInput(arr) {
-        arr = document.getElementById("randomNumbers").value;
-        // Loop through the arr
-        for (let i = 0; i < arr.length - 1; i++){
+    function checkTsInput() {
+        let arr = document.getElementById("randomNumbers").value;
+        // regex for letters and special characters or just letters or just special characters
+        let specialCases = /[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
-            // regex for letter and special characters or just letters or just special characters
-            let specialCases = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-            
-            if(specialCases.test(arr)) {
-                showResponse(sumOutcome, buttonSum);
-                sumOutcome.innerHTML = "Enter only numbers";
-            } else {
-                checkTarget()
-            }
-            clearForm(tsForm, sumOutcome, buttonSum);
-        }   
+        if (specialCases.test(arr)) {
+            showResponse(sumOutcome, buttonSum);
+            sumOutcome.innerHTML = "Enter only numbers";
+        } else {
+            checkTarget();
+        }
     }
 
     // check the target number
-    function checkTarget(target) {
-        target = document.getElementById("targetNumber").value;
+    function checkTarget() {
+        let target = document.getElementById("targetNumber").value;
+        // regex for letters and special characters or just special characters
+        let specialCases = /[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
 
-        // regex for letter and special characters or just special characters
-        let specialCases = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[A-Za-z]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
-            
         // if the target contains letters or special characters
-        if(specialCases.test(target)) {
+        if (specialCases.test(target)) {
             showResponse(sumOutcome, buttonSum);
             sumOutcome.innerHTML = "Enter a number";
         } else {
-            twoSum()
+            twoSum();
         }
-        clearForm(tsForm, sumOutcome, buttonSum);
     }
 
     // two sum function
-    function twoSum(arr, target) {
-        target = document.getElementById("targetNumber").value;
-        arr = document.getElementById("randomNumbers").value.split(" ");
-        arr = arr.map(Number)
+    function twoSum() {
+        let target = Number(document.getElementById("targetNumber").value);
+        let arr = document.getElementById("randomNumbers").value.split(" ").map(Number);
 
         // create an object/hash map to store key-value pairs
         let numsObj = {};
@@ -353,33 +345,36 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < arr.length; i++) {
             let someNum = arr[i];
             let numDifference = target - someNum;
-            
-            // in the object, if the value of the first number is in the object, its NOT undefined
-            if (numsObj[someNum] !== undefined ) {
-                //get the index of the first number from the original array and assign it
+
+            // in the object, if the value of the first number is in the object, it's NOT undefined
+            if (numsObj[someNum] !== undefined) {
+                // get the index of the first number from the original array and assign it
                 let indexOne = numsObj[someNum];
                 // get the index of the second number and assign it
                 let indexTwo = i;
-                
+
                 // the two sums were found
                 showResponse(sumOutcome, buttonSum);
-                sumOutcome.innerHTML = `${target}` + " is the sum of the values at indices ["+`${indexOne}`+", " +`${indexTwo}`+"]."
-                break;
-            } else { 
-                // the two sums were not found
-                numsObj[numDifference] = i
-                let newArr = arr.join(", ")
-                showResponse(sumOutcome, buttonSum);
-                sumOutcome.innerHTML = "The sum of  " + `${target}` + " is NOT in [" + `${newArr}` + "]";
+                sumOutcome.innerHTML = `${target} is the sum of the values at indices [${indexOne}, ${indexTwo}], values ${arr[indexOne]} and ${arr[indexTwo]}.`;
+                clearForm(tsForm, sumOutcome, buttonSum); // Move the clearForm call outside the loop
+                return;
+            } else {
+                numsObj[numDifference] = i;
             }
-            clearForm(tsForm, sumOutcome, buttonSum);
         }
-    } 
+
+        // the two sums were not found
+        let newArr = arr.join(", ");
+        showResponse(sumOutcome, buttonSum);
+        sumOutcome.innerHTML = `The sum of ${target} is NOT in [${newArr}].`;
+        clearForm(tsForm, sumOutcome, buttonSum);
+    }
 
     twoHomeBtn.addEventListener('click', function(e) {
         e.preventDefault();
         showDash(homepage, '#c32abbc9');
     });
+
 
     // **************************************SPIN WORDS****************************************************
 
