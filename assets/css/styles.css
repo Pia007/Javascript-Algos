@@ -200,13 +200,14 @@ footer {
     text-align: center;
     border-radius:50%;
 }
-/* .social-btn-item:hover,
+.social-btn-item:hover,
 .social-btn-item:active,
 .social-btn-item:focus {
     background: linear-gradient(145deg, #f0f5fd, #caced4);
     box-shadow:  inset 5px 5px 10px #5a5c5e,
-        inset -5px -5px 10px #ffffff; */
-/* } */
+        inset -5px -5px 10px #ffffff; 
+    cursor: pointer;
+}
 .f-icon {
     font-size: 30px;
     /* margin: 0 auto; */
@@ -1884,6 +1885,7 @@ form {
     margin-bottom: 8px;
     padding: auto;
     font-size: 22px;
+    font-weight: 600;
 }
 .lwEval {
     margin-top: 8px
@@ -2559,7 +2561,7 @@ form {
         width: 95%;
         height: 90%;
         box-shadow: 5px 5px 10px #31b343,
-             -5px -5px 10px #39cd4d;
+            -5px -5px 10px #39cd4d;
     }
     .sw-form,
     .sw-pdf-frame {
@@ -2678,7 +2680,6 @@ form {
         justify-content: space-evenly;
         align-items: center;
     }
-    
     .two-nums,
     .two-target {
         height: 40px;
@@ -2690,7 +2691,7 @@ form {
     }
     .fact-input-holder,
     .pn-input-holder{
-       margin: 0 auto; 
+        margin: 0 auto; 
     }
     .sm-all-input-holder {
         margin: 0 auto;
@@ -2724,7 +2725,6 @@ form {
     .sm-all-text-field {
         width: 70%;
         margin:  auto;
-       
     }
     /* responses */
     .evals {
@@ -2762,7 +2762,6 @@ form {
     }
     .lw-btn-check {
         margin-top: 8px;
-       
     }
     .sm-all-btn-check {
         color: var(--sum-all-color);
@@ -2791,7 +2790,6 @@ form {
         box-shadow:   5px 5px 30px #9c6060,
         -5px -5px 30px #ffd0d0;
     }
-     
     .ts-intro,
     .sw-intro {
         font-size: 20px;
@@ -2807,7 +2805,6 @@ form {
         margin : 0 auto;
     }
     .rev-int-btn-check {
-       
         margin: 10px auto;
         margin-bottom: auto;
     }
