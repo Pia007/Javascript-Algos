@@ -82,6 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     Time();
 
+    const headerAndFooterElements = [
+        infoIcon, webTitle, appClock, mobileTitle, copyDev
+    ];
+
+    function updateColor(arr=headerAndFooterElements, color) {
+        arr.forEach(function(tag) { 
+            tag.style.color = color;
+        })
+        changeSocBtnColor(color);
+    }
+
     const dashboards = [
         infoDash,isoDash, palDash, twoDash, spinDash,
         llwDash, factDash, palNumDash, revIntDash,
@@ -96,11 +107,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         if (dash === homepage || dash === infoDash) {
             dash.style.display = 'block';
-            updateColor(color);
+            updateColor(arr=headerAndFooterElements, color);
         } else {
             dash.style.display = 'block';
             mainDash.style.display = 'block';
-            updateColor(color);
+            updateColor(arr=headerAndFooterElements, color);   
         }
     }
 
@@ -108,15 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
         socialBtns.forEach(function(btn) {
             btn.style.border = `2px solid ${color}`;
         })
-    }
-
-    function updateColor(color) {    
-        infoIcon.style.color = color;  
-        webTitle.style.color= color;  
-        appClock.style.color= color; 
-        mobileTitle.style.color= color;
-        copyDev.style.color = color;
-        changeSocBtnColor(color);
     }
 
     function hideResponse(res, btn) {
@@ -183,26 +185,26 @@ document.addEventListener("DOMContentLoaded", () => {
             let numbers = /\d/
             
             if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
-                evlautation;
-                response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
+                evaluation;
+                isoResponse.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
             } else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
-                evlautation;
-                response.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
+                evaluation;
+                isoResponse.innerHTML = "Try again! "+ "'"+`${str}`+"'" +  " is not a single word and has atleast one special character."
             } else if(str.indexOf(' ') >= 1 && numbers.test(str)){
-                evlautation;
-                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
+                evaluation;
+                isoResponse.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word and has atleast one number."
             } else if(specialChar.test(str) && numbers.test(str)){
-                evlautation;
-                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
+                evaluation;
+                isoResponse.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number and special character."
             } else if(str.indexOf(' ') >= 0){
-                evlautation;
-                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
+                evaluation;
+                isoResponse.innerHTML = "Try again! " + "'"+`${str}`+"'" + " is not a single word."
             } else if(specialChar.test(str)) {
-                evlautation;
-                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
+                evaluation;
+                isoResponse.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one special character."
             } else if(numbers.test(str)) {
-                evlautation;
-                response.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
+                evaluation;
+                isoResponse.innerHTML = "Try again! " + "'"+`${str}`+"'" + " has atleast one number."
             } else {
                 isIsogram();
             }     
@@ -267,16 +269,23 @@ document.addEventListener("DOMContentLoaded", () => {
     function palindromeChecker(str) {
         let words = document.getElementById("pal-text").value;
 
-        // Use regex to search for occurences of only letters and numbers
-        let regEx = /[^a-z0-9]/gi;
+        // Use regex to search for occurences of only upper and lower case letters
+        let regEx = /[^a-zA-Z]/gi;
         let newStrArr = words.replace(regEx,'').toLowerCase().split('');
         let newStr = newStrArr.join('');
         let revNewStr = newStrArr.reverse().join('');
 
-        if( newStr === revNewStr ) {
+        // check for numbers
+        if (/\d/.test(words)) {
+            showResponse(palOutcome, buttonCheckPal);
+            palOutcome.innerHTML = "Enter only letters";
+        } else if (words === "") {
+            showResponse(palOutcome, buttonCheckPal);
+            palOutcome.innerHTML = "Please enter a word/words";
+        } else if (newStr === revNewStr ) {
             showResponse(palOutcome, buttonCheckPal);
             palOutcome.innerHTML ="' " + `${words}`+ " '"  + " IS a palindrome"; 
-        }else {
+        } else {
             showResponse(palOutcome, buttonCheckPal);
             palOutcome.innerHTML = "' " + `${words}`+ " '"  +  " is NOT a palindrome";
         }
@@ -419,7 +428,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             for (let i = 0; i < str.length-1; i++){
                 // regex for letter and special characters or just special characters
-                let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+                let specialChar = /[A-Za-z][!@#$%^&*()_+\-=\[\]{};:"\\|,.<>\/?]|[!@#$%^&*()_+\-=\[\]{};:"\\|,.<>\/?]/
                 let letters = /[A-Za-z]/
                 //regev for letters and numbers or just numbers
                 let numbers = /[A-Za-z]\d|\d/
@@ -491,7 +500,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         for (let i = 0; i < str.length - 1; i++){
             // regex does not inlude ' and - they are allowed in words
-            let specialChar = /[A-Za-z][!@#$%^&*()_+\=\[\]{};:"\\|,.<>\/?]|[!@#$%^&*()_+\=\[\]{};:"\\|,.<>\/?]/
+            // let specialChar = /[A-Za-z][@#$%^&*()_+\=\[\]{};:\\|<>\/?]|[!@#$%^&*()_+\=\[\]{};:\\|<>\/]/
+            let specialChar = /[A-Za-z][@#$%^&*_+\=\[\]{}\\|<>\]|[@#$%^&*_+\=\[\]{};:\\|<>\/]/;
+
             //regev for letters and numbers or just numbers
             let numbers = /[A-Za-z]\d|\d/
 
@@ -500,7 +511,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 showResponse(lwOutcome, buttonCheckLongest);
                 lwOutcome.innerHTML = "Enter only letters";
             } else {
-                findLongestWord()
+                findLongestWord(str);
             }
             clearForm(lwForm, lwOutcome, buttonCheckLongest);
         }   
@@ -509,14 +520,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // find the longest word
     function findLongestWord(str) {
         let strArr = document.getElementById("lw-text").value.split(' ');
+        console.log(strArr)
         let longestWordLength = 0;
+        let allowedChar = /['"?,.:;!\-()]/;
         
         for(let i = 0; i < strArr.length; i++) {
             if(strArr[i].length > longestWordLength) {
+                // replacing commont punctuation marks
+                strArr[i] = strArr[i].replace(/['"?,.:;!\-()]/g, '');
                 longestWordLength = strArr[i].length;
                 theWord = strArr[i]
                 showResponse(lwOutcome, buttonCheckLongest);
-                lwOutcome.innerHTML = "'" +`${theWord}`+"': " + `${longestWordLength}`;
+                lwOutcome.innerHTML = `${theWord}` +":" + `${longestWordLength}`;
             }
         }
     }
@@ -548,7 +563,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // check if num contains a /
         if (num.includes("/")) {
             showResponse(factOutcome, buttonGetFact);
-            factOutcome.innerHTML = "Please enter a number";
+            factOutcome.innerHTML = "Please enter a whole number";
         } else {
             let integer = Number(num);
             let decimalCheck = /^[+-]?([0-9]+\.[0-9]*|\.[0-9]+)$/;
