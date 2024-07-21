@@ -1,0 +1,13 @@
+$primary-bg: #e0e5ec;
+$custom-font: Rubik, sans-serif;
+
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: $primary-bg;
+    font-family: $custom-font;
+}
+.btn {
+    font-family: $custom-font;
+}
