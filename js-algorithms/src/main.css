@@ -1,0 +1,56 @@
+:root {
+   /* font */
+   --rubik: 'Rubik', sans-serif;
+
+   --border: rgba(150, 150, 160, 0.753);
+
+   /* Background */
+   --main-bg: #e0e5ec;
+
+   /* Landing color */
+   --js-header: #c32abbc9;
+
+    /* information color */
+    --info-color: #6d88c8;
+    --info-hover: #214bac;
+    --info-sub: #4475e9;
+
+    /* Card Colors */
+    --iso-color: #37A4C8;
+    --pal-color: #FFA500;
+    --two-color: #5b0eeb;
+    --spin-color: #f89898;
+    --llw-color: #35c048;
+    --fact-color: #eb0e96;
+    --pn-color: #0b7c739d;
+    --rev-color: #8790e0;
+    --lnr-color: #ff0000;
+    --rw-color: #8e06fdda;
+    --sum-all-color: #f36c36ed;
+    --rome-color: #05c0c7;
+
+    --card-btn-shadows:  inset 9px 9px 17px #5a5c5e,
+        inset -9px -9px 17px #ffffff;
+
+    /* footer colors */
+    --f-linkedin: #0077b5;
+    --f-github: #333;
+    --f-twitter: #1da1f2;
+
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--rubik);
+    color: var(--js-black);
+    background:  var(--main-bg);
+    overflow: hidden;
+}

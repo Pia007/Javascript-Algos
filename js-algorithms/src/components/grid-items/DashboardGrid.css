@@ -1,0 +1,352 @@
+
+.dash-holder {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.dash-grid-holder {
+    width: 90%;
+    min-width: 343px;
+    display: flex;
+    height: 92%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid blue;
+}
+.dashboard {
+    width: 85%;
+    /* CHECK HERE FOR THE SCROLL HEIGHT */
+    height: 70vh;
+    display: grid;
+    /* This ensures responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
+    /* /This ensures responsiveness */
+    gap: 10px;
+    
+    margin: 10px auto;
+    padding: 15px;
+    box-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
+    transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.algo-card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 
+    7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
+    border-radius: 10px;
+}
+.algo-info {
+    height: 60%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* .title {
+    font-size: 18px;
+    margin: 8px 0;
+    margin-top: 0;
+    font-weight: 700;
+} */
+.algo-text-info {
+    font-size: 14px;
+    margin: 8px auto;
+    margin-bottom: 10px;
+}
+.card-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 8px auto;
+    margin-top: 0;
+}
+
+.btn-holder {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: auto;
+}
+/* BUTTON STYLING*/
+.btn,
+.btn-play,
+.level {
+    width: 40px; 
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background: var(--main-bg);
+    box-shadow: 7px -7px 20px 0px rgba(251, 251, 251, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(8, 8, 8, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.level {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* battery styling */
+.fa-battery-three-quarters,
+.fa-battery-half {
+    margin: 11px auto;
+    font-size: 19px;
+}
+/* play button styling */
+.fa-play {
+    /* margin: 8px auto; */
+    margin-left: 3px;
+    font-size: .85em;
+}
+/* general button */
+.btn-play:hover,
+.btn-play:focus,
+.btn-play:active {
+    background-color: none;
+    box-shadow: inset 7px 7px 14px #94979c,
+            inset -7px -7px 14px #ffffff;
+}
+/* isogramgram card */
+.isogram,
+.isogram-play,
+.isogram-text {
+    color: var(--iso-color);
+}
+.isogram-btn-play:hover,
+.isogram-btn-play:focus,
+.isogram-btn-play:active {
+    border: 2px solid var(--iso-color);
+}
+
+/* two-sum Sum Card */
+.two-sum,
+.two-sum-text,
+.two-sum-play {
+    color: var(--two-color);
+}
+.two-sum-btn-play:hover,
+.two-sum-btn-play:focus,
+.two-sum-btn-play:active {
+    border: 2px solid var(--two-color);
+}
+
+/* Palindrome Card */
+.palindrome,
+.palindrome-play {
+    color: var(--pal-color);
+}
+.palindrome-btn-play:hover,
+.palindrome-btn-play:focus,
+.palindrome-btn-play:active {
+    border: 2px solid var(--pal-color);
+}
+
+/* Spin Card */
+.spin-words,
+.spin-words-play {
+    color: var(--spin-color);
+}
+.spin-words-btn-play:hover,
+.spin-words-btn-play:focus,
+.spin-words-btn-play:active {
+    border: 2px solid var(--spin-color);
+}
+
+/* Longest .. Card */
+.longest-word,
+.longest-word-play {
+    color: var(--llw-color);
+}
+.longest-word-btn-play:hover,
+.longest-word-btn-play:focus,
+.longest-word-btn-play:active {
+    border: 2px solid var(--longest-word-color);
+}
+
+/* Factor Card */
+.factorialize,
+.factorialize-play {
+    color: var(--fact-color);
+}
+.factorialize-btn-play:hover,
+.factorialize-btn-play:focus,
+.factorialize-btn-play:active {
+    border: 2px solid var(--fact-color);
+}
+
+/* Palindrome Number Card*/
+.palindrome-number,
+.palindrome-number-play {
+    color: var(--pn-color);
+}
+.palindrome-number-btn-play:hover,
+.palindrome-number-btn-play:focus,
+.palindrome-number-btn-play:active {
+    border: 2px solid var(--pn-color);
+}
+
+/* Reverse Integer Card*/
+.reverse-integer,
+.reverse-integer-play {
+    color: var(--rev-color);
+}
+.reverse-integer-btn-play:hover,
+.reverse-integer-btn-play:focus,
+.reverse-integer-btn-play:active {
+    border: 2px solid var(--rev-color);
+}
+
+
+/* Longest NON... Card*/
+.longest-non-repeating-substring,
+.longest-non-repeating-substring-play {
+    color: var(--lnr-color);
+}
+.longest-non-repeating-substring-btn-play:hover,
+.longest-non-repeating-substring-btn-play:focus,
+.longest-non-repeating-substring-btn-play:active {
+    border: 2px solid var(--lnr-color);
+}
+
+/* Reverse a Word....Card */
+.reverse-words,
+.reverse-words-play {
+    color: var(--rw-color);
+}
+.reverse-words-btn-play:hover,
+.reverse-words-btn-play:focus,
+.reverse-words-btn-play:active {
+    border: 2px solid var(--rw-color);
+}
+
+/* Sum All */
+.sum-all,
+.sum-all-play {
+    color: var(--sum-all-color);
+}
+.sum-all-btn-play:hover,
+.sum-all-btn-play:focus,
+.sum-all-btn-play:active {
+    border: 2px solid var(--sum-all-color);
+}
+/* Rome and Back */
+.to-rome-and-back,
+.to-rome-and-back-play {
+    color: var(--rome-color);
+}
+.to-rome-and-back-btn-play:hover,  
+.rome-btn-play:focus,
+.to-rome-and-back-btn-play:active {
+    border: 2px solid var(--rome-color);
+}
+
+
+
+@media (min-width: 500px) {
+    .dashboard {
+        padding: 20px;
+        overflow: auto;
+    }
+    /* .card-title {
+        font-size: 4vw;
+    } */
+    .info {
+        font-size: 2.8vw;
+    }
+    .btn-holder{
+        height: 55px;
+        
+    }
+    .btn-holder .btn,
+    .btn-holder .btn-play {
+        margin-top: auto;
+    }
+    .level {
+        margin-top:auto; 
+    }
+
+}
+@media (min-width: 600px) {
+    
+    .dashboard {
+        padding: 30px;
+        gap: 15px;
+    }
+    /* .card-title {
+        font-size: 24px;
+    } */
+}
+@media (min-width: 768px) {
+    .dashboard {
+        padding: 40px;
+    }
+}
+@media (min-width: 1080px) {
+    .dashboard {
+        padding: 50px;
+    }
+    .btn-holder {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .btn,
+    .btn-play {
+        width: 50px; 
+        height:50px;
+    }
+    .level {
+        width: 50px; 
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .fa-battery-three-quarters,
+    .fa-battery-half {
+        margin: 8px auto;
+        font-size: 24px;
+
+        font-size: 24px;
+        margin:13px auto;
+    }
+    .play {
+        width: 38px;
+        height: 38px;
+        margin-left: 5px;
+    }
+}

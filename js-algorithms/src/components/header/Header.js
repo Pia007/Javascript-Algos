@@ -1,32 +1,54 @@
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Clock from './Clock';
-// import {faInfoCircle} from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faInfo} from '@fortawesome/free-solid-svg-icons';
+import './header.css';
 
 
-const Header = () => {
+const Header = ({ color }) => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+    // change the title based on the window width
+    const changeTitle = () => {
+        if (windowWidth <= 992) {
+            return <h1 className="hd-title">JS Algos</h1>
+        } else {
+            return <h1 className="hd-title"> JavaScript Algorithms</h1>
+        }
+    }
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container">
-                <NavLink to='/info'>Info Icon</NavLink>
-                {/* <NavLink className="navbar-brand" to="/">React App</NavLink> */}
-                <Clock />
-                {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button> */}
-                
-                {/* <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/" exact>Home</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" to="/info">Info</NavLink>
-                        </li>
-                    </ul>
-                </div> */}
+        <header style={{ color: color }}>
+            <div className="header-info-holder">
+                <div className="hd-content">
+                    <div className="hd-holder hd-btn-holder">
+                        <button className="header-btn" id="info-btn" aria-label="info-button">
+                            <Link to='/info' className="info-btn">
+                                {/* <FontAwesomeIcon icon={faInfo} size="2xl" style={{color: color}}/> */}
+                                <i class="fa-solid fa-info" style={{color: color}}/>
+                            </Link>
+                        </button>
+                    </div>
+                    <div className="hd-holder hd-title-holder">
+                        {changeTitle()}
+                    </div>
+                    <div className="hd-holder clock-holder">
+                            <Clock className="hd-clock"/>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </header>
     )
-}
+};
 
 export default Header

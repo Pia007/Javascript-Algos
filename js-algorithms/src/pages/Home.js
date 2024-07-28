@@ -1,13 +1,14 @@
 import React from 'react'
-import DashboardPanel from '../components/DashboardPanel'
+import DashboardGrid from '../components/grid-items/DashboardGrid'
+import '../components/grid-items/DashboardGrid.css'
 
 const Home = () => {
     return (
-        // <div>
-            <DashboardPanel />
+        <div className="dash-holder">
+            <DashboardGrid />
 
-            // HOME
-        // </div>
+         
+        </div>
     )
 }
 

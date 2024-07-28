@@ -13,8 +13,8 @@ const Clock = () => {
     }, []);
 
     return (
-        <div>
-            <h2>{time.toLocaleTimeString()}</h2>
+        <div className="hd-clock">
+            <span >{time.toLocaleTimeString()}</span>
         </div>
     );
 }
