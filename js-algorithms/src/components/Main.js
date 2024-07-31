@@ -49,7 +49,7 @@ const Main = () => {
                 <Route path="/sum-all" element={<SumAllPage />} />
                 <Route path="/rome-and-back" element={<RomeAndBackPage />} />
             </Routes>
-            <Footer />
+            <Footer color={color} />
         </div>
     )
 };

@@ -35,7 +35,7 @@ const Header = ({ color }) => {
                         <button className="header-btn" id="info-btn" aria-label="info-button">
                             <Link to='/info' className="info-btn">
                                 {/* <FontAwesomeIcon icon={faInfo} size="2xl" style={{color: color}}/> */}
-                                <i class="fa-solid fa-info" style={{color: color}}/>
+                                <i className="fa-solid fa-info" style={{color: color}}/>
                             </Link>
                         </button>
                     </div>
