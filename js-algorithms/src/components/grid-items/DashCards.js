@@ -14,7 +14,11 @@ const DashCards = () => {
 
     return (
         <>
-            {algoCards}
+            {algoCards.map((algo, index) => (
+                <React.Fragment key={index}>
+                    {algo}
+                </React.Fragment>
+            ))}
         </>
     )
 }
