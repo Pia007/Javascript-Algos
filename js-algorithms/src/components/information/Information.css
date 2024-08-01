@@ -1,0 +1,119 @@
+.information  {
+    width: 90%;
+    height: 70vh;
+    margin: 20px auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--main-bg);
+}
+
+.info-content {
+    width: 95%;
+    height: 85%;
+    margin: 10px auto;
+    margin-top: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: flex-start;
+    border:1px solid var(--info-color);
+    border-radius: 10px;
+    box-shadow: 7px -7px 20px 0px rgba(255, 255, 255, 0.6),
+        -4px -4px 5px 0px rgba(255, 255, 255, 0.6),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.133),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067),
+        inset 0px 0px 0px 0px rgba(255, 255, 255, 0.6),        
+        inset 0px 0px 0px 0px rgba(0, 0, 0, 0.067);
+    overflow-y: auto;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: var(--info-hover);
+}
+.info-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--info-sub);
+}
+.info-text {
+    font-size: 20px;
+    margin: 10px 0;
+    margin-top: 5px;
+    line-height: 1.4;
+    color: rgb(61, 58, 58);
+}
+.info-img-holder {
+    width: 40%;
+    max-width: 380px;
+    min-width: 260px;
+    height: auto;
+    
+}
+.sample-image {
+    padding-left: 90px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.resources-list {
+    width: 100%;
+    padding-left: 85px;
+}
+.resources-list {
+    font-weight: 500;
+}
+.resources-item {
+    margin: 5px 0;
+    font-size: 18px;
+    
+}
+
+a.resources-links {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--info-color);
+    text-decoration: none;
+}
+a.resources-links:hover,
+a.resources-links:active,
+a.resources-links:focus {
+    color: var(--info-hover);
+}
+.algo-dash-holder {
+    width: 100%;
+    height: auto;
+    margin: 10px 15px;
+    outline: none;
+    border-radius: 10px;
+    
+    padding: 10px auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.algo-dash-holder{
+    display: none
+}
+.container {
+    width: 90%;
+    margin: 15px auto;
+    min-width: 340px;
+    height: 75vh;
+    max-height: 750px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: var(--main-bg);
+    border-radius: 10px;
+}
