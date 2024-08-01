@@ -1,0 +1,237 @@
+/* home button */
+.btn-home {
+    float: right;
+    margin: 15px;
+    width: 45px;
+    height: 45px; 
+    text-align: center;
+    padding: 0px;
+    border-radius: 50%;
+    border: none;   
+}
+.btn-home:hover {
+    cursor: pointer;
+}
+.info-home {
+    float: right;
+    margin: 7.5px;
+    border: 1px solid var(--info-color);
+    background: var(--main-bg);
+    box-shadow:  17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.iso-home {
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.pal-home {
+    border: 1px solid var(--pal-color);
+    background: linear-gradient(145deg, #caced4, #f0f5fd);
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.two-home {
+    /* border: 1px solid var(--two-color); */
+    background: linear-gradient(145deg, #610ffb, #520dd4);
+    box-shadow:  17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.sw-home {
+    border-radius:50px;
+    background: linear-gradient(145deg, #ffa3a3, #df8989);
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.lw-home {
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.pn-home {
+    /* border: 1px solid var(--pn-color); */
+    background: linear-gradient(145deg, #0a756b, #08625a);
+    box-shadow: 17px 17px 34px #5a5c5e,
+    -17px -17px 34px #ffffff;
+}
+.fact-home {
+    background: #e0e5ec;
+    box-shadow:  5px 5px 9px #5a5c5e,
+        -5px -5px 9px #ffffff;
+}
+.rev-int-home {
+    background: #e0e5ec;
+    box-shadow: inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;
+}
+
+.lnr-home {
+    background: #ff0000;
+    box-shadow: inset 7px 7px 14px #660000,
+        inset -7px -7px 14px #ff0000;
+}
+.rev-word-home {
+    background: #8e06fd;
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.sm-all-home {
+    background: #e0e5ec;
+    box-shadow: inset 8px 8px 16px #9fa3a8,
+        inset -8px -8px 16px #ffffff;
+}
+.rome-home {
+    background: #e0e5ec;
+    box-shadow: 5px 5px 9px #5a5c5e,
+        -5px -5px 9px #ffffff;
+}
+/* home button activity */
+.info-home:hover,
+.info-home:focus,
+.info-home:active {
+    border: 2px solid var(--info-color);
+    box-shadow:  inset 5px 5px 9px #5a5c5e,
+    inset -5px -5px 9px #ffffff;
+}
+.iso-home:active,
+.iso-home:hover,
+.iso-home:focus {
+    border: 2px solid var(--iso-color);
+    box-shadow: inset 5px 5px 10px #5a5c5e,
+        inset -5px -5px 10px #ffffff;
+}
+.pal-home:active,
+.pal-home:focus,
+.pal-home:hover {
+    border: 2px solid var(--pal-color);
+    box-shadow:  inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;
+}
+.two-home:active,
+.two-home:focus,
+.two-home:hover {
+    border: 2px solid var(--main-bg);
+    box-shadow:  inset 5px 5px 10px #24065e,
+    inset -5px -5px 10px #9216ff;
+}
+.sw-home:active,
+.sw-home:focus,
+.sw-home:hover {
+    border: 2px solid var(--main-bg);
+    box-shadow:  12px 12px 24px #5a5c5e,
+        -12px -12px 24px #ffffff;
+}
+.lw-home:active,
+.lw-home:focus,
+.lw-home:hover {
+    border: 2px solid var(--llw-color);
+    background: #e0e5ec;
+    box-shadow:  inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;;
+}
+.fact-home:active,
+.fact-home:focus,
+.fact-home:hover {
+    border: 2px solid var(--fact-color);
+    background: #e0e5ec;
+    box-shadow:  inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;;
+}
+.pn-home:active,
+.pn-home:focus,
+.pn-home:hover {
+    border: 2px solid var(--main-bg);
+    background: #096d64;
+    box-shadow: inset 5px 5px 9px #042c28,
+            inset -5px -5px 9px #0eaea0;
+}
+.rev-int-home:active,
+.rev-int-home:focus,
+.rev-int-home:hover {
+    border: 2px solid var(--rev-color);
+    background: #e0e5ec;
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.lnr-home:active,
+.lnr-home:focus,
+.lnr-home:hover {
+    border: 2px solid var(--main-bg);
+    background: #ff0000;
+    box-shadow: 17px 17px 34px #5a5c5e,
+        -17px -17px 34px #ffffff;
+}
+.rev-word-home:active,
+.rev-word-home:focus,
+.rev-word-home:hover {
+    border: 2px solid var(--main-bg);
+    box-shadow:  inset 12px 12px 24px #390265,
+        inset -12px -12px 24px #e30aff;
+}
+.sm-all-home:active,
+.sm-all-home:focus,
+.sm-all-home:hover {
+    border: 2px solid var(--sum-all-color);
+    background: linear-gradient(145deg, #f0f5fd, #caced4);
+    box-shadow:  9px 9px 18px #898c90,
+        -9px -9px 18px #ffffff;    
+}
+.rome-home:active,
+.rome-home:hover,
+.rome-home:focus {
+    border: 2px solid var(--rome-color);
+    box-shadow: inset 5px 5px 9px #5a5c5e,
+        inset -5px -5px 9px #ffffff;
+}
+
+.link-home {
+    color: var(--info-color);
+    text-decoration: none;
+}
+
+.icon-home {
+    width: 30px;
+    height: 30px;
+    padding: auto;
+    margin: 5px auto;
+}
+/* home button icon  */
+.info-home-icon {
+    color: var(--info-color);
+}
+.iso-home-icon {
+    fill: var(--iso-color);
+}
+.pal-home-icon {
+    fill: var(--pal-color);
+}
+.ts-home-icon {
+    fill: var(--main-bg);
+}
+.sw-home-icon {
+    fill: var(--main-bg);
+}
+.lw-home-icon {
+    fill: var(--llw-color);
+}
+.fact-home-icon {
+    fill: var(--fact-color);
+}
+.pn-home-icon {
+    fill: var(--main-bg);
+}
+.rev-int-home-icon {
+    fill: var(--rev-color);
+}
+.lnr-home-icon {
+    fill: var(--main-bg);
+}
+.rev-word-home-icon {
+    fill: var(--main-bg);
+}
+.sm-all-home-icon {
+    fill: var(--sum-all-color);
+}
+.rome-home-icon {
+    fill: var(--rome-color);
+}

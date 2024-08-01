@@ -1,8 +1,11 @@
 import React from 'react'
+import Factorialize from '../../components/algorithms/Factorialize'
 
 const FactorializePage = () => {
   return (
-    <div>Factorialize Page</div>
+    <div>Factorialize Page
+      <Factorialize />
+    </div>
   )
 }
 

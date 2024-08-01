@@ -1,21 +1,13 @@
-import React, { useState } from 'react'
-import HomeButton from '../components/HomeButton'
+import React from 'react'
+import Information from '../components/information/InformationContent'
+import HomeButton from '../components/home-button/HomeButton'
 
 
-const Info = () => {
-    // const setStyles = () => {
-    //     console.log('setStyles')
-    // }
-    const [styles, setStyles] = useState({
-    color: '#4475e9',
-    borderColor: '#4475e9',
-    backgroundColor: '#4475e9',
-});
-
+const Info = ({ buttonStyles, homeIconStyle }) => {
     return (
-        <div className='container' style={{ backgroundColor: styles.backgroundColor }}>
-            Info
-            <HomeButton styles={{ color: 'red', borderColor: 'red', backgroundColor: 'lightgray' }} setStyles={setStyles}/>
+        <div className="information">
+            <HomeButton buttonStyles="info-home" homeIconStyle="info-home-icon"/>
+            <Information />
         </div>
     )
 }
