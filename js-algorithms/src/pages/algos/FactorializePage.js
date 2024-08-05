@@ -1,5 +1,5 @@
 import React from 'react'
-import Factorialize from '../../components/algorithms/Factorialize'
+import Factorialize from '../../components/algorithms/Fact'
 
 const FactorializePage = () => {
   return (
